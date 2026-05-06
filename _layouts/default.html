@@ -20,9 +20,161 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+  <style>
+    body { font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important; }
+    
+    /* 드롭다운 호버 효과 (데스크탑 전용) */
+    @media (min-width: 992px) {
+      .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeIn 0.2s ease;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .dropdown-item i { width: 20px; text-align: center; }
+    
+    /* 서브 드롭다운 (Nested Dropdowns) */
+    .dropdown-submenu { position: relative; }
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+      display: none;
+    }
+    .dropdown-submenu:hover > .dropdown-menu { display: block; }
+    @media (max-width: 991.98px) {
+      .dropdown-submenu .dropdown-menu { position: static; margin-left: 15px; display: block; box-shadow: none; background: rgba(255,255,255,0.05); }
+    }
+    
+    /* 사이드바 활성 메뉴 글자색 개선 */
+    .list-group-item.active {
+      color: #fff !important;
+      font-weight: 600 !important;
+      background-color: #3f51b5 !important;
+      border-color: #3f51b5 !important;
+    }
+    
+    .sidebar-header {
+      background-color: #2c3e50 !important;
+      color: white !important;
+      border-radius: 0 !important;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 20px 10px !important;
+    }
+    [data-theme='dark'] .sidebar-header {
+      background-color: #0f172a !important;
+      border-color: #1e293b !important;
+    }
+    
+    /* 전역 클래스 다크 모드 보정 */
+    [data-theme='dark'] .bg-white { background-color: #1e293b !important; color: #f1f5f9 !important; }
+    [data-theme='dark'] .border { border-color: #334155 !important; }
+    [data-theme='dark'] .btn-light { background-color: #334155; border-color: #475569; color: #f1f5f9; }
+    [data-theme='dark'] .btn-outline-dark { color: #f1f5f9; border-color: #475569; }
+    [data-theme='dark'] .text-primary { color: #60a5fa !important; }
+    [data-theme='dark'] .text-success { color: #4ade80 !important; }
+    [data-theme='dark'] .text-info { color: #22d3ee !important; }
+    [data-theme='dark'] .text-warning { color: #fbbf24 !important; }
+    [data-theme='dark'] .text-danger { color: #f87171 !important; }
+
+    /* 회원가입 페이지 입력란 (요청: 항상 흰색 배경에 검은 글씨) */
+    .sidebar-menu [data-toggle="collapse"] .caret-icon {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #38bdf8; /* 하늘색 (Sky Blue) */
+      transition: transform 0.3s ease;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    .sidebar-menu [data-toggle="collapse"].collapsed .caret-icon {
+      transform: rotate(180deg);
+    }
+
+    /* 상단 유틸리티 바 (로그인, 회원가입, 사이트맵) */
+    .top-utility-bar {
+      background-color: #333; /* 검은색 배경 */
+      border-bottom: 1px solid #222;
+      padding: 8px 0;
+      font-size: 0.75rem;
+    }
+    .top-utility-bar a {
+      color: #fff; /* 흰색 글자 */
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .top-utility-bar a:hover {
+      opacity: 0.8;
+      color: #fff;
+    }
+    .top-utility-bar .divider {
+      color: #555;
+      margin: 0 10px;
+    }
+
+    /* ══ 다크 모드 통합 지원 ══ */
+    [data-theme='dark'] body, 
+    [data-theme='dark'] .content-wrapper { background-color: #0f172a !important; color: #f1f5f9; }
+    [data-theme='dark'] .section-card { background-color: #1e293b !important; color: #f1f5f9; border-color: #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4); }
+    [data-theme='dark'] .section-card h1, 
+    [data-theme='dark'] .section-card h2, 
+    [data-theme='dark'] .section-card h3, 
+    [data-theme='dark'] .section-card h4, 
+    [data-theme='dark'] .section-card h5 { color: #f8fafc !important; }
+    [data-theme='dark'] .section-card p, 
+    [data-theme='dark'] .section-card li,
+    [data-theme='dark'] .section-card span { color: #cbd5e1 !important; }
+    
+    [data-theme='dark'] .bg-light { background-color: #1e293b !important; color: #f1f5f9 !important; }
+    [data-theme='dark'] .bg-white { background-color: #1e293b !important; color: #f1f5f9 !important; }
+    [data-theme='dark'] .text-muted { color: #94a3b8 !important; }
+    [data-theme='dark'] .text-dark { color: #f8fafc !important; }
+    [data-theme='dark'] .text-primary { color: #60a5fa !important; }
+    [data-theme='dark'] .text-success { color: #4ade80 !important; }
+    [data-theme='dark'] .breadcrumb-item a { color: #94a3b8 !important; }
+    [data-theme='dark'] .breadcrumb-item.active { color: #f8fafc !important; }
+    
+    [data-theme='dark'] .table { color: #f1f5f9; }
+    [data-theme='dark'] .table th { background-color: #334155 !important; color: #f8fafc !important; border-color: #475569 !important; }
+    [data-theme='dark'] .table td { border-color: #334155 !important; color: #cbd5e1 !important; }
+    
+    [data-theme='dark'] .list-group-item { background-color: #1e293b !important; color: #cbd5e1 !important; border-color: #334155 !important; }
+    [data-theme='dark'] .list-group-item.active { background-color: #3b82f6 !important; border-color: #3b82f6 !important; color: #ffffff !important; }
+    [data-theme='dark'] .list-group-item-action:hover { background-color: #334155 !important; color: #ffffff !important; }
+    
+    [data-theme='dark'] .sidebar-header { background-color: #0f172a !important; border-color: #1e293b !important; }
+    
+    [data-theme='dark'] .page-hero { background: #020617 !important; border-color: #1e293b !important; color: #f8fafc !important; }
+    [data-theme='dark'] .page-hero h1, [data-theme='dark'] .page-hero .page-sub { color: #f8fafc !important; }
+    
+    [data-theme='dark'] .btn-light { background-color: #334155 !important; border-color: #475569 !important; color: #f1f5f9 !important; }
+    [data-theme='dark'] .btn-outline-dark { color: #f1f5f9 !important; border-color: #475569 !important; }
+
+    /* 회원가입 페이지 입력란 (요청: 항상 흰색 배경에 검은 글씨) */
+    .form-control-custom {
+      background-color: #ffffff !important;
+      color: #333333 !important;
+      border: 1px solid #ced4da;
+    }
+    .form-control-custom::placeholder {
+      color: #adb5bd;
+    }
+    .form-control-custom[readonly] {
+      background-color: #e9ecef !important;
+    }
+  </style>
 
   <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
   <link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
@@ -57,42 +209,74 @@
 <body class="hold-transition layout-top-nav">
 <div class="wrapper">
 
+  <!-- ══ Top Utility Bar ══ -->
+  <div class="top-utility-bar">
+    <div class="container text-right">
+      <a href="{{ '/site/sitemap.html' | relative_url }}">사이트맵</a>
+    </div>
+  </div>
+
   <!-- ══ Navbar ══ -->
-  <nav class="main-header navbar navbar-expand-lg navbar-dark">
+  <nav class="main-header navbar navbar-expand-lg navbar-dark border-bottom-0" style="background: rgba(0, 86, 179, 0.8) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
     <div class="container">
-      <a href="{{ base | append: '/' | relative_url }}" class="navbar-brand">
-        <i class="fas fa-wifi mr-1"></i>
-        {{ t.org }} <span class="brand-edu">eduroam</span>
+      <a href="{{ base | append: '/' | relative_url }}" class="navbar-brand d-flex align-items-center">
+        <span class="brand-icon-wrap mr-2">
+          <i class="fas fa-wifi"></i>
+        </span>
+        <span class="brand-text-wrap">
+          <span class="brand-edu">eduroam</span><span class="brand-kr">.kr</span>
+        </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/about' %} active{% endif %}" href="{{ base | append: '/about/' | relative_url }}">
-              <i class="fas fa-info-circle"></i>{{ t.nav_about }}
+          <!-- 1. 소개 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              소개
             </a>
+            <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="{{ '/about/eduroam/' | relative_url }}">eduroam이란?</a>
+              <a class="dropdown-item" href="{{ '/about/guide/' | relative_url }}">가입방법 및 절차</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{ '/policy/' | relative_url }}">정책</a>
+              <a class="dropdown-item" href="{{ '/about/promotion.html' | relative_url }}">홍보자료</a>
+              <a class="dropdown-item" href="{{ '/connect/' | relative_url }}">접속안내</a>
+              <a class="dropdown-item" href="{{ '/about/aboutus/' | relative_url }}">운영센터안내</a>
+            </div>
           </li>
+
+          <!-- 2. eduroam 맵 -->
           <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/connect' %} active{% endif %}" href="{{ base | append: '/connect/' | relative_url }}">
-              <i class="fas fa-plug"></i>{{ t.nav_connect }}
-            </a>
+            <a class="nav-link" href="{{ '/coverage/map.html' | relative_url }}">eduroam 맵</a>
           </li>
+
+          <!-- 3. 이용 기관 -->
           <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/coverage' %} active{% endif %}" href="{{ base | append: '/coverage/' | relative_url }}">
-              <i class="fas fa-map-marker-alt"></i>{{ t.nav_coverage }}
-            </a>
+            <a class="nav-link" href="{{ '/support/institutions.html' | relative_url }}">이용 기관</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/policy' %} active{% endif %}" href="{{ base | append: '/policy/' | relative_url }}">
-              <i class="fas fa-file-alt"></i>{{ t.nav_policy }}
+
+          <!-- 4. 커뮤니티 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              커뮤니티
             </a>
+            <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="communityDropdown">
+              <a class="dropdown-item" href="{{ '/notices/' | relative_url }}">공지사항</a>
+              <a class="dropdown-item" href="{{ '/community/faq.html' | relative_url }}">FAQ</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link{% if page.url contains '/support' %} active{% endif %}" href="{{ base | append: '/support/' | relative_url }}">
-              <i class="fas fa-headset"></i>{{ t.nav_support }}
+
+          <!-- 4. 관리 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="mgmtDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              관리
             </a>
+            <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="mgmtDropdown">
+              <a class="dropdown-item" href="{{ '/support/management.html' | relative_url }}">관리 안내</a>
+            </div>
           </li>
           <!-- 테마 전환 -->
           <li class="nav-item dropdown ml-1">
@@ -111,6 +295,21 @@
               </a>
             </div>
           </li>
+          
+          <!-- 사이트 검색 -->
+          <li class="nav-item ml-lg-2 mt-2 mt-lg-0">
+            <form action="{{ '/search.html' | relative_url }}" method="get" class="form-inline">
+              <div class="input-group input-group-sm" style="box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+                <input class="form-control border-0" type="search" name="q" placeholder="검색어 입력..." aria-label="Search" style="background-color: white !important; color: #333 !important; width: 140px;">
+                <div class="input-group-append">
+                  <button class="btn btn-primary border-0" type="submit" style="background-color: #0056b3;">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </li>
+
           <!-- 언어 전환 -->
           <li class="nav-item dropdown ml-1">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="padding:0.5rem 0.7rem !important;">

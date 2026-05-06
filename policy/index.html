@@ -10,56 +10,73 @@ title: 이용 정책
   </div>
 </section>
 
-<div class="container content-section">
+<div class="container my-4">
+  <div class="row">
 
-  <div class="section-card">
-    <h2><i class="fas fa-users"></i>이용 대상</h2>
-    <ul style="font-size:0.9rem; color:#444; line-height:2.2;">
-      <li>{{ site.t[page.lang].org }} 소속 직원 (기관 계정 보유자)</li>
-      <li>eduroam 참여기관 방문자 (소속 기관 계정으로 인증)</li>
-    </ul>
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          이용정책
+        </div>
+        <a href="{{ '/about/eduroam/' | relative_url }}" class="list-group-item list-group-item-action">
+          eduroam이란?
+        </a>
+        <a href="{{ '/about/guide/' | relative_url }}" class="list-group-item list-group-item-action">가입방법 및 절차</a>
+        
+        <a href="{{ '/policy/' | relative_url }}" class="list-group-item list-group-item-action active">정책</a>
+        <a href="{{ '/about/promotion.html' | relative_url }}" class="list-group-item list-group-item-action">홍보자료</a>
+        <a href="{{ '/connect/' | relative_url }}" class="list-group-item list-group-item-action">접속안내</a>
+        <a href="{{ '/about/aboutus/' | relative_url }}" class="list-group-item list-group-item-action">운영센터안내</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <!-- 빵부스러기 -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">정책</li>
+        </ol>
+      </nav>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-users"></i> 이용 대상</h2>
+        <ul style="font-size:0.95rem; color:#444; line-height:2.2;">
+          <li>{{ site.t[page.lang].org }} 소속 구성원 (기관 계정 보유자)</li>
+          <li>eduroam 참여기관 방문자 (소속 기관 계정으로 인증)</li>
+        </ul>
+      </div>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-ban"></i> 금지 사항</h2>
+        <ul style="font-size:0.95rem; color:#444; line-height:2.2;">
+          <li>불법 콘텐츠 유통 및 저작권 침해 행위</li>
+          <li>타인에 대한 해킹·사기·스팸 등 침해 행위</li>
+          <li>과도한 대역폭 점유 (P2P, 서버 운영 등)</li>
+        </ul>
+      </div>
+
+      <div class="section-card" style="background:#f8f9fa;">
+        <p class="small text-muted mb-0">본 정책은 2025년 3월 1일부터 시행됩니다. 문의: <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a></p>
+      </div>
+    </div>
   </div>
-
-  <div class="section-card">
-    <h2><i class="fas fa-ban"></i>금지 사항</h2>
-    <ul style="font-size:0.9rem; color:#444; line-height:2.2;">
-      <li>불법 콘텐츠 유통 및 저작권 침해</li>
-      <li>타인에 대한 해킹·사기·스팸 등 침해 행위</li>
-      <li>과도한 대역폭 점유 (P2P, 대용량 스트리밍 서버 운영 등)</li>
-      <li>계정 정보 타인 양도·공유</li>
-      <li>기타 관계 법령 위반 행위</li>
-    </ul>
-  </div>
-
-  <div class="section-card">
-    <h2><i class="fas fa-exclamation-triangle"></i>위반 시 조치</h2>
-    <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-      정책 위반 확인 시 접속을 차단하고 소속 기관에 통보할 수 있습니다.
-      불법 행위가 수반된 경우 수사기관에 협조합니다.
-    </p>
-  </div>
-
-  <div class="section-card">
-    <h2><i class="fas fa-user-shield"></i>개인정보 처리</h2>
-    <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-      eduroam 접속 시 아래 정보가 수집·처리됩니다.
-    </p>
-    <ul style="font-size:0.9rem; color:#444; line-height:2.2;">
-      <li>사용자 ID (익명처리 후 로밍 로그 전달)</li>
-      <li>접속 일시 및 AP 위치</li>
-      <li>접속 단말기 MAC 주소</li>
-    </ul>
-    <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-      수집된 정보는 서비스 제공 및 보안 사고 대응 목적으로만 사용되며,
-      법령에 따른 경우를 제외하고 제3자에게 제공되지 않습니다.
-      보존 기간은 접속일로부터 1년입니다.
-    </p>
-  </div>
-
-  <div class="section-card" style="background:#f8f9fa;">
-    <p style="font-size:0.82rem; color:#888; margin:0;">
-      본 정책은 2025년 3월 1일부터 시행됩니다. 문의: {{ site.t[page.lang].support_dept }}, <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a>
-    </p>
-  </div>
-
 </div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    font-weight: bold;
+  }
+</style>

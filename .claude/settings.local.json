@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/home/cyj07154/다운로드/nro-site-main/_data/institutions_pages.json'\\)\\); print\\(d\\)\")"
+    ]
+  }
+}

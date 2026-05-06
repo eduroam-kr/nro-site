@@ -1,0 +1,108 @@
+---
+layout: default
+title: 네트워크 상태
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-signal mr-2"></i>네트워크 상태</h1>
+    <p class="page-sub">eduroamKR 서비스의 실시간 운영 상태를 안내합니다</p>
+  </div>
+</section>
+
+<div class="container content-section">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="section-card">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0"><i class="fas fa-check-circle text-success"></i> 현재 서비스 상태</h2>
+          <span class="text-muted small">최종 업데이트: {{ site.data.network_status.last_updated }}</span>
+        </div>
+
+        <div class="status-box-success p-4 mb-4 rounded d-flex align-items-center">
+          <div class="mr-4">
+            <i class="fas fa-check-circle fa-4x text-success"></i>
+          </div>
+          <div>
+            <h3 class="mb-1 status-text">모든 서비스가 정상입니다</h3>
+            <p class="mb-0 text-muted">현재 모든 인증 서버 및 관리 포털이 원활하게 운영되고 있습니다.</p>
+          </div>
+        </div>
+
+        <table class="table mt-4">
+          <thead class="thead-light">
+            <tr>
+              <th>서비스 이름</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in site.data.network_status.services %}
+            <tr>
+              <td class="py-3 font-weight-bold">{{ item.name }}</td>
+              <td class="py-3">
+                {% if item.status == 'operational' %}
+                  <span class="badge badge-success px-3 py-2"><i class="fas fa-check mr-1"></i>정상</span>
+                {% elsif item.status == 'maintenance' %}
+                  <span class="badge badge-warning px-3 py-2"><i class="fas fa-tools mr-1"></i>점검중</span>
+                {% else %}
+                  <span class="badge badge-danger px-3 py-2"><i class="fas fa-exclamation-triangle mr-1"></i>장애</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-card mt-4">
+        <h2><i class="fas fa-history"></i> 최근 작업 이력</h2>
+        <ul class="list-unstyled">
+          <li class="pb-3 border-bottom mb-3">
+            <div class="d-flex justify-content-between">
+              <strong>[정기 점검] RADIUS 서버 인증서 갱신 작업</strong>
+              <span class="text-muted small">2026.04.15</span>
+            </div>
+            <p class="mb-0 mt-1 small text-muted">안정적인 서비스 제공을 위해 국가 RADIUS 서버의 보안 인증서 갱신 작업을 완료하였습니다.</p>
+          </li>
+          <li class="pb-3">
+            <div class="d-flex justify-content-between">
+              <strong>[기능 업그레이드] 관리 포털 DB 최적화</strong>
+              <span class="text-muted small">2026.03.20</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="section-card bg-light">
+        <h4>상태 알림 구독</h4>
+        <p class="small text-muted">서비스 장애나 점검 일정을 이메일로 받아보실 수 있습니다. (기관 담당자 전용)</p>
+        <button class="btn btn-primary d-block w-100">알림 신청하기</button>
+      </div>
+
+      <div class="section-card mt-4">
+        <h4>기술 문의</h4>
+        <p class="small text-muted">서비스 연결에 문제가 있는 경우 운영센터로 문의해 주세요.</p>
+        <a href="mailto:{{ site.support.email }}" class="btn btn-outline-dark d-block w-100">운영센터 메일</a>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .status-box-success {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+  }
+  .status-text {
+    color: #166534;
+  }
+  [data-theme='dark'] .status-box-success {
+    background-color: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.3);
+  }
+  [data-theme='dark'] .status-text {
+    color: #4ade80;
+  }
+</style>

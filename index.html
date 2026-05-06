@@ -2,97 +2,331 @@
 layout: default
 title: 홈
 ---
+<!-- Custom Aesthetic Styles -->
+<style>
+  /* Base Hero Video Section */
+  .hero-video-section {
+    background: url('{{ "/assets/images/hero-bg.png" | relative_url }}') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 90px 0;
+    overflow: hidden;
+  }
+  .hero-video-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(0, 30, 80, 0.8), rgba(0, 80, 150, 0.6));
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  .highlight-text {
+    background-color: #5ab2ff;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 18px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .hero-desc {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #5ab2ff;
+    line-height: 1.6;
+  }
 
-<!-- Hero -->
-<section class="hero-section">
-  <div class="container">
-    <div class="eduroam-logo"><span>eduroam</span> @ {{ site.t[page.lang].org }}</div>
-    <div class="sub">전 세계 어디서나 기관 계정으로 무선랜에 접속하세요</div>
-    <a class="hero-btn" href="{{ '/connect/' | relative_url }}">
-      <i class="fas fa-wifi mr-1"></i>접속 방법 안내
-    </a>
+  /* Existing Quick Cards */
+  .quick-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    background: var(--card-bg, #ffffff);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05) !important;
+  }
+  [data-theme='dark'] .quick-card {
+    background: #1e293b;
+    border-color: #334155 !important;
+  }
+  .quick-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+
+  /* Stat blocks rich gradient & animated hover */
+  .stat-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+  .stat-bg-icon {
+    position: absolute;
+    right: -15px;
+    bottom: -20px;
+    font-size: 8rem !important;
+    opacity: 0.15 !important;
+    transform: rotate(-10deg);
+    transition: transform 0.5s ease;
+    color: white;
+  }
+  .stat-card:hover .stat-bg-icon {
+    transform: rotate(0deg) scale(1.1);
+  }
+
+  /* Partners */
+  .partner-logo {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .partner-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    color: #0056b3 !important;
+  }
+  [data-theme='dark'] .partner-logo:hover {
+    color: #60a5fa !important;
+  }
+
+  /* Map Stat Card - Theme Responsive */
+  .map-stat-card {
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+    color: #333;
+  }
+  .map-card-label { color: #666; }
+  .map-card-title { color: #007bff; }
+  .map-stat-card .stat-bg-icon {
+    color: #333;
+    opacity: 0.05 !important;
+  }
+
+  [data-theme='dark'] .map-stat-card {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #f1f5f9;
+    border-color: #334155 !important;
+  }
+  [data-theme='dark'] .map-card-label { color: #cbd5e1; }
+  [data-theme='dark'] .map-card-title { color: #60a5fa; }
+  [data-theme='dark'] .map-stat-card .stat-bg-icon {
+    color: #ffffff;
+    opacity: 0.1 !important;
+  }
+</style>
+
+<!-- ================= 1. Hero Video Section ================= -->
+<section class="hero-video-section">
+  <div class="container hero-content">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-md-8 mb-5 mb-md-0">
+        <div><h1 class="highlight-text mb-2">글로벌 무선랜(Wi-Fi)</h1></div>
+        <div><h1 class="highlight-text">로밍 서비스</h1></div>
+        
+        <div class="hero-desc mt-4">
+          <strong>eduroam(education roaming)은</strong><br>
+          연구·교육 커뮤니티를 위한 무선랜 로밍서비스로,<br>
+          전 세계 101개국이 참여하고 있습니다.
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+
+
+
+<!-- ================= 4. Existing Components (Lower Block) ================= -->
 <div class="container pb-4">
 
   <!-- 퀵 카드 -->
-  <div class="row quick-cards">
+  <div class="row quick-cards mb-4">
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/connect/' | relative_url }}">
-        <div class="icon"><i class="fas fa-laptop"></i></div>
-        <div class="title">접속 방법</div>
-        <div class="desc">기기별 설정 가이드</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/connect/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-laptop"></i></div>
+        <div class="title mt-2 font-weight-bold">접속 방법</div>
+        <div class="desc text-muted small">기기별 설정 가이드</div>
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/coverage/' | relative_url }}">
-        <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
-        <div class="title">이용 지역</div>
-        <div class="desc">국내·외 접속 가능 지역</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/coverage/map.html' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-map-marked-alt"></i></div>
+        <div class="title mt-2 font-weight-bold">이용 지역</div>
+        <div class="desc text-muted small">국내·외 접속 가능 지역</div>
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/policy/' | relative_url }}">
-        <div class="icon"><i class="fas fa-file-alt"></i></div>
-        <div class="title">이용 정책</div>
-        <div class="desc">사용 규정 및 약관</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/policy/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-file-alt"></i></div>
+        <div class="title mt-2 font-weight-bold">이용 정책</div>
+        <div class="desc text-muted small">사용 규정 및 약관</div>
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/support/' | relative_url }}">
-        <div class="icon"><i class="fas fa-headset"></i></div>
-        <div class="title">문의</div>
-        <div class="desc">문제 해결 및 도움말</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/support/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-headset"></i></div>
+        <div class="title mt-2 font-weight-bold">문의</div>
+        <div class="desc text-muted small">문제 해결 및 도움말</div>
       </a>
     </div>
   </div>
 
   <div class="row mt-3">
-
     <!-- 공지사항 -->
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-header">
-          <i class="fas fa-bullhorn"></i>공지사항
-          <a href="{{ '/notices/' | relative_url }}" class="float-right" style="font-size:0.78rem; color:#888; font-weight:400;">전체보기</a>
+    <div class="col-md-8 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white border-bottom-0 pt-4 pb-2">
+          <i class="fas fa-bullhorn text-primary mr-2"></i><strong>공지사항</strong>
+          <a href="{{ '/notices/' | relative_url }}" class="float-right text-muted small">전체보기</a>
         </div>
-        <div class="card-body p-0">
-          <ul class="notice-list">
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
             {% assign notices = site.notices | sort: "date" | reverse %}
             {% for notice in notices limit:5 %}
-            <li>
-              <span>{% if notice.is_new %}<span class="badge-new">NEW</span>{% endif %}<a href="{{ notice.url | relative_url }}" style="color:inherit; text-decoration:none;">{{ notice.title_ko }}</a></span>
-              <span class="date">{{ notice.date | date: "%Y.%m.%d" }}</span>
+            <li class="py-2 border-bottom d-flex justify-content-between align-items-center">
+              <span class="text-truncate mr-3">
+                {% if notice.is_new %}<span class="badge badge-danger mr-1">NEW</span>{% endif %}
+                <a href="{{ notice.url | relative_url }}" class="text-dark">{{ notice.title_ko }}</a>
+              </span>
+              <span class="text-muted small" style="min-width:80px; text-align:right;">{{ notice.date | date: "%Y.%m.%d" }}</span>
             </li>
             {% endfor %}
+            {% if notices.size == 0 %}
+            <li class="py-3 text-center text-muted">등록된 게시물이 없습니다.</li>
+            {% endif %}
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- 빠른 도움말 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header"><i class="fas fa-question-circle"></i>빠른 도움말</div>
-        <div class="card-body p-0">
-          <ul class="help-list">
-            <li onclick="location.href='{{ '/connect/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>처음 사용 설정 방법
+    <!-- 우측 컬럼: 상태 및 도움말 -->
+    <div class="col-md-4 mb-4">
+      
+<!-- 빠른 도움말 -->
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white border-bottom-0 pt-4 pb-2">
+          <i class="fas fa-question-circle text-primary mr-2"></i><strong>빠른 도움말</strong>
+        </div>
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+            <li class="py-2 border-bottom">
+              <a href="{{ '/connect/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>처음 사용 설정 방법</a>
             </li>
-            <li onclick="location.href='{{ '/support/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>비밀번호를 잊었어요
+            <li class="py-2 border-bottom">
+              <a href="{{ '/support/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>비밀번호를 잊었어요</a>
             </li>
-            <li onclick="location.href='{{ '/coverage/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>해외에서 접속하기
+            <li class="py-2 border-bottom">
+              <a href="{{ '/coverage/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>해외에서 접속하기</a>
             </li>
-            <li onclick="location.href='{{ '/support/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>인증서 오류 해결
+            <li class="py-2 border-bottom">
+              <a href="{{ '/support/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>인증서 오류 해결</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
   </div>
+
+
 </div>
+
+
+<!-- ================= 5. Partner Logos (관련 사이트) ================= -->
+<section class="container mt-4 mb-5 pt-4 border-top">
+  <div class="text-muted mb-4" style="font-size: 0.95rem; font-weight: 600;">관련 사이트</div>
+  
+  <!-- 첫 번째 줄 -->
+  <div class="row text-center text-muted align-items-center justify-content-center mb-4">
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://www.eduroam.org" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-wifi fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">eduroam</span>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://apan.net" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-globe-asia fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">APAN</span>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://www.aarnet.edu.au" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-project-diagram fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">aarnet</span>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://www.kisti.re.kr" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-microscope fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">KISTI</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 두 번째 줄 -->
+  <div class="row text-center text-muted align-items-center justify-content-center">
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://www.kreonet.net" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-network-wired fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">KREONET</span>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://www.koren.kr" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-link fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">KOREN</span>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <a href="https://www.kren.kr" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-graduation-cap fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">KREN</span>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <a href="http://www.apan.kr" target="_blank" class="partner-logo d-block text-decoration-none text-muted">
+        <i class="fas fa-satellite-dish fa-3x mb-2"></i><br>
+        <span class="font-weight-bold" style="font-size: 1.1rem;">APAN KR</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 카운터 넘버 애니메이션 JS -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll('.counter-val');
+    const speed = 100;
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+
+        if(count < target) {
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount, 15);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  });
+</script>

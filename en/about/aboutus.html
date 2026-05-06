@@ -1,0 +1,105 @@
+---
+layout: default
+title: About Us
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-headset mr-2"></i>About Us</h1>
+    <p class="page-sub">Introducing the Operations Center responsible for running and supporting eduroam in Korea</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          About
+        </div>
+        <a href="{{ '/en/about/eduroam.html' | relative_url }}" class="list-group-item list-group-item-action">About eduroam</a>
+        <a href="{{ '/en/about/guide.html' | relative_url }}" class="list-group-item list-group-item-action">How to Join</a>
+        <a href="{{ '/en/policy/' | relative_url }}" class="list-group-item list-group-item-action">Policy</a>
+        <a href="{{ '/en/about/promotion.html' | relative_url }}" class="list-group-item list-group-item-action">Resources</a>
+        <a href="{{ '/en/connect/' | relative_url }}" class="list-group-item list-group-item-action">Connect</a>
+        <a href="{{ '/en/about/aboutus.html' | relative_url }}" class="list-group-item list-group-item-action active">About Us</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
+          <li class="breadcrumb-item text-muted">About</li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">About Us</li>
+        </ol>
+      </nav>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-university"></i> eduroam Operations Center</h2>
+        <p style="line-height: 1.8; color: #444;">
+          The domestic eduroam service is operated through a collaborative partnership between the
+          <strong>Korea Research Environment Open Network (KREONET / KISTI)</strong> and
+          <strong>Korea Education and Research Information Service (KERIS / KREN)</strong>.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3">
+            <div class="p-3 border rounded h-100 bg-white">
+              <h5 class="mb-2 text-primary">Planning &amp; Management (KREN)</h5>
+              <ul class="small text-muted mb-0 pl-3">
+                <li>Membership approval and institution management</li>
+                <li>Service policy and promotion</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="p-3 border rounded h-100 bg-white">
+              <h5 class="mb-2 text-success">Technical Operations (KISTI)</h5>
+              <ul class="small text-muted mb-0 pl-3">
+                <li>National RADIUS server operations</li>
+                <li>Global eduroam interconnection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-phone-alt"></i> Contact</h2>
+        <table class="table table-sm border-0 mb-0" style="font-size: 0.95rem;">
+          <tr>
+            <th class="border-0 bg-light" style="width: 120px;">Email</th>
+            <td class="border-0"><a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a></td>
+          </tr>
+          <tr>
+            <th class="border-0 bg-light">Tech Support</th>
+            <td class="border-0">{{ site.support.tel }}</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    font-weight: bold;
+  }
+</style>

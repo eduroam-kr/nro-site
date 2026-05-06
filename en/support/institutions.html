@@ -1,0 +1,324 @@
+---
+layout: default
+title: Member Institutions
+lang: en
+---
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          Service Status
+        </div>
+        <a href="{{ '/en/about/eduroam.html' | relative_url }}" class="list-group-item list-group-item-action">About eduroam</a>
+        <a href="{{ '/en/about/guide.html' | relative_url }}" class="list-group-item list-group-item-action">How to Join</a>
+        <a href="{{ '/en/policy/' | relative_url }}" class="list-group-item list-group-item-action">Policy</a>
+        <a href="{{ '/en/about/promotion.html' | relative_url }}" class="list-group-item list-group-item-action">Resources</a>
+        <a href="{{ '/en/connect/' | relative_url }}" class="list-group-item list-group-item-action">Connect</a>
+        <a href="{{ '/en/about/aboutus.html' | relative_url }}" class="list-group-item list-group-item-action">About Us</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+
+      <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
+        <h2 style="color: #666; font-weight: 300;">Member Institutions</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+            <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" style="color: #999;">Home</a></li>
+            <li class="breadcrumb-item" style="color: #999;">About</li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: #333;">Member Institutions</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Search & Filter Box -->
+      <div class="section-card p-4 mb-4" id="filter-box" style="border: 1px solid #007bff; border-radius: 8px;">
+        <div class="row align-items-end">
+          <!-- Filter 1: Type -->
+          <div class="col-md-2 mb-2 mb-md-0">
+            <label class="small text-secondary font-weight-bold mb-1">Type</label>
+            <select class="form-control" id="filterType" onchange="searchTable()">
+              <option value="">All</option>
+              <option value="국립">National</option>
+              <option value="사립">Private</option>
+              <option value="특별법법인">Special</option>
+              <option value="기타">Other</option>
+            </select>
+          </div>
+          <!-- Filter 2: Network -->
+          <div class="col-md-2 mb-2 mb-md-0">
+            <label class="small text-secondary font-weight-bold mb-1">Network</label>
+            <select class="form-control" id="filterNet" onchange="searchTable()">
+              <option value="">All</option>
+              <option value="NRO">NRO Direct</option>
+              <option value="RO">RO Member</option>
+            </select>
+          </div>
+          <!-- Search -->
+          <div class="col-md-3 mb-2 mb-md-0">
+            <label class="small text-secondary font-weight-bold mb-1">Search Institution</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="searchInput" placeholder="Enter institution name">
+            </div>
+          </div>
+          <!-- Filter 3: Connection Guide -->
+          <div class="col-md-3 mb-2 mb-md-0">
+            <label class="small text-secondary font-weight-bold mb-1">Connection Guide</label>
+            <select class="form-control" id="filterGuide" onchange="searchTable()">
+              <option value="">All</option>
+              <option value="y">Available</option>
+              <option value="n">Not available</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary w-100 py-2" onclick="searchTable()"><i class="fas fa-search"></i> Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-2 text-secondary" style="font-size: 0.85rem;">
+        ※ Sorted alphabetically by institution name. &nbsp; ( {{ site.data.institutions_pages.total_institutions }} institutions, {{ site.data.institutions_pages.total_campuses }} campuses )
+      </div>
+
+      <!-- Institution Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem;" id="instTable">
+          <thead style="background-color: #f8f9fa;">
+            <tr>
+              <th style="width: 50px;">No.</th>
+              <th style="width: 80px;">Type</th>
+              <th colspan="2">Institution</th>
+              <th>Campus</th>
+              <th style="width: 85px;">Network</th>
+              <th style="width: 140px;">Connection Guide</th>
+              <th>Realm</th>
+            </tr>
+          </thead>
+
+          {% for pagedata in site.data.institutions_pages.pages %}
+            <tbody id="page-{{ pagedata.page }}" style="{% if pagedata.page != 1 %}display: none;{% endif %}">
+              {% for cd in pagedata.rows %}
+                <tr class="inst-row" data-name="{{ cd.univ_name }}" data-type="{{ cd.inst_type }}" data-net="{{ cd.operator_type }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
+
+                  <td>{{ cd.serial_no }}</td>
+
+                  {% if cd.is_first_in_chunk %}
+                    <td rowspan="{{ cd.chunk_size }}" class="align-middle">{{ cd.inst_type }}</td>
+                    <td style="width: 100px; padding: 5px;" rowspan="{{ cd.chunk_size }}" class="align-middle">
+                      {% if cd.logo != '' %}
+                        <img src="{{ '/eduroam-kr-data/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
+                      {% else %}
+                        <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
+                      {% endif %}
+                    </td>
+                    <td class="text-left align-middle" style="font-weight: 500;" rowspan="{{ cd.chunk_size }}">
+                      {{ cd.univ_name }}
+                    </td>
+                  {% endif %}
+
+                  <td class="text-left align-middle">{{ cd.campus_name }}</td>
+
+                  {% if cd.is_first_in_chunk %}
+                    <td rowspan="{{ cd.chunk_size }}" class="align-middle">
+                      {% if cd.operator_type == 'NRO' %}
+                        <span class="badge badge-primary px-2 py-1" style="font-weight: 500;">NRO Direct</span>
+                      {% else %}
+                        <span class="badge badge-info px-2 py-1" style="font-weight: 500; background-color: #17a2b8;">RO Member</span>
+                      {% endif %}
+                    </td>
+                  {% endif %}
+
+                  {% if cd.rowspan_realm %}
+                    {% if cd.is_first_in_chunk %}
+                      <td rowspan="{{ cd.chunk_size }}" class="align-middle">
+                        {% if cd.guide != '' %}
+                          <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
+                            <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
+                          </a>
+                        {% endif %}
+                      </td>
+                      <td class="text-success text-left ps-3 align-middle" rowspan="{{ cd.chunk_size }}">
+                        <div style="font-size:0.85rem;">{{ cd.realm }}</div>
+                      </td>
+                    {% endif %}
+                  {% else %}
+                    <td class="align-middle">
+                      {% if cd.guide != '' %}
+                        <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
+                          <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
+                        </a>
+                      {% endif %}
+                    </td>
+                    <td class="text-success text-left ps-3 align-middle">
+                      <div style="font-size:0.85rem;">{{ cd.realm }}</div>
+                    </td>
+                  {% endif %}
+
+                </tr>
+              {% endfor %}
+            </tbody>
+          {% endfor %}
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div class="d-flex justify-content-center mt-4 mb-3">
+        <div style="border-top: 1px solid #ddd; width: 100%; max-width: 600px; padding-top: 15px; margin-bottom: 20px;">
+          <ul class="pagination pagination-sm justify-content-center mb-0" id="pagination-controls">
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end mb-5">
+        <a href="{{ '/en/coverage/' | relative_url }}" class="text-primary text-decoration-none fw-bold" style="font-size: 0.95rem;">
+          &lt; View eduroam Map &gt;
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+  }
+  .table-bordered th, .table-bordered td {
+    vertical-align: middle;
+  }
+  .pagination .page-link {
+    color: #28a745;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+  }
+  .pagination .page-item.active .page-link {
+    background-color: #17a2b8 !important;
+    color: white !important;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+</style>
+
+<script>
+  var totalPages = {{ site.data.institutions_pages.total_pages }};
+  var currentPage = 1;
+  var itemsPerPage = 15;
+  var filteredRows = [];
+  var isSearchMode = false;
+
+  var allRows = Array.from(document.querySelectorAll('.inst-row'));
+
+  function renderPagination() {
+    var ul = document.getElementById('pagination-controls');
+    ul.innerHTML = '';
+
+    var pagesCount = isSearchMode ? Math.ceil(filteredRows.length / itemsPerPage) : totalPages;
+    if (pagesCount === 0) return;
+
+    var maxVisible = 10;
+    var start = Math.max(1, currentPage - 5);
+    var end = Math.min(pagesCount, start + maxVisible - 1);
+    if (end - start < maxVisible - 1) start = Math.max(1, end - maxVisible + 1);
+
+    for (var i = start; i <= end; i++) {
+      var li = document.createElement('li');
+      li.className = 'page-item ' + (i === currentPage ? 'active' : '');
+      li.style.cursor = 'pointer';
+
+      var a = document.createElement('a');
+      a.className = 'page-link px-3';
+      a.innerText = i;
+      a.onclick = (function(page) { return function() { goToPage(page); }; })(i);
+
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+
+    if (pagesCount > end) {
+      var ellipsis = document.createElement('li');
+      ellipsis.className = 'page-item disabled';
+      ellipsis.innerHTML = '<span class="page-link text-success">...</span>';
+      ul.appendChild(ellipsis);
+    }
+  }
+
+  function goToPage(p) {
+    currentPage = p;
+
+    if (!isSearchMode) {
+      for (var i = 1; i <= totalPages; i++) {
+        var pageElem = document.getElementById('page-' + i);
+        if (pageElem) pageElem.style.display = (i === p) ? '' : 'none';
+      }
+    } else {
+      var startIndex = (p - 1) * itemsPerPage;
+      var endIndex = p * itemsPerPage;
+
+      for (var i = 1; i <= totalPages; i++) {
+        var pageElem = document.getElementById('page-' + i);
+        if (pageElem) pageElem.style.display = '';
+      }
+
+      allRows.forEach(function(row) { row.style.display = 'none'; });
+
+      filteredRows.forEach(function(row, index) {
+        if (index >= startIndex && index < endIndex) {
+          row.style.display = '';
+        }
+      });
+    }
+
+    renderPagination();
+    var filterBox = document.getElementById('filter-box');
+    if (filterBox) window.scrollTo(0, filterBox.offsetTop - 20);
+  }
+
+  function searchTable() {
+    var input = document.getElementById("searchInput").value.toLowerCase();
+    var filterType = document.getElementById("filterType").value;
+    var filterNet = document.getElementById("filterNet").value;
+    var filterGuide = document.getElementById("filterGuide").value;
+
+    if (input.trim() === '' && filterType === '' && filterNet === '' && filterGuide === '') {
+      isSearchMode = false;
+      filteredRows = [];
+      allRows.forEach(function(row) { row.style.display = ''; });
+      goToPage(1);
+      return;
+    }
+
+    isSearchMode = true;
+    filteredRows = allRows.filter(function(row) {
+      var matchesName = row.dataset.name.toLowerCase().includes(input);
+      var matchesType = filterType === '' || row.dataset.type === filterType;
+      var matchesNet = filterNet === '' || row.dataset.net === filterNet;
+      var matchesGuide = filterGuide === '' || row.dataset.guide === filterGuide;
+      return matchesName && matchesType && matchesNet && matchesGuide;
+    });
+
+    currentPage = 1;
+    goToPage(1);
+  }
+
+  document.getElementById("searchInput").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") searchTable();
+  });
+
+  renderPagination();
+</script>

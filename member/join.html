@@ -1,0 +1,152 @@
+---
+layout: default
+title: 가입하기
+---
+
+<style>
+  .join-notice-box {
+    margin: 40px 0;
+    line-height: 1.8;
+  }
+  .notice-highlight {
+    background-color: #3498db;
+    color: white;
+    padding: 2px 8px;
+    font-weight: bold;
+  }
+  .join-table {
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.9rem;
+  }
+  .join-table th {
+    background-color: #f8f9fa;
+    width: 20%;
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    font-weight: 600;
+  }
+  .join-table td {
+    padding: 10px 15px;
+    border: 1px solid #dee2e6;
+  }
+  
+  /* 다크 모드 테이블 스타일 보완 */
+  [data-theme='dark'] .join-table,
+  [data-theme='dark'] .join-table th,
+  [data-theme='dark'] .join-table td {
+    border-color: #374151;
+  }
+  [data-theme='dark'] .join-table th {
+    background-color: #1f2937;
+    color: #e5e7eb;
+  }
+  [data-theme='dark'] .join-table td {
+    background-color: #111827;
+  }
+
+  .join-info-bottom {
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  [data-theme='dark'] .join-info-bottom {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #9ca3af;
+  }
+</style>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6">
+        <h1 style="font-size: 1.8rem; font-weight: 500; margin: 0;">가입하기</h1>
+      </div>
+      <div class="col-6 text-right">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
+            <li class="breadcrumb-item"><a href="{{ '/member/join.html' | relative_url }}" class="text-muted">회원가입</a></li>
+            <li class="breadcrumb-item active text-primary" aria-current="page">가입하기</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container pb-5">
+  <div class="join-notice-box">
+    <p class="mb-1" style="font-size: 1.05rem;">본 웹사이트는 <strong>대학의 서버관리자</strong>를 위한 사이트이며, <span class="notice-highlight">대학 서버 관리자만 회원가입을 받습니다.</span></p>
+    <p class="text-danger font-weight-bold" style="font-size: 1.1rem; text-decoration: underline;">일반 교직원 및 학생은 별도의 회원가입이 필요하지 않습니다!!</p>
+  </div>
+
+  <form>
+    <table class="join-table">
+      <tr>
+        <th>아이디</th>
+        <td>
+          <div class="d-flex align-items-center">
+            <input type="text" class="form-control-custom mr-2" placeholder="ID 입력">
+            <button type="button" class="btn btn-outline-primary btn-sm" style="white-space: nowrap;">아이디 중복체크</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>비밀번호</th>
+        <td style="width: 30%;"><input type="password" class="form-control-custom"></td>
+        <th style="width: 20%;">비밀번호확인</th>
+        <td><input type="password" class="form-control-custom"></td>
+      </tr>
+      <tr>
+        <th>비밀번호 분실 시 <br>본인 확인 질문</th>
+        <td><input type="text" class="form-control-custom" placeholder="예) 존경하는 인물"></td>
+        <th>본인 확인 답변</th>
+        <td><input type="text" class="form-control-custom" placeholder="예) 이순신"></td>
+      </tr>
+      <tr>
+        <th>성명</th>
+        <td><input type="text" class="form-control-custom"></td>
+        <th>이메일</th>
+        <td><input type="email" class="form-control-custom"></td>
+      </tr>
+      <tr>
+        <th>가입대학</th>
+        <td colspan="3">
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-light border btn-sm mr-2"><i class="fas fa-search"></i></button>
+            <input type="text" class="form-control-custom bg-light" style="width: 100px; max-width: 100px;" readonly>
+            <input type="text" class="form-control-custom bg-light mx-2" style="width: 100px; max-width: 100px;" readonly>
+            <input type="text" class="form-control-custom bg-light" style="max-width: 400px;" readonly>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>연락처</th>
+        <td colspan="3"><input type="text" class="form-control-custom" style="max-width: 400px;"></td>
+      </tr>
+      <tr>
+        <th>역할</th>
+        <td colspan="3">대학 서버관리자</td>
+      </tr>
+    </table>
+
+    <div class="join-info-bottom">
+      <ul>
+        <li>아이디 : 영문자/숫자로 사용할 수 있으며 최소 2자에서 최대 20자 이내로 입력하셔야 합니다.</li>
+        <li>비밀번호 : 7자 이상이어야 하며 특수문자 1자 이상 포함되어 있어야 합니다.</li>
+        <li class="font-weight-bold">일반 교직원·학생은 회원가입이 필요 없으며, 본인의 소속 대학에 eduroam 접속방법을 문의하시기 바랍니다.</li>
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <button type="submit" class="btn btn-primary px-4 py-2 mr-2" style="background-color: #3498db; border-color: #3498db;">확인</button>
+      <button type="button" class="btn btn-secondary px-4 py-2" style="background-color: #5d6d7e; border-color: #5d6d7e;">취소</button>
+    </div>
+  </form>
+</div>

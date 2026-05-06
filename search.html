@@ -1,0 +1,75 @@
+---
+layout: default
+title: 사이트 검색
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-search mr-2"></i>사이트 검색</h1>
+    <p class="page-sub" id="search-info">검색어를 불러오는 중입니다...</p>
+  </div>
+</section>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div id="search-results-container">
+        <!-- 검색 결과가 여기에 동적으로 생성됩니다 -->
+      </div>
+      <div id="no-results" style="display: none;" class="text-center py-5">
+        <i class="fas fa-exclamation-circle fa-3x text-muted mb-3"></i>
+        <h4 class="text-muted">검색 결과가 없습니다.</h4>
+        <p>다른 검색어를 입력해 보세요.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  
+  if (!query) {
+    document.getElementById('search-info').innerText = '검색어를 입력해 주세요.';
+    return;
+  }
+
+  document.getElementById('search-info').innerText = `'${query}'에 대한 검색 결과입니다.`;
+
+  fetch("{{ '/search.json' | relative_url }}")
+    .then(response => response.json())
+    .then(data => {
+      const resultsContainer = document.getElementById('search-results-container');
+      const results = data.filter(item => 
+        item.title.toLowerCase().includes(query.toLowerCase()) || 
+        item.content.toLowerCase().includes(query.toLowerCase())
+      );
+
+      if (results.length === 0) {
+        document.getElementById('no-results').style.display = 'block';
+        return;
+      }
+
+      results.forEach(result => {
+        const item = document.createElement('div');
+        item.className = 'section-card mb-4 transition-hover';
+        item.innerHTML = `
+          <h3 class="mb-2"><a href="${result.url}" class="text-primary text-decoration-none">${result.title}</a></h3>
+          <p class="text-muted small mb-0">${result.content}...</p>
+        `;
+        resultsContainer.appendChild(item);
+      });
+    });
+});
+</script>
+
+<style>
+  .transition-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .transition-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+</style>

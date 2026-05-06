@@ -1,0 +1,1532 @@
+[
+  {
+    "univ_name": "가천대학교",
+    "campus_name": "본교",
+    "lat": 37.4512348695085,
+    "lng": 127.12939432624,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "gachon_ac_kr.png"
+  },
+  {
+    "univ_name": "가천대학교",
+    "campus_name": "메디컬캠퍼스",
+    "lat": 37.4222544663586,
+    "lng": 126.687483413764,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gachon_ac_kr.png"
+  },
+  {
+    "univ_name": "강릉원주대학교",
+    "campus_name": "원주캠퍼스",
+    "lat": 37.3051734296711,
+    "lng": 127.922147145205,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gwnu_ac_kr.png"
+  },
+  {
+    "univ_name": "강릉원주대학교",
+    "campus_name": "강릉캠퍼스",
+    "lat": 37.765741029794,
+    "lng": 128.869927605305,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gwnu_ac_kr.png"
+  },
+  {
+    "univ_name": "강원대학교",
+    "campus_name": "본교",
+    "lat": 37.8680051339074,
+    "lng": 127.748387235378,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kangwon_ac_kr.png"
+  },
+  {
+    "univ_name": "강원대학교",
+    "campus_name": "도계캠퍼스",
+    "lat": 37.2240560960185,
+    "lng": 129.09680085896,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kangwon_ac_kr.png"
+  },
+  {
+    "univ_name": "강원대학교",
+    "campus_name": "삼척캠퍼스",
+    "lat": 37.450795742599,
+    "lng": 129.159944372587,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kangwon_ac_kr.png"
+  },
+  {
+    "univ_name": "건국대학교",
+    "campus_name": "서울캠퍼스",
+    "lat": 37.539182674872,
+    "lng": 127.074711902268,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "konkuk_ac_kr.png"
+  },
+  {
+    "univ_name": "건국대학교",
+    "campus_name": "글로컬캠퍼스",
+    "lat": 36.9494495,
+    "lng": 127.9075402,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "konkuk_ac_kr.png"
+  },
+  {
+    "univ_name": "건양대학교",
+    "campus_name": "글로벌캠퍼스",
+    "lat": 36.1821519220811,
+    "lng": 127.109687408926,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "konyang_ac_kr.png"
+  },
+  {
+    "univ_name": "건양대학교",
+    "campus_name": "메디컬캠퍼스",
+    "lat": 36.3067741999757,
+    "lng": 127.343214331596,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "konyang_ac_kr.png"
+  },
+  {
+    "univ_name": "경남대학교",
+    "campus_name": "본교",
+    "lat": 35.1843203764588,
+    "lng": 128.555097241675,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kyungnam_ac_kr.png"
+  },
+  {
+    "univ_name": "경북대학교",
+    "campus_name": "산격캠퍼스",
+    "lat": 35.8890974884948,
+    "lng": 128.614322336303,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knu_ac_kr.png"
+  },
+  {
+    "univ_name": "경상국립대학교",
+    "campus_name": "통영캠퍼스",
+    "lat": 34.83642146673406,
+    "lng": 128.399159157606,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "gnu_ac_kr.png"
+  },
+  {
+    "univ_name": "경상국립대학교",
+    "campus_name": "내동캠퍼스",
+    "lat": 35.1570934849827,
+    "lng": 128.082468134869,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gnu_ac_kr.png"
+  },
+  {
+    "univ_name": "경상국립대학교",
+    "campus_name": "가좌캠퍼스",
+    "lat": 35.15671511251574,
+    "lng": 128.0980020769947,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "gnu_ac_kr.png"
+  },
+  {
+    "univ_name": "경상국립대학교",
+    "campus_name": "칠암캠퍼스(의간호대",
+    "lat": 35.1759389043888,
+    "lng": 128.094915669653,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "gnu_ac_kr.png"
+  },
+  {
+    "univ_name": "경상국립대학교",
+    "campus_name": "칠암캠퍼스",
+    "lat": 35.1792658758639,
+    "lng": 128.092080852163,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gnu_ac_kr.png"
+  },
+  {
+    "univ_name": "경상국립대학교",
+    "campus_name": "창원산학캠퍼스",
+    "lat": 35.240868345979,
+    "lng": 128.631924756403,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gnu_ac_kr.png"
+  },
+  {
+    "univ_name": "경인교육대학교",
+    "campus_name": "본교",
+    "lat": 37.5367048882494,
+    "lng": 126.718842140379,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kiu_ac_kr.png"
+  },
+  {
+    "univ_name": "경인교육대학교",
+    "campus_name": "경기캠퍼스",
+    "lat": 37.4356067014873,
+    "lng": 126.917068252393,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kiu_ac_kr.png"
+  },
+  {
+    "univ_name": "경일대학교",
+    "campus_name": "본교",
+    "lat": 35.9110678895598,
+    "lng": 128.8020439759435,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": ""
+  },
+  {
+    "univ_name": "경희대학교",
+    "campus_name": "서울",
+    "lat": 37.59394949858164,
+    "lng": 127.0548901889417,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "khu_ac_kr.png"
+  },
+  {
+    "univ_name": "경희대학교",
+    "campus_name": "국제",
+    "lat": 37.23980158080214,
+    "lng": 127.081197910657,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "khu_ac_kr.png"
+  },
+  {
+    "univ_name": "계명대학교",
+    "campus_name": "본교",
+    "lat": 35.85453085550989,
+    "lng": 128.4890149156095,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kmu_ac_kr.png"
+  },
+  {
+    "univ_name": "계명대학교",
+    "campus_name": "대명캠퍼스",
+    "lat": 35.85632664918209,
+    "lng": 128.5798283754054,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kmu_ac_kr.png"
+  },
+  {
+    "univ_name": "계명문화대학교",
+    "campus_name": "본교",
+    "lat": 35.8590060999999,
+    "lng": 128.4910262,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kmcu_ac_kr.png"
+  },
+  {
+    "univ_name": "고려대학교",
+    "campus_name": "서울캠퍼스",
+    "lat": 37.5887034224,
+    "lng": 127.031698105,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "korea_ac_kr.png"
+  },
+  {
+    "univ_name": "고려대학교",
+    "campus_name": "세종캠퍼스",
+    "lat": 36.6108968,
+    "lng": 127.2864676,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "korea_ac_kr.png"
+  },
+  {
+    "univ_name": "공주교육대학교",
+    "campus_name": "본교",
+    "lat": 36.44520274674267,
+    "lng": 127.1196553066765,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "gjue_ac_kr.png"
+  },
+  {
+    "univ_name": "과학기술연합대학원대학교",
+    "campus_name": "과학기술연합대학원대학교",
+    "lat": 36.384908126012,
+    "lng": 127.367622966026,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "ust_ac_kr.png"
+  },
+  {
+    "univ_name": "광주교육대학교",
+    "campus_name": "본교",
+    "lat": 35.16471467835112,
+    "lng": 126.9256988110379,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "gnue_ac_kr.png"
+  },
+  {
+    "univ_name": "광주대학교",
+    "campus_name": "본교",
+    "lat": 35.10590247906741,
+    "lng": 126.8961680714184,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "gwangju_ac_kr.png"
+  },
+  {
+    "univ_name": "광주보건대학교",
+    "campus_name": "본교",
+    "lat": 35.19197058902291,
+    "lng": 126.8446634197417,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "ghu_ac_kr.png"
+  },
+  {
+    "univ_name": "광주여자대학교",
+    "campus_name": "본교",
+    "lat": 35.16316748892437,
+    "lng": 126.7964100307687,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kwu_ac_kr.png"
+  },
+  {
+    "univ_name": "국립공주대학교",
+    "campus_name": "본교",
+    "lat": 36.4689627,
+    "lng": 127.1408071,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kongju_ac_kr.png"
+  },
+  {
+    "univ_name": "국립공주대학교",
+    "campus_name": "천안",
+    "lat": 36.85084013892514,
+    "lng": 127.1510204551376,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kongju_ac_kr.png"
+  },
+  {
+    "univ_name": "국립공주대학교",
+    "campus_name": "예산캠퍼스",
+    "lat": 36.6697682033317,
+    "lng": 126.859477394486,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kongju_ac_kr.png"
+  },
+  {
+    "univ_name": "국립한국교통대학교",
+    "campus_name": "충주캠퍼스",
+    "lat": 36.96884633849513,
+    "lng": 127.8727695558564,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "ut_ac_kr.png"
+  },
+  {
+    "univ_name": "국립한국교통대학교",
+    "campus_name": "증평캠퍼스",
+    "lat": 36.7685562440672,
+    "lng": 127.6240460272947,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "ut_ac_kr.png"
+  },
+  {
+    "univ_name": "국립한국교통대학교",
+    "campus_name": "의왕캠퍼스",
+    "lat": 37.31581082352837,
+    "lng": 126.9545633961425,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "ut_ac_kr.png"
+  },
+  {
+    "univ_name": "국립한밭대학교",
+    "campus_name": "대덕산학융합캠퍼스",
+    "lat": 36.4283490377813,
+    "lng": 127.395788684291,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "hanbat_ac_kr.png"
+  },
+  {
+    "univ_name": "국립한밭대학교",
+    "campus_name": "유성덕명캠퍼스",
+    "lat": 36.3487943861574,
+    "lng": 127.300562230012,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hanbat_ac_kr.png"
+  },
+  {
+    "univ_name": "국민대학교",
+    "campus_name": "본교",
+    "lat": 37.6102882035,
+    "lng": 126.998523136,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kookmin_ac_kr.png"
+  },
+  {
+    "univ_name": "군산대학교",
+    "campus_name": "본교",
+    "lat": 35.95034649629235,
+    "lng": 126.6803558442133,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kunsan_ac_kr.png"
+  },
+  {
+    "univ_name": "군산대학교",
+    "campus_name": "새만금캠퍼스",
+    "lat": 35.9616980436861,
+    "lng": 126.559649362135,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kunsan_ac_kr.png"
+  },
+  {
+    "univ_name": "금오공과대학교",
+    "campus_name": "본교",
+    "lat": 36.14563132077487,
+    "lng": 128.3878838939511,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kumoh_ac_kr.png"
+  },
+  {
+    "univ_name": "금오공과대학교",
+    "campus_name": "신평동캠퍼스",
+    "lat": 36.11920930664027,
+    "lng": 128.3656895209137,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "kumoh_ac_kr.png"
+  },
+  {
+    "univ_name": "나사렛대학교",
+    "campus_name": "본교",
+    "lat": 36.79834861047757,
+    "lng": 127.119476240896,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kornu_ac_kr.png"
+  },
+  {
+    "univ_name": "남부대학교",
+    "campus_name": "본교",
+    "lat": 35.2070608996015,
+    "lng": 126.842258172223,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "nambu_ac_kr.png"
+  },
+  {
+    "univ_name": "단국대학교",
+    "campus_name": "죽전캠퍼스",
+    "lat": 37.3211938747541,
+    "lng": 127.132535935195,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "dankook_ac_kr.png"
+  },
+  {
+    "univ_name": "단국대학교",
+    "campus_name": "천안캠퍼스",
+    "lat": 36.8359524852566,
+    "lng": 127.165213408735,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "dankook_ac_kr.png"
+  },
+  {
+    "univ_name": "대구가톨릭대학교",
+    "campus_name": "본교",
+    "lat": 35.9089671138434,
+    "lng": 128.807422033769,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "cu_ac_kr.png"
+  },
+  {
+    "univ_name": "대구경북과학기술원",
+    "campus_name": "본교",
+    "lat": 35.7056377572321,
+    "lng": 128.455010688046,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "dgist_ac_kr.png"
+  },
+  {
+    "univ_name": "대구교육대학교",
+    "campus_name": "본교",
+    "lat": 35.85143181717411,
+    "lng": 128.5877407032085,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "dnue_ac_kr.png"
+  },
+  {
+    "univ_name": "대구대학교",
+    "campus_name": "경산캠퍼스",
+    "lat": 35.904537694,
+    "lng": 128.842814453,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "daegu_ac_kr.png"
+  },
+  {
+    "univ_name": "대전대학교",
+    "campus_name": "본교",
+    "lat": 36.336696167799,
+    "lng": 127.459001869396,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "dju_ac_kr.png"
+  },
+  {
+    "univ_name": "대진대학교",
+    "campus_name": "본교",
+    "lat": 37.87380994538831,
+    "lng": 127.157553556389,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "daejin_ac_kr.png"
+  },
+  {
+    "univ_name": "동국대학교",
+    "campus_name": "본교",
+    "lat": 37.5581783508,
+    "lng": 126.998003549,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "dongguk_ac_kr.png"
+  },
+  {
+    "univ_name": "동신대학교",
+    "campus_name": "본교",
+    "lat": 35.0496248791451,
+    "lng": 126.7179925226,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "dsu_ac_kr.png"
+  },
+  {
+    "univ_name": "동아대학교",
+    "campus_name": "구덕캠퍼스",
+    "lat": 35.12000129718304,
+    "lng": 129.0187420586447,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "donga_ac_kr.png"
+  },
+  {
+    "univ_name": "동아대학교",
+    "campus_name": "승학캠퍼스",
+    "lat": 35.11880885589761,
+    "lng": 128.9680846252763,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "donga_ac_kr.png"
+  },
+  {
+    "univ_name": "동아대학교",
+    "campus_name": "부민캠퍼스",
+    "lat": 35.10374007151985,
+    "lng": 129.0194155452584,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "donga_ac_kr.png"
+  },
+  {
+    "univ_name": "동의대학교",
+    "campus_name": "본교",
+    "lat": 35.14372143,
+    "lng": 129.035253623,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "deu_ac_kr.png"
+  },
+  {
+    "univ_name": "동의대학교",
+    "campus_name": "양정캠퍼스",
+    "lat": 35.1693164368,
+    "lng": 129.077384148,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "deu_ac_kr.png"
+  },
+  {
+    "univ_name": "목포대학교",
+    "campus_name": "본교",
+    "lat": 34.91030889138297,
+    "lng": 126.4402120534642,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "mokpo_ac_kr.png"
+  },
+  {
+    "univ_name": "목포해양대학교",
+    "campus_name": "본교",
+    "lat": 34.79096647867523,
+    "lng": 126.3627662562169,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "mmu_ac_kr.png"
+  },
+  {
+    "univ_name": "백석대학교",
+    "campus_name": "본교",
+    "lat": 36.8413484242451,
+    "lng": 127.1873754646205,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "bu_ac_kr.png"
+  },
+  {
+    "univ_name": "백석대학교",
+    "campus_name": "백석문화대학교",
+    "lat": 36.83856896511693,
+    "lng": 127.1830368273339,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "bu_ac_kr.png"
+  },
+  {
+    "univ_name": "부경대학교",
+    "campus_name": "대연캠퍼스",
+    "lat": 35.13470779190961,
+    "lng": 129.1078780784902,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "pknu_ac_kr.png"
+  },
+  {
+    "univ_name": "부경대학교",
+    "campus_name": "용당캠퍼스",
+    "lat": 35.11599838901978,
+    "lng": 129.08943580317,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "pknu_ac_kr.png"
+  },
+  {
+    "univ_name": "부산교육대학교",
+    "campus_name": "본교",
+    "lat": 35.194937068446,
+    "lng": 129.0772328858075,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "bnue_ac_kr.png"
+  },
+  {
+    "univ_name": "부산대학교",
+    "campus_name": "양산캠퍼스",
+    "lat": 35.31116391570001,
+    "lng": 128.9883382848699,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "pusan_ac_kr.png"
+  },
+  {
+    "univ_name": "부산대학교",
+    "campus_name": "부산캠퍼스",
+    "lat": 35.23144255748333,
+    "lng": 129.0843624503418,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "pusan_ac_kr.png"
+  },
+  {
+    "univ_name": "부산대학교",
+    "campus_name": "밀양캠퍼스",
+    "lat": 35.4540299,
+    "lng": 128.8084336,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "pusan_ac_kr.png"
+  },
+  {
+    "univ_name": "상명대학교",
+    "campus_name": "본교",
+    "lat": 37.604108905882,
+    "lng": 126.955159496571,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "smu_ac_kr.png"
+  },
+  {
+    "univ_name": "서강대학교",
+    "campus_name": "본교",
+    "lat": 37.5514684075,
+    "lng": 126.943027036,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "sogang_ac_kr.png"
+  },
+  {
+    "univ_name": "서울과학기술대학교",
+    "campus_name": "본교",
+    "lat": 37.63280590285895,
+    "lng": 127.0768336812461,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "seoultech_ac_kr.png"
+  },
+  {
+    "univ_name": "서울대학교",
+    "campus_name": "본교",
+    "lat": 37.46803850112325,
+    "lng": 126.9592960534645,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "snu_ac_kr.png"
+  },
+  {
+    "univ_name": "서울시립대학교",
+    "campus_name": "본교",
+    "lat": 37.58257649436555,
+    "lng": 127.0599900507603,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "uos_ac_kr.png"
+  },
+  {
+    "univ_name": "서원대학교",
+    "campus_name": "본교",
+    "lat": 36.6259813562068,
+    "lng": 127.4821185171045,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "seowon_ac_kr.png"
+  },
+  {
+    "univ_name": "서일대학교",
+    "campus_name": "본교",
+    "lat": 37.58583098139557,
+    "lng": 127.0976267625128,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "seoil_ac_kr.png"
+  },
+  {
+    "univ_name": "성결대학교",
+    "campus_name": "본교",
+    "lat": 37.3798649117,
+    "lng": 126.928808635,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "sungkyul_ac_kr.png"
+  },
+  {
+    "univ_name": "성균관대학교",
+    "campus_name": "인문사회과학캠퍼스",
+    "lat": 37.588227,
+    "lng": 126.993606,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "skku_ac_kr.png"
+  },
+  {
+    "univ_name": "성균관대학교",
+    "campus_name": "자연과학캠퍼스",
+    "lat": 37.2950353892,
+    "lng": 126.974876666,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "skku_ac_kr.png"
+  },
+  {
+    "univ_name": "성신여자대학교",
+    "campus_name": "본교",
+    "lat": 37.5916524767249,
+    "lng": 127.02214561649,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "sungshin_ac_kr.png"
+  },
+  {
+    "univ_name": "성신여자대학교",
+    "campus_name": "운정그린캠퍼스",
+    "lat": 37.6320379987723,
+    "lng": 127.027124202688,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "sungshin_ac_kr.png"
+  },
+  {
+    "univ_name": "세종대학교",
+    "campus_name": "본교",
+    "lat": 37.5507980803455,
+    "lng": 127.074575586641,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "sejong_ac_kr.png"
+  },
+  {
+    "univ_name": "세한대학교",
+    "campus_name": "본교",
+    "lat": 34.74537823788697,
+    "lng": 126.4832658312688,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "sehan_ac_kr.png"
+  },
+  {
+    "univ_name": "세한대학교",
+    "campus_name": "당진캠퍼스",
+    "lat": 36.87615558021339,
+    "lng": 126.7806583413888,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "sehan_ac_kr.png"
+  },
+  {
+    "univ_name": "수원대학교",
+    "campus_name": "본교",
+    "lat": 37.2101174847642,
+    "lng": 126.979480352479,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "suwon_ac_kr.png"
+  },
+  {
+    "univ_name": "숙명여자대학교",
+    "campus_name": "본교",
+    "lat": 37.54496095,
+    "lng": 126.965025279,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "sookmyung_ac_kr.png"
+  },
+  {
+    "univ_name": "순천대학교",
+    "campus_name": "본교",
+    "lat": 34.96677017477022,
+    "lng": 127.4809262987245,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "scnu_ac_kr.png"
+  },
+  {
+    "univ_name": "숭실대학교",
+    "campus_name": "본교",
+    "lat": 37.4964289688636,
+    "lng": 126.955157917408,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "ssu_ac_kr.png"
+  },
+  {
+    "univ_name": "신한대학교",
+    "campus_name": "본교",
+    "lat": 37.7102010493838,
+    "lng": 127.04628974814,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "shinhan_ac_kr.png"
+  },
+  {
+    "univ_name": "아주대학교",
+    "campus_name": "본교",
+    "lat": 37.283192168869,
+    "lng": 127.044128202435,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "ajou_ac_kr.png"
+  },
+  {
+    "univ_name": "연세대학교",
+    "campus_name": "본교",
+    "lat": 37.5663937,
+    "lng": 126.9387066,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "yonsei_ac_kr.png"
+  },
+  {
+    "univ_name": "연세대학교",
+    "campus_name": "미래캠퍼스",
+    "lat": 37.27483165405356,
+    "lng": 127.904327977619,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "yonsei_ac_kr.png"
+  },
+  {
+    "univ_name": "연세대학교",
+    "campus_name": "국제캠퍼스",
+    "lat": 37.38182213266336,
+    "lng": 126.6672445709842,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "yonsei_ac_kr.png"
+  },
+  {
+    "univ_name": "영남대학교",
+    "campus_name": "본교",
+    "lat": 35.830492598,
+    "lng": 128.752181813,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "yu_ac_kr.png"
+  },
+  {
+    "univ_name": "영남이공대학교",
+    "campus_name": "본교",
+    "lat": 35.84579164312034,
+    "lng": 128.5857555132023,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "ync_ac_kr.png"
+  },
+  {
+    "univ_name": "울산과학기술원",
+    "campus_name": "본교",
+    "lat": 35.5734176,
+    "lng": 129.189629,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "unist_ac_kr.png"
+  },
+  {
+    "univ_name": "울산대학교",
+    "campus_name": "본교",
+    "lat": 35.54187724688744,
+    "lng": 129.2575864558528,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "ulsan_ac_kr.png"
+  },
+  {
+    "univ_name": "원광대학교",
+    "campus_name": "본교",
+    "lat": 35.9717139654452,
+    "lng": 126.9602243460423,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "wku_ac_kr.png"
+  },
+  {
+    "univ_name": "원광보건대학교",
+    "campus_name": "본교",
+    "lat": 35.9727469134765,
+    "lng": 126.95619665143,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "wu_ac_kr.png"
+  },
+  {
+    "univ_name": "유한대학교",
+    "campus_name": "본교",
+    "lat": 37.4881299135532,
+    "lng": 126.822366316948,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "yuhan_ac_kr.png"
+  },
+  {
+    "univ_name": "이화여자대학교",
+    "campus_name": "본교",
+    "lat": 37.56446406709584,
+    "lng": 126.9502882721266,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "ewha_ac_kr.png"
+  },
+  {
+    "univ_name": "인제대학교",
+    "campus_name": "본교",
+    "lat": 35.2528090884,
+    "lng": 128.90051596,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "inje_ac_kr.png"
+  },
+  {
+    "univ_name": "인천대학교",
+    "campus_name": "본교",
+    "lat": 37.37785570061634,
+    "lng": 126.6325053152302,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "inu_ac_kr.png"
+  },
+  {
+    "univ_name": "인하대학교",
+    "campus_name": "본교",
+    "lat": 37.4500221,
+    "lng": 126.653488,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "inha_ac_kr.png"
+  },
+  {
+    "univ_name": "장로회신학대학교",
+    "campus_name": "본교",
+    "lat": 37.55026581355625,
+    "lng": 127.1031345174325,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "puts_ac_kr.png"
+  },
+  {
+    "univ_name": "전남대학교",
+    "campus_name": "화순캠퍼스",
+    "lat": 35.06117760320932,
+    "lng": 127.0032185862936,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jnu_ac_kr.png"
+  },
+  {
+    "univ_name": "전남대학교",
+    "campus_name": "학동캠퍼스",
+    "lat": 35.14316702600614,
+    "lng": 126.9232647461609,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jnu_ac_kr.png"
+  },
+  {
+    "univ_name": "전남대학교",
+    "campus_name": "여수캠퍼스",
+    "lat": 34.77487,
+    "lng": 127.6994546,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jnu_ac_kr.png"
+  },
+  {
+    "univ_name": "전남대학교",
+    "campus_name": "광주캠퍼스",
+    "lat": 35.1738806999,
+    "lng": 126.911142969,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jnu_ac_kr.png"
+  },
+  {
+    "univ_name": "전북대학교",
+    "campus_name": "본교",
+    "lat": 35.8468171,
+    "lng": 127.1299221,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "jbnu_ac_kr.png"
+  },
+  {
+    "univ_name": "전북대학교",
+    "campus_name": "익산캠퍼스",
+    "lat": 35.94286162187158,
+    "lng": 126.9597160808072,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "jbnu_ac_kr.png"
+  },
+  {
+    "univ_name": "전주교육대학교",
+    "campus_name": "본교",
+    "lat": 35.80916278167916,
+    "lng": 127.153803187126,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jnue_ac_kr.png"
+  },
+  {
+    "univ_name": "전주대학교",
+    "campus_name": "본교",
+    "lat": 35.81622209664619,
+    "lng": 127.0888855324619,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "jj_ac_kr.png"
+  },
+  {
+    "univ_name": "전주비전대학교",
+    "campus_name": "본교",
+    "lat": 35.81087788384139,
+    "lng": 127.0909641264078,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jvision_ac_kr.png"
+  },
+  {
+    "univ_name": "제주대학교",
+    "campus_name": "아라캠퍼스",
+    "lat": 33.45724784717842,
+    "lng": 126.5643602063624,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "jejunu_ac_kr.png"
+  },
+  {
+    "univ_name": "조선대학교",
+    "campus_name": "본교",
+    "lat": 35.1460038407,
+    "lng": 126.934363212,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "chosun_ac_kr.png"
+  },
+  {
+    "univ_name": "중앙대학교",
+    "campus_name": "다빈치캠퍼스",
+    "lat": 37.0004292004148,
+    "lng": 127.228708651132,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "cau_ac_kr.png"
+  },
+  {
+    "univ_name": "중앙대학교",
+    "campus_name": "서울캠퍼스",
+    "lat": 37.5047255525,
+    "lng": 126.953833908,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "cau_ac_kr.png"
+  },
+  {
+    "univ_name": "창원대학교",
+    "campus_name": "본교",
+    "lat": 35.24595919064325,
+    "lng": 128.69484852089,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "cwnu_ac_kr.png"
+  },
+  {
+    "univ_name": "청주교육대학교",
+    "campus_name": "본교",
+    "lat": 36.6154304538,
+    "lng": 127.484011263,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "cje_ac_kr.png"
+  },
+  {
+    "univ_name": "춘천교육대학교",
+    "campus_name": "본교",
+    "lat": 37.85941607250345,
+    "lng": 127.7486049171837,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "cnue_ac_kr.png"
+  },
+  {
+    "univ_name": "충남대학교",
+    "campus_name": "본교",
+    "lat": 36.36836822189016,
+    "lng": 127.3420001066986,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "cnu_ac_kr.png"
+  },
+  {
+    "univ_name": "충남대학교",
+    "campus_name": "보운캠퍼스",
+    "lat": 36.3163192395868,
+    "lng": 127.413800712178,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "cnu_ac_kr.png"
+  },
+  {
+    "univ_name": "충북대학교",
+    "campus_name": "본교",
+    "lat": 36.63003933387085,
+    "lng": 127.4547919873264,
+    "building_count": 4,
+    "num_ap": 0,
+    "logo": "cbnu_ac_kr.png"
+  },
+  {
+    "univ_name": "충북보건과학대학교",
+    "campus_name": "본교",
+    "lat": 36.7035003719896,
+    "lng": 127.553357528953,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "chsu_ac_kr.png"
+  },
+  {
+    "univ_name": "포항공과대학교",
+    "campus_name": "본교",
+    "lat": 36.01058741326126,
+    "lng": 129.32129983082,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "postech_ac_kr.png"
+  },
+  {
+    "univ_name": "한국공학대학교",
+    "campus_name": "본교",
+    "lat": 37.339732743931,
+    "lng": 126.733539352474,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "tukorea_ac_kr.png"
+  },
+  {
+    "univ_name": "한국공학대학교",
+    "campus_name": "한국공학대학교 제2캠퍼스",
+    "lat": 37.3305323385207,
+    "lng": 126.689488900624,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "tukorea_ac_kr.png"
+  },
+  {
+    "univ_name": "한국교원대학교",
+    "campus_name": "본교",
+    "lat": 36.6056660115,
+    "lng": 127.357324457,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knue_ac_kr.png"
+  },
+  {
+    "univ_name": "한국기술교육대학교",
+    "campus_name": "본교",
+    "lat": 36.765104950533,
+    "lng": 127.281200389603,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "koreatech_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "본교",
+    "lat": 37.5791954862382,
+    "lng": 127.003290880975,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "강원지역대학 강릉시학습관",
+    "lat": 37.7748776414058,
+    "lng": 128.930309164758,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "제주지역대학",
+    "lat": 33.4859246408624,
+    "lng": 126.473631024359,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "부산지역대학",
+    "lat": 35.2240259143056,
+    "lng": 129.006481231585,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "대전충남지역대학",
+    "lat": 36.4150615773002,
+    "lng": 127.4010499755,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "서울지역대학",
+    "lat": 37.5475776727471,
+    "lng": 127.045671171868,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "대구경북지역대학",
+    "lat": 35.8597865206093,
+    "lng": 128.49483994005,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "서울지역대학 남부학습센터",
+    "lat": 37.5294934279349,
+    "lng": 126.865343486648,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "서울지역대학 서부학습센터",
+    "lat": 37.6505306616489,
+    "lng": 126.876447922716,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "전북지역대학",
+    "lat": 35.8249176988844,
+    "lng": 127.14081413335,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "강원지역대학",
+    "lat": 37.8713418362531,
+    "lng": 127.721112538954,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "울산지역대학",
+    "lat": 35.578469518189,
+    "lng": 129.314289019576,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "인천지역대학",
+    "lat": 37.4528464578591,
+    "lng": 126.704441134841,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "충북지역대학",
+    "lat": 36.6241354027925,
+    "lng": 127.467760150218,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "광주전남지역대학",
+    "lat": 35.2074520489882,
+    "lng": 126.836055496404,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "경남지역대학 창원시학습관",
+    "lat": 35.1771143825872,
+    "lng": 128.567025054729,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "경기지역대학",
+    "lat": 37.2407526695862,
+    "lng": 126.958242424918,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국방송통신대학교",
+    "campus_name": "경기지역대학 성남시학습관",
+    "lat": 37.3493348025565,
+    "lng": 127.109521570749,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "knou_ac_kr.png"
+  },
+  {
+    "univ_name": "한국에너지공과대학교",
+    "campus_name": "본교",
+    "lat": 35.010628426145,
+    "lng": 126.803293897405,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kentech_ac_kr.png"
+  },
+  {
+    "univ_name": "한국외국어대학교",
+    "campus_name": "본교",
+    "lat": 37.598298029,
+    "lng": 127.057941735,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hufs_ac_kr.png"
+  },
+  {
+    "univ_name": "한국체육대학교",
+    "campus_name": "본교",
+    "lat": 37.51990580247737,
+    "lng": 127.1320015596852,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "knsu_ac_kr.png"
+  },
+  {
+    "univ_name": "한국항공대학교",
+    "campus_name": "본교",
+    "lat": 37.59893688202335,
+    "lng": 126.8641854672186,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kau_ac_kr.png"
+  },
+  {
+    "univ_name": "한국해양대학교",
+    "campus_name": "본교",
+    "lat": 35.0744077694,
+    "lng": 129.087348579,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "kmou_ac_kr.png"
+  },
+  {
+    "univ_name": "한남대학교",
+    "campus_name": "본교",
+    "lat": 36.3527987154,
+    "lng": 127.423308084,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "hnu_ac_kr.png"
+  },
+  {
+    "univ_name": "한남대학교",
+    "campus_name": "대덕밸리캠퍼스",
+    "lat": 36.3995577679,
+    "lng": 127.390766004,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "hnu_ac_kr.png"
+  },
+  {
+    "univ_name": "한동대학교",
+    "campus_name": "본교",
+    "lat": 36.1023019859,
+    "lng": 129.389265076,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hgu_ac_kr.png"
+  },
+  {
+    "univ_name": "한림대학교",
+    "campus_name": "본교",
+    "lat": 37.88610616190521,
+    "lng": 127.739903789861,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hallym_ac_kr.png"
+  },
+  {
+    "univ_name": "한세대학교",
+    "campus_name": "본교",
+    "lat": 37.3441462048,
+    "lng": 126.953855654,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "hansei_ac_kr.png"
+  },
+  {
+    "univ_name": "한양대학교",
+    "campus_name": "본교",
+    "lat": 37.5582766359,
+    "lng": 127.048231781,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hanyang_ac_kr.png"
+  },
+  {
+    "univ_name": "한양대학교",
+    "campus_name": "ERICA캠퍼스",
+    "lat": 37.2980037428,
+    "lng": 126.834393384,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hanyang_ac_kr.png"
+  },
+  {
+    "univ_name": "호남대학교",
+    "campus_name": "본교",
+    "lat": 35.14996891443252,
+    "lng": 126.7650386958359,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "honam_ac_kr.png"
+  },
+  {
+    "univ_name": "홍익대학교",
+    "campus_name": "세종캠퍼스",
+    "lat": 36.6197753286909,
+    "lng": 127.288098013088,
+    "building_count": 0,
+    "num_ap": 0,
+    "logo": "hongik_ac_kr.png"
+  },
+  {
+    "univ_name": "홍익대학교",
+    "campus_name": "본교",
+    "lat": 37.5525245968145,
+    "lng": 126.9250355422,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": "hongik_ac_kr.png"
+  },
+  {
+    "univ_name": "KDI국",
+    "campus_name": "본교",
+    "lat": 36.4810968523362,
+    "lng": 127.309690998723,
+    "building_count": 1,
+    "num_ap": 0,
+    "logo": ""
+  }
+]

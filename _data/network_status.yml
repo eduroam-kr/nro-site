@@ -1,0 +1,11 @@
+status: operational
+last_updated: 2026-04-30 15:40:00
+services:
+  - name: National RADIUS (Primary)
+    status: operational
+  - name: National RADIUS (Secondary)
+    status: operational
+  - name: eduroam CAT (Global)
+    status: operational
+  - name: Management Portal
+    status: operational

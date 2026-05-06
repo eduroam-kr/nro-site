@@ -1,0 +1,278 @@
+---
+layout: default
+title: 이용 기관
+lang: ko
+---
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Main Content -->
+    <div class="col-md-12">
+      
+      <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
+        <h2 style="color: #666; font-weight: 300;">이용 기관</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" style="color: #999;">홈</a></li>
+            <li class="breadcrumb-item" style="color: #999;">소개</li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: #333;">이용 기관</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Search & Filter Box -->
+      <div class="section-card p-4 mb-4" style="border: 1px solid #007bff; border-radius: 8px;">
+        <div class="row align-items-end">
+          <!-- 검색어 입력 -->
+          <div class="col-md-5 mb-2 mb-md-0">
+            <label class="small text-secondary font-weight-bold mb-1">기관명 검색</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="searchInput" placeholder="기관명을 입력하세요">
+            </div>
+          </div>
+          <!-- 필터: 접속안내 -->
+          <div class="col-md-4 mb-2 mb-md-0">
+            <label class="small text-secondary font-weight-bold mb-1">접속안내</label>
+            <select class="form-control" id="filterGuide" onchange="searchTable()">
+              <option value="">전체 보기</option>
+              <option value="y">안내 있음</option>
+              <option value="n">안내 없음</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary w-100 py-2" onclick="searchTable()"><i class="fas fa-search"></i> 검색</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-2 text-secondary" style="font-size: 0.85rem;">
+        ※ '대학명' 가나다 순 입니다. &nbsp; ( {{ site.data.institutions_pages.total_institutions }}개 대학, {{ site.data.institutions_pages.total_campuses }}개 캠퍼스 )
+      </div>
+
+      <!-- Table Map -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem;" id="instTable">
+          <thead style="background-color: #f8f9fa;">
+            <tr>
+              <th style="width: 50px;">연번</th>
+              <th colspan="2">기관명</th>
+              <th style="width: 140px;">접속안내</th>
+              <th>렐름(Realm)</th>
+            </tr>
+          </thead>
+
+          {% for pagedata in site.data.institutions_pages.pages %}
+            <tbody id="page-{{ pagedata.page }}" style="{% if pagedata.page != 1 %}display: none;{% endif %}">
+              {% for cd in pagedata.rows %}
+                <tr class="inst-row" data-name="{{ cd.univ_name }}" data-type="{{ cd.inst_type }}" data-net="{{ cd.operator_type }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
+                  
+                  <td>{{ cd.serial_no }}</td>
+
+                  {% if cd.is_first_in_chunk %}
+                    <td style="width: 100px; padding: 5px;" rowspan="{{ cd.chunk_size }}" class="align-middle">
+                      {% if cd.logo != '' %}
+                        <img src="{{ '/eduroam-kr-data/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
+                      {% else %}
+                        <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
+                      {% endif %}
+                    </td>
+                    <td class="text-left align-middle" style="font-weight: 500;" rowspan="{{ cd.chunk_size }}">
+                      {{ cd.univ_name }}
+                    </td>
+                  {% endif %}
+
+                  {% if cd.rowspan_realm %}
+                    {% if cd.is_first_in_chunk %}
+                      <td rowspan="{{ cd.chunk_size }}" class="align-middle">
+                        {% if cd.guide != '' %}
+                          <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
+                            <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
+                          </a>
+                        {% endif %}
+                      </td>
+                      <td class="text-success text-left ps-3 align-middle" rowspan="{{ cd.chunk_size }}">
+                        <div style="font-size:0.85rem;">{{ cd.realm }}</div>
+                      </td>
+                    {% endif %}
+                  {% else %}
+                    <td class="align-middle">
+                      {% if cd.guide != '' %}
+                        <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
+                          <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
+                        </a>
+                      {% endif %}
+                    </td>
+                    <td class="text-success text-left ps-3 align-middle">
+                      <div style="font-size:0.85rem;">{{ cd.realm }}</div>
+                    </td>
+                  {% endif %}
+
+                </tr>
+              {% endfor %}
+            </tbody>
+          {% endfor %}
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div class="d-flex justify-content-center mt-4 mb-3">
+        <div style="border-top: 1px solid #ddd; width: 100%; max-width: 600px; padding-top: 15px; margin-bottom: 20px;">
+          <ul class="pagination pagination-sm justify-content-center mb-0" id="pagination-controls">
+            <!-- dynamically populated by JS -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end mb-5">
+        <a href="{{ '/coverage/map.html' | relative_url }}" class="text-primary text-decoration-none fw-bold" style="font-size: 0.95rem;">
+          < eduroam 맵 보기 >
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+  }
+  .table-bordered th, .table-bordered td {
+    vertical-align: middle;
+  }
+  .pagination .page-link {
+    color: #28a745;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+  }
+  .pagination .page-item.active .page-link {
+    background-color: #17a2b8 !important;
+    color: white !important;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+</style>
+
+<script>
+  var totalPages = {{ site.data.institutions_pages.total_pages }};
+  var currentPage = 1;
+  var itemsPerPage = 15;
+  var filteredRows = []; // 검색 결과 행들을 담을 배열
+  var isSearchMode = false;
+  
+  // 모든 행을 미리 가져오기
+  var allRows = Array.from(document.querySelectorAll('.inst-row'));
+
+  function renderPagination() {
+    var ul = document.getElementById('pagination-controls');
+    ul.innerHTML = '';
+    
+    // 현재 모드에 따른 총 페이지 수 계산
+    var pagesCount = isSearchMode ? Math.ceil(filteredRows.length / itemsPerPage) : totalPages;
+    if (pagesCount === 0) return;
+
+    var maxVisible = 10;
+    var start = Math.max(1, currentPage - 5);
+    var end = Math.min(pagesCount, start + maxVisible - 1);
+    if (end - start < maxVisible - 1) start = Math.max(1, end - maxVisible + 1);
+    
+    for (var i = start; i <= end; i++) {
+      var li = document.createElement('li');
+      li.className = 'page-item ' + (i === currentPage ? 'active' : '');
+      li.style.cursor = 'pointer';
+      
+      var a = document.createElement('a');
+      a.className = 'page-link px-3';
+      a.innerText = i;
+      a.onclick = (function(page) { return function() { goToPage(page); }; })(i);
+      
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+    
+    if (pagesCount > end) {
+      var ellipsis = document.createElement('li');
+      ellipsis.className = 'page-item disabled';
+      ellipsis.innerHTML = '<span class="page-link text-success">...</span>';
+      ul.appendChild(ellipsis);
+    }
+  }
+  
+  function goToPage(p) {
+    currentPage = p;
+    
+    if (!isSearchMode) {
+      // 일반 모드: 페이지(tbody) 단위로 토글
+      for (var i = 1; i <= totalPages; i++) {
+        var pageElem = document.getElementById('page-' + i);
+        if (pageElem) pageElem.style.display = (i === p) ? '' : 'none';
+      }
+    } else {
+      // 검색 모드: 전체 행 중 검색된 행들의 인덱스에 따라 토글
+      var startIndex = (p - 1) * itemsPerPage;
+      var endIndex = p * itemsPerPage;
+
+      // 모든 tbody를 보이고 행 단위로 제어
+      for (var i = 1; i <= totalPages; i++) {
+        var pageElem = document.getElementById('page-' + i);
+        if (pageElem) pageElem.style.display = '';
+      }
+
+      allRows.forEach(function(row) {
+        row.style.display = 'none'; // 일단 다 숨김
+      });
+
+      filteredRows.forEach(function(row, index) {
+        if (index >= startIndex && index < endIndex) {
+          row.style.display = ''; // 현재 검색 페이지에 해당하는 행만 표시
+        }
+      });
+    }
+
+    renderPagination();
+    window.scrollTo(0, document.querySelector('.search-box').offsetTop - 20);
+  }
+
+  function searchTable() {
+    var input = document.getElementById("searchInput").value.toLowerCase();
+    var filterGuide = document.getElementById("filterGuide").value;
+
+    if (input.trim() === '' && filterGuide === '') {
+      isSearchMode = false;
+      filteredRows = [];
+      allRows.forEach(function(row) { row.style.display = ''; });
+      goToPage(1);
+      return;
+    }
+
+    isSearchMode = true;
+    filteredRows = allRows.filter(function(row) {
+      var matchesName = row.dataset.name.toLowerCase().includes(input);
+      var matchesGuide = filterGuide === '' || row.dataset.guide === filterGuide;
+      return matchesName && matchesGuide;
+    });
+
+    currentPage = 1;
+    goToPage(1);
+  }
+  
+  document.getElementById("searchInput").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+      searchTable();
+    }
+  });
+
+  renderPagination();
+</script>

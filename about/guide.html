@@ -1,0 +1,106 @@
+---
+layout: default
+title: 서비스 가입방법
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-sign-in-alt mr-2"></i>서비스 가입방법</h1>
+    <p class="page-sub">대학 또는 교육기관이 eduroam에 가입하기 위한 절차입니다</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          소개
+        </div>
+        <a href="{{ '/about/eduroam/' | relative_url }}" class="list-group-item list-group-item-action">
+          eduroam이란?
+        </a>
+        <a href="{{ '/about/guide/' | relative_url }}" class="list-group-item list-group-item-action active">가입방법 및 절차</a>
+        <a href="{{ '/policy/' | relative_url }}" class="list-group-item list-group-item-action">정책</a>
+        <a href="{{ '/about/promotion.html' | relative_url }}" class="list-group-item list-group-item-action">홍보자료</a>
+        <a href="{{ '/connect/' | relative_url }}" class="list-group-item list-group-item-action">접속안내</a>
+        <a href="{{ '/about/aboutus/' | relative_url }}" class="list-group-item list-group-item-action">운영센터안내</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <!-- 빵부스러기 -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
+          <li class="breadcrumb-item text-muted">소개</li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">가입방법 및 절차</li>
+        </ol>
+      </nav>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-list-ol"></i> 가입 단계 개요</h2>
+        <p class="text-muted small mb-4">대학 또는 교육기관의 서버관리자가 직접 신청해야 합니다.</p>
+
+        <div class="step-list">
+          <div class="d-flex mb-4">
+            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">01.</div>
+            <div>
+              <h5 class="mb-1">eduroam.kr 사이트 회원가입</h5>
+              <p class="text-muted small">반드시 대학(또는 기관)의 서버관리자가 가입해야 합니다.</p>
+              <a href="https://www.eduroam.kr/Member/Join.aspx" target="_blank" class="btn btn-xs btn-outline-primary py-1 px-2" style="font-size: 0.75rem;">가입 사이트 이동</a>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">02.</div>
+            <div>
+              <h5 class="mb-1">관리자 승인</h5>
+              <p class="text-muted small">승인이 완료되면 대학서버관리자 권한으로 사용 가능합니다.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">03.</div>
+            <div>
+              <h5 class="mb-1">정보 입력 (인증서버/기본정보)</h5>
+              <p class="text-muted small">기관명, 주소, 가입신청서 및 인증서버 정보를 입력합니다.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">04.</div>
+            <div>
+              <h5 class="mb-1">캠퍼스 및 담당자 정보 등록</h5>
+              <p class="text-muted small">eduroam map에 표시될 캠퍼스 정보를 입력합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card" style="border-left: 4px solid #ef4444;">
+        <h4 style="color: #dc2626; font-size: 1.1rem;"><i class="fas fa-exclamation-triangle"></i> 주의사항</h4>
+        <p class="small text-muted mb-0">인증서버 연동을 위해서는 운영센터와 사전 기술 협의가 필요합니다.</p>
+        <div class="mt-2 small">
+          <i class="fas fa-envelope mr-1"></i> <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    font-weight: bold;
+  }
+</style>

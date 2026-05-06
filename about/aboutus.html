@@ -1,0 +1,102 @@
+---
+layout: default
+title: 운영센터안내
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-headset mr-2"></i>운영센터안내</h1>
+    <p class="page-sub">국내 eduroam 서비스 운영 및 기술 지원을 담당하는 운영센터를 소개합니다</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          소개
+        </div>
+        <a href="{{ '/about/eduroam/' | relative_url }}" class="list-group-item list-group-item-action">
+          eduroam이란?
+        </a>
+        <a href="{{ '/about/guide/' | relative_url }}" class="list-group-item list-group-item-action">가입방법 및 절차</a>
+        <a href="{{ '/policy/' | relative_url }}" class="list-group-item list-group-item-action">정책</a>
+        <a href="{{ '/about/promotion.html' | relative_url }}" class="list-group-item list-group-item-action">홍보자료</a>
+        <a href="{{ '/connect/' | relative_url }}" class="list-group-item list-group-item-action">접속안내</a>
+        <a href="{{ '/about/aboutus/' | relative_url }}" class="list-group-item list-group-item-action active">운영센터안내</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <!-- 빵부스러기 -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
+          <li class="breadcrumb-item text-muted">소개</li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">운영센터안내</li>
+        </ol>
+      </nav>
+
+      <div class="section-card">
+        <h2><i class="fas fa-university"></i> eduroam 운영센터 소개</h2>
+        <p style="line-height: 1.8; color: #444;">
+          국내 eduroam 서비스는 <strong>한국과학기술정보연구원(KISTI)</strong>과 <strong>한국교육정보화재단(KREN)</strong>의 공동 협력을 통해 운영되고 있습니다.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-md-6 mb-3">
+            <div class="p-3 border rounded h-100 bg-white">
+              <h5 class="mb-2 text-success">기술 운영 (KISTI)</h5>
+              <ul class="small text-muted mb-0 pl-3">
+                <li>국가 RADIUS 서버 운영</li>
+                <li>글로벌 eduroam 연동</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="p-3 border rounded h-100 bg-white">
+              <h5 class="mb-2 text-primary">기획 및 관리 (KREN)</h5>
+              <ul class="small text-muted mb-0 pl-3">
+                <li>가입 승인 및 기관 관리</li>
+                <li>서비스 정책 및 홍보</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card mt-4">
+        <h2><i class="fas fa-phone-alt"></i> 연락처</h2>
+        <table class="table table-sm border-0 mb-0" style="font-size: 0.95rem;">
+          <tr>
+            <th class="border-0 bg-light" style="width: 120px;">이메일</th>
+            <td class="border-0"><a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a></td>
+          </tr>
+          <tr>
+            <th class="border-0 bg-light">기술 지원</th>
+            <td class="border-0">02-882-5363 (ARS 6번)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    font-weight: bold;
+  }
+</style>

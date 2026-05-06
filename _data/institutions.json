@@ -1,0 +1,1829 @@
+[
+  {
+    "id": 1,
+    "type": "기타",
+    "name": "KDI국제정책대학원대학교",
+    "logo": "kdis_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kdis.ac.kr",
+        "guide": "https://www.kdischool.ac.kr/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 2,
+    "type": "사립",
+    "name": "가천대학교",
+    "logo": "gachon_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "gachon.ac.kr",
+        "guide": "https://www.gachon.ac.kr/ist/2990/subview.do"
+      },
+      {
+        "name": "메디컬캠퍼스",
+        "realm": "gachon.ac.kr",
+        "guide": "https://www.gachon.ac.kr/ist/2990/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 3,
+    "type": "국립",
+    "name": "강릉원주대학교",
+    "logo": "gwnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "원주캠퍼스",
+        "realm": "gwnu.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "강릉캠퍼스",
+        "realm": "gwnu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 4,
+    "type": "국립",
+    "name": "강원대학교",
+    "logo": "kangwon_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kangwon.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "도계캠퍼스",
+        "realm": "kangwon.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "삼척캠퍼스",
+        "realm": "kangwon.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 5,
+    "type": "사립",
+    "name": "건국대학교",
+    "logo": "konkuk_ac_kr.png",
+    "campuses": [
+      {
+        "name": "서울캠퍼스",
+        "realm": "konkuk.ac.kr",
+        "guide": "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do"
+      },
+      {
+        "name": "글로컬캠퍼스",
+        "realm": "kku.ac.kr",
+        "guide": "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do"
+      }
+    ],
+    "rowspan_realm": false
+  },
+  {
+    "id": 6,
+    "type": "사립",
+    "name": "건양대학교",
+    "logo": "konyang_ac_kr.png",
+    "campuses": [
+      {
+        "name": "글로벌캠퍼스",
+        "realm": "konyang.ac.kr",
+        "guide": "https://www.konyang.ac.kr/ict/sub02_02.do"
+      },
+      {
+        "name": "메디컬캠퍼스",
+        "realm": "konyang.ac.kr",
+        "guide": "https://www.konyang.ac.kr/ict/sub02_02.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 7,
+    "type": "사립",
+    "name": "경남대학교",
+    "logo": "kyungnam_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kyungnam.ac.kr",
+        "guide": "https://library.kyungnam.ac.kr/webcontent/info/52"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 8,
+    "type": "국립",
+    "name": "경북대학교",
+    "logo": "knu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "산격캠퍼스",
+        "realm": "knu.ac.kr",
+        "guide": "https://wifi.knu.ac.kr/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 9,
+    "type": "국립",
+    "name": "경상국립대학교",
+    "logo": "gnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "통영캠퍼스",
+        "realm": "gnu.ac.kr",
+        "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+      },
+      {
+        "name": "내동캠퍼스",
+        "realm": "gnu.ac.kr",
+        "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+      },
+      {
+        "name": "가좌캠퍼스",
+        "realm": "gnu.ac.kr",
+        "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+      },
+      {
+        "name": "칠암캠퍼스(의간호대)",
+        "realm": "gnu.ac.kr",
+        "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+      },
+      {
+        "name": "칠암캠퍼스",
+        "realm": "gnu.ac.kr",
+        "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+      },
+      {
+        "name": "창원산학캠퍼스",
+        "realm": "gnu.ac.kr",
+        "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 10,
+    "type": "국립",
+    "name": "경인교육대학교",
+    "logo": "ginue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ginue.ac.kr",
+        "guide": "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313"
+      },
+      {
+        "name": "경기캠퍼스",
+        "realm": "ginue.ac.kr",
+        "guide": "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 11,
+    "type": "사립",
+    "name": "경인교육대학교",
+    "logo": "kiu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kiu.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "경기캠퍼스",
+        "realm": "kiu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 12,
+    "type": "사립",
+    "name": "경희대학교",
+    "logo": "khu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "서울",
+        "realm": "khu.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "국제캠퍼스",
+        "realm": "khu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 13,
+    "type": "사립",
+    "name": "계명대학교",
+    "logo": "kmu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kmu.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "대명캠퍼스",
+        "realm": "kmu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 14,
+    "type": "사립",
+    "name": "계명문화대학교",
+    "logo": "kmcu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kmcu.ac.kr",
+        "guide": "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 15,
+    "type": "사립",
+    "name": "고려대학교",
+    "logo": "korea_ac_kr.png",
+    "campuses": [
+      {
+        "name": "서울캠퍼스",
+        "realm": "korea.ac.kr",
+        "guide": "http://wifi.korea.ac.kr/"
+      },
+      {
+        "name": "세종캠퍼스",
+        "realm": "korea.ac.kr",
+        "guide": "http://wifi.korea.ac.kr/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 16,
+    "type": "국립",
+    "name": "공주교육대학교",
+    "logo": "gjue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "gjue.ac.kr",
+        "guide": "https://www.gjue.ac.kr/kor/contents/68"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 17,
+    "type": "기타",
+    "name": "과학기술연합대학원대학교",
+    "logo": "ust_ac_kr.png",
+    "campuses": [
+      {
+        "name": "과학기술연합대학원대학교",
+        "realm": "ust.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 18,
+    "type": "국립",
+    "name": "광주교육대학교",
+    "logo": "gnue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "gnue.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 19,
+    "type": "사립",
+    "name": "광주대학교",
+    "logo": "gwangju_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "gwangju.ac.kr",
+        "guide": "http://icc.gwangju.ac.kr/icc/page/sub0401.html"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 20,
+    "type": "사립",
+    "name": "광주보건대학교",
+    "logo": "ghu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ghu.ac.kr",
+        "guide": "https://www.ghu.ac.kr/LifeGhc/InfoMail.jsp"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 21,
+    "type": "사립",
+    "name": "광주여자대학교",
+    "logo": "kwu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kwu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 22,
+    "type": "국립",
+    "name": "국립공주대학교",
+    "logo": "kongju_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kongju.ac.kr",
+        "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do"
+      },
+      {
+        "name": "천안",
+        "realm": "kongju.ac.kr",
+        "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do"
+      },
+      {
+        "name": "예산캠퍼스",
+        "realm": "kongju.ac.kr",
+        "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 23,
+    "type": "국립",
+    "name": "국립한국교통대학교",
+    "logo": "ut_ac_kr.png",
+    "campuses": [
+      {
+        "name": "충주캠퍼스",
+        "realm": "ut.ac.kr",
+        "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do"
+      },
+      {
+        "name": "증평캠퍼스",
+        "realm": "ut.ac.kr",
+        "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do"
+      },
+      {
+        "name": "의왕캠퍼스",
+        "realm": "ut.ac.kr",
+        "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 24,
+    "type": "국립",
+    "name": "국립한밭대학교",
+    "logo": "hanbat_ac_kr.png",
+    "campuses": [
+      {
+        "name": "대덕산학융합캠퍼스",
+        "realm": "hanbat.ac.kr",
+        "guide": "https://www.hanbat.ac.kr/kor/sub06_080105.do"
+      },
+      {
+        "name": "유성덕명캠퍼스",
+        "realm": "hanbat.ac.kr",
+        "guide": "https://www.hanbat.ac.kr/kor/sub06_080105.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 25,
+    "type": "사립",
+    "name": "국민대학교",
+    "logo": "kookmin_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kookmin.ac.kr",
+        "guide": "https://kist.kookmin.ac.kr/kist_new/infra/ko.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 26,
+    "type": "국립",
+    "name": "군산대학교",
+    "logo": "kunsan_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kunsan.ac.kr",
+        "guide": "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000"
+      },
+      {
+        "name": "새만금캠퍼스",
+        "realm": "kunsan.ac.kr",
+        "guide": "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 27,
+    "type": "국립",
+    "name": "금오공과대학교",
+    "logo": "kumoh_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kumoh.ac.kr",
+        "guide": "https://cic.kumoh.ac.kr/cic/sub020202.do"
+      },
+      {
+        "name": "신평동캠퍼스",
+        "realm": "kumoh.ac.kr",
+        "guide": "https://cic.kumoh.ac.kr/cic/sub020202.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 28,
+    "type": "사립",
+    "name": "나사렛대학교",
+    "logo": "kornu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kornu.ac.kr",
+        "guide": "https://www.kornu.ac.kr/mbs/kornukr/subview.jsp?id=kornukr_071300000000"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 29,
+    "type": "사립",
+    "name": "남부대학교",
+    "logo": "nambu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "nambu.ac.kr",
+        "guide": "https://se.nambu.ac.kr/content/view.do?menuCd=dept_se002001"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 30,
+    "type": "사립",
+    "name": "단국대학교",
+    "logo": "dankook_ac_kr.png",
+    "campuses": [
+      {
+        "name": "죽전캠퍼스",
+        "realm": "dankook.ac.kr",
+        "guide": "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-"
+      },
+      {
+        "name": "천안캠퍼스",
+        "realm": "dankook.ac.kr",
+        "guide": "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 31,
+    "type": "사립",
+    "name": "대구가톨릭대학교",
+    "logo": "cu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "cu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 32,
+    "type": "특별법법인",
+    "name": "대구경북과학기술원",
+    "logo": "dgist_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "dgist.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 33,
+    "type": "국립",
+    "name": "대구교육대학교",
+    "logo": "dnue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "dnue.ac.kr",
+        "guide": "https://www.dnue.ac.kr/kor/CMS/Board/Board.do?mCode=MN168&mode=view&board_seq=14025"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 34,
+    "type": "사립",
+    "name": "대구대학교",
+    "logo": "daegu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "경산캠퍼스",
+        "realm": "daegu.ac.kr",
+        "guide": "https://www.daegu.ac.kr/page/153"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 35,
+    "type": "사립",
+    "name": "대전대학교",
+    "logo": "dju_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "dju.ac.kr",
+        "guide": "https://www.dju.ac.kr/dju/cm/cntnts/cntntsView.do?mi=6573&cntntsId=4021"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 36,
+    "type": "사립",
+    "name": "대진대학교",
+    "logo": "daejin_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "daejin.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 37,
+    "type": "사립",
+    "name": "동국대학교",
+    "logo": "dongguk_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "dongguk.ac.kr",
+        "guide": "https://it.dongguk.edu/?page_id=18649"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 38,
+    "type": "사립",
+    "name": "동신대학교",
+    "logo": "dsu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "dsu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 39,
+    "type": "사립",
+    "name": "동아대학교",
+    "logo": "donga_ac_kr.png",
+    "campuses": [
+      {
+        "name": "구덕캠퍼스",
+        "realm": "donga.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "승학캠퍼스",
+        "realm": "donga.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "부민캠퍼스",
+        "realm": "donga.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 40,
+    "type": "사립",
+    "name": "동의대학교",
+    "logo": "deu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "deu.ac.kr",
+        "guide": "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10"
+      },
+      {
+        "name": "양정캠퍼스",
+        "realm": "deu.ac.kr",
+        "guide": "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 41,
+    "type": "국립",
+    "name": "목포대학교",
+    "logo": "mokpo_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "mokpo.ac.kr",
+        "guide": "https://www.mokpo.ac.kr/www/291/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 42,
+    "type": "국립",
+    "name": "목포해양대학교",
+    "logo": "mmu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "mmu.ac.kr",
+        "guide": "https://www.mmu.ac.kr/main/contents/eduroam"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 43,
+    "type": "사립",
+    "name": "백석대학교",
+    "logo": "bu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "bu.ac.kr",
+        "guide": "http://www.bu.ac.kr/web/3739/subview.do"
+      },
+      {
+        "name": "백석문화대학교",
+        "realm": "bu.ac.kr",
+        "guide": "http://www.bu.ac.kr/web/3739/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 44,
+    "type": "국립",
+    "name": "부경대학교",
+    "logo": "pknu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "대연캠퍼스",
+        "realm": "pknu.ac.kr",
+        "guide": "https://icc.pknu.ac.kr/main/17"
+      },
+      {
+        "name": "용당캠퍼스",
+        "realm": "pknu.ac.kr",
+        "guide": "https://icc.pknu.ac.kr/main/17"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 45,
+    "type": "국립",
+    "name": "부산교육대학교",
+    "logo": "bnue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "bnue.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 46,
+    "type": "국립",
+    "name": "부산대학교",
+    "logo": "pusan_ac_kr.png",
+    "campuses": [
+      {
+        "name": "양산캠퍼스",
+        "realm": "pusan.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "부산캠퍼스",
+        "realm": "pusan.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "밀양캠퍼스",
+        "realm": "pusan.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 47,
+    "type": "사립",
+    "name": "상명대학교",
+    "logo": "smu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "smu.ac.kr",
+        "guide": "https://www.smu.ac.kr/kor/life/eduroam.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 48,
+    "type": "사립",
+    "name": "서강대학교",
+    "logo": "sogang_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "sogang.ac.kr",
+        "guide": "http://eduroam.sogang.ac.kr/eduroam/index.html"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 49,
+    "type": "국립",
+    "name": "서울과학기술대학교",
+    "logo": "seoultech_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "seoultech.ac.kr",
+        "guide": "https://itc.seoultech.ac.kr/service/wifi"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 50,
+    "type": "국립대법인",
+    "name": "서울대학교",
+    "logo": "snu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "snu.ac.kr",
+        "guide": "https://ist.snu.ac.kr/wifi/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 51,
+    "type": "공립",
+    "name": "서울시립대학교",
+    "logo": "uos_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "uos.ac.kr",
+        "guide": "https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&identified=anonymous&"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 52,
+    "type": "사립",
+    "name": "서원대학교",
+    "logo": "seowon_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "seowon.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 53,
+    "type": "사립",
+    "name": "서일대학교",
+    "logo": "seoil_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "seoil.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 54,
+    "type": "사립",
+    "name": "성결대학교",
+    "logo": "sungkyul_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "sungkyul.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 55,
+    "type": "사립",
+    "name": "성균관대학교",
+    "logo": "skku_ac_kr.png",
+    "campuses": [
+      {
+        "name": "인문사회과학캠퍼스",
+        "realm": "skku.ac.kr",
+        "guide": "https://www.skku.edu/skku/campus/IT_service/it_service11.do"
+      },
+      {
+        "name": "자연과학캠퍼스",
+        "realm": "skku.ac.kr",
+        "guide": "https://www.skku.edu/skku/campus/IT_service/it_service11.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 56,
+    "type": "사립",
+    "name": "성신여자대학교",
+    "logo": "sungshin_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "sungshin.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "운정그린캠퍼스",
+        "realm": "sungshin.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 57,
+    "type": "사립",
+    "name": "세종대학교",
+    "logo": "sejong_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "sejong.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 58,
+    "type": "사립",
+    "name": "세한대학교",
+    "logo": "sehan_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "sehan.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "당진캠퍼스",
+        "realm": "sehan.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 59,
+    "type": "사립",
+    "name": "수원대학교",
+    "logo": "suwon_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "suwon.ac.kr",
+        "guide": "https://ici.suwon.ac.kr/index.html?menuno=340"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 60,
+    "type": "사립",
+    "name": "숙명여자대학교",
+    "logo": "sookmyung_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "sookmyung.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 61,
+    "type": "국립",
+    "name": "순천대학교",
+    "logo": "scnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "scnu.ac.kr",
+        "guide": "https://www.scnu.ac.kr/icc/cm/cntnts/cntntsView.do?mi=4804&cntntsId=2682"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 62,
+    "type": "사립",
+    "name": "숭실대학교",
+    "logo": "ssu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ssu.ac.kr",
+        "guide": "https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 63,
+    "type": "사립",
+    "name": "신한대학교",
+    "logo": "shinhan_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "shinhan.ac.kr",
+        "guide": "https://www.shinhan.ac.kr/kr/256/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 64,
+    "type": "사립",
+    "name": "아주대학교",
+    "logo": "ajou_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ajou.ac.kr",
+        "guide": "https://pc119.ajou.ac.kr/pc119/service/lan.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 65,
+    "type": "사립",
+    "name": "연세대학교",
+    "logo": "yonsei_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "yonsei.ac.kr",
+        "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do"
+      },
+      {
+        "name": "미래캠퍼스",
+        "realm": "yonsei.ac.kr",
+        "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do"
+      },
+      {
+        "name": "국제캠퍼스",
+        "realm": "yonsei.ac.kr",
+        "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 66,
+    "type": "사립",
+    "name": "영남대학교",
+    "logo": "yu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "yu.ac.kr",
+        "guide": "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 67,
+    "type": "사립",
+    "name": "영남이공대학교",
+    "logo": "ync_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ync.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 68,
+    "type": "국립대법인",
+    "name": "울산과학기술원",
+    "logo": "unist_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "unist.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 69,
+    "type": "사립",
+    "name": "울산대학교",
+    "logo": "ulsan_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ulsan.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 70,
+    "type": "사립",
+    "name": "원광대학교",
+    "logo": "wku_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "wku.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 71,
+    "type": "사립",
+    "name": "원광보건대학교",
+    "logo": "wu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "wu.ac.kr",
+        "guide": "https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 72,
+    "type": "사립",
+    "name": "유한대학교",
+    "logo": "yuhan_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "yuhan.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 73,
+    "type": "사립",
+    "name": "이화여자대학교",
+    "logo": "ewha_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "ewha.ac.kr",
+        "guide": "https://www.ewha.ac.kr/ewha/life/eduroam.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 74,
+    "type": "사립",
+    "name": "인제대학교",
+    "logo": "inje_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "inje.ac.kr",
+        "guide": "https://www.inje.ac.kr/kor/campus-life/e-service-03.asp"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 75,
+    "type": "공립",
+    "name": "인천대학교",
+    "logo": "inu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "inu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 76,
+    "type": "사립",
+    "name": "인하대학교",
+    "logo": "inha_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "inha.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 77,
+    "type": "사립",
+    "name": "장로회신학대학교",
+    "logo": "puts_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "puts.ac.kr",
+        "guide": "https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 78,
+    "type": "국립",
+    "name": "전남대학교",
+    "logo": "jnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "화순캠퍼스",
+        "realm": "jnu.ac.kr",
+        "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam"
+      },
+      {
+        "name": "학동캠퍼스",
+        "realm": "jnu.ac.kr",
+        "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam"
+      },
+      {
+        "name": "여수캠퍼스",
+        "realm": "jnu.ac.kr",
+        "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam"
+      },
+      {
+        "name": "광주캠퍼스",
+        "realm": "jnu.ac.kr",
+        "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 79,
+    "type": "국립",
+    "name": "전북대학교",
+    "logo": "jbnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "jbnu.ac.kr",
+        "guide": "https://its.jbnu.ac.kr/its/9226/subview.do"
+      },
+      {
+        "name": "익산캠퍼스",
+        "realm": "jbnu.ac.kr",
+        "guide": "https://its.jbnu.ac.kr/its/9226/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 80,
+    "type": "국립",
+    "name": "전주교육대학교",
+    "logo": "jnue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "jnue.ac.kr",
+        "guide": "https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 81,
+    "type": "사립",
+    "name": "전주대학교",
+    "logo": "jj_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "jj.ac.kr",
+        "guide": "http://wlan.jj.ac.kr/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 82,
+    "type": "사립",
+    "name": "전주비전대학교",
+    "logo": "jvision_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "jvision.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 83,
+    "type": "국립",
+    "name": "제주대학교",
+    "logo": "jejunu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "아라캠퍼스",
+        "realm": "jejunu.ac.kr",
+        "guide": "https://cms.jejunu.ac.kr/camp/stud/wifi/eduroam.htm"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 84,
+    "type": "사립",
+    "name": "조선대학교",
+    "logo": "chosun_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "chosun.ac.kr",
+        "guide": "http://wifi.chosun.ac.kr/Main/Main.html"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 85,
+    "type": "사립",
+    "name": "중앙대학교",
+    "logo": "cau_ac_kr.png",
+    "campuses": [
+      {
+        "name": "다빈치캠퍼스",
+        "realm": "cau.ac.kr",
+        "guide": "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01"
+      },
+      {
+        "name": "서울캠퍼스",
+        "realm": "cau.ac.kr",
+        "guide": "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 86,
+    "type": "국립",
+    "name": "창원대학교",
+    "logo": "cwnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "cwnu.ac.kr",
+        "guide": "https://www.changwon.ac.kr/kor/na/ntt/selectNttInfo.do?mi=10177&nttSn=782638"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 87,
+    "type": "국립",
+    "name": "청주교육대학교",
+    "logo": "cje_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "cje.ac.kr",
+        "guide": "https://www.cje.ac.kr/cj_edu_univ/web/content.do?menu_cd=000157"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 88,
+    "type": "국립",
+    "name": "춘천교육대학교",
+    "logo": "cnue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "cnue.ac.kr",
+        "guide": "https://www.cnue.ac.kr/cnue/life/wireless-lan.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 89,
+    "type": "국립",
+    "name": "충남대학교",
+    "logo": "cnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "cnu.ac.kr",
+        "guide": "https://homepage.cnu.ac.kr/cic/service/eduroam.do"
+      },
+      {
+        "name": "보운캠퍼스",
+        "realm": "cnu.ac.kr",
+        "guide": "https://homepage.cnu.ac.kr/cic/service/eduroam.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 90,
+    "type": "국립",
+    "name": "충북대학교",
+    "logo": "cbnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "cbnu.ac.kr",
+        "guide": "http://wifi.cbnu.ac.kr/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 91,
+    "type": "사립",
+    "name": "충북보건과학대학교",
+    "logo": "chsu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "chsu.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 92,
+    "type": "사립",
+    "name": "포항공과대학교",
+    "logo": "postech_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "postech.ac.kr",
+        "guide": "https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 93,
+    "type": "사립",
+    "name": "한국공학대학교",
+    "logo": "tukorea_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "tukorea.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "한국공학대학교 제2캠퍼스",
+        "realm": "tukorea.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 94,
+    "type": "국립",
+    "name": "한국교원대학교",
+    "logo": "knue_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "knue.ac.kr",
+        "guide": "http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&uid=1974"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 95,
+    "type": "사립",
+    "name": "한국기술교육대학교",
+    "logo": "koreatech_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "koreatech.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 96,
+    "type": "국립",
+    "name": "한국방송통신대학교",
+    "logo": "knou_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "강원지역대학 강릉시학습관",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "제주지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "부산지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "대전충남지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "서울지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "대구경북지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "서울지역대학 남부학습센터",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "서울지역대학 서부학습센터",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "전북지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "강원지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "울산지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "인천지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "충북지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "광주전남지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "경남지역대학 창원시학습관",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "경기지역대학",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      },
+      {
+        "name": "경기지역대학 성남시학습관",
+        "realm": "knou.ac.kr",
+        "guide": "https://eist.knou.ac.kr/eist/10344/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 97,
+    "type": "특별법법인",
+    "name": "한국에너지공과대학교",
+    "logo": "kentech_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kentech.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 98,
+    "type": "사립",
+    "name": "한국외국어대학교",
+    "logo": "hufs_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "hufs.ac.kr",
+        "guide": "https://www.hufs.ac.kr/hufs/11334/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 99,
+    "type": "국립",
+    "name": "한국체육대학교",
+    "logo": "knsu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "knsu.ac.kr",
+        "guide": "https://www.knsu.ac.kr/knsu/unilife/wireless-internet.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 100,
+    "type": "사립",
+    "name": "한국항공대학교",
+    "logo": "kau_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kau.ac.kr",
+        "guide": "https://kau.ac.kr/kaulife/itnoti.php?searchkey=&searchvalue=&code=s1801&page=&mode=read&seq=6546"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 101,
+    "type": "국립",
+    "name": "한국해양대학교",
+    "logo": "kmou_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "kmou.ac.kr",
+        "guide": "http://www.kmou.ac.kr/cisc/cm/cntnts/cntntsView.do?mi=4384&cntntsId=1306"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 102,
+    "type": "사립",
+    "name": "한남대학교",
+    "logo": "hnu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "hnu.ac.kr",
+        "guide": "http://wifi.hannam.ac.kr/"
+      },
+      {
+        "name": "대덕밸리캠퍼스",
+        "realm": "hnu.ac.kr",
+        "guide": "http://wifi.hannam.ac.kr/"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 103,
+    "type": "사립",
+    "name": "한동대학교",
+    "logo": "hgu_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "hgu.ac.kr",
+        "guide": "https://library.handong.edu/local/html/450"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 104,
+    "type": "사립",
+    "name": "한림대학교",
+    "logo": "hallym_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "hallym.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 105,
+    "type": "사립",
+    "name": "한세대학교",
+    "logo": "hansei_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "hansei.ac.kr",
+        "guide": "http://www.hansei.ac.kr/kor/345/subview.do"
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 106,
+    "type": "사립",
+    "name": "한양대학교",
+    "logo": "hanyang_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "hanyang.ac.kr",
+        "guide": ""
+      },
+      {
+        "name": "ERICA캠퍼스",
+        "realm": "hanyang.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 107,
+    "type": "사립",
+    "name": "호남대학교",
+    "logo": "honam_ac_kr.png",
+    "campuses": [
+      {
+        "name": "본교",
+        "realm": "honam.ac.kr",
+        "guide": ""
+      }
+    ],
+    "rowspan_realm": true
+  },
+  {
+    "id": 108,
+    "type": "사립",
+    "name": "홍익대학교",
+    "logo": "hongik_ac_kr.png",
+    "campuses": [
+      {
+        "name": "세종캠퍼스",
+        "realm": "hongik.ac.kr",
+        "guide": "https://wifi.hongik.ac.kr"
+      },
+      {
+        "name": "본교",
+        "realm": "hongik.ac.kr",
+        "guide": "https://wifi.hongik.ac.kr"
+      }
+    ],
+    "rowspan_realm": true
+  }
+]

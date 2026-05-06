@@ -1,0 +1,96 @@
+---
+layout: default
+title: 에듀롬 맵
+---
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+<script src="{{ '/assets/js/map-data.js' | relative_url }}"></script>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Main Content -->
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent p-0 m-0 mb-4" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">eduroam 맵</li>
+        </ol>
+      </nav>
+
+      <div class="section-card p-0 overflow-hidden shadow-sm" style="border-radius: 12px; border: 1px solid #eee;">
+        <div class="bg-white p-3 border-bottom d-flex justify-content-between align-items-center">
+          <h5 class="m-0 font-weight-bold" style="color: #333;">
+            <i class="fas fa-map-marked-alt text-primary mr-2"></i>전국 eduroam 참여 기관 지도
+          </h5>
+          <span class="badge badge-primary px-3 py-2" style="font-size: 0.85rem;">총 108개 기관</span>
+        </div>
+        <div id="eduroam-map" style="height: 700px; width: 100%;"></div>
+      </div>
+      
+      <div class="mt-4 p-3 bg-light rounded border" style="font-size: 0.9rem; color: #666;">
+        <i class="fas fa-info-circle mr-2 text-info"></i> 지도 위의 마커에 마우스를 올리면 기관명을 확인하실 수 있습니다. 클릭 시 상세 정보를 확인하실 수 있습니다.
+      </div>
+
+      <!-- 해외 eduroam 커버리지 섹션 이동 -->
+      <div class="section-card mt-4">
+        <h2><i class="fas fa-globe"></i> 해외 eduroam 커버리지</h2>
+        <p style="font-size:0.95rem; color:#444; line-height:1.8;">
+          전 세계 100여 개 국가의 교육/연구기관에서 별도의 가입 절차 없이 즉시 이용 가능합니다.
+        </p>
+        <a href="https://monitor.eduroam.org/map_service_loc.php" target="_blank" class="btn btn-outline-dark btn-block mt-3">
+          <i class="fas fa-external-link-alt mr-2"></i>글로벌 eduroam 지도 확인 (eduroam.org)
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .leaflet-popup-content-wrapper { border-radius: 8px; padding: 0; overflow: hidden; }
+  .leaflet-popup-content { margin: 0; width: 220px !important; }
+  .map-popup-card { padding: 15px; }
+  .map-popup-header { font-weight: 700; font-size: 1.05rem; color: #0056b3; margin-bottom: 5px; }
+  .map-popup-addr { font-size: 0.85rem; color: #666; line-height: 1.4; }
+  .marker-cluster-small { background-color: rgba(181, 226, 140, 0.6); }
+  .marker-cluster-small div { background-color: rgba(110, 204, 57, 0.6); }
+  .marker-cluster-medium { background-color: rgba(241, 211, 87, 0.6); }
+  .marker-cluster-medium div { background-color: rgba(240, 194, 12, 0.6); }
+  .marker-cluster-large { background-color: rgba(253, 156, 115, 0.6); }
+  .marker-cluster-large div { background-color: rgba(241, 128, 23, 0.6); }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('eduroam-map').setView([36.3, 127.8], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markers = L.markerClusterGroup();
+
+    if (typeof eduroamInstitutions !== 'undefined') {
+      eduroamInstitutions.forEach(function(inst) {
+        var marker = L.marker([inst.lat, inst.lng]);
+        
+        var popupContent = `
+          <div class="map-popup-card">
+            <div class="map-popup-header">${inst.name}</div>
+            <div class="map-popup-addr">${inst.addr}</div>
+            ${inst.link ? `<a href="${inst.link}" target="_blank" class="btn btn-xs btn-success mt-2 text-white" style="font-size:0.75rem; padding: 2px 8px;"><i class="fas fa-external-link-alt mr-1"></i> 접속 안내 바로가기</a>` : `<span class="badge badge-secondary mt-2">안내 링크 준비중</span>`}
+          </div>
+        `;
+
+        marker.bindTooltip(inst.name, { direction: 'top' });
+        marker.bindPopup(popupContent);
+        markers.addLayer(marker);
+      });
+    }
+
+    map.addLayer(markers);
+  });
+</script>

@@ -1,0 +1,185 @@
+---
+layout: default
+title: eduroam 개요
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-info-circle mr-2"></i>eduroam 개요</h1>
+    <p class="page-sub">eduroam(education roaming)은 연구·교육 커뮤니티를 위한 글로벌 무선랜 서비스입니다</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          소개
+        </div>
+        <a href="{{ '/about/eduroam/' | relative_url }}" class="list-group-item list-group-item-action active">
+          eduroam이란?
+        </a>
+        <a href="{{ '/about/guide/' | relative_url }}" class="list-group-item list-group-item-action">가입방법 및 절차</a>
+        <a href="{{ '/policy/' | relative_url }}" class="list-group-item list-group-item-action">정책</a>
+        <a href="{{ '/about/promotion.html' | relative_url }}" class="list-group-item list-group-item-action">홍보자료</a>
+        <a href="{{ '/connect/' | relative_url }}" class="list-group-item list-group-item-action">접속안내</a>
+        <a href="{{ '/about/aboutus/' | relative_url }}" class="list-group-item list-group-item-action">운영센터안내</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      
+      <!-- 빵부스러기 -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
+          <li class="breadcrumb-item text-muted">소개</li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">eduroam이란?</li>
+        </ol>
+      </nav>
+
+      <div class="section-card mb-4">
+        <div class="text-center mb-4">
+          <span style="background: linear-gradient(135deg, #0072ff, #00c6ff); color: white; font-size: 1.2rem; font-weight: 700; padding: 8px 25px; border-radius: 50px; display: inline-block;">
+            The Educational &amp; Research Global Free Wi-Fi Roaming Service
+          </span>
+        </div>
+        <h2 class="text-center mt-4 mb-2" style="font-size: 1.6rem; font-weight: 700; color: #003366;">
+          eduroam은 글로벌 무선랜 공동활용 서비스입니다
+        </h2>
+      </div>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-wifi"></i> eduroam이란?</h2>
+        <p style="font-size: 1rem; line-height: 1.9; color: #333;">
+          <strong>eduroam(education roaming)</strong>은 국제적인 연구 및 교육 커뮤니티를 위해 개발된 무선랜 로밍 액세스 서비스로, 2003년부터 추진되어 2024년 5월 현재 전 세계 101개국이 참여하는 서비스입니다.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.9; color: #333;">
+          사용자는 자신이 소속된 기관의 계정(<code style="background:#f0f4ff; padding: 2px 6px; border-radius:4px; font-size: 0.9em;">아이디@도메인</code> 형태)으로 전 세계 eduroam 참여 기관 어디서나 별도의 설정 변경 없이 무선 인터넷에 접속할 수 있습니다.
+        </p>
+      </div>
+
+      <!-- 통계 카드 -->
+      <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+          <div class="p-4 rounded text-center text-white" style="background: linear-gradient(135deg, #0072ff, #00c6ff); box-shadow: 0 5px 15px rgba(0,114,255,0.2);">
+            <h3 style="font-size: 2.2rem; font-weight: 200; margin: 0;">101<small style="font-size: 1rem;">개국</small></h3>
+            <p class="mb-0 small opacity-75">전 세계 참여 국가</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-4 rounded text-center text-white" style="background: linear-gradient(135deg, #4568dc, #b06ab3); box-shadow: 0 5px 15px rgba(69,104,220,0.2);">
+            <h3 style="font-size: 2.2rem; font-weight: 200; margin: 0;">{{ site.data.institutions_pages.total_institutions }}<small style="font-size: 1rem;">개</small></h3>
+            <p class="mb-0 small opacity-75">국내 참여 기관</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-4 rounded text-center text-white" style="background: linear-gradient(135deg, #00b09b, #96c93d); box-shadow: 0 5px 15px rgba(0,176,155,0.2);">
+            <h3 style="font-size: 2.2rem; font-weight: 200; margin: 0;">{{ site.data.institutions_pages.total_campuses }}<small style="font-size: 1rem;">개</small></h3>
+            <p class="mb-0 small opacity-75">국내 연동 캠퍼스</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 특장점 섹션 -->
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-star text-warning"></i> eduroam의 4대 핵심 장점</h2>
+        <div class="row mt-4">
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="h-100 p-3 border rounded text-center transition-hover bg-white">
+              <i class="fas fa-globe-americas fa-2x text-primary mb-2"></i>
+              <h6 class="font-weight-bold">경계 없는 연구교육</h6>
+              <p class="small text-muted mb-0">국내외 다수의 대학 및 연구기관이 참여하여 최적의 연구 환경을 제공합니다.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="h-100 p-3 border rounded text-center transition-hover bg-white">
+              <i class="fas fa-lock fa-2x text-success mb-2"></i>
+              <h6 class="font-weight-bold">안전한 네트워크</h6>
+              <p class="small text-muted mb-0">강력한 WPA2-Enterprise 보안 방식을 사용하여 개인정보를 안전하게 보호합니다.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="h-100 p-3 border rounded text-center transition-hover bg-white">
+              <i class="fas fa-infinity fa-2x text-info mb-2"></i>
+              <h6 class="font-weight-bold">끊김 없는 연결</h6>
+              <p class="small text-muted mb-0">단 1회의 설정만으로 전 세계 어디서나 에듀롬 신호를 잡으면 자동 연결됩니다.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="h-100 p-3 border rounded text-center transition-hover bg-white">
+              <i class="fas fa-comment-dollar fa-2x text-danger mb-2"></i>
+              <h6 class="font-weight-bold">무료 네트워크</h6>
+              <p class="small text-muted mb-0">연구와 교육을 목적으로 자발적으로 공유하기에 추가 비용 없이 무료로 이용합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 글로벌 협력 섹션 -->
+      <div class="section-card mb-4 bg-light">
+        <h2><i class="fas fa-handshake text-primary"></i> 글로벌 협력 체계</h2>
+        <p class="small text-muted">에듀롬은 전 세계 주요 연구교육전산망(NREN)과 함께 운영됩니다.</p>
+        <div class="row align-items-center text-center">
+          <div class="col-4 col-md mb-3">
+            <div class="font-weight-bold text-dark">GÉANT</div>
+            <div class="x-small text-muted">유럽</div>
+          </div>
+          <div class="col-4 col-md mb-3">
+            <div class="font-weight-bold text-dark">Internet2</div>
+            <div class="x-small text-muted">미국</div>
+          </div>
+          <div class="col-4 col-md mb-3">
+            <div class="font-weight-bold text-dark">AARNet</div>
+            <div class="x-small text-muted">호주</div>
+          </div>
+          <div class="col-4 col-md mb-3">
+            <div class="font-weight-bold text-dark">CANARIE</div>
+            <div class="x-small text-muted">캐나다</div>
+          </div>
+          <div class="col-4 col-md mb-3">
+            <div class="font-weight-bold text-dark">APAN</div>
+            <div class="x-small text-muted">아시아·태평양</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card mb-4">
+        <h2><i class="fas fa-shield-alt"></i> 인증 구조</h2>
+        <p style="color: #555; line-height: 1.8;">
+          eduroam은 계층적인 분산 인증 구조를 사용합니다. 사용자의 인증 정보는 소속 기관(Home IdP)에서 검증하며, 개인정보가 방문 기관에 노출되지 않는 보안성이 강화된 환경을 제공합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sidebar-menu .list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .sidebar-menu .list-group-item.active {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    font-weight: bold;
+  }
+  .transition-hover {
+    transition: all 0.3s ease;
+  }
+  .transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .x-small {
+    font-size: 0.75rem;
+  }
+</style>

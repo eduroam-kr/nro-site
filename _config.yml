@@ -1,4 +1,4 @@
-title: 샌드박스 eduroam
+title: eduroam
 description: 샌드박스연구소 eduroam 서비스 안내
 
 realm: sandbox.re.kr
@@ -20,6 +20,9 @@ t:
     nav_coverage: 이용 지역
     nav_policy: 이용 정책
     nav_support: 문의
+    nav_pds: 자료실
+    nav_community: 커뮤니티
+    nav_mgmt: 관리
     footer_policy: 이용정책
     footer_powered: Powered by
     lang_name: 한국어
