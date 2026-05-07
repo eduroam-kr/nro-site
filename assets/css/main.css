@@ -200,7 +200,7 @@ body.layout-top-nav { background: var(--bg) !important; transition: background 0
   /* Bootstrap 5 gutter 패턴 — 값을 바꾸면 카드 사이 좌우 여백이 조정됨
      https://getbootstrap.com/docs/5.0/layout/gutters/ */
   --bs-gutter-x: 1.45rem;
-  margin-top: -28px;
+  margin-top: 0;
   margin-left: calc(var(--bs-gutter-x) * -0.5);
   margin-right: calc(var(--bs-gutter-x) * -0.5);
 }
