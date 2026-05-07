@@ -269,15 +269,6 @@
             </div>
           </li>
 
-          <!-- 4. 관리 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="mgmtDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              관리
-            </a>
-            <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="mgmtDropdown">
-              <a class="dropdown-item" href="{{ '/support/management.html' | relative_url }}">관리 안내</a>
-            </div>
-          </li>
           <!-- 테마 전환 -->
           <li class="nav-item dropdown ml-1">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="padding:0.5rem 0.7rem !important;" title="{{ t.theme_label }}">
@@ -296,20 +287,6 @@
             </div>
           </li>
           
-          <!-- 사이트 검색 -->
-          <li class="nav-item ml-lg-2 mt-2 mt-lg-0">
-            <form action="{{ '/search.html' | relative_url }}" method="get" class="form-inline">
-              <div class="input-group input-group-sm" style="box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
-                <input class="form-control border-0" type="search" name="q" placeholder="검색어 입력..." aria-label="Search" style="background-color: white !important; color: #333 !important; width: 140px;">
-                <div class="input-group-append">
-                  <button class="btn btn-primary border-0" type="submit" style="background-color: #0056b3;">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </li>
-
           <!-- 언어 전환 -->
           <li class="nav-item dropdown ml-1">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="padding:0.5rem 0.7rem !important;">
