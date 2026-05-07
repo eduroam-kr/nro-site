@@ -18,22 +18,16 @@
 -->
 <institutions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:noNamespaceSchemaLocation="institution.xsd">
+  <!--
+  [샌드박스 가상 기관 — 비활성화]
   <institution>
     <instid>sandbox.ac.kr</instid>
     <ROid>kr01</ROid>
     <type>IdP+SP</type>
     <stage>1</stage>
     <inst_realm>sandbox.re.kr</inst_realm>
-    <!--
-    instid    : 도메인 형식
-    ROid      : 대한민국 에듀롬 참여기관은 kr01 값으로 고정
-    type      : IdP | SP | IdP+SP
-    stage     : 0=preprod/test, 1=active
-    inst_realm: SP-only 기관은 inst_realm 항목 제거
-    -->
     <inst_name lang="en">Sandbox Research Institute</inst_name>
     <inst_name lang="ko">샌드박스연구소</inst_name>
-    <!-- lang 속성이 있는 경우, en(영문)은 무조건 제공해야 함 -->
     <address>
       <street lang="en">245 Daehak-ro, Yuseong-gu, Daejeon</street>
       <city lang="en">Daejeon</city>
@@ -43,19 +37,6 @@
       <city lang="ko">대전</city>
     </address>
     <inst_type>2,8</inst_type>
-    <!--
-    inst_type   : group,type (IEEE 802.11-2012 Venue Info 의 기관 분류)
-    inst_type 의미
-    0,0  | Unspecified                      | 미분류
-    1,8  | Assembly + Library               | 도서관
-    1,9  | Assembly + Museum                | 박물관
-    3,1  | Educational + Primary school     | 초등학교
-    3,3  | Educational + Secondary          | 중/고등학교
-    3,3  | Educational + college/university | 대학교
-    2,8  | Business + Research facility     | 연구소
-    5,1  | Institutional + Hospital         | 종합병원
-    11,1 | Outdoor + Municipal              | 공공 옥외
-    -->
     <contact>
       <name>IT Helpdesk</name>
       <email>helpdesk@sandbox.re.kr</email>
@@ -63,43 +44,18 @@
       <type>1</type>
       <privacy>1</privacy>
     </contact>
-    <contact>
-      <name>정보통신팀 헬프데스크</name>
-      <email>helpdesk@sandbox.re.kr</email>
-      <phone>+82-42-000-0000</phone>
-      <type>1</type>
-      <privacy>1</privacy>
-    </contact>
-    <!--
-    contact: (연락처는 lang 속성이 없어서, 영문/국문으로 두번 입력)
-      type      : 0=person(default), 1=service/department
-      privacy   : 0=private(default), 1=public
-    -->
     <info_URL lang="en">https://eduroam.sandbox.re.kr/en/</info_URL>
     <info_URL lang="ko">https://eduroam.sandbox.re.kr/</info_URL>
     <policy_URL lang="en">https://eduroam.sandbox.re.kr/en/policy/</policy_URL>
     <policy_URL lang="ko">https://eduroam.sandbox.re.kr/policy/</policy_URL>
     <ts>2026-04-22T18:00:00+09:00</ts>
-    <!--
-    ts: 변경 일시, 오프셋(+09:00)을 마지막에 넣으면 한국시간으로 기입하기 편함
-    -->
     <location>
-      <!--
-      location: (건물/장소별로 표시가 번거로운 경우, 본관 1개 장소에 몰아서 표시)
-      -->
       <locationid>sandbox.ac.kr.01</locationid>
       <coordinates>127.3594198,36.3657991</coordinates>
       <stage>1</stage>
       <type>0</type>
       <loc_name lang="ko">샌드박스 본원</loc_name>
       <loc_name lang="en">Sandbox Inst. Main Bld.</loc_name>
-      <!--
-      locationid : unique id of location (NRO 기준 고유ID)
-      coordinates: 한 지점이면 long(경도),lat(위도)
-                   다각형 영역이면 점;점;점;
-      stage      : 0=preproduction/test, 1=active (default value =1)
-      type       : 0=single spot(default), 1=area, 2=mobile
-      -->
       <address>
         <street lang="en">245 Daehak-ro, Yuseong-gu, Daejeon</street>
         <city lang="en">Daejeon</city>
@@ -114,19 +70,11 @@
       <AP_no>20</AP_no>
       <tag>NAT</tag>
       <availability>1</availability>
-      <!--
-      SSID        : eduroam (고정)
-      enc_level   : 암호화 방식
-      AP_no       : AP 개수
-      wired_no    : 에듀롬으로 인증 가능한 802.1X 유선 포트 수, 해당 없으면 항목 제거
-      tag         : port_restrict, transp_proxy, IPv6, NAT, HS2.0 (쉼표 구분), 해당 없으면 항목 제거
-      availability: 0=제한없음, 1=물리 접근 제한
-      operation_hours: 24시간 제공이 아닌 경우 자유롭게 기술, 해당 없으면 항목 제거
-      -->
       <info_URL lang="en">https://eduroam.sandbox.re.kr/en/</info_URL>
       <info_URL lang="ko">https://eduroam.sandbox.re.kr/</info_URL>
     </location>
   </institution>
+  -->
   <institution>
     <instid>kdis.ac.kr</instid>
     <ROid>kr01</ROid>

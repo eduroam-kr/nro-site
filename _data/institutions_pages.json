@@ -1,6 +1,6 @@
 {
-  "total_campuses": 116,
-  "total_institutions": 116,
+  "total_campuses": 115,
+  "total_institutions": 115,
   "pages": [
     {
       "page": 1,
@@ -635,18 +635,6 @@
         {
           "serial_no": 52,
           "page": 4,
-          "logo": "sandbox_ac_kr.png",
-          "univ_name": "샌드박스연구소",
-          "inst_type": "기타",
-          "conn_type": "IdP+SP",
-          "guide": "https://eduroam.sandbox.re.kr/",
-          "realms": [
-            "sandbox.re.kr"
-          ]
-        },
-        {
-          "serial_no": 53,
-          "page": 4,
           "logo": "sogang_ac_kr.png",
           "univ_name": "서강대학교",
           "inst_type": "사립",
@@ -657,7 +645,7 @@
           ]
         },
         {
-          "serial_no": 54,
+          "serial_no": 53,
           "page": 4,
           "logo": "seoultech_ac_kr.png",
           "univ_name": "서울과학기술대학교",
@@ -669,7 +657,7 @@
           ]
         },
         {
-          "serial_no": 55,
+          "serial_no": 54,
           "page": 4,
           "logo": "snu_ac_kr.png",
           "univ_name": "서울대학교",
@@ -681,7 +669,7 @@
           ]
         },
         {
-          "serial_no": 56,
+          "serial_no": 55,
           "page": 4,
           "logo": "uos_ac_kr.png",
           "univ_name": "서울시립대학교",
@@ -693,7 +681,7 @@
           ]
         },
         {
-          "serial_no": 57,
+          "serial_no": 56,
           "page": 4,
           "logo": "seowon_ac_kr.png",
           "univ_name": "서원대학교",
@@ -705,7 +693,7 @@
           ]
         },
         {
-          "serial_no": 58,
+          "serial_no": 57,
           "page": 4,
           "logo": "seoil_ac_kr.png",
           "univ_name": "서일대학교",
@@ -717,7 +705,7 @@
           ]
         },
         {
-          "serial_no": 59,
+          "serial_no": 58,
           "page": 4,
           "logo": "sungkyul_ac_kr.png",
           "univ_name": "성결대학교",
@@ -729,7 +717,7 @@
           ]
         },
         {
-          "serial_no": 60,
+          "serial_no": 59,
           "page": 4,
           "logo": "skku_ac_kr.png",
           "univ_name": "성균관대학교",
@@ -739,15 +727,10 @@
           "realms": [
             "skku.ac.kr"
           ]
-        }
-      ]
-    },
-    {
-      "page": 5,
-      "rows": [
+        },
         {
-          "serial_no": 61,
-          "page": 5,
+          "serial_no": 60,
+          "page": 4,
           "logo": "sungshin_ac_kr.png",
           "univ_name": "성신여자대학교",
           "inst_type": "사립",
@@ -756,9 +739,14 @@
           "realms": [
             "sungshin.ac.kr"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "rows": [
         {
-          "serial_no": 62,
+          "serial_no": 61,
           "page": 5,
           "logo": "sejong_ac_kr.png",
           "univ_name": "세종대학교",
@@ -770,7 +758,7 @@
           ]
         },
         {
-          "serial_no": 63,
+          "serial_no": 62,
           "page": 5,
           "logo": "sehan_ac_kr.png",
           "univ_name": "세한대학교",
@@ -782,7 +770,7 @@
           ]
         },
         {
-          "serial_no": 64,
+          "serial_no": 63,
           "page": 5,
           "logo": "suwon_ac_kr.png",
           "univ_name": "수원대학교",
@@ -794,7 +782,7 @@
           ]
         },
         {
-          "serial_no": 65,
+          "serial_no": 64,
           "page": 5,
           "logo": "sookmyung_ac_kr.png",
           "univ_name": "숙명여자대학교",
@@ -806,7 +794,7 @@
           ]
         },
         {
-          "serial_no": 66,
+          "serial_no": 65,
           "page": 5,
           "logo": "scnu_ac_kr.png",
           "univ_name": "순천대학교",
@@ -818,7 +806,7 @@
           ]
         },
         {
-          "serial_no": 67,
+          "serial_no": 66,
           "page": 5,
           "logo": "ssu_ac_kr.png",
           "univ_name": "숭실대학교",
@@ -830,7 +818,7 @@
           ]
         },
         {
-          "serial_no": 68,
+          "serial_no": 67,
           "page": 5,
           "logo": "shinhan_ac_kr.png",
           "univ_name": "신한대학교",
@@ -842,7 +830,7 @@
           ]
         },
         {
-          "serial_no": 69,
+          "serial_no": 68,
           "page": 5,
           "logo": "ajou_ac_kr.png",
           "univ_name": "아주대학교",
@@ -854,7 +842,7 @@
           ]
         },
         {
-          "serial_no": 70,
+          "serial_no": 69,
           "page": 5,
           "logo": "yonsei_ac_kr.png",
           "univ_name": "연세대학교",
@@ -866,7 +854,7 @@
           ]
         },
         {
-          "serial_no": 71,
+          "serial_no": 70,
           "page": 5,
           "logo": "yu_ac_kr.png",
           "univ_name": "영남대학교",
@@ -878,7 +866,7 @@
           ]
         },
         {
-          "serial_no": 72,
+          "serial_no": 71,
           "page": 5,
           "logo": "ync_ac_kr.png",
           "univ_name": "영남이공대학교",
@@ -890,7 +878,7 @@
           ]
         },
         {
-          "serial_no": 73,
+          "serial_no": 72,
           "page": 5,
           "logo": "unist_ac_kr.png",
           "univ_name": "울산과학기술원",
@@ -902,7 +890,7 @@
           ]
         },
         {
-          "serial_no": 74,
+          "serial_no": 73,
           "page": 5,
           "logo": "ulsan_ac_kr.png",
           "univ_name": "울산대학교",
@@ -914,7 +902,7 @@
           ]
         },
         {
-          "serial_no": 75,
+          "serial_no": 74,
           "page": 5,
           "logo": "wku_ac_kr.png",
           "univ_name": "원광대학교",
@@ -924,15 +912,10 @@
           "realms": [
             "wku.ac.kr"
           ]
-        }
-      ]
-    },
-    {
-      "page": 6,
-      "rows": [
+        },
         {
-          "serial_no": 76,
-          "page": 6,
+          "serial_no": 75,
+          "page": 5,
           "logo": "wu_ac_kr.png",
           "univ_name": "원광보건대학교",
           "inst_type": "사립",
@@ -941,9 +924,14 @@
           "realms": [
             "wu.ac.kr"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "rows": [
         {
-          "serial_no": 77,
+          "serial_no": 76,
           "page": 6,
           "logo": "yuhan_ac_kr.png",
           "univ_name": "유한대학교",
@@ -955,7 +943,7 @@
           ]
         },
         {
-          "serial_no": 78,
+          "serial_no": 77,
           "page": 6,
           "logo": "ewha_ac_kr.png",
           "univ_name": "이화여자대학교",
@@ -967,7 +955,7 @@
           ]
         },
         {
-          "serial_no": 79,
+          "serial_no": 78,
           "page": 6,
           "logo": "inje_ac_kr.png",
           "univ_name": "인제대학교",
@@ -979,7 +967,7 @@
           ]
         },
         {
-          "serial_no": 80,
+          "serial_no": 79,
           "page": 6,
           "logo": "inu_ac_kr.png",
           "univ_name": "인천대학교",
@@ -991,7 +979,7 @@
           ]
         },
         {
-          "serial_no": 81,
+          "serial_no": 80,
           "page": 6,
           "logo": "inha_ac_kr.png",
           "univ_name": "인하대학교",
@@ -1003,7 +991,7 @@
           ]
         },
         {
-          "serial_no": 82,
+          "serial_no": 81,
           "page": 6,
           "logo": "puts_ac_kr.png",
           "univ_name": "장로회신학대학교",
@@ -1015,7 +1003,7 @@
           ]
         },
         {
-          "serial_no": 83,
+          "serial_no": 82,
           "page": 6,
           "logo": "jnu_ac_kr.png",
           "univ_name": "전남대학교",
@@ -1027,7 +1015,7 @@
           ]
         },
         {
-          "serial_no": 84,
+          "serial_no": 83,
           "page": 6,
           "logo": "jbnu_ac_kr.png",
           "univ_name": "전북대학교",
@@ -1039,7 +1027,7 @@
           ]
         },
         {
-          "serial_no": 85,
+          "serial_no": 84,
           "page": 6,
           "logo": "jnue_ac_kr.png",
           "univ_name": "전주교육대학교",
@@ -1051,7 +1039,7 @@
           ]
         },
         {
-          "serial_no": 86,
+          "serial_no": 85,
           "page": 6,
           "logo": "jj_ac_kr.png",
           "univ_name": "전주대학교",
@@ -1063,7 +1051,7 @@
           ]
         },
         {
-          "serial_no": 87,
+          "serial_no": 86,
           "page": 6,
           "logo": "jvision_ac_kr.png",
           "univ_name": "전주비전대학교",
@@ -1075,7 +1063,7 @@
           ]
         },
         {
-          "serial_no": 88,
+          "serial_no": 87,
           "page": 6,
           "logo": "jejunu_ac_kr.png",
           "univ_name": "제주대학교",
@@ -1087,7 +1075,7 @@
           ]
         },
         {
-          "serial_no": 89,
+          "serial_no": 88,
           "page": 6,
           "logo": "chosun_ac_kr.png",
           "univ_name": "조선대학교",
@@ -1099,7 +1087,7 @@
           ]
         },
         {
-          "serial_no": 90,
+          "serial_no": 89,
           "page": 6,
           "logo": "cau_ac_kr.png",
           "univ_name": "중앙대학교",
@@ -1109,15 +1097,10 @@
           "realms": [
             "cau.ac.kr"
           ]
-        }
-      ]
-    },
-    {
-      "page": 7,
-      "rows": [
+        },
         {
-          "serial_no": 91,
-          "page": 7,
+          "serial_no": 90,
+          "page": 6,
           "logo": "cwnu_ac_kr.png",
           "univ_name": "창원대학교",
           "inst_type": "국립",
@@ -1126,9 +1109,14 @@
           "realms": [
             "cwnu.ac.kr"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "rows": [
         {
-          "serial_no": 92,
+          "serial_no": 91,
           "page": 7,
           "logo": "cje_ac_kr.png",
           "univ_name": "청주교육대학교",
@@ -1140,7 +1128,7 @@
           ]
         },
         {
-          "serial_no": 93,
+          "serial_no": 92,
           "page": 7,
           "logo": "cnue_ac_kr.png",
           "univ_name": "춘천교육대학교",
@@ -1152,7 +1140,7 @@
           ]
         },
         {
-          "serial_no": 94,
+          "serial_no": 93,
           "page": 7,
           "logo": "cnu_ac_kr.png",
           "univ_name": "충남대학교",
@@ -1164,7 +1152,7 @@
           ]
         },
         {
-          "serial_no": 95,
+          "serial_no": 94,
           "page": 7,
           "logo": "cbnu_ac_kr.png",
           "univ_name": "충북대학교",
@@ -1176,7 +1164,7 @@
           ]
         },
         {
-          "serial_no": 96,
+          "serial_no": 95,
           "page": 7,
           "logo": "chsu_ac_kr.png",
           "univ_name": "충북보건과학대학교",
@@ -1188,7 +1176,7 @@
           ]
         },
         {
-          "serial_no": 97,
+          "serial_no": 96,
           "page": 7,
           "logo": "teincc_kr.png",
           "univ_name": "(재)테인협력센터",
@@ -1200,7 +1188,7 @@
           ]
         },
         {
-          "serial_no": 98,
+          "serial_no": 97,
           "page": 7,
           "logo": "postech_ac_kr.png",
           "univ_name": "포항공과대학교",
@@ -1212,7 +1200,7 @@
           ]
         },
         {
-          "serial_no": 99,
+          "serial_no": 98,
           "page": 7,
           "logo": "tukorea_ac_kr.png",
           "univ_name": "한국공학대학교",
@@ -1224,7 +1212,7 @@
           ]
         },
         {
-          "serial_no": 100,
+          "serial_no": 99,
           "page": 7,
           "logo": "kisti_re_kr.png",
           "univ_name": "한국과학기술정보연구원",
@@ -1236,7 +1224,7 @@
           ]
         },
         {
-          "serial_no": 101,
+          "serial_no": 100,
           "page": 7,
           "logo": "knue_ac_kr.png",
           "univ_name": "한국교원대학교",
@@ -1248,7 +1236,7 @@
           ]
         },
         {
-          "serial_no": 102,
+          "serial_no": 101,
           "page": 7,
           "logo": "koreatech_ac_kr.png",
           "univ_name": "한국기술교육대학교",
@@ -1260,7 +1248,7 @@
           ]
         },
         {
-          "serial_no": 103,
+          "serial_no": 102,
           "page": 7,
           "logo": "knou_ac_kr.png",
           "univ_name": "한국방송통신대학교",
@@ -1272,7 +1260,7 @@
           ]
         },
         {
-          "serial_no": 104,
+          "serial_no": 103,
           "page": 7,
           "logo": "kentech_ac_kr.png",
           "univ_name": "한국에너지공과대학교",
@@ -1284,7 +1272,7 @@
           ]
         },
         {
-          "serial_no": 105,
+          "serial_no": 104,
           "page": 7,
           "logo": "hufs_ac_kr.png",
           "univ_name": "한국외국어대학교",
@@ -1294,15 +1282,10 @@
           "realms": [
             "hufs.ac.kr"
           ]
-        }
-      ]
-    },
-    {
-      "page": 8,
-      "rows": [
+        },
         {
-          "serial_no": 106,
-          "page": 8,
+          "serial_no": 105,
+          "page": 7,
           "logo": "knsu_ac_kr.png",
           "univ_name": "한국체육대학교",
           "inst_type": "국립",
@@ -1311,9 +1294,14 @@
           "realms": [
             "knsu.ac.kr"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "rows": [
         {
-          "serial_no": 107,
+          "serial_no": 106,
           "page": 8,
           "logo": "kriss_re_kr.png",
           "univ_name": "한국표준과학연구원",
@@ -1325,7 +1313,7 @@
           ]
         },
         {
-          "serial_no": 108,
+          "serial_no": 107,
           "page": 8,
           "logo": "kau_ac_kr.png",
           "univ_name": "한국항공대학교",
@@ -1337,7 +1325,7 @@
           ]
         },
         {
-          "serial_no": 109,
+          "serial_no": 108,
           "page": 8,
           "logo": "kmou_ac_kr.png",
           "univ_name": "한국해양대학교",
@@ -1349,7 +1337,7 @@
           ]
         },
         {
-          "serial_no": 110,
+          "serial_no": 109,
           "page": 8,
           "logo": "hnu_ac_kr.png",
           "univ_name": "한남대학교",
@@ -1361,7 +1349,7 @@
           ]
         },
         {
-          "serial_no": 111,
+          "serial_no": 110,
           "page": 8,
           "logo": "hgu_ac_kr.png",
           "univ_name": "한동대학교",
@@ -1373,7 +1361,7 @@
           ]
         },
         {
-          "serial_no": 112,
+          "serial_no": 111,
           "page": 8,
           "logo": "hallym_ac_kr.png",
           "univ_name": "한림대학교",
@@ -1385,7 +1373,7 @@
           ]
         },
         {
-          "serial_no": 113,
+          "serial_no": 112,
           "page": 8,
           "logo": "hansei_ac_kr.png",
           "univ_name": "한세대학교",
@@ -1397,7 +1385,7 @@
           ]
         },
         {
-          "serial_no": 114,
+          "serial_no": 113,
           "page": 8,
           "logo": "hanyang_ac_kr.png",
           "univ_name": "한양대학교",
@@ -1409,7 +1397,7 @@
           ]
         },
         {
-          "serial_no": 115,
+          "serial_no": 114,
           "page": 8,
           "logo": "honam_ac_kr.png",
           "univ_name": "호남대학교",
@@ -1421,7 +1409,7 @@
           ]
         },
         {
-          "serial_no": 116,
+          "serial_no": 115,
           "page": 8,
           "logo": "hongik_ac_kr.png",
           "univ_name": "홍익대학교",

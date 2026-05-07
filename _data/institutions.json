@@ -765,21 +765,6 @@
     "rowspan_realm": true
   },
   {
-    "id": 52,
-    "type": "기타",
-    "conn_type": "IdP+SP",
-    "name": "샌드박스연구소",
-    "logo": "sandbox_ac_kr.png",
-    "campuses": [
-      {
-        "name": "샌드박스 본원",
-        "realm": "sandbox.re.kr",
-        "guide": "https://eduroam.sandbox.re.kr/"
-      }
-    ],
-    "rowspan_realm": true
-  },
-  {
     "id": 53,
     "type": "사립",
     "conn_type": "IdP+SP",
