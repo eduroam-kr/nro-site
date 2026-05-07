@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  eduroam KR NRO 정보 파일 (ro.xml)
+
+  eduroam database specification v2.0.1 (30.11.2021) 준수
+  https://monitor.eduroam.org/eduroam-database/v2/docs/eduroam-database-ver30112021.pdf
+
+  배치 경로: 레포 루트의 general/ro.xml
+  서빙 URL: https://eduroam.kreonet.net/general/ro.xml
+-->
+<ROs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="ro.xsd">
+  <RO>
+    <ROid>kr01</ROid>
+    <country>KR</country>
+    <stage>1</stage>
+
+    <org_name lang="en">Korea Institute of Science and Technology Information</org_name>
+    <org_name lang="ko">한국과학기술정보연구원</org_name>
+
+    <address>
+      <street lang="en">245 Daehak-ro, Yuseong-gu</street>
+      <city lang="en">Daejeon 34141</city>
+    </address>
+    <address>
+      <street lang="ko">대전광역시 유성구 대학로 245</street>
+      <city lang="ko">대전</city>
+    </address>
+
+    <coordinates>127.3656,36.3778</coordinates>
+
+    <contact>
+      <name>Minseok Jang</name>
+      <email>msjang@kisti.re.kr</email>
+      <phone>+82-42-869-1292</phone>
+      <type>1</type>
+      <privacy>1</privacy>
+    </contact>
+    <contact>
+      <name>Buseung Cho</name>
+      <email>bscho@kisti.re.kr</email>
+      <phone>+82-42-869-0584</phone>
+      <type>1</type>
+      <privacy>1</privacy>
+    </contact>
+
+    <info_URL lang="en">https://eduroam.kreonet.net/en/</info_URL>
+    <info_URL lang="ko">https://eduroam.kreonet.net/</info_URL>
+
+    <policy_URL lang="en">https://eduroam.kreonet.net/en/policy/</policy_URL>
+    <policy_URL lang="ko">https://eduroam.kreonet.net/policy/</policy_URL>
+
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </RO>
+</ROs>

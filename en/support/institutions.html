@@ -95,6 +95,7 @@ lang: en
               <th colspan="2">Institution</th>
               <th>Campus</th>
               <th style="width: 85px;">Network</th>
+              <th style="width: 80px;">Type</th>
               <th style="width: 140px;">Connection Guide</th>
               <th>Realm</th>
             </tr>
@@ -111,7 +112,7 @@ lang: en
                     <td rowspan="{{ cd.chunk_size }}" class="align-middle">{{ cd.inst_type }}</td>
                     <td style="width: 100px; padding: 5px;" rowspan="{{ cd.chunk_size }}" class="align-middle">
                       {% if cd.logo != '' %}
-                        <img src="{{ '/eduroam-kr-data/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
+                        <img src="{{ '/assets/images/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
                       {% else %}
                         <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
                       {% endif %}
@@ -129,6 +130,15 @@ lang: en
                         <span class="badge badge-primary px-2 py-1" style="font-weight: 500;">NRO Direct</span>
                       {% else %}
                         <span class="badge badge-info px-2 py-1" style="font-weight: 500; background-color: #17a2b8;">RO Member</span>
+                      {% endif %}
+                    </td>
+                    <td rowspan="{{ cd.chunk_size }}" class="text-center align-middle">
+                      {% if cd.conn_type == 'IdP+SP' %}
+                        <span style="color: #7b1fa2; font-weight: 600; font-size: 0.82rem;">IdP+SP</span>
+                      {% elsif cd.conn_type == 'IdP' %}
+                        <span style="color: #1565c0; font-weight: 600; font-size: 0.82rem;">IdP</span>
+                      {% elsif cd.conn_type == 'SP' %}
+                        <span style="color: #2e7d32; font-weight: 600; font-size: 0.82rem;">SP</span>
                       {% endif %}
                     </td>
                   {% endif %}

@@ -57,6 +57,7 @@ lang: ko
             <tr>
               <th style="width: 50px;">연번</th>
               <th colspan="2">기관명</th>
+              <th style="width: 80px;">구분</th>
               <th style="width: 140px;">접속안내</th>
               <th>렐름(Realm)</th>
             </tr>
@@ -71,13 +72,23 @@ lang: ko
 
                   <td style="width: 100px; padding: 5px;" class="align-middle">
                     {% if cd.logo != '' %}
-                      <img src="{{ '/eduroam-kr-data/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
+                      <img src="{{ '/assets/images/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
                     {% else %}
                       <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
                     {% endif %}
                   </td>
 
                   <td class="text-left align-middle" style="font-weight: 500;">{{ cd.univ_name }}</td>
+
+                  <td class="text-center align-middle">
+                    {% if cd.conn_type == 'IdP+SP' %}
+                      <span style="color: #7b1fa2; font-weight: 600; font-size: 0.82rem;">IdP+SP</span>
+                    {% elsif cd.conn_type == 'IdP' %}
+                      <span style="color: #1565c0; font-weight: 600; font-size: 0.82rem;">IdP</span>
+                    {% elsif cd.conn_type == 'SP' %}
+                      <span style="color: #2e7d32; font-weight: 600; font-size: 0.82rem;">SP</span>
+                    {% endif %}
+                  </td>
 
                   <td class="align-middle">
                     {% if cd.guide != '' %}
@@ -227,7 +238,8 @@ lang: ko
     }
 
     renderPagination();
-    window.scrollTo(0, document.querySelector('.search-box').offsetTop - 20);
+    var filterBox = document.getElementById('filter-box');
+    if (filterBox) window.scrollTo(0, filterBox.offsetTop - 20);
   }
 
   function searchTable() {

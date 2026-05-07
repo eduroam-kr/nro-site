@@ -8,7 +8,8 @@ const eduroamInstitutions = [
   { name: "경남대학교", lat: 35.1837, lng: 128.5638, addr: "경상남도 창원시 마산합포구 경남대길 7", link: "https://library.kyungnam.ac.kr/webcontent/info/52", link: "https://library.kyungnam.ac.kr/webcontent/info/52" },
   { name: "경북대학교", lat: 35.8888, lng: 128.6103, addr: "대구광역시 북구 대학로 80", link: "https://wifi.knu.ac.kr/", link: "https://wifi.knu.ac.kr/" },
   { name: "경상국립대학교", lat: 35.1534, lng: 128.0999, addr: "경상남도 진주시 가좌길 45", link: "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442", link: "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442" },
-  { name: "경인교육대학교", lat: 37.5312, lng: 126.7161, addr: "인천광역시 계양구 계산로 62", link: "" },
+  { name: "경인교육대학교 (국립)", lat: 37.5312, lng: 126.7161, addr: "인천광역시 계양구 계산로 62", link: "" },
+  { name: "경인교육대학교 (사립)", lat: 37.5312, lng: 126.7161, addr: "", link: "" },
   { name: "경희대학교", lat: 37.5962, lng: 127.0525, addr: "서울특별시 동대문구 경희대로 26", link: "" },
   { name: "계명대학교", lat: 35.8531, lng: 128.4877, addr: "대구광역시 달서구 달구벌대로 1095", link: "" },
   { name: "계명문화대학교", lat: 35.8519, lng: 128.4828, addr: "대구광역시 달서구 달구벌대로 1035", link: "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi", link: "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi" },
@@ -109,7 +110,7 @@ const eduroamInstitutions = [
   { name: "고등과학원", lat: 37.5939, lng: 127.0508, addr: "서울특별시 동대문구 홍릉로 85", link: "" },
   { name: "국가수리과학연구소", lat: 36.3787, lng: 127.3598, addr: "대전광역시 유성구 대덕대로 776", link: "" },
   { name: "기초과학연구원", lat: 36.4068, lng: 127.3815, addr: "대전광역시 유성구 엑스포로 55", link: "http://eduroam.ibs.re.kr" },
-  { name: "대전마케팅공사", lat: 36.3505, lng: 127.3854, addr: "대전광역시 서구 둔산대로 117", link: "" },
+  { name: "대전컨벤션센터", lat: 36.3738, lng: 127.3880, addr: "대전광역시 유성구 엑스포로 107", link: "" },
   { name: "(재)테인협력센터", lat: 37.5759, lng: 126.8887, addr: "서울특별시 마포구 성암로 189", link: "" },
   { name: "한국과학기술정보연구원", lat: 36.3755, lng: 127.3697, addr: "대전광역시 유성구 대학로 245", link: "http://www.kreonet.net/eduroam/en" },
   { name: "한국표준과학연구원", lat: 36.3893, lng: 127.3368, addr: "대전광역시 유성구 가정로 267", link: "" }

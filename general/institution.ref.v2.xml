@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  eduroam 참여기관 정보 파일 (institution.xml)
+
+  eduroam database specification v2.0.1 (30.11.2021) 준수
+  https://monitor.eduroam.org/eduroam-database/v2/docs/eduroam-database-ver30112021.pdf
+  https://monitor.eduroam.org/fact_eduroam_db.php
+
+  배치 경로: 레포 루트의 general/institution.xml
+  서빙 URL: https://eduroam.<기관도메인>/general/institution.xml
+           (이 URL을 eduroamKR NRO 수집기가 매일 1회 harvest)
+
+  작성 규칙
+  * institution 요소가 기관 본체 정보, 그 안의 location 요소들이 hotspot.
+  * 다국어 필드(inst_name, address, info_URL, policy_URL, loc_name)는 lang 속성 필수.
+    English("en") 항목은 반드시 1개 포함.
+  * ts 요소는 마지막 수정 시각 (ISO 8601 UTC).
+-->
+<institutions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="institution.xsd">
+  <institution>
+    <instid>sandbox.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sandbox.re.kr</inst_realm>
+    <!--
+    instid    : 도메인 형식
+    ROid      : 대한민국 에듀롬 참여기관은 kr01 값으로 고정
+    type      : IdP | SP | IdP+SP
+    stage     : 0=preprod/test, 1=active
+    inst_realm: SP-only 기관은 inst_realm 항목 제거
+    -->
+    <inst_name lang="en">Sandbox Research Institute</inst_name>
+    <inst_name lang="ko">샌드박스연구소</inst_name>
+    <!-- lang 속성이 있는 경우, en(영문)은 무조건 제공해야 함 -->
+    <address>
+      <street lang="en">245 Daehak-ro, Yuseong-gu, Daejeon</street>
+      <city lang="en">Daejeon</city>
+    </address>
+    <address>
+      <street lang="ko">대전광역시 유성구 대학로 245</street>
+      <city lang="ko">대전</city>
+    </address>
+    <inst_type>2,8</inst_type>
+    <!--
+    inst_type   : group,type (IEEE 802.11-2012 Venue Info 의 기관 분류)
+    inst_type 의미
+    0,0  | Unspecified                      | 미분류
+    1,8  | Assembly + Library               | 도서관
+    1,9  | Assembly + Museum                | 박물관
+    3,1  | Educational + Primary school     | 초등학교
+    3,3  | Educational + Secondary          | 중/고등학교
+    3,3  | Educational + college/university | 대학교
+    2,8  | Business + Research facility     | 연구소
+    5,1  | Institutional + Hospital         | 종합병원
+    11,1 | Outdoor + Municipal              | 공공 옥외
+    -->
+    <contact>
+      <name>IT Helpdesk</name>
+      <email>helpdesk@sandbox.re.kr</email>
+      <phone>+82-42-000-0000</phone>
+      <type>1</type>
+      <privacy>1</privacy>
+    </contact>
+    <contact>
+      <name>정보통신팀 헬프데스크</name>
+      <email>helpdesk@sandbox.re.kr</email>
+      <phone>+82-42-000-0000</phone>
+      <type>1</type>
+      <privacy>1</privacy>
+    </contact>
+    <!--
+    contact: (연락처는 lang 속성이 없어서, 영문/국문으로 두번 입력)
+      type      : 0=person(default), 1=service/department
+      privacy   : 0=private(default), 1=public
+    -->
+    <info_URL lang="en">https://eduroam.sandbox.re.kr/en/</info_URL>
+    <info_URL lang="ko">https://eduroam.sandbox.re.kr/</info_URL>
+    <policy_URL lang="en">https://eduroam.sandbox.re.kr/en/policy/</policy_URL>
+    <policy_URL lang="ko">https://eduroam.sandbox.re.kr/policy/</policy_URL>
+    <ts>2026-04-22T18:00:00+09:00</ts>
+    <!--
+    ts: 변경 일시, 오프셋(+09:00)을 마지막에 넣으면 한국시간으로 기입하기 편함
+    -->
+    <location>
+      <!--
+      location: (건물/장소별로 표시가 번거로운 경우, 본관 1개 장소에 몰아서 표시)
+      -->
+      <locationid>sandbox.ac.kr.01</locationid>
+      <coordinates>127.3594198,36.3657991</coordinates>
+      <stage>1</stage>
+      <type>0</type>
+      <loc_name lang="ko">샌드박스 본원</loc_name>
+      <loc_name lang="en">Sandbox Inst. Main Bld.</loc_name>
+      <!--
+      locationid : unique id of location (NRO 기준 고유ID)
+      coordinates: 한 지점이면 long(경도),lat(위도)
+                   다각형 영역이면 점;점;점;
+      stage      : 0=preproduction/test, 1=active (default value =1)
+      type       : 0=single spot(default), 1=area, 2=mobile
+      -->
+      <address>
+        <street lang="en">245 Daehak-ro, Yuseong-gu, Daejeon</street>
+        <city lang="en">Daejeon</city>
+      </address>
+      <address>
+        <street lang="ko">대전광역시 유성구 대학로 245</street>
+        <city lang="ko">대전</city>
+      </address>
+      <location_type>2,8</location_type>
+      <SSID>eduroam</SSID>
+      <enc_level>WPA2/AES</enc_level>
+      <AP_no>20</AP_no>
+      <tag>NAT</tag>
+      <availability>1</availability>
+      <!--
+      SSID        : eduroam (고정)
+      enc_level   : 암호화 방식
+      AP_no       : AP 개수
+      wired_no    : 에듀롬으로 인증 가능한 802.1X 유선 포트 수, 해당 없으면 항목 제거
+      tag         : port_restrict, transp_proxy, IPv6, NAT, HS2.0 (쉼표 구분), 해당 없으면 항목 제거
+      availability: 0=제한없음, 1=물리 접근 제한
+      operation_hours: 24시간 제공이 아닌 경우 자유롭게 기술, 해당 없으면 항목 제거
+      -->
+      <info_URL lang="en">https://eduroam.sandbox.re.kr/en/</info_URL>
+      <info_URL lang="ko">https://eduroam.sandbox.re.kr/</info_URL>
+    </location>
+  </institution>
+  <institution>
+    <instid>kdis.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kdis.ac.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">KDI국제정책대학원대학교</inst_name>
+    <inst_name lang="en">KDI국제정책대학원대학교</inst_name>
+    <info_URL lang="ko">https://www.kdischool.ac.kr/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>gachon.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>gachon.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">가천대학교</inst_name>
+    <inst_name lang="en">가천대학교</inst_name>
+    <info_URL lang="ko">https://www.gachon.ac.kr/ist/2990/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>gwnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>gwnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">강릉원주대학교</inst_name>
+    <inst_name lang="en">강릉원주대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kangwon.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kangwon.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">강원대학교</inst_name>
+    <inst_name lang="en">강원대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>konkuk.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>konkuk.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">건국대학교</inst_name>
+    <inst_name lang="en">건국대학교</inst_name>
+    <info_URL lang="ko">https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>konyang.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>konyang.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">건양대학교</inst_name>
+    <inst_name lang="en">건양대학교</inst_name>
+    <info_URL lang="ko">https://www.konyang.ac.kr/ict/sub02_02.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kyungnam.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kyungnam.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">경남대학교</inst_name>
+    <inst_name lang="en">경남대학교</inst_name>
+    <info_URL lang="ko">https://library.kyungnam.ac.kr/webcontent/info/52</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>knu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>knu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">경북대학교</inst_name>
+    <inst_name lang="en">경북대학교</inst_name>
+    <info_URL lang="ko">https://wifi.knu.ac.kr/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>gnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>gnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">경상국립대학교</inst_name>
+    <inst_name lang="en">경상국립대학교</inst_name>
+    <info_URL lang="ko">https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&amp;cntntsId=4442</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ginue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ginue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">경인교육대학교</inst_name>
+    <inst_name lang="en">경인교육대학교</inst_name>
+    <info_URL lang="ko">https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kiu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kiu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">경인교육대학교</inst_name>
+    <inst_name lang="en">경인교육대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>khu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>khu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">경희대학교</inst_name>
+    <inst_name lang="en">경희대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kmu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kmu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">계명대학교</inst_name>
+    <inst_name lang="en">계명대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kmcu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kmcu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">계명문화대학교</inst_name>
+    <inst_name lang="en">계명문화대학교</inst_name>
+    <info_URL lang="ko">https://www.kmcu.ac.kr/kr/index.php?pCode=wifi</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kias.re.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kias.re.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">고등과학원</inst_name>
+    <inst_name lang="en">고등과학원</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>korea.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>korea.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">고려대학교</inst_name>
+    <inst_name lang="en">고려대학교</inst_name>
+    <info_URL lang="ko">http://wifi.korea.ac.kr/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>gjue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>gjue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">공주교육대학교</inst_name>
+    <inst_name lang="en">공주교육대학교</inst_name>
+    <info_URL lang="ko">https://www.gjue.ac.kr/kor/contents/68</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ust.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ust.ac.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">과학기술연합대학원대학교</inst_name>
+    <inst_name lang="en">과학기술연합대학원대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>gnue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>gnue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">광주교육대학교</inst_name>
+    <inst_name lang="en">광주교육대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>gwangju.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>gwangju.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">광주대학교</inst_name>
+    <inst_name lang="en">광주대학교</inst_name>
+    <info_URL lang="ko">http://icc.gwangju.ac.kr/icc/page/sub0401.html</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ghu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ghu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">광주보건대학교</inst_name>
+    <inst_name lang="en">광주보건대학교</inst_name>
+    <info_URL lang="ko">https://www.ghu.ac.kr/LifeGhc/InfoMail.jsp</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kwu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kwu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">광주여자대학교</inst_name>
+    <inst_name lang="en">광주여자대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>nims.re.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>nims.re.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">국가수리과학연구소</inst_name>
+    <inst_name lang="en">국가수리과학연구소</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kongju.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kongju.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">국립공주대학교</inst_name>
+    <inst_name lang="en">국립공주대학교</inst_name>
+    <info_URL lang="ko">https://www.kongju.ac.kr/KNU/16898/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ut.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ut.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">국립한국교통대학교</inst_name>
+    <inst_name lang="en">국립한국교통대학교</inst_name>
+    <info_URL lang="ko">https://www.ut.ac.kr/kor/sub06_03_03_01.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hanbat.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hanbat.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">국립한밭대학교</inst_name>
+    <inst_name lang="en">국립한밭대학교</inst_name>
+    <info_URL lang="ko">https://www.hanbat.ac.kr/kor/sub06_080105.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kookmin.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kookmin.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">국민대학교</inst_name>
+    <inst_name lang="en">국민대학교</inst_name>
+    <info_URL lang="ko">https://kist.kookmin.ac.kr/kist_new/infra/ko.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kunsan.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kunsan.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">군산대학교</inst_name>
+    <inst_name lang="en">군산대학교</inst_name>
+    <info_URL lang="ko">https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kumoh.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kumoh.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">금오공과대학교</inst_name>
+    <inst_name lang="en">금오공과대학교</inst_name>
+    <info_URL lang="ko">https://cic.kumoh.ac.kr/cic/sub020202.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ibs.re.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ibs.re.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">기초과학연구원</inst_name>
+    <inst_name lang="en">기초과학연구원</inst_name>
+    <info_URL lang="ko">http://eduroam.ibs.re.kr</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kornu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kornu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">나사렛대학교</inst_name>
+    <inst_name lang="en">나사렛대학교</inst_name>
+    <info_URL lang="ko">https://www.kornu.ac.kr/mbs/kornukr/subview.jsp?id=kornukr_071300000000</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>nambu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>nambu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">남부대학교</inst_name>
+    <inst_name lang="en">남부대학교</inst_name>
+    <info_URL lang="ko">https://se.nambu.ac.kr/content/view.do?menuCd=dept_se002001</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dankook.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>dankook.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">단국대학교</inst_name>
+    <inst_name lang="en">단국대학교</inst_name>
+    <info_URL lang="ko">https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">대구가톨릭대학교</inst_name>
+    <inst_name lang="en">대구가톨릭대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dgist.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>dgist.ac.kr</inst_realm>
+    <type_kr>특별법법인</type_kr>
+    <inst_name lang="ko">대구경북과학기술원</inst_name>
+    <inst_name lang="en">대구경북과학기술원</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dnue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>dnue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">대구교육대학교</inst_name>
+    <inst_name lang="en">대구교육대학교</inst_name>
+    <info_URL lang="ko">https://www.dnue.ac.kr/kor/CMS/Board/Board.do?mCode=MN168&amp;mode=view&amp;board_seq=14025</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>daegu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>daegu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">대구대학교</inst_name>
+    <inst_name lang="en">대구대학교</inst_name>
+    <info_URL lang="ko">https://www.daegu.ac.kr/page/153</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dju.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>dju.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">대전대학교</inst_name>
+    <inst_name lang="en">대전대학교</inst_name>
+    <info_URL lang="ko">https://www.dju.ac.kr/dju/cm/cntnts/cntntsView.do?mi=6573&amp;cntntsId=4021</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dcckorea.or.kr</instid>
+    <ROid>kr01</ROid>
+    <type>SP</type>
+    <stage>1</stage>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">대전컨벤션센터</inst_name>
+    <inst_name lang="en">대전컨벤션센터</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>daejin.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>daejin.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">대진대학교</inst_name>
+    <inst_name lang="en">대진대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dongguk.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>dongguk.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">동국대학교</inst_name>
+    <inst_name lang="en">동국대학교</inst_name>
+    <info_URL lang="ko">https://it.dongguk.edu/?page_id=18649</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>dsu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>dsu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">동신대학교</inst_name>
+    <inst_name lang="en">동신대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>donga.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>donga.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">동아대학교</inst_name>
+    <inst_name lang="en">동아대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>deu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>deu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">동의대학교</inst_name>
+    <inst_name lang="en">동의대학교</inst_name>
+    <info_URL lang="ko">https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&amp;articleNo=65693&amp;article.offset=0&amp;articleLimit=10</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>mokpo.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>mokpo.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">목포대학교</inst_name>
+    <inst_name lang="en">목포대학교</inst_name>
+    <info_URL lang="ko">https://www.mokpo.ac.kr/www/291/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>mmu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>mmu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">목포해양대학교</inst_name>
+    <inst_name lang="en">목포해양대학교</inst_name>
+    <info_URL lang="ko">https://www.mmu.ac.kr/main/contents/eduroam</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>bu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>bu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">백석대학교</inst_name>
+    <inst_name lang="en">백석대학교</inst_name>
+    <info_URL lang="ko">http://www.bu.ac.kr/web/3739/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>pknu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>pknu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">부경대학교</inst_name>
+    <inst_name lang="en">부경대학교</inst_name>
+    <info_URL lang="ko">https://icc.pknu.ac.kr/main/17</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>bnue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>bnue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">부산교육대학교</inst_name>
+    <inst_name lang="en">부산교육대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>pusan.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>pusan.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">부산대학교</inst_name>
+    <inst_name lang="en">부산대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>smu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>smu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">상명대학교</inst_name>
+    <inst_name lang="en">상명대학교</inst_name>
+    <info_URL lang="ko">https://www.smu.ac.kr/kor/life/eduroam.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>sogang.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sogang.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">서강대학교</inst_name>
+    <inst_name lang="en">서강대학교</inst_name>
+    <info_URL lang="ko">http://eduroam.sogang.ac.kr/eduroam/index.html</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>seoultech.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>seoultech.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">서울과학기술대학교</inst_name>
+    <inst_name lang="en">서울과학기술대학교</inst_name>
+    <info_URL lang="ko">https://itc.seoultech.ac.kr/service/wifi</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>snu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>snu.ac.kr</inst_realm>
+    <type_kr>국립대법인</type_kr>
+    <inst_name lang="ko">서울대학교</inst_name>
+    <inst_name lang="en">서울대학교</inst_name>
+    <info_URL lang="ko">https://ist.snu.ac.kr/wifi/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>uos.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>uos.ac.kr</inst_realm>
+    <type_kr>공립</type_kr>
+    <inst_name lang="ko">서울시립대학교</inst_name>
+    <inst_name lang="en">서울시립대학교</inst_name>
+    <info_URL lang="ko">https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&amp;identified=anonymous&amp;</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>seowon.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>seowon.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">서원대학교</inst_name>
+    <inst_name lang="en">서원대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>seoil.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>seoil.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">서일대학교</inst_name>
+    <inst_name lang="en">서일대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>sungkyul.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sungkyul.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">성결대학교</inst_name>
+    <inst_name lang="en">성결대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>skku.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>skku.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">성균관대학교</inst_name>
+    <inst_name lang="en">성균관대학교</inst_name>
+    <info_URL lang="ko">https://www.skku.edu/skku/campus/IT_service/it_service11.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>sungshin.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sungshin.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">성신여자대학교</inst_name>
+    <inst_name lang="en">성신여자대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>sejong.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sejong.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">세종대학교</inst_name>
+    <inst_name lang="en">세종대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>sehan.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sehan.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">세한대학교</inst_name>
+    <inst_name lang="en">세한대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>suwon.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>suwon.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">수원대학교</inst_name>
+    <inst_name lang="en">수원대학교</inst_name>
+    <info_URL lang="ko">https://ici.suwon.ac.kr/index.html?menuno=340</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>sookmyung.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>sookmyung.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">숙명여자대학교</inst_name>
+    <inst_name lang="en">숙명여자대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>scnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>scnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">순천대학교</inst_name>
+    <inst_name lang="en">순천대학교</inst_name>
+    <info_URL lang="ko">https://www.scnu.ac.kr/icc/cm/cntnts/cntntsView.do?mi=4804&amp;cntntsId=2682</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ssu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ssu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">숭실대학교</inst_name>
+    <inst_name lang="en">숭실대학교</inst_name>
+    <info_URL lang="ko">https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>shinhan.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>shinhan.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">신한대학교</inst_name>
+    <inst_name lang="en">신한대학교</inst_name>
+    <info_URL lang="ko">https://www.shinhan.ac.kr/kr/256/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ajou.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ajou.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">아주대학교</inst_name>
+    <inst_name lang="en">아주대학교</inst_name>
+    <info_URL lang="ko">https://pc119.ajou.ac.kr/pc119/service/lan.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>yonsei.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>yonsei.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">연세대학교</inst_name>
+    <inst_name lang="en">연세대학교</inst_name>
+    <info_URL lang="ko">https://yis.yonsei.ac.kr/ics/service/eduroam.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>yu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>yu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">영남대학교</inst_name>
+    <inst_name lang="en">영남대학교</inst_name>
+    <info_URL lang="ko">http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ync.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ync.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">영남이공대학교</inst_name>
+    <inst_name lang="en">영남이공대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>unist.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>unist.ac.kr</inst_realm>
+    <type_kr>국립대법인</type_kr>
+    <inst_name lang="ko">울산과학기술원</inst_name>
+    <inst_name lang="en">울산과학기술원</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ulsan.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ulsan.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">울산대학교</inst_name>
+    <inst_name lang="en">울산대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>wku.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>wku.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">원광대학교</inst_name>
+    <inst_name lang="en">원광대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>wu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>wu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">원광보건대학교</inst_name>
+    <inst_name lang="en">원광보건대학교</inst_name>
+    <info_URL lang="ko">https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>yuhan.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>yuhan.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">유한대학교</inst_name>
+    <inst_name lang="en">유한대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>ewha.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>ewha.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">이화여자대학교</inst_name>
+    <inst_name lang="en">이화여자대학교</inst_name>
+    <info_URL lang="ko">https://www.ewha.ac.kr/ewha/life/eduroam.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>inje.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>inje.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">인제대학교</inst_name>
+    <inst_name lang="en">인제대학교</inst_name>
+    <info_URL lang="ko">https://www.inje.ac.kr/kor/campus-life/e-service-03.asp</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>inu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>inu.ac.kr</inst_realm>
+    <type_kr>공립</type_kr>
+    <inst_name lang="ko">인천대학교</inst_name>
+    <inst_name lang="en">인천대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>inha.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>inha.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">인하대학교</inst_name>
+    <inst_name lang="en">인하대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>puts.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>puts.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">장로회신학대학교</inst_name>
+    <inst_name lang="en">장로회신학대학교</inst_name>
+    <info_URL lang="ko">https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>jnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>jnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">전남대학교</inst_name>
+    <inst_name lang="en">전남대학교</inst_name>
+    <info_URL lang="ko">http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>jbnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>jbnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">전북대학교</inst_name>
+    <inst_name lang="en">전북대학교</inst_name>
+    <info_URL lang="ko">https://its.jbnu.ac.kr/its/9226/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>jnue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>jnue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">전주교육대학교</inst_name>
+    <inst_name lang="en">전주교육대학교</inst_name>
+    <info_URL lang="ko">https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>jj.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>jj.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">전주대학교</inst_name>
+    <inst_name lang="en">전주대학교</inst_name>
+    <info_URL lang="ko">http://wlan.jj.ac.kr/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>jvision.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>jvision.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">전주비전대학교</inst_name>
+    <inst_name lang="en">전주비전대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>jejunu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>jejunu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">제주대학교</inst_name>
+    <inst_name lang="en">제주대학교</inst_name>
+    <info_URL lang="ko">https://cms.jejunu.ac.kr/camp/stud/wifi/eduroam.htm</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>chosun.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>chosun.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">조선대학교</inst_name>
+    <inst_name lang="en">조선대학교</inst_name>
+    <info_URL lang="ko">http://wifi.chosun.ac.kr/Main/Main.html</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cau.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cau.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">중앙대학교</inst_name>
+    <inst_name lang="en">중앙대학교</inst_name>
+    <info_URL lang="ko">http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&amp;m2=01</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cwnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cwnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">창원대학교</inst_name>
+    <inst_name lang="en">창원대학교</inst_name>
+    <info_URL lang="ko">https://www.changwon.ac.kr/kor/na/ntt/selectNttInfo.do?mi=10177&amp;nttSn=782638</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cje.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cje.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">청주교육대학교</inst_name>
+    <inst_name lang="en">청주교육대학교</inst_name>
+    <info_URL lang="ko">https://www.cje.ac.kr/cj_edu_univ/web/content.do?menu_cd=000157</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cnue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cnue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">춘천교육대학교</inst_name>
+    <inst_name lang="en">춘천교육대학교</inst_name>
+    <info_URL lang="ko">https://www.cnue.ac.kr/cnue/life/wireless-lan.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">충남대학교</inst_name>
+    <inst_name lang="en">충남대학교</inst_name>
+    <info_URL lang="ko">https://homepage.cnu.ac.kr/cic/service/eduroam.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>cbnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>cbnu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">충북대학교</inst_name>
+    <inst_name lang="en">충북대학교</inst_name>
+    <info_URL lang="ko">http://wifi.cbnu.ac.kr/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>chsu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>chsu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">충북보건과학대학교</inst_name>
+    <inst_name lang="en">충북보건과학대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>teincc.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>teincc.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">(재)테인협력센터</inst_name>
+    <inst_name lang="en">(재)테인협력센터</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>postech.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>postech.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">포항공과대학교</inst_name>
+    <inst_name lang="en">포항공과대학교</inst_name>
+    <info_URL lang="ko">https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>tukorea.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>tukorea.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한국공학대학교</inst_name>
+    <inst_name lang="en">한국공학대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kisti.re.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kisti.re.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">한국과학기술정보연구원</inst_name>
+    <inst_name lang="en">한국과학기술정보연구원</inst_name>
+    <info_URL lang="ko">http://www.kreonet.net/eduroam/en</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>knue.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>knue.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">한국교원대학교</inst_name>
+    <inst_name lang="en">한국교원대학교</inst_name>
+    <info_URL lang="ko">http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&amp;uid=1974</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>koreatech.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>koreatech.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한국기술교육대학교</inst_name>
+    <inst_name lang="en">한국기술교육대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>knou.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>knou.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">한국방송통신대학교</inst_name>
+    <inst_name lang="en">한국방송통신대학교</inst_name>
+    <info_URL lang="ko">https://eist.knou.ac.kr/eist/10344/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kentech.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kentech.ac.kr</inst_realm>
+    <type_kr>특별법법인</type_kr>
+    <inst_name lang="ko">한국에너지공과대학교</inst_name>
+    <inst_name lang="en">한국에너지공과대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hufs.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hufs.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한국외국어대학교</inst_name>
+    <inst_name lang="en">한국외국어대학교</inst_name>
+    <info_URL lang="ko">https://www.hufs.ac.kr/hufs/11334/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>knsu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>knsu.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">한국체육대학교</inst_name>
+    <inst_name lang="en">한국체육대학교</inst_name>
+    <info_URL lang="ko">https://www.knsu.ac.kr/knsu/unilife/wireless-internet.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kriss.re.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kriss.re.kr</inst_realm>
+    <type_kr>기타</type_kr>
+    <inst_name lang="ko">한국표준과학연구원</inst_name>
+    <inst_name lang="en">한국표준과학연구원</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kau.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kau.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한국항공대학교</inst_name>
+    <inst_name lang="en">한국항공대학교</inst_name>
+    <info_URL lang="ko">https://kau.ac.kr/kaulife/itnoti.php?searchkey=&amp;searchvalue=&amp;code=s1801&amp;page=&amp;mode=read&amp;seq=6546</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>kmou.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>kmou.ac.kr</inst_realm>
+    <type_kr>국립</type_kr>
+    <inst_name lang="ko">한국해양대학교</inst_name>
+    <inst_name lang="en">한국해양대학교</inst_name>
+    <info_URL lang="ko">http://www.kmou.ac.kr/cisc/cm/cntnts/cntntsView.do?mi=4384&amp;cntntsId=1306</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hnu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hnu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한남대학교</inst_name>
+    <inst_name lang="en">한남대학교</inst_name>
+    <info_URL lang="ko">http://wifi.hannam.ac.kr/</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hgu.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hgu.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한동대학교</inst_name>
+    <inst_name lang="en">한동대학교</inst_name>
+    <info_URL lang="ko">https://library.handong.edu/local/html/450</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hallym.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hallym.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한림대학교</inst_name>
+    <inst_name lang="en">한림대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hansei.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hansei.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한세대학교</inst_name>
+    <inst_name lang="en">한세대학교</inst_name>
+    <info_URL lang="ko">http://www.hansei.ac.kr/kor/345/subview.do</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hanyang.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hanyang.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">한양대학교</inst_name>
+    <inst_name lang="en">한양대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>honam.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>honam.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">호남대학교</inst_name>
+    <inst_name lang="en">호남대학교</inst_name>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+  <institution>
+    <instid>hongik.ac.kr</instid>
+    <ROid>kr01</ROid>
+    <type>IdP+SP</type>
+    <stage>1</stage>
+    <inst_realm>hongik.ac.kr</inst_realm>
+    <type_kr>사립</type_kr>
+    <inst_name lang="ko">홍익대학교</inst_name>
+    <inst_name lang="en">홍익대학교</inst_name>
+    <info_URL lang="ko">https://wifi.hongik.ac.kr</info_URL>
+    <ts>2026-05-07T00:00:00+09:00</ts>
+  </institution>
+</institutions>
