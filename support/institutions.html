@@ -47,7 +47,7 @@ lang: ko
       </div>
       
       <div class="mb-2 text-secondary" style="font-size: 0.85rem;">
-        ※ '대학명' 가나다 순 입니다. &nbsp; ( {{ site.data.institutions_pages.total_institutions }}개 대학, {{ site.data.institutions_pages.total_campuses }}개 캠퍼스 )
+        ※ 기관별 가나다 순 입니다.
       </div>
 
       <!-- Table Map -->
@@ -65,48 +65,33 @@ lang: ko
           {% for pagedata in site.data.institutions_pages.pages %}
             <tbody id="page-{{ pagedata.page }}" style="{% if pagedata.page != 1 %}display: none;{% endif %}">
               {% for cd in pagedata.rows %}
-                <tr class="inst-row" data-name="{{ cd.univ_name }}" data-type="{{ cd.inst_type }}" data-net="{{ cd.operator_type }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
-                  
+                <tr class="inst-row" data-name="{{ cd.univ_name }}" data-type="{{ cd.inst_type }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
+
                   <td>{{ cd.serial_no }}</td>
 
-                  {% if cd.is_first_in_chunk %}
-                    <td style="width: 100px; padding: 5px;" rowspan="{{ cd.chunk_size }}" class="align-middle">
-                      {% if cd.logo != '' %}
-                        <img src="{{ '/eduroam-kr-data/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
-                      {% else %}
-                        <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
-                      {% endif %}
-                    </td>
-                    <td class="text-left align-middle" style="font-weight: 500;" rowspan="{{ cd.chunk_size }}">
-                      {{ cd.univ_name }}
-                    </td>
-                  {% endif %}
-
-                  {% if cd.rowspan_realm %}
-                    {% if cd.is_first_in_chunk %}
-                      <td rowspan="{{ cd.chunk_size }}" class="align-middle">
-                        {% if cd.guide != '' %}
-                          <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
-                            <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
-                          </a>
-                        {% endif %}
-                      </td>
-                      <td class="text-success text-left ps-3 align-middle" rowspan="{{ cd.chunk_size }}">
-                        <div style="font-size:0.85rem;">{{ cd.realm }}</div>
-                      </td>
+                  <td style="width: 100px; padding: 5px;" class="align-middle">
+                    {% if cd.logo != '' %}
+                      <img src="{{ '/eduroam-kr-data/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
+                    {% else %}
+                      <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
                     {% endif %}
-                  {% else %}
-                    <td class="align-middle">
-                      {% if cd.guide != '' %}
-                        <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
-                          <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
-                        </a>
-                      {% endif %}
-                    </td>
-                    <td class="text-success text-left ps-3 align-middle">
-                      <div style="font-size:0.85rem;">{{ cd.realm }}</div>
-                    </td>
-                  {% endif %}
+                  </td>
+
+                  <td class="text-left align-middle" style="font-weight: 500;">{{ cd.univ_name }}</td>
+
+                  <td class="align-middle">
+                    {% if cd.guide != '' %}
+                      <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
+                        <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
+                      </a>
+                    {% endif %}
+                  </td>
+
+                  <td class="text-success text-left ps-3 align-middle">
+                    {% for realm in cd.realms %}
+                      <div style="font-size:0.85rem;">{{ realm }}</div>
+                    {% endfor %}
+                  </td>
 
                 </tr>
               {% endfor %}

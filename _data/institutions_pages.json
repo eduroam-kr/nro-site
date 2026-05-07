@@ -1,6 +1,6 @@
 {
-  "total_campuses": 171,
-  "total_institutions": 108,
+  "total_campuses": 178,
+  "total_institutions": 115,
   "pages": [
     {
       "page": 1,
@@ -8,227 +8,168 @@
         {
           "serial_no": 1,
           "page": 1,
-          "inst_id": 1,
-          "operator_type": "NRO",
-          "inst_type": "기타",
           "logo": "kdis_ac_kr.png",
           "univ_name": "KDI국제정책대학원대학교",
-          "campus_name": "본교",
+          "inst_type": "기타",
           "guide": "https://www.kdischool.ac.kr/",
-          "realm": "kdis.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "kdis.ac.kr"
+          ]
         },
         {
           "serial_no": 2,
           "page": 1,
-          "inst_id": 2,
-          "operator_type": "NRO",
-          "inst_type": "사립",
           "logo": "gachon_ac_kr.png",
           "univ_name": "가천대학교",
-          "campus_name": "본교",
+          "inst_type": "사립",
           "guide": "https://www.gachon.ac.kr/ist/2990/subview.do",
-          "realm": "gachon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "realms": [
+            "gachon.ac.kr"
+          ]
         },
         {
           "serial_no": 3,
           "page": 1,
-          "inst_id": 2,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "gachon_ac_kr.png",
-          "univ_name": "가천대학교",
-          "campus_name": "메디컬캠퍼스",
-          "guide": "https://www.gachon.ac.kr/ist/2990/subview.do",
-          "realm": "gachon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "gwnu_ac_kr.png",
+          "univ_name": "강릉원주대학교",
+          "inst_type": "국립",
+          "guide": "",
+          "realms": [
+            "gwnu.ac.kr"
+          ]
         },
         {
           "serial_no": 4,
           "page": 1,
-          "inst_id": 3,
-          "operator_type": "NRO",
+          "logo": "kangwon_ac_kr.png",
+          "univ_name": "강원대학교",
           "inst_type": "국립",
-          "logo": "gwnu_ac_kr.png",
-          "univ_name": "강릉원주대학교",
-          "campus_name": "원주캠퍼스",
           "guide": "",
-          "realm": "gwnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "realms": [
+            "kangwon.ac.kr"
+          ]
         },
         {
           "serial_no": 5,
           "page": 1,
-          "inst_id": 3,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "gwnu_ac_kr.png",
-          "univ_name": "강릉원주대학교",
-          "campus_name": "강릉캠퍼스",
-          "guide": "",
-          "realm": "gwnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "konkuk_ac_kr.png",
+          "univ_name": "건국대학교",
+          "inst_type": "사립",
+          "guide": "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do",
+          "realms": [
+            "konkuk.ac.kr",
+            "kku.ac.kr"
+          ]
         },
         {
           "serial_no": 6,
           "page": 1,
-          "inst_id": 4,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kangwon_ac_kr.png",
-          "univ_name": "강원대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "kangwon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": true
+          "logo": "konyang_ac_kr.png",
+          "univ_name": "건양대학교",
+          "inst_type": "사립",
+          "guide": "https://www.konyang.ac.kr/ict/sub02_02.do",
+          "realms": [
+            "konyang.ac.kr"
+          ]
         },
         {
           "serial_no": 7,
           "page": 1,
-          "inst_id": 4,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kangwon_ac_kr.png",
-          "univ_name": "강원대학교",
-          "campus_name": "도계캠퍼스",
-          "guide": "",
-          "realm": "kangwon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "kyungnam_ac_kr.png",
+          "univ_name": "경남대학교",
+          "inst_type": "사립",
+          "guide": "https://library.kyungnam.ac.kr/webcontent/info/52",
+          "realms": [
+            "kyungnam.ac.kr"
+          ]
         },
         {
           "serial_no": 8,
           "page": 1,
-          "inst_id": 4,
-          "operator_type": "NRO",
+          "logo": "knu_ac_kr.png",
+          "univ_name": "경북대학교",
           "inst_type": "국립",
-          "logo": "kangwon_ac_kr.png",
-          "univ_name": "강원대학교",
-          "campus_name": "삼척캠퍼스",
-          "guide": "",
-          "realm": "kangwon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "guide": "https://wifi.knu.ac.kr/",
+          "realms": [
+            "knu.ac.kr"
+          ]
         },
         {
           "serial_no": 9,
           "page": 1,
-          "inst_id": 5,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "konkuk_ac_kr.png",
-          "univ_name": "건국대학교",
-          "campus_name": "서울캠퍼스",
-          "guide": "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do",
-          "realm": "konkuk.ac.kr",
-          "rowspan_realm": false,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "gnu_ac_kr.png",
+          "univ_name": "경상국립대학교",
+          "inst_type": "국립",
+          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
+          "realms": [
+            "gnu.ac.kr"
+          ]
         },
         {
           "serial_no": 10,
           "page": 1,
-          "inst_id": 5,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "konkuk_ac_kr.png",
-          "univ_name": "건국대학교",
-          "campus_name": "글로컬캠퍼스",
-          "guide": "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do",
-          "realm": "kku.ac.kr",
-          "rowspan_realm": false,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "ginue_ac_kr.png",
+          "univ_name": "경인교육대학교",
+          "inst_type": "국립",
+          "guide": "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313",
+          "realms": [
+            "ginue.ac.kr"
+          ]
         },
         {
           "serial_no": 11,
           "page": 1,
-          "inst_id": 6,
-          "operator_type": "NRO",
+          "logo": "kiu_ac_kr.png",
+          "univ_name": "경인교육대학교",
           "inst_type": "사립",
-          "logo": "konyang_ac_kr.png",
-          "univ_name": "건양대학교",
-          "campus_name": "글로벌캠퍼스",
-          "guide": "https://www.konyang.ac.kr/ict/sub02_02.do",
-          "realm": "konyang.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "kiu.ac.kr"
+          ]
         },
         {
           "serial_no": 12,
           "page": 1,
-          "inst_id": 6,
-          "operator_type": "NRO",
+          "logo": "khu_ac_kr.png",
+          "univ_name": "경희대학교",
           "inst_type": "사립",
-          "logo": "konyang_ac_kr.png",
-          "univ_name": "건양대학교",
-          "campus_name": "메디컬캠퍼스",
-          "guide": "https://www.konyang.ac.kr/ict/sub02_02.do",
-          "realm": "konyang.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "",
+          "realms": [
+            "khu.ac.kr"
+          ]
         },
         {
           "serial_no": 13,
           "page": 1,
-          "inst_id": 7,
-          "operator_type": "NRO",
+          "logo": "kmu_ac_kr.png",
+          "univ_name": "계명대학교",
           "inst_type": "사립",
-          "logo": "kyungnam_ac_kr.png",
-          "univ_name": "경남대학교",
-          "campus_name": "본교",
-          "guide": "https://library.kyungnam.ac.kr/webcontent/info/52",
-          "realm": "kyungnam.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "kmu.ac.kr"
+          ]
         },
         {
           "serial_no": 14,
           "page": 1,
-          "inst_id": 8,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "knu_ac_kr.png",
-          "univ_name": "경북대학교",
-          "campus_name": "산격캠퍼스",
-          "guide": "https://wifi.knu.ac.kr/",
-          "realm": "knu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "kmcu_ac_kr.png",
+          "univ_name": "계명문화대학교",
+          "inst_type": "사립",
+          "guide": "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi",
+          "realms": [
+            "kmcu.ac.kr"
+          ]
         },
         {
           "serial_no": 15,
           "page": 1,
-          "inst_id": 9,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "gnu_ac_kr.png",
-          "univ_name": "경상국립대학교",
-          "campus_name": "통영캠퍼스",
-          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
-          "realm": "gnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "kias_re_kr.png",
+          "univ_name": "고등과학원",
+          "inst_type": "기타",
+          "guide": "",
+          "realms": [
+            "kias.re.kr"
+          ]
         }
       ]
     },
@@ -238,227 +179,167 @@
         {
           "serial_no": 16,
           "page": 2,
-          "inst_id": 9,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "gnu_ac_kr.png",
-          "univ_name": "경상국립대학교",
-          "campus_name": "내동캠퍼스",
-          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
-          "realm": "gnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 5,
-          "is_first_in_chunk": true
+          "logo": "korea_ac_kr.png",
+          "univ_name": "고려대학교",
+          "inst_type": "사립",
+          "guide": "http://wifi.korea.ac.kr/",
+          "realms": [
+            "korea.ac.kr"
+          ]
         },
         {
           "serial_no": 17,
           "page": 2,
-          "inst_id": 9,
-          "operator_type": "NRO",
+          "logo": "gjue_ac_kr.png",
+          "univ_name": "공주교육대학교",
           "inst_type": "국립",
-          "logo": "gnu_ac_kr.png",
-          "univ_name": "경상국립대학교",
-          "campus_name": "가좌캠퍼스",
-          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
-          "realm": "gnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 5,
-          "is_first_in_chunk": false
+          "guide": "https://www.gjue.ac.kr/kor/contents/68",
+          "realms": [
+            "gjue.ac.kr"
+          ]
         },
         {
           "serial_no": 18,
           "page": 2,
-          "inst_id": 9,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "gnu_ac_kr.png",
-          "univ_name": "경상국립대학교",
-          "campus_name": "칠암캠퍼스(의간호대)",
-          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
-          "realm": "gnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 5,
-          "is_first_in_chunk": false
+          "logo": "ust_ac_kr.png",
+          "univ_name": "과학기술연합대학원대학교",
+          "inst_type": "기타",
+          "guide": "",
+          "realms": [
+            "ust.ac.kr"
+          ]
         },
         {
           "serial_no": 19,
           "page": 2,
-          "inst_id": 9,
-          "operator_type": "NRO",
+          "logo": "gnue_ac_kr.png",
+          "univ_name": "광주교육대학교",
           "inst_type": "국립",
-          "logo": "gnu_ac_kr.png",
-          "univ_name": "경상국립대학교",
-          "campus_name": "칠암캠퍼스",
-          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
-          "realm": "gnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 5,
-          "is_first_in_chunk": false
+          "guide": "",
+          "realms": [
+            "gnue.ac.kr"
+          ]
         },
         {
           "serial_no": 20,
           "page": 2,
-          "inst_id": 9,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "gnu_ac_kr.png",
-          "univ_name": "경상국립대학교",
-          "campus_name": "창원산학캠퍼스",
-          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
-          "realm": "gnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 5,
-          "is_first_in_chunk": false
+          "logo": "gwangju_ac_kr.png",
+          "univ_name": "광주대학교",
+          "inst_type": "사립",
+          "guide": "http://icc.gwangju.ac.kr/icc/page/sub0401.html",
+          "realms": [
+            "gwangju.ac.kr"
+          ]
         },
         {
           "serial_no": 21,
           "page": 2,
-          "inst_id": 10,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "ginue_ac_kr.png",
-          "univ_name": "경인교육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313",
-          "realm": "ginue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "ghu_ac_kr.png",
+          "univ_name": "광주보건대학교",
+          "inst_type": "사립",
+          "guide": "https://www.ghu.ac.kr/LifeGhc/InfoMail.jsp",
+          "realms": [
+            "ghu.ac.kr"
+          ]
         },
         {
           "serial_no": 22,
           "page": 2,
-          "inst_id": 10,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "ginue_ac_kr.png",
-          "univ_name": "경인교육대학교",
-          "campus_name": "경기캠퍼스",
-          "guide": "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313",
-          "realm": "ginue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "kwu_ac_kr.png",
+          "univ_name": "광주여자대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "kwu.ac.kr"
+          ]
         },
         {
           "serial_no": 23,
           "page": 2,
-          "inst_id": 11,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "kiu_ac_kr.png",
-          "univ_name": "경인교육대학교",
-          "campus_name": "본교",
+          "logo": "nims_re_kr.png",
+          "univ_name": "국가수리과학연구소",
+          "inst_type": "기타",
           "guide": "",
-          "realm": "kiu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "realms": [
+            "nims.re.kr"
+          ]
         },
         {
           "serial_no": 24,
           "page": 2,
-          "inst_id": 11,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "kiu_ac_kr.png",
-          "univ_name": "경인교육대학교",
-          "campus_name": "경기캠퍼스",
-          "guide": "",
-          "realm": "kiu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "kongju_ac_kr.png",
+          "univ_name": "국립공주대학교",
+          "inst_type": "국립",
+          "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do",
+          "realms": [
+            "kongju.ac.kr"
+          ]
         },
         {
           "serial_no": 25,
           "page": 2,
-          "inst_id": 12,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "khu_ac_kr.png",
-          "univ_name": "경희대학교",
-          "campus_name": "서울",
-          "guide": "",
-          "realm": "khu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "ut_ac_kr.png",
+          "univ_name": "국립한국교통대학교",
+          "inst_type": "국립",
+          "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do",
+          "realms": [
+            "ut.ac.kr"
+          ]
         },
         {
           "serial_no": 26,
           "page": 2,
-          "inst_id": 12,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "khu_ac_kr.png",
-          "univ_name": "경희대학교",
-          "campus_name": "국제캠퍼스",
-          "guide": "",
-          "realm": "khu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "hanbat_ac_kr.png",
+          "univ_name": "국립한밭대학교",
+          "inst_type": "국립",
+          "guide": "https://www.hanbat.ac.kr/kor/sub06_080105.do",
+          "realms": [
+            "hanbat.ac.kr"
+          ]
         },
         {
           "serial_no": 27,
           "page": 2,
-          "inst_id": 13,
-          "operator_type": "NRO",
+          "logo": "kookmin_ac_kr.png",
+          "univ_name": "국민대학교",
           "inst_type": "사립",
-          "logo": "kmu_ac_kr.png",
-          "univ_name": "계명대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "kmu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "https://kist.kookmin.ac.kr/kist_new/infra/ko.do",
+          "realms": [
+            "kookmin.ac.kr"
+          ]
         },
         {
           "serial_no": 28,
           "page": 2,
-          "inst_id": 13,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "kmu_ac_kr.png",
-          "univ_name": "계명대학교",
-          "campus_name": "대명캠퍼스",
-          "guide": "",
-          "realm": "kmu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "kunsan_ac_kr.png",
+          "univ_name": "군산대학교",
+          "inst_type": "국립",
+          "guide": "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000",
+          "realms": [
+            "kunsan.ac.kr"
+          ]
         },
         {
           "serial_no": 29,
           "page": 2,
-          "inst_id": 14,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "kmcu_ac_kr.png",
-          "univ_name": "계명문화대학교",
-          "campus_name": "본교",
-          "guide": "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi",
-          "realm": "kmcu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "kumoh_ac_kr.png",
+          "univ_name": "금오공과대학교",
+          "inst_type": "국립",
+          "guide": "https://cic.kumoh.ac.kr/cic/sub020202.do",
+          "realms": [
+            "kumoh.ac.kr"
+          ]
         },
         {
           "serial_no": 30,
           "page": 2,
-          "inst_id": 15,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "korea_ac_kr.png",
-          "univ_name": "고려대학교",
-          "campus_name": "서울캠퍼스",
-          "guide": "http://wifi.korea.ac.kr/",
-          "realm": "korea.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "ibs_re_kr.png",
+          "univ_name": "기초과학연구원",
+          "inst_type": "기타",
+          "guide": "http://eduroam.ibs.re.kr",
+          "realms": [
+            "ibs.re.kr"
+          ]
         }
       ]
     },
@@ -468,227 +349,167 @@
         {
           "serial_no": 31,
           "page": 3,
-          "inst_id": 15,
-          "operator_type": "NRO",
+          "logo": "kornu_ac_kr.png",
+          "univ_name": "나사렛대학교",
           "inst_type": "사립",
-          "logo": "korea_ac_kr.png",
-          "univ_name": "고려대학교",
-          "campus_name": "세종캠퍼스",
-          "guide": "http://wifi.korea.ac.kr/",
-          "realm": "korea.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://www.kornu.ac.kr/mbs/kornukr/subview.jsp?id=kornukr_071300000000",
+          "realms": [
+            "kornu.ac.kr"
+          ]
         },
         {
           "serial_no": 32,
           "page": 3,
-          "inst_id": 16,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "gjue_ac_kr.png",
-          "univ_name": "공주교육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.gjue.ac.kr/kor/contents/68",
-          "realm": "gjue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "nambu_ac_kr.png",
+          "univ_name": "남부대학교",
+          "inst_type": "사립",
+          "guide": "https://se.nambu.ac.kr/content/view.do?menuCd=dept_se002001",
+          "realms": [
+            "nambu.ac.kr"
+          ]
         },
         {
           "serial_no": 33,
           "page": 3,
-          "inst_id": 17,
-          "operator_type": "NRO",
-          "inst_type": "기타",
-          "logo": "ust_ac_kr.png",
-          "univ_name": "과학기술연합대학원대학교",
-          "campus_name": "과학기술연합대학원대학교",
-          "guide": "",
-          "realm": "ust.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "dankook_ac_kr.png",
+          "univ_name": "단국대학교",
+          "inst_type": "사립",
+          "guide": "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-",
+          "realms": [
+            "dankook.ac.kr"
+          ]
         },
         {
           "serial_no": 34,
           "page": 3,
-          "inst_id": 18,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "gnue_ac_kr.png",
-          "univ_name": "광주교육대학교",
-          "campus_name": "본교",
+          "logo": "cu_ac_kr.png",
+          "univ_name": "대구가톨릭대학교",
+          "inst_type": "사립",
           "guide": "",
-          "realm": "gnue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "cu.ac.kr"
+          ]
         },
         {
           "serial_no": 35,
           "page": 3,
-          "inst_id": 19,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "gwangju_ac_kr.png",
-          "univ_name": "광주대학교",
-          "campus_name": "본교",
-          "guide": "http://icc.gwangju.ac.kr/icc/page/sub0401.html",
-          "realm": "gwangju.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "dgist_ac_kr.png",
+          "univ_name": "대구경북과학기술원",
+          "inst_type": "특별법법인",
+          "guide": "",
+          "realms": [
+            "dgist.ac.kr"
+          ]
         },
         {
           "serial_no": 36,
           "page": 3,
-          "inst_id": 20,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "ghu_ac_kr.png",
-          "univ_name": "광주보건대학교",
-          "campus_name": "본교",
-          "guide": "https://www.ghu.ac.kr/LifeGhc/InfoMail.jsp",
-          "realm": "ghu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "dnue_ac_kr.png",
+          "univ_name": "대구교육대학교",
+          "inst_type": "국립",
+          "guide": "https://www.dnue.ac.kr/kor/CMS/Board/Board.do?mCode=MN168&mode=view&board_seq=14025",
+          "realms": [
+            "dnue.ac.kr"
+          ]
         },
         {
           "serial_no": 37,
           "page": 3,
-          "inst_id": 21,
-          "operator_type": "NRO",
+          "logo": "daegu_ac_kr.png",
+          "univ_name": "대구대학교",
           "inst_type": "사립",
-          "logo": "kwu_ac_kr.png",
-          "univ_name": "광주여자대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "kwu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://www.daegu.ac.kr/page/153",
+          "realms": [
+            "daegu.ac.kr"
+          ]
         },
         {
           "serial_no": 38,
           "page": 3,
-          "inst_id": 22,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kongju_ac_kr.png",
-          "univ_name": "국립공주대학교",
-          "campus_name": "본교",
-          "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do",
-          "realm": "kongju.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": true
+          "logo": "dju_ac_kr.png",
+          "univ_name": "대전대학교",
+          "inst_type": "사립",
+          "guide": "https://www.dju.ac.kr/dju/cm/cntnts/cntntsView.do?mi=6573&cntntsId=4021",
+          "realms": [
+            "dju.ac.kr"
+          ]
         },
         {
           "serial_no": 39,
           "page": 3,
-          "inst_id": 22,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kongju_ac_kr.png",
-          "univ_name": "국립공주대학교",
-          "campus_name": "천안",
-          "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do",
-          "realm": "kongju.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "dime_or_kr.png",
+          "univ_name": "대전마케팅공사",
+          "inst_type": "기타",
+          "guide": "",
+          "realms": [
+            "dime.or.kr"
+          ]
         },
         {
           "serial_no": 40,
           "page": 3,
-          "inst_id": 22,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kongju_ac_kr.png",
-          "univ_name": "국립공주대학교",
-          "campus_name": "예산캠퍼스",
-          "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do",
-          "realm": "kongju.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "daejin_ac_kr.png",
+          "univ_name": "대진대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "daejin.ac.kr"
+          ]
         },
         {
           "serial_no": 41,
           "page": 3,
-          "inst_id": 23,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "ut_ac_kr.png",
-          "univ_name": "국립한국교통대학교",
-          "campus_name": "충주캠퍼스",
-          "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do",
-          "realm": "ut.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": true
+          "logo": "dongguk_ac_kr.png",
+          "univ_name": "동국대학교",
+          "inst_type": "사립",
+          "guide": "https://it.dongguk.edu/?page_id=18649",
+          "realms": [
+            "dongguk.ac.kr"
+          ]
         },
         {
           "serial_no": 42,
           "page": 3,
-          "inst_id": 23,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "ut_ac_kr.png",
-          "univ_name": "국립한국교통대학교",
-          "campus_name": "증평캠퍼스",
-          "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do",
-          "realm": "ut.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "dsu_ac_kr.png",
+          "univ_name": "동신대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "dsu.ac.kr"
+          ]
         },
         {
           "serial_no": 43,
           "page": 3,
-          "inst_id": 23,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "ut_ac_kr.png",
-          "univ_name": "국립한국교통대학교",
-          "campus_name": "의왕캠퍼스",
-          "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do",
-          "realm": "ut.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "donga_ac_kr.png",
+          "univ_name": "동아대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "donga.ac.kr"
+          ]
         },
         {
           "serial_no": 44,
           "page": 3,
-          "inst_id": 24,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "hanbat_ac_kr.png",
-          "univ_name": "국립한밭대학교",
-          "campus_name": "대덕산학융합캠퍼스",
-          "guide": "https://www.hanbat.ac.kr/kor/sub06_080105.do",
-          "realm": "hanbat.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "deu_ac_kr.png",
+          "univ_name": "동의대학교",
+          "inst_type": "사립",
+          "guide": "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10",
+          "realms": [
+            "deu.ac.kr"
+          ]
         },
         {
           "serial_no": 45,
           "page": 3,
-          "inst_id": 24,
-          "operator_type": "RO",
+          "logo": "mokpo_ac_kr.png",
+          "univ_name": "목포대학교",
           "inst_type": "국립",
-          "logo": "hanbat_ac_kr.png",
-          "univ_name": "국립한밭대학교",
-          "campus_name": "유성덕명캠퍼스",
-          "guide": "https://www.hanbat.ac.kr/kor/sub06_080105.do",
-          "realm": "hanbat.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "https://www.mokpo.ac.kr/www/291/subview.do",
+          "realms": [
+            "mokpo.ac.kr"
+          ]
         }
       ]
     },
@@ -698,227 +519,167 @@
         {
           "serial_no": 46,
           "page": 4,
-          "inst_id": 25,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "kookmin_ac_kr.png",
-          "univ_name": "국민대학교",
-          "campus_name": "본교",
-          "guide": "https://kist.kookmin.ac.kr/kist_new/infra/ko.do",
-          "realm": "kookmin.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "mmu_ac_kr.png",
+          "univ_name": "목포해양대학교",
+          "inst_type": "국립",
+          "guide": "https://www.mmu.ac.kr/main/contents/eduroam",
+          "realms": [
+            "mmu.ac.kr"
+          ]
         },
         {
           "serial_no": 47,
           "page": 4,
-          "inst_id": 26,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kunsan_ac_kr.png",
-          "univ_name": "군산대학교",
-          "campus_name": "본교",
-          "guide": "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000",
-          "realm": "kunsan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "bu_ac_kr.png",
+          "univ_name": "백석대학교",
+          "inst_type": "사립",
+          "guide": "http://www.bu.ac.kr/web/3739/subview.do",
+          "realms": [
+            "bu.ac.kr"
+          ]
         },
         {
           "serial_no": 48,
           "page": 4,
-          "inst_id": 26,
-          "operator_type": "NRO",
+          "logo": "pknu_ac_kr.png",
+          "univ_name": "부경대학교",
           "inst_type": "국립",
-          "logo": "kunsan_ac_kr.png",
-          "univ_name": "군산대학교",
-          "campus_name": "새만금캠퍼스",
-          "guide": "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000",
-          "realm": "kunsan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "https://icc.pknu.ac.kr/main/17",
+          "realms": [
+            "pknu.ac.kr"
+          ]
         },
         {
           "serial_no": 49,
           "page": 4,
-          "inst_id": 27,
-          "operator_type": "NRO",
+          "logo": "bnue_ac_kr.png",
+          "univ_name": "부산교육대학교",
           "inst_type": "국립",
-          "logo": "kumoh_ac_kr.png",
-          "univ_name": "금오공과대학교",
-          "campus_name": "본교",
-          "guide": "https://cic.kumoh.ac.kr/cic/sub020202.do",
-          "realm": "kumoh.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "bnue.ac.kr"
+          ]
         },
         {
           "serial_no": 50,
           "page": 4,
-          "inst_id": 27,
-          "operator_type": "NRO",
+          "logo": "pusan_ac_kr.png",
+          "univ_name": "부산대학교",
           "inst_type": "국립",
-          "logo": "kumoh_ac_kr.png",
-          "univ_name": "금오공과대학교",
-          "campus_name": "신평동캠퍼스",
-          "guide": "https://cic.kumoh.ac.kr/cic/sub020202.do",
-          "realm": "kumoh.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "",
+          "realms": [
+            "pusan.ac.kr"
+          ]
         },
         {
           "serial_no": 51,
           "page": 4,
-          "inst_id": 28,
-          "operator_type": "NRO",
+          "logo": "smu_ac_kr.png",
+          "univ_name": "상명대학교",
           "inst_type": "사립",
-          "logo": "kornu_ac_kr.png",
-          "univ_name": "나사렛대학교",
-          "campus_name": "본교",
-          "guide": "https://www.kornu.ac.kr/mbs/kornukr/subview.jsp?id=kornukr_071300000000",
-          "realm": "kornu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://www.smu.ac.kr/kor/life/eduroam.do",
+          "realms": [
+            "smu.ac.kr"
+          ]
         },
         {
           "serial_no": 52,
           "page": 4,
-          "inst_id": 29,
-          "operator_type": "NRO",
+          "logo": "sogang_ac_kr.png",
+          "univ_name": "서강대학교",
           "inst_type": "사립",
-          "logo": "nambu_ac_kr.png",
-          "univ_name": "남부대학교",
-          "campus_name": "본교",
-          "guide": "https://se.nambu.ac.kr/content/view.do?menuCd=dept_se002001",
-          "realm": "nambu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "http://eduroam.sogang.ac.kr/eduroam/index.html",
+          "realms": [
+            "sogang.ac.kr"
+          ]
         },
         {
           "serial_no": 53,
           "page": 4,
-          "inst_id": 30,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "dankook_ac_kr.png",
-          "univ_name": "단국대학교",
-          "campus_name": "죽전캠퍼스",
-          "guide": "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-",
-          "realm": "dankook.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "seoultech_ac_kr.png",
+          "univ_name": "서울과학기술대학교",
+          "inst_type": "국립",
+          "guide": "https://itc.seoultech.ac.kr/service/wifi",
+          "realms": [
+            "seoultech.ac.kr"
+          ]
         },
         {
           "serial_no": 54,
           "page": 4,
-          "inst_id": 30,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "dankook_ac_kr.png",
-          "univ_name": "단국대학교",
-          "campus_name": "천안캠퍼스",
-          "guide": "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-",
-          "realm": "dankook.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "snu_ac_kr.png",
+          "univ_name": "서울대학교",
+          "inst_type": "국립대법인",
+          "guide": "https://ist.snu.ac.kr/wifi/",
+          "realms": [
+            "snu.ac.kr"
+          ]
         },
         {
           "serial_no": 55,
           "page": 4,
-          "inst_id": 31,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "cu_ac_kr.png",
-          "univ_name": "대구가톨릭대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "cu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "uos_ac_kr.png",
+          "univ_name": "서울시립대학교",
+          "inst_type": "공립",
+          "guide": "https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&identified=anonymous&",
+          "realms": [
+            "uos.ac.kr"
+          ]
         },
         {
           "serial_no": 56,
           "page": 4,
-          "inst_id": 32,
-          "operator_type": "NRO",
-          "inst_type": "특별법법인",
-          "logo": "dgist_ac_kr.png",
-          "univ_name": "대구경북과학기술원",
-          "campus_name": "본교",
+          "logo": "seowon_ac_kr.png",
+          "univ_name": "서원대학교",
+          "inst_type": "사립",
           "guide": "",
-          "realm": "dgist.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "seowon.ac.kr"
+          ]
         },
         {
           "serial_no": 57,
           "page": 4,
-          "inst_id": 33,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "dnue_ac_kr.png",
-          "univ_name": "대구교육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.dnue.ac.kr/kor/CMS/Board/Board.do?mCode=MN168&mode=view&board_seq=14025",
-          "realm": "dnue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "seoil_ac_kr.png",
+          "univ_name": "서일대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "seoil.ac.kr"
+          ]
         },
         {
           "serial_no": 58,
           "page": 4,
-          "inst_id": 34,
-          "operator_type": "NRO",
+          "logo": "sungkyul_ac_kr.png",
+          "univ_name": "성결대학교",
           "inst_type": "사립",
-          "logo": "daegu_ac_kr.png",
-          "univ_name": "대구대학교",
-          "campus_name": "경산캠퍼스",
-          "guide": "https://www.daegu.ac.kr/page/153",
-          "realm": "daegu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "sungkyul.ac.kr"
+          ]
         },
         {
           "serial_no": 59,
           "page": 4,
-          "inst_id": 35,
-          "operator_type": "NRO",
+          "logo": "skku_ac_kr.png",
+          "univ_name": "성균관대학교",
           "inst_type": "사립",
-          "logo": "dju_ac_kr.png",
-          "univ_name": "대전대학교",
-          "campus_name": "본교",
-          "guide": "https://www.dju.ac.kr/dju/cm/cntnts/cntntsView.do?mi=6573&cntntsId=4021",
-          "realm": "dju.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://www.skku.edu/skku/campus/IT_service/it_service11.do",
+          "realms": [
+            "skku.ac.kr"
+          ]
         },
         {
           "serial_no": 60,
           "page": 4,
-          "inst_id": 36,
-          "operator_type": "RO",
+          "logo": "sungshin_ac_kr.png",
+          "univ_name": "성신여자대학교",
           "inst_type": "사립",
-          "logo": "daejin_ac_kr.png",
-          "univ_name": "대진대학교",
-          "campus_name": "본교",
           "guide": "",
-          "realm": "daejin.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "sungshin.ac.kr"
+          ]
         }
       ]
     },
@@ -928,227 +689,167 @@
         {
           "serial_no": 61,
           "page": 5,
-          "inst_id": 37,
-          "operator_type": "NRO",
+          "logo": "sejong_ac_kr.png",
+          "univ_name": "세종대학교",
           "inst_type": "사립",
-          "logo": "dongguk_ac_kr.png",
-          "univ_name": "동국대학교",
-          "campus_name": "본교",
-          "guide": "https://it.dongguk.edu/?page_id=18649",
-          "realm": "dongguk.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "sejong.ac.kr"
+          ]
         },
         {
           "serial_no": 62,
           "page": 5,
-          "inst_id": 38,
-          "operator_type": "NRO",
+          "logo": "sehan_ac_kr.png",
+          "univ_name": "세한대학교",
           "inst_type": "사립",
-          "logo": "dsu_ac_kr.png",
-          "univ_name": "동신대학교",
-          "campus_name": "본교",
           "guide": "",
-          "realm": "dsu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "sehan.ac.kr"
+          ]
         },
         {
           "serial_no": 63,
           "page": 5,
-          "inst_id": 39,
-          "operator_type": "NRO",
+          "logo": "suwon_ac_kr.png",
+          "univ_name": "수원대학교",
           "inst_type": "사립",
-          "logo": "donga_ac_kr.png",
-          "univ_name": "동아대학교",
-          "campus_name": "구덕캠퍼스",
-          "guide": "",
-          "realm": "donga.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": true
+          "guide": "https://ici.suwon.ac.kr/index.html?menuno=340",
+          "realms": [
+            "suwon.ac.kr"
+          ]
         },
         {
           "serial_no": 64,
           "page": 5,
-          "inst_id": 39,
-          "operator_type": "NRO",
+          "logo": "sookmyung_ac_kr.png",
+          "univ_name": "숙명여자대학교",
           "inst_type": "사립",
-          "logo": "donga_ac_kr.png",
-          "univ_name": "동아대학교",
-          "campus_name": "승학캠퍼스",
           "guide": "",
-          "realm": "donga.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "realms": [
+            "sookmyung.ac.kr"
+          ]
         },
         {
           "serial_no": 65,
           "page": 5,
-          "inst_id": 39,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "donga_ac_kr.png",
-          "univ_name": "동아대학교",
-          "campus_name": "부민캠퍼스",
-          "guide": "",
-          "realm": "donga.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "scnu_ac_kr.png",
+          "univ_name": "순천대학교",
+          "inst_type": "국립",
+          "guide": "https://www.scnu.ac.kr/icc/cm/cntnts/cntntsView.do?mi=4804&cntntsId=2682",
+          "realms": [
+            "scnu.ac.kr"
+          ]
         },
         {
           "serial_no": 66,
           "page": 5,
-          "inst_id": 40,
-          "operator_type": "NRO",
+          "logo": "ssu_ac_kr.png",
+          "univ_name": "숭실대학교",
           "inst_type": "사립",
-          "logo": "deu_ac_kr.png",
-          "univ_name": "동의대학교",
-          "campus_name": "본교",
-          "guide": "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10",
-          "realm": "deu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/",
+          "realms": [
+            "ssu.ac.kr"
+          ]
         },
         {
           "serial_no": 67,
           "page": 5,
-          "inst_id": 40,
-          "operator_type": "NRO",
+          "logo": "shinhan_ac_kr.png",
+          "univ_name": "신한대학교",
           "inst_type": "사립",
-          "logo": "deu_ac_kr.png",
-          "univ_name": "동의대학교",
-          "campus_name": "양정캠퍼스",
-          "guide": "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10",
-          "realm": "deu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "https://www.shinhan.ac.kr/kr/256/subview.do",
+          "realms": [
+            "shinhan.ac.kr"
+          ]
         },
         {
           "serial_no": 68,
           "page": 5,
-          "inst_id": 41,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "mokpo_ac_kr.png",
-          "univ_name": "목포대학교",
-          "campus_name": "본교",
-          "guide": "https://www.mokpo.ac.kr/www/291/subview.do",
-          "realm": "mokpo.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "ajou_ac_kr.png",
+          "univ_name": "아주대학교",
+          "inst_type": "사립",
+          "guide": "https://pc119.ajou.ac.kr/pc119/service/lan.do",
+          "realms": [
+            "ajou.ac.kr"
+          ]
         },
         {
           "serial_no": 69,
           "page": 5,
-          "inst_id": 42,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "mmu_ac_kr.png",
-          "univ_name": "목포해양대학교",
-          "campus_name": "본교",
-          "guide": "https://www.mmu.ac.kr/main/contents/eduroam",
-          "realm": "mmu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "yonsei_ac_kr.png",
+          "univ_name": "연세대학교",
+          "inst_type": "사립",
+          "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do",
+          "realms": [
+            "yonsei.ac.kr"
+          ]
         },
         {
           "serial_no": 70,
           "page": 5,
-          "inst_id": 43,
-          "operator_type": "NRO",
+          "logo": "yu_ac_kr.png",
+          "univ_name": "영남대학교",
           "inst_type": "사립",
-          "logo": "bu_ac_kr.png",
-          "univ_name": "백석대학교",
-          "campus_name": "본교",
-          "guide": "http://www.bu.ac.kr/web/3739/subview.do",
-          "realm": "bu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07",
+          "realms": [
+            "yu.ac.kr"
+          ]
         },
         {
           "serial_no": 71,
           "page": 5,
-          "inst_id": 43,
-          "operator_type": "NRO",
+          "logo": "ync_ac_kr.png",
+          "univ_name": "영남이공대학교",
           "inst_type": "사립",
-          "logo": "bu_ac_kr.png",
-          "univ_name": "백석대학교",
-          "campus_name": "백석문화대학교",
-          "guide": "http://www.bu.ac.kr/web/3739/subview.do",
-          "realm": "bu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "",
+          "realms": [
+            "ync.ac.kr"
+          ]
         },
         {
           "serial_no": 72,
           "page": 5,
-          "inst_id": 44,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "pknu_ac_kr.png",
-          "univ_name": "부경대학교",
-          "campus_name": "대연캠퍼스",
-          "guide": "https://icc.pknu.ac.kr/main/17",
-          "realm": "pknu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "unist_ac_kr.png",
+          "univ_name": "울산과학기술원",
+          "inst_type": "국립대법인",
+          "guide": "",
+          "realms": [
+            "unist.ac.kr"
+          ]
         },
         {
           "serial_no": 73,
           "page": 5,
-          "inst_id": 44,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "pknu_ac_kr.png",
-          "univ_name": "부경대학교",
-          "campus_name": "용당캠퍼스",
-          "guide": "https://icc.pknu.ac.kr/main/17",
-          "realm": "pknu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "ulsan_ac_kr.png",
+          "univ_name": "울산대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "ulsan.ac.kr"
+          ]
         },
         {
           "serial_no": 74,
           "page": 5,
-          "inst_id": 45,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "bnue_ac_kr.png",
-          "univ_name": "부산교육대학교",
-          "campus_name": "본교",
+          "logo": "wku_ac_kr.png",
+          "univ_name": "원광대학교",
+          "inst_type": "사립",
           "guide": "",
-          "realm": "bnue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "wku.ac.kr"
+          ]
         },
         {
           "serial_no": 75,
           "page": 5,
-          "inst_id": 46,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "pusan_ac_kr.png",
-          "univ_name": "부산대학교",
-          "campus_name": "양산캠퍼스",
-          "guide": "",
-          "realm": "pusan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "wu_ac_kr.png",
+          "univ_name": "원광보건대학교",
+          "inst_type": "사립",
+          "guide": "https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D",
+          "realms": [
+            "wu.ac.kr"
+          ]
         }
       ]
     },
@@ -1158,227 +859,167 @@
         {
           "serial_no": 76,
           "page": 6,
-          "inst_id": 46,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "pusan_ac_kr.png",
-          "univ_name": "부산대학교",
-          "campus_name": "부산캠퍼스",
+          "logo": "yuhan_ac_kr.png",
+          "univ_name": "유한대학교",
+          "inst_type": "사립",
           "guide": "",
-          "realm": "pusan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "realms": [
+            "yuhan.ac.kr"
+          ]
         },
         {
           "serial_no": 77,
           "page": 6,
-          "inst_id": 46,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "pusan_ac_kr.png",
-          "univ_name": "부산대학교",
-          "campus_name": "밀양캠퍼스",
-          "guide": "",
-          "realm": "pusan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "ewha_ac_kr.png",
+          "univ_name": "이화여자대학교",
+          "inst_type": "사립",
+          "guide": "https://www.ewha.ac.kr/ewha/life/eduroam.do",
+          "realms": [
+            "ewha.ac.kr"
+          ]
         },
         {
           "serial_no": 78,
           "page": 6,
-          "inst_id": 47,
-          "operator_type": "NRO",
+          "logo": "inje_ac_kr.png",
+          "univ_name": "인제대학교",
           "inst_type": "사립",
-          "logo": "smu_ac_kr.png",
-          "univ_name": "상명대학교",
-          "campus_name": "본교",
-          "guide": "https://www.smu.ac.kr/kor/life/eduroam.do",
-          "realm": "smu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://www.inje.ac.kr/kor/campus-life/e-service-03.asp",
+          "realms": [
+            "inje.ac.kr"
+          ]
         },
         {
           "serial_no": 79,
           "page": 6,
-          "inst_id": 48,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "sogang_ac_kr.png",
-          "univ_name": "서강대학교",
-          "campus_name": "본교",
-          "guide": "http://eduroam.sogang.ac.kr/eduroam/index.html",
-          "realm": "sogang.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "inu_ac_kr.png",
+          "univ_name": "인천대학교",
+          "inst_type": "공립",
+          "guide": "",
+          "realms": [
+            "inu.ac.kr"
+          ]
         },
         {
           "serial_no": 80,
           "page": 6,
-          "inst_id": 49,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "seoultech_ac_kr.png",
-          "univ_name": "서울과학기술대학교",
-          "campus_name": "본교",
-          "guide": "https://itc.seoultech.ac.kr/service/wifi",
-          "realm": "seoultech.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "inha_ac_kr.png",
+          "univ_name": "인하대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "inha.ac.kr"
+          ]
         },
         {
           "serial_no": 81,
           "page": 6,
-          "inst_id": 50,
-          "operator_type": "NRO",
-          "inst_type": "국립대법인",
-          "logo": "snu_ac_kr.png",
-          "univ_name": "서울대학교",
-          "campus_name": "본교",
-          "guide": "https://ist.snu.ac.kr/wifi/",
-          "realm": "snu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "puts_ac_kr.png",
+          "univ_name": "장로회신학대학교",
+          "inst_type": "사립",
+          "guide": "https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp",
+          "realms": [
+            "puts.ac.kr"
+          ]
         },
         {
           "serial_no": 82,
           "page": 6,
-          "inst_id": 51,
-          "operator_type": "NRO",
-          "inst_type": "공립",
-          "logo": "uos_ac_kr.png",
-          "univ_name": "서울시립대학교",
-          "campus_name": "본교",
-          "guide": "https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&identified=anonymous&",
-          "realm": "uos.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "jnu_ac_kr.png",
+          "univ_name": "전남대학교",
+          "inst_type": "국립",
+          "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam",
+          "realms": [
+            "jnu.ac.kr"
+          ]
         },
         {
           "serial_no": 83,
           "page": 6,
-          "inst_id": 52,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "seowon_ac_kr.png",
-          "univ_name": "서원대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "seowon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "jbnu_ac_kr.png",
+          "univ_name": "전북대학교",
+          "inst_type": "국립",
+          "guide": "https://its.jbnu.ac.kr/its/9226/subview.do",
+          "realms": [
+            "jbnu.ac.kr"
+          ]
         },
         {
           "serial_no": 84,
           "page": 6,
-          "inst_id": 53,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "seoil_ac_kr.png",
-          "univ_name": "서일대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "seoil.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "jnue_ac_kr.png",
+          "univ_name": "전주교육대학교",
+          "inst_type": "국립",
+          "guide": "https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000",
+          "realms": [
+            "jnue.ac.kr"
+          ]
         },
         {
           "serial_no": 85,
           "page": 6,
-          "inst_id": 54,
-          "operator_type": "NRO",
+          "logo": "jj_ac_kr.png",
+          "univ_name": "전주대학교",
           "inst_type": "사립",
-          "logo": "sungkyul_ac_kr.png",
-          "univ_name": "성결대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "sungkyul.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "http://wlan.jj.ac.kr/",
+          "realms": [
+            "jj.ac.kr"
+          ]
         },
         {
           "serial_no": 86,
           "page": 6,
-          "inst_id": 55,
-          "operator_type": "NRO",
+          "logo": "jvision_ac_kr.png",
+          "univ_name": "전주비전대학교",
           "inst_type": "사립",
-          "logo": "skku_ac_kr.png",
-          "univ_name": "성균관대학교",
-          "campus_name": "인문사회과학캠퍼스",
-          "guide": "https://www.skku.edu/skku/campus/IT_service/it_service11.do",
-          "realm": "skku.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "jvision.ac.kr"
+          ]
         },
         {
           "serial_no": 87,
           "page": 6,
-          "inst_id": 55,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "skku_ac_kr.png",
-          "univ_name": "성균관대학교",
-          "campus_name": "자연과학캠퍼스",
-          "guide": "https://www.skku.edu/skku/campus/IT_service/it_service11.do",
-          "realm": "skku.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "jejunu_ac_kr.png",
+          "univ_name": "제주대학교",
+          "inst_type": "국립",
+          "guide": "https://cms.jejunu.ac.kr/camp/stud/wifi/eduroam.htm",
+          "realms": [
+            "jejunu.ac.kr"
+          ]
         },
         {
           "serial_no": 88,
           "page": 6,
-          "inst_id": 56,
-          "operator_type": "NRO",
+          "logo": "chosun_ac_kr.png",
+          "univ_name": "조선대학교",
           "inst_type": "사립",
-          "logo": "sungshin_ac_kr.png",
-          "univ_name": "성신여자대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "sungshin.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "guide": "http://wifi.chosun.ac.kr/Main/Main.html",
+          "realms": [
+            "chosun.ac.kr"
+          ]
         },
         {
           "serial_no": 89,
           "page": 6,
-          "inst_id": 56,
-          "operator_type": "NRO",
+          "logo": "cau_ac_kr.png",
+          "univ_name": "중앙대학교",
           "inst_type": "사립",
-          "logo": "sungshin_ac_kr.png",
-          "univ_name": "성신여자대학교",
-          "campus_name": "운정그린캠퍼스",
-          "guide": "",
-          "realm": "sungshin.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "guide": "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01",
+          "realms": [
+            "cau.ac.kr"
+          ]
         },
         {
           "serial_no": 90,
           "page": 6,
-          "inst_id": 57,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "sejong_ac_kr.png",
-          "univ_name": "세종대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "sejong.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "cwnu_ac_kr.png",
+          "univ_name": "창원대학교",
+          "inst_type": "국립",
+          "guide": "https://www.changwon.ac.kr/kor/na/ntt/selectNttInfo.do?mi=10177&nttSn=782638",
+          "realms": [
+            "cwnu.ac.kr"
+          ]
         }
       ]
     },
@@ -1388,227 +1029,167 @@
         {
           "serial_no": 91,
           "page": 7,
-          "inst_id": 58,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "sehan_ac_kr.png",
-          "univ_name": "세한대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "sehan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
+          "logo": "cje_ac_kr.png",
+          "univ_name": "청주교육대학교",
+          "inst_type": "국립",
+          "guide": "https://www.cje.ac.kr/cj_edu_univ/web/content.do?menu_cd=000157",
+          "realms": [
+            "cje.ac.kr"
+          ]
         },
         {
           "serial_no": 92,
           "page": 7,
-          "inst_id": 58,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "sehan_ac_kr.png",
-          "univ_name": "세한대학교",
-          "campus_name": "당진캠퍼스",
-          "guide": "",
-          "realm": "sehan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "logo": "cnue_ac_kr.png",
+          "univ_name": "춘천교육대학교",
+          "inst_type": "국립",
+          "guide": "https://www.cnue.ac.kr/cnue/life/wireless-lan.do",
+          "realms": [
+            "cnue.ac.kr"
+          ]
         },
         {
           "serial_no": 93,
           "page": 7,
-          "inst_id": 59,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "suwon_ac_kr.png",
-          "univ_name": "수원대학교",
-          "campus_name": "본교",
-          "guide": "https://ici.suwon.ac.kr/index.html?menuno=340",
-          "realm": "suwon.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "cnu_ac_kr.png",
+          "univ_name": "충남대학교",
+          "inst_type": "국립",
+          "guide": "https://homepage.cnu.ac.kr/cic/service/eduroam.do",
+          "realms": [
+            "cnu.ac.kr"
+          ]
         },
         {
           "serial_no": 94,
           "page": 7,
-          "inst_id": 60,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "sookmyung_ac_kr.png",
-          "univ_name": "숙명여자대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "sookmyung.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "cbnu_ac_kr.png",
+          "univ_name": "충북대학교",
+          "inst_type": "국립",
+          "guide": "http://wifi.cbnu.ac.kr/",
+          "realms": [
+            "cbnu.ac.kr"
+          ]
         },
         {
           "serial_no": 95,
           "page": 7,
-          "inst_id": 61,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "scnu_ac_kr.png",
-          "univ_name": "순천대학교",
-          "campus_name": "본교",
-          "guide": "https://www.scnu.ac.kr/icc/cm/cntnts/cntntsView.do?mi=4804&cntntsId=2682",
-          "realm": "scnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "chsu_ac_kr.png",
+          "univ_name": "충북보건과학대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "chsu.ac.kr"
+          ]
         },
         {
           "serial_no": 96,
           "page": 7,
-          "inst_id": 62,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "ssu_ac_kr.png",
-          "univ_name": "숭실대학교",
-          "campus_name": "본교",
-          "guide": "https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/",
-          "realm": "ssu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "teincc_kr.png",
+          "univ_name": "(재)테인협력센터",
+          "inst_type": "기타",
+          "guide": "",
+          "realms": [
+            "teincc.kr"
+          ]
         },
         {
           "serial_no": 97,
           "page": 7,
-          "inst_id": 63,
-          "operator_type": "NRO",
+          "logo": "postech_ac_kr.png",
+          "univ_name": "포항공과대학교",
           "inst_type": "사립",
-          "logo": "shinhan_ac_kr.png",
-          "univ_name": "신한대학교",
-          "campus_name": "본교",
-          "guide": "https://www.shinhan.ac.kr/kr/256/subview.do",
-          "realm": "shinhan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi",
+          "realms": [
+            "postech.ac.kr"
+          ]
         },
         {
           "serial_no": 98,
           "page": 7,
-          "inst_id": 64,
-          "operator_type": "NRO",
+          "logo": "tukorea_ac_kr.png",
+          "univ_name": "한국공학대학교",
           "inst_type": "사립",
-          "logo": "ajou_ac_kr.png",
-          "univ_name": "아주대학교",
-          "campus_name": "본교",
-          "guide": "https://pc119.ajou.ac.kr/pc119/service/lan.do",
-          "realm": "ajou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "tukorea.ac.kr"
+          ]
         },
         {
           "serial_no": 99,
           "page": 7,
-          "inst_id": 65,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "yonsei_ac_kr.png",
-          "univ_name": "연세대학교",
-          "campus_name": "본교",
-          "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do",
-          "realm": "yonsei.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": true
+          "logo": "kisti_re_kr.png",
+          "univ_name": "한국과학기술정보연구원",
+          "inst_type": "기타",
+          "guide": "http://www.kreonet.net/eduroam/en",
+          "realms": [
+            "kisti.re.kr"
+          ]
         },
         {
           "serial_no": 100,
           "page": 7,
-          "inst_id": 65,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "yonsei_ac_kr.png",
-          "univ_name": "연세대학교",
-          "campus_name": "미래캠퍼스",
-          "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do",
-          "realm": "yonsei.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "logo": "knue_ac_kr.png",
+          "univ_name": "한국교원대학교",
+          "inst_type": "국립",
+          "guide": "http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&uid=1974",
+          "realms": [
+            "knue.ac.kr"
+          ]
         },
         {
           "serial_no": 101,
           "page": 7,
-          "inst_id": 65,
-          "operator_type": "NRO",
+          "logo": "koreatech_ac_kr.png",
+          "univ_name": "한국기술교육대학교",
           "inst_type": "사립",
-          "logo": "yonsei_ac_kr.png",
-          "univ_name": "연세대학교",
-          "campus_name": "국제캠퍼스",
-          "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do",
-          "realm": "yonsei.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 3,
-          "is_first_in_chunk": false
+          "guide": "",
+          "realms": [
+            "koreatech.ac.kr"
+          ]
         },
         {
           "serial_no": 102,
           "page": 7,
-          "inst_id": 66,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "yu_ac_kr.png",
-          "univ_name": "영남대학교",
-          "campus_name": "본교",
-          "guide": "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07",
-          "realm": "yu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "knou_ac_kr.png",
+          "univ_name": "한국방송통신대학교",
+          "inst_type": "국립",
+          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
+          "realms": [
+            "knou.ac.kr"
+          ]
         },
         {
           "serial_no": 103,
           "page": 7,
-          "inst_id": 67,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "ync_ac_kr.png",
-          "univ_name": "영남이공대학교",
-          "campus_name": "본교",
+          "logo": "kentech_ac_kr.png",
+          "univ_name": "한국에너지공과대학교",
+          "inst_type": "특별법법인",
           "guide": "",
-          "realm": "ync.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "kentech.ac.kr"
+          ]
         },
         {
           "serial_no": 104,
           "page": 7,
-          "inst_id": 68,
-          "operator_type": "NRO",
-          "inst_type": "국립대법인",
-          "logo": "unist_ac_kr.png",
-          "univ_name": "울산과학기술원",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "unist.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "hufs_ac_kr.png",
+          "univ_name": "한국외국어대학교",
+          "inst_type": "사립",
+          "guide": "https://www.hufs.ac.kr/hufs/11334/subview.do",
+          "realms": [
+            "hufs.ac.kr"
+          ]
         },
         {
           "serial_no": 105,
           "page": 7,
-          "inst_id": 69,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "ulsan_ac_kr.png",
-          "univ_name": "울산대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "ulsan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "knsu_ac_kr.png",
+          "univ_name": "한국체육대학교",
+          "inst_type": "국립",
+          "guide": "https://www.knsu.ac.kr/knsu/unilife/wireless-internet.do",
+          "realms": [
+            "knsu.ac.kr"
+          ]
         }
       ]
     },
@@ -1618,1015 +1199,115 @@
         {
           "serial_no": 106,
           "page": 8,
-          "inst_id": 70,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "wku_ac_kr.png",
-          "univ_name": "원광대학교",
-          "campus_name": "본교",
+          "logo": "kriss_re_kr.png",
+          "univ_name": "한국표준과학연구원",
+          "inst_type": "기타",
           "guide": "",
-          "realm": "wku.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "kriss.re.kr"
+          ]
         },
         {
           "serial_no": 107,
           "page": 8,
-          "inst_id": 71,
-          "operator_type": "NRO",
+          "logo": "kau_ac_kr.png",
+          "univ_name": "한국항공대학교",
           "inst_type": "사립",
-          "logo": "wu_ac_kr.png",
-          "univ_name": "원광보건대학교",
-          "campus_name": "본교",
-          "guide": "https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D",
-          "realm": "wu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://kau.ac.kr/kaulife/itnoti.php?searchkey=&searchvalue=&code=s1801&page=&mode=read&seq=6546",
+          "realms": [
+            "kau.ac.kr"
+          ]
         },
         {
           "serial_no": 108,
           "page": 8,
-          "inst_id": 72,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "yuhan_ac_kr.png",
-          "univ_name": "유한대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "yuhan.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "logo": "kmou_ac_kr.png",
+          "univ_name": "한국해양대학교",
+          "inst_type": "국립",
+          "guide": "http://www.kmou.ac.kr/cisc/cm/cntnts/cntntsView.do?mi=4384&cntntsId=1306",
+          "realms": [
+            "kmou.ac.kr"
+          ]
         },
         {
           "serial_no": 109,
           "page": 8,
-          "inst_id": 73,
-          "operator_type": "NRO",
+          "logo": "hnu_ac_kr.png",
+          "univ_name": "한남대학교",
           "inst_type": "사립",
-          "logo": "ewha_ac_kr.png",
-          "univ_name": "이화여자대학교",
-          "campus_name": "본교",
-          "guide": "https://www.ewha.ac.kr/ewha/life/eduroam.do",
-          "realm": "ewha.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "http://wifi.hannam.ac.kr/",
+          "realms": [
+            "hnu.ac.kr"
+          ]
         },
         {
           "serial_no": 110,
           "page": 8,
-          "inst_id": 74,
-          "operator_type": "NRO",
+          "logo": "hgu_ac_kr.png",
+          "univ_name": "한동대학교",
           "inst_type": "사립",
-          "logo": "inje_ac_kr.png",
-          "univ_name": "인제대학교",
-          "campus_name": "본교",
-          "guide": "https://www.inje.ac.kr/kor/campus-life/e-service-03.asp",
-          "realm": "inje.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "https://library.handong.edu/local/html/450",
+          "realms": [
+            "hgu.ac.kr"
+          ]
         },
         {
           "serial_no": 111,
           "page": 8,
-          "inst_id": 75,
-          "operator_type": "NRO",
-          "inst_type": "공립",
-          "logo": "inu_ac_kr.png",
-          "univ_name": "인천대학교",
-          "campus_name": "본교",
+          "logo": "hallym_ac_kr.png",
+          "univ_name": "한림대학교",
+          "inst_type": "사립",
           "guide": "",
-          "realm": "inu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "realms": [
+            "hallym.ac.kr"
+          ]
         },
         {
           "serial_no": 112,
           "page": 8,
-          "inst_id": 76,
-          "operator_type": "NRO",
+          "logo": "hansei_ac_kr.png",
+          "univ_name": "한세대학교",
           "inst_type": "사립",
-          "logo": "inha_ac_kr.png",
-          "univ_name": "인하대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "inha.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "http://www.hansei.ac.kr/kor/345/subview.do",
+          "realms": [
+            "hansei.ac.kr"
+          ]
         },
         {
           "serial_no": 113,
           "page": 8,
-          "inst_id": 77,
-          "operator_type": "NRO",
+          "logo": "hanyang_ac_kr.png",
+          "univ_name": "한양대학교",
           "inst_type": "사립",
-          "logo": "puts_ac_kr.png",
-          "univ_name": "장로회신학대학교",
-          "campus_name": "본교",
-          "guide": "https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp",
-          "realm": "puts.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
+          "guide": "",
+          "realms": [
+            "hanyang.ac.kr"
+          ]
         },
         {
           "serial_no": 114,
           "page": 8,
-          "inst_id": 78,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jnu_ac_kr.png",
-          "univ_name": "전남대학교",
-          "campus_name": "화순캠퍼스",
-          "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam",
-          "realm": "jnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 4,
-          "is_first_in_chunk": true
+          "logo": "honam_ac_kr.png",
+          "univ_name": "호남대학교",
+          "inst_type": "사립",
+          "guide": "",
+          "realms": [
+            "honam.ac.kr"
+          ]
         },
         {
           "serial_no": 115,
           "page": 8,
-          "inst_id": 78,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jnu_ac_kr.png",
-          "univ_name": "전남대학교",
-          "campus_name": "학동캠퍼스",
-          "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam",
-          "realm": "jnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 4,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 116,
-          "page": 8,
-          "inst_id": 78,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jnu_ac_kr.png",
-          "univ_name": "전남대학교",
-          "campus_name": "여수캠퍼스",
-          "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam",
-          "realm": "jnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 4,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 117,
-          "page": 8,
-          "inst_id": 78,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jnu_ac_kr.png",
-          "univ_name": "전남대학교",
-          "campus_name": "광주캠퍼스",
-          "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam",
-          "realm": "jnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 4,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 118,
-          "page": 8,
-          "inst_id": 79,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jbnu_ac_kr.png",
-          "univ_name": "전북대학교",
-          "campus_name": "본교",
-          "guide": "https://its.jbnu.ac.kr/its/9226/subview.do",
-          "realm": "jbnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 119,
-          "page": 8,
-          "inst_id": 79,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jbnu_ac_kr.png",
-          "univ_name": "전북대학교",
-          "campus_name": "익산캠퍼스",
-          "guide": "https://its.jbnu.ac.kr/its/9226/subview.do",
-          "realm": "jbnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 120,
-          "page": 8,
-          "inst_id": 80,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "jnue_ac_kr.png",
-          "univ_name": "전주교육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000",
-          "realm": "jnue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        }
-      ]
-    },
-    {
-      "page": 9,
-      "rows": [
-        {
-          "serial_no": 121,
-          "page": 9,
-          "inst_id": 81,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "jj_ac_kr.png",
-          "univ_name": "전주대학교",
-          "campus_name": "본교",
-          "guide": "http://wlan.jj.ac.kr/",
-          "realm": "jj.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 122,
-          "page": 9,
-          "inst_id": 82,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "jvision_ac_kr.png",
-          "univ_name": "전주비전대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "jvision.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 123,
-          "page": 9,
-          "inst_id": 83,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "jejunu_ac_kr.png",
-          "univ_name": "제주대학교",
-          "campus_name": "아라캠퍼스",
-          "guide": "https://cms.jejunu.ac.kr/camp/stud/wifi/eduroam.htm",
-          "realm": "jejunu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 124,
-          "page": 9,
-          "inst_id": 84,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "chosun_ac_kr.png",
-          "univ_name": "조선대학교",
-          "campus_name": "본교",
-          "guide": "http://wifi.chosun.ac.kr/Main/Main.html",
-          "realm": "chosun.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 125,
-          "page": 9,
-          "inst_id": 85,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "cau_ac_kr.png",
-          "univ_name": "중앙대학교",
-          "campus_name": "다빈치캠퍼스",
-          "guide": "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01",
-          "realm": "cau.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 126,
-          "page": 9,
-          "inst_id": 85,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "cau_ac_kr.png",
-          "univ_name": "중앙대학교",
-          "campus_name": "서울캠퍼스",
-          "guide": "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01",
-          "realm": "cau.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 127,
-          "page": 9,
-          "inst_id": 86,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "cwnu_ac_kr.png",
-          "univ_name": "창원대학교",
-          "campus_name": "본교",
-          "guide": "https://www.changwon.ac.kr/kor/na/ntt/selectNttInfo.do?mi=10177&nttSn=782638",
-          "realm": "cwnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 128,
-          "page": 9,
-          "inst_id": 87,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "cje_ac_kr.png",
-          "univ_name": "청주교육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.cje.ac.kr/cj_edu_univ/web/content.do?menu_cd=000157",
-          "realm": "cje.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 129,
-          "page": 9,
-          "inst_id": 88,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "cnue_ac_kr.png",
-          "univ_name": "춘천교육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.cnue.ac.kr/cnue/life/wireless-lan.do",
-          "realm": "cnue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 130,
-          "page": 9,
-          "inst_id": 89,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "cnu_ac_kr.png",
-          "univ_name": "충남대학교",
-          "campus_name": "본교",
-          "guide": "https://homepage.cnu.ac.kr/cic/service/eduroam.do",
-          "realm": "cnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 131,
-          "page": 9,
-          "inst_id": 89,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "cnu_ac_kr.png",
-          "univ_name": "충남대학교",
-          "campus_name": "보운캠퍼스",
-          "guide": "https://homepage.cnu.ac.kr/cic/service/eduroam.do",
-          "realm": "cnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 132,
-          "page": 9,
-          "inst_id": 90,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "cbnu_ac_kr.png",
-          "univ_name": "충북대학교",
-          "campus_name": "본교",
-          "guide": "http://wifi.cbnu.ac.kr/",
-          "realm": "cbnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 133,
-          "page": 9,
-          "inst_id": 91,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "chsu_ac_kr.png",
-          "univ_name": "충북보건과학대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "chsu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 134,
-          "page": 9,
-          "inst_id": 92,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "postech_ac_kr.png",
-          "univ_name": "포항공과대학교",
-          "campus_name": "본교",
-          "guide": "https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi",
-          "realm": "postech.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 135,
-          "page": 9,
-          "inst_id": 93,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "tukorea_ac_kr.png",
-          "univ_name": "한국공학대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "tukorea.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        }
-      ]
-    },
-    {
-      "page": 10,
-      "rows": [
-        {
-          "serial_no": 136,
-          "page": 10,
-          "inst_id": 93,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "tukorea_ac_kr.png",
-          "univ_name": "한국공학대학교",
-          "campus_name": "한국공학대학교 제2캠퍼스",
-          "guide": "",
-          "realm": "tukorea.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 137,
-          "page": 10,
-          "inst_id": 94,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "knue_ac_kr.png",
-          "univ_name": "한국교원대학교",
-          "campus_name": "본교",
-          "guide": "http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&uid=1974",
-          "realm": "knue.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 138,
-          "page": 10,
-          "inst_id": 95,
-          "operator_type": "RO",
-          "inst_type": "사립",
-          "logo": "koreatech_ac_kr.png",
-          "univ_name": "한국기술교육대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "koreatech.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 139,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "본교",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 140,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "강원지역대학 강릉시학습관",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 141,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "제주지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 142,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "부산지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 143,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "대전충남지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 144,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "서울지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 145,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "대구경북지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 146,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "서울지역대학 남부학습센터",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 147,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "서울지역대학 서부학습센터",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 148,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "전북지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 149,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "강원지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 150,
-          "page": 10,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "울산지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 12,
-          "is_first_in_chunk": false
-        }
-      ]
-    },
-    {
-      "page": 11,
-      "rows": [
-        {
-          "serial_no": 151,
-          "page": 11,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "인천지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 6,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 152,
-          "page": 11,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "충북지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 6,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 153,
-          "page": 11,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "광주전남지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 6,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 154,
-          "page": 11,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "경남지역대학 창원시학습관",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 6,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 155,
-          "page": 11,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "경기지역대학",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 6,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 156,
-          "page": 11,
-          "inst_id": 96,
-          "operator_type": "RO",
-          "inst_type": "국립",
-          "logo": "knou_ac_kr.png",
-          "univ_name": "한국방송통신대학교",
-          "campus_name": "경기지역대학 성남시학습관",
-          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
-          "realm": "knou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 6,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 157,
-          "page": 11,
-          "inst_id": 97,
-          "operator_type": "NRO",
-          "inst_type": "특별법법인",
-          "logo": "kentech_ac_kr.png",
-          "univ_name": "한국에너지공과대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "kentech.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 158,
-          "page": 11,
-          "inst_id": 98,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hufs_ac_kr.png",
-          "univ_name": "한국외국어대학교",
-          "campus_name": "본교",
-          "guide": "https://www.hufs.ac.kr/hufs/11334/subview.do",
-          "realm": "hufs.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 159,
-          "page": 11,
-          "inst_id": 99,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "knsu_ac_kr.png",
-          "univ_name": "한국체육대학교",
-          "campus_name": "본교",
-          "guide": "https://www.knsu.ac.kr/knsu/unilife/wireless-internet.do",
-          "realm": "knsu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 160,
-          "page": 11,
-          "inst_id": 100,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "kau_ac_kr.png",
-          "univ_name": "한국항공대학교",
-          "campus_name": "본교",
-          "guide": "https://kau.ac.kr/kaulife/itnoti.php?searchkey=&searchvalue=&code=s1801&page=&mode=read&seq=6546",
-          "realm": "kau.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 161,
-          "page": 11,
-          "inst_id": 101,
-          "operator_type": "NRO",
-          "inst_type": "국립",
-          "logo": "kmou_ac_kr.png",
-          "univ_name": "한국해양대학교",
-          "campus_name": "본교",
-          "guide": "http://www.kmou.ac.kr/cisc/cm/cntnts/cntntsView.do?mi=4384&cntntsId=1306",
-          "realm": "kmou.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 162,
-          "page": 11,
-          "inst_id": 102,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hnu_ac_kr.png",
-          "univ_name": "한남대학교",
-          "campus_name": "본교",
-          "guide": "http://wifi.hannam.ac.kr/",
-          "realm": "hnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 163,
-          "page": 11,
-          "inst_id": 102,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hnu_ac_kr.png",
-          "univ_name": "한남대학교",
-          "campus_name": "대덕밸리캠퍼스",
-          "guide": "http://wifi.hannam.ac.kr/",
-          "realm": "hnu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 164,
-          "page": 11,
-          "inst_id": 103,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hgu_ac_kr.png",
-          "univ_name": "한동대학교",
-          "campus_name": "본교",
-          "guide": "https://library.handong.edu/local/html/450",
-          "realm": "hgu.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 165,
-          "page": 11,
-          "inst_id": 104,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hallym_ac_kr.png",
-          "univ_name": "한림대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "hallym.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        }
-      ]
-    },
-    {
-      "page": 12,
-      "rows": [
-        {
-          "serial_no": 166,
-          "page": 12,
-          "inst_id": 105,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hansei_ac_kr.png",
-          "univ_name": "한세대학교",
-          "campus_name": "본교",
-          "guide": "http://www.hansei.ac.kr/kor/345/subview.do",
-          "realm": "hansei.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 167,
-          "page": 12,
-          "inst_id": 106,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hanyang_ac_kr.png",
-          "univ_name": "한양대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "hanyang.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 168,
-          "page": 12,
-          "inst_id": 106,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "hanyang_ac_kr.png",
-          "univ_name": "한양대학교",
-          "campus_name": "ERICA캠퍼스",
-          "guide": "",
-          "realm": "hanyang.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
-        },
-        {
-          "serial_no": 169,
-          "page": 12,
-          "inst_id": 107,
-          "operator_type": "NRO",
-          "inst_type": "사립",
-          "logo": "honam_ac_kr.png",
-          "univ_name": "호남대학교",
-          "campus_name": "본교",
-          "guide": "",
-          "realm": "honam.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 1,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 170,
-          "page": 12,
-          "inst_id": 108,
-          "operator_type": "RO",
-          "inst_type": "사립",
           "logo": "hongik_ac_kr.png",
           "univ_name": "홍익대학교",
-          "campus_name": "세종캠퍼스",
-          "guide": "https://wifi.hongik.ac.kr",
-          "realm": "hongik.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": true
-        },
-        {
-          "serial_no": 171,
-          "page": 12,
-          "inst_id": 108,
-          "operator_type": "RO",
           "inst_type": "사립",
-          "logo": "hongik_ac_kr.png",
-          "univ_name": "홍익대학교",
-          "campus_name": "본교",
           "guide": "https://wifi.hongik.ac.kr",
-          "realm": "hongik.ac.kr",
-          "rowspan_realm": true,
-          "chunk_size": 2,
-          "is_first_in_chunk": false
+          "realms": [
+            "hongik.ac.kr"
+          ]
         }
       ]
     }
   ],
-  "total_pages": 12
+  "total_pages": 8
 }
