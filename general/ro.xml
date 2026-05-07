@@ -12,7 +12,7 @@
      xsi:noNamespaceSchemaLocation="ro.xsd">
   <RO>
     <ROid>kr01</ROid>
-    <country>KR</country>
+    <country>kr</country>
     <stage>1</stage>
 
     <org_name lang="en">Korea Institute of Science and Technology Information</org_name>
