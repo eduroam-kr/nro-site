@@ -23,35 +23,15 @@ lang: en
       <!-- Search & Filter Box -->
       <div class="section-card p-4 mb-4" id="filter-box" style="border: 1px solid #007bff; border-radius: 8px;">
         <div class="row align-items-end">
-          <!-- Filter 1: Type -->
-          <div class="col-md-2 mb-2 mb-md-0">
-            <label class="small text-secondary font-weight-bold mb-1">Type</label>
-            <select class="form-control" id="filterType" onchange="searchTable()">
-              <option value="">All</option>
-              <option value="국립">National</option>
-              <option value="사립">Private</option>
-              <option value="특별법법인">Special</option>
-              <option value="기타">Other</option>
-            </select>
-          </div>
-          <!-- Filter 2: Network -->
-          <div class="col-md-2 mb-2 mb-md-0">
-            <label class="small text-secondary font-weight-bold mb-1">Network</label>
-            <select class="form-control" id="filterNet" onchange="searchTable()">
-              <option value="">All</option>
-              <option value="NRO">NRO Direct</option>
-              <option value="RO">RO Member</option>
-            </select>
-          </div>
           <!-- Search -->
-          <div class="col-md-3 mb-2 mb-md-0">
+          <div class="col-md-5 mb-2 mb-md-0">
             <label class="small text-secondary font-weight-bold mb-1">Search Institution</label>
             <div class="input-group">
               <input type="text" class="form-control" id="searchInput" placeholder="Enter institution name">
             </div>
           </div>
-          <!-- Filter 3: Connection Guide -->
-          <div class="col-md-3 mb-2 mb-md-0">
+          <!-- Filter: Connection Guide -->
+          <div class="col-md-4 mb-2 mb-md-0">
             <label class="small text-secondary font-weight-bold mb-1">Connection Guide</label>
             <select class="form-control" id="filterGuide" onchange="searchTable()">
               <option value="">All</option>
@@ -59,14 +39,14 @@ lang: en
               <option value="n">Not available</option>
             </select>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <button class="btn btn-primary w-100 py-2" onclick="searchTable()"><i class="fas fa-search"></i> Search</button>
           </div>
         </div>
       </div>
 
       <div class="mb-2 text-secondary" style="font-size: 0.85rem;">
-        ※ Sorted alphabetically by institution name. &nbsp; ( {{ site.data.institutions_pages.total_institutions }} institutions, {{ site.data.institutions_pages.total_campuses }} campuses )
+        ※ Sorted alphabetically by institution name. &nbsp; ( {{ site.data.institutions_pages_en.total_institutions }} institutions )
       </div>
 
       <!-- Institution Table -->
@@ -75,83 +55,53 @@ lang: en
           <thead style="background-color: #f8f9fa;">
             <tr>
               <th style="width: 50px;">No.</th>
-              <th style="width: 80px;">Type</th>
               <th colspan="2">Institution</th>
-              <th>Campus</th>
-              <th style="width: 85px;">Network</th>
               <th style="width: 80px;">Type</th>
               <th style="width: 140px;">Connection Guide</th>
               <th>Realm</th>
             </tr>
           </thead>
 
-          {% for pagedata in site.data.institutions_pages.pages %}
+          {% for pagedata in site.data.institutions_pages_en.pages %}
             <tbody id="page-{{ pagedata.page }}" style="{% if pagedata.page != 1 %}display: none;{% endif %}">
               {% for cd in pagedata.rows %}
-                <tr class="inst-row" data-name="{{ cd.univ_name }}" data-type="{{ cd.inst_type }}" data-net="{{ cd.operator_type }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
+                <tr class="inst-row" data-name="{{ cd.univ_name | downcase }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
 
                   <td>{{ cd.serial_no }}</td>
 
-                  {% if cd.is_first_in_chunk %}
-                    <td rowspan="{{ cd.chunk_size }}" class="align-middle">{{ cd.inst_type }}</td>
-                    <td style="width: 100px; padding: 5px;" rowspan="{{ cd.chunk_size }}" class="align-middle">
-                      {% if cd.logo != '' %}
-                        <img src="{{ '/assets/images/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
-                      {% else %}
-                        <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
-                      {% endif %}
-                    </td>
-                    <td class="text-left align-middle" style="font-weight: 500;" rowspan="{{ cd.chunk_size }}">
-                      {{ cd.univ_name }}
-                    </td>
-                  {% endif %}
-
-                  <td class="text-left align-middle">{{ cd.campus_name }}</td>
-
-                  {% if cd.is_first_in_chunk %}
-                    <td rowspan="{{ cd.chunk_size }}" class="align-middle">
-                      {% if cd.operator_type == 'NRO' %}
-                        <span class="badge badge-primary px-2 py-1" style="font-weight: 500;">NRO Direct</span>
-                      {% else %}
-                        <span class="badge badge-info px-2 py-1" style="font-weight: 500; background-color: #17a2b8;">RO Member</span>
-                      {% endif %}
-                    </td>
-                    <td rowspan="{{ cd.chunk_size }}" class="text-center align-middle">
-                      {% if cd.conn_type == 'IdP+SP' %}
-                        <span style="color: #7b1fa2; font-weight: 600; font-size: 0.82rem;">IdP+SP</span>
-                      {% elsif cd.conn_type == 'IdP' %}
-                        <span style="color: #1565c0; font-weight: 600; font-size: 0.82rem;">IdP</span>
-                      {% elsif cd.conn_type == 'SP' %}
-                        <span style="color: #2e7d32; font-weight: 600; font-size: 0.82rem;">SP</span>
-                      {% endif %}
-                    </td>
-                  {% endif %}
-
-                  {% if cd.rowspan_realm %}
-                    {% if cd.is_first_in_chunk %}
-                      <td rowspan="{{ cd.chunk_size }}" class="align-middle">
-                        {% if cd.guide != '' %}
-                          <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
-                            <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
-                          </a>
-                        {% endif %}
-                      </td>
-                      <td class="text-success text-left ps-3 align-middle" rowspan="{{ cd.chunk_size }}">
-                        <div style="font-size:0.85rem;">{{ cd.realm }}</div>
-                      </td>
+                  <td style="width: 100px; padding: 5px;" class="align-middle">
+                    {% if cd.logo != '' %}
+                      <img src="{{ '/assets/images/logos/' | relative_url }}{{ cd.logo }}" alt="logo" style="max-width: 80px; max-height: 50px; object-fit: contain;">
+                    {% else %}
+                      <div style="width: 60px; height: 60px; background: #eee; margin: auto; border-radius: 50%; display:flex; align-items:center; justify-content:center; font-size:0.7rem; color:#999;">No Logo</div>
                     {% endif %}
-                  {% else %}
-                    <td class="align-middle">
-                      {% if cd.guide != '' %}
-                        <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
-                          <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
-                        </a>
-                      {% endif %}
-                    </td>
-                    <td class="text-success text-left ps-3 align-middle">
-                      <div style="font-size:0.85rem;">{{ cd.realm }}</div>
-                    </td>
-                  {% endif %}
+                  </td>
+
+                  <td class="text-left align-middle" style="font-weight: 500;">{{ cd.univ_name }}</td>
+
+                  <td class="text-center align-middle">
+                    {% if cd.conn_type == 'IdP+SP' %}
+                      <span style="color: #7b1fa2; font-weight: 600; font-size: 0.82rem;">IdP+SP</span>
+                    {% elsif cd.conn_type == 'IdP' %}
+                      <span style="color: #1565c0; font-weight: 600; font-size: 0.82rem;">IdP</span>
+                    {% elsif cd.conn_type == 'SP' %}
+                      <span style="color: #2e7d32; font-weight: 600; font-size: 0.82rem;">SP</span>
+                    {% endif %}
+                  </td>
+
+                  <td class="align-middle">
+                    {% if cd.guide != '' %}
+                      <a href="{{ cd.guide }}" target="_blank" class="text-primary text-decoration-none border rounded p-1" style="font-size: 0.8rem; display:inline-block;">
+                        <i class="fas fa-external-link-square-alt"></i> Wi-Fi Guide
+                      </a>
+                    {% endif %}
+                  </td>
+
+                  <td class="text-success text-left ps-3 align-middle">
+                    {% for realm in cd.realms %}
+                      <div style="font-size:0.85rem;">{{ realm }}</div>
+                    {% endfor %}
+                  </td>
 
                 </tr>
               {% endfor %}
@@ -179,19 +129,6 @@ lang: en
 </div>
 
 <style>
-  .sidebar-menu .list-group-item {
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    margin-bottom: 0px;
-    padding: 12px 15px;
-    font-size: 0.95rem;
-    color: #444;
-  }
-  .sidebar-menu .list-group-item.active {
-    background-color: #3f51b5;
-    border-color: #3f51b5;
-  }
   .table-bordered th, .table-bordered td {
     vertical-align: middle;
   }
@@ -210,7 +147,7 @@ lang: en
 </style>
 
 <script>
-  var totalPages = {{ site.data.institutions_pages.total_pages }};
+  var totalPages = {{ site.data.institutions_pages_en.total_pages }};
   var currentPage = 1;
   var itemsPerPage = 15;
   var filteredRows = [];
@@ -285,11 +222,9 @@ lang: en
 
   function searchTable() {
     var input = document.getElementById("searchInput").value.toLowerCase();
-    var filterType = document.getElementById("filterType").value;
-    var filterNet = document.getElementById("filterNet").value;
     var filterGuide = document.getElementById("filterGuide").value;
 
-    if (input.trim() === '' && filterType === '' && filterNet === '' && filterGuide === '') {
+    if (input.trim() === '' && filterGuide === '') {
       isSearchMode = false;
       filteredRows = [];
       allRows.forEach(function(row) { row.style.display = ''; });
@@ -299,11 +234,9 @@ lang: en
 
     isSearchMode = true;
     filteredRows = allRows.filter(function(row) {
-      var matchesName = row.dataset.name.toLowerCase().includes(input);
-      var matchesType = filterType === '' || row.dataset.type === filterType;
-      var matchesNet = filterNet === '' || row.dataset.net === filterNet;
+      var matchesName = row.dataset.name.includes(input);
       var matchesGuide = filterGuide === '' || row.dataset.guide === filterGuide;
-      return matchesName && matchesType && matchesNet && matchesGuide;
+      return matchesName && matchesGuide;
     });
 
     currentPage = 1;

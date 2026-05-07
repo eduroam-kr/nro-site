@@ -1,0 +1,1427 @@
+{
+  "total_campuses": 115,
+  "total_institutions": 115,
+  "total_pages": 8,
+  "pages": [
+    {
+      "page": 1,
+      "rows": [
+        {
+          "serial_no": 1,
+          "page": 1,
+          "logo": "kdis_ac_kr.png",
+          "univ_name": "KDI School of Public Policy and Management",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.kdischool.ac.kr/",
+          "realms": [
+            "kdis.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 2,
+          "page": 1,
+          "logo": "gachon_ac_kr.png",
+          "univ_name": "Gachon University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.gachon.ac.kr/ist/2990/subview.do",
+          "realms": [
+            "gachon.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 3,
+          "page": 1,
+          "logo": "gwnu_ac_kr.png",
+          "univ_name": "Gangneung-Wonju National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "gwnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 4,
+          "page": 1,
+          "logo": "kangwon_ac_kr.png",
+          "univ_name": "Kangwon National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kangwon.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 5,
+          "page": 1,
+          "logo": "konkuk_ac_kr.png",
+          "univ_name": "Konkuk University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://kuinc.konkuk.ac.kr/kuinc/15896/subview.do",
+          "realms": [
+            "konkuk.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 6,
+          "page": 1,
+          "logo": "konyang_ac_kr.png",
+          "univ_name": "Konyang University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.konyang.ac.kr/ict/sub02_02.do",
+          "realms": [
+            "konyang.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 7,
+          "page": 1,
+          "logo": "kyungnam_ac_kr.png",
+          "univ_name": "Kyungnam University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://library.kyungnam.ac.kr/webcontent/info/52",
+          "realms": [
+            "kyungnam.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 8,
+          "page": 1,
+          "logo": "knu_ac_kr.png",
+          "univ_name": "Kyungpook National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://wifi.knu.ac.kr/",
+          "realms": [
+            "knu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 9,
+          "page": 1,
+          "logo": "gnu_ac_kr.png",
+          "univ_name": "Gyeongsang National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.gnu.ac.kr/info/cm/cntnts/cntntsView.do?mi=8444&cntntsId=4442",
+          "realms": [
+            "gnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 10,
+          "page": 1,
+          "logo": "ginue_ac_kr.png",
+          "univ_name": "Gyeongin National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313",
+          "realms": [
+            "ginue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 11,
+          "page": 1,
+          "logo": "kiu_ac_kr.png",
+          "univ_name": "Gyeongin National University of Education",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kiu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 12,
+          "page": 1,
+          "logo": "khu_ac_kr.png",
+          "univ_name": "Kyung Hee University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "khu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 13,
+          "page": 1,
+          "logo": "kmu_ac_kr.png",
+          "univ_name": "Keimyung University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kmu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 14,
+          "page": 1,
+          "logo": "kmcu_ac_kr.png",
+          "univ_name": "Keimyung College University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.kmcu.ac.kr/kr/index.php?pCode=wifi",
+          "realms": [
+            "kmcu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 15,
+          "page": 1,
+          "logo": "kias_re_kr.png",
+          "univ_name": "Korea Institute for Advanced Study (KIAS)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kias.re.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "rows": [
+        {
+          "serial_no": 16,
+          "page": 2,
+          "logo": "korea_ac_kr.png",
+          "univ_name": "Korea University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://wifi.korea.ac.kr/",
+          "realms": [
+            "korea.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 17,
+          "page": 2,
+          "logo": "gjue_ac_kr.png",
+          "univ_name": "Gongju National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.gjue.ac.kr/kor/contents/68",
+          "realms": [
+            "gjue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 18,
+          "page": 2,
+          "logo": "ust_ac_kr.png",
+          "univ_name": "University of Science and Technology (UST)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "ust.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 19,
+          "page": 2,
+          "logo": "gnue_ac_kr.png",
+          "univ_name": "Gwangju National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "gnue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 20,
+          "page": 2,
+          "logo": "gwangju_ac_kr.png",
+          "univ_name": "Gwangju University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://icc.gwangju.ac.kr/icc/page/sub0401.html",
+          "realms": [
+            "gwangju.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 21,
+          "page": 2,
+          "logo": "ghu_ac_kr.png",
+          "univ_name": "Gwangju Health University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.ghu.ac.kr/LifeGhc/InfoMail.jsp",
+          "realms": [
+            "ghu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 22,
+          "page": 2,
+          "logo": "kwu_ac_kr.png",
+          "univ_name": "Kwangju Women's University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kwu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 23,
+          "page": 2,
+          "logo": "nims_re_kr.png",
+          "univ_name": "National Institute for Mathematical Sciences (NIMS)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "nims.re.kr"
+          ]
+        },
+        {
+          "serial_no": 24,
+          "page": 2,
+          "logo": "kongju_ac_kr.png",
+          "univ_name": "Kongju National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.kongju.ac.kr/KNU/16898/subview.do",
+          "realms": [
+            "kongju.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 25,
+          "page": 2,
+          "logo": "ut_ac_kr.png",
+          "univ_name": "Korea National University of Transportation",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.ut.ac.kr/kor/sub06_03_03_01.do",
+          "realms": [
+            "ut.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 26,
+          "page": 2,
+          "logo": "hanbat_ac_kr.png",
+          "univ_name": "Hanbat National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.hanbat.ac.kr/kor/sub06_080105.do",
+          "realms": [
+            "hanbat.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 27,
+          "page": 2,
+          "logo": "kookmin_ac_kr.png",
+          "univ_name": "Kookmin University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://kist.kookmin.ac.kr/kist_new/infra/ko.do",
+          "realms": [
+            "kookmin.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 28,
+          "page": 2,
+          "logo": "kunsan_ac_kr.png",
+          "univ_name": "Kunsan National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.kunsan.ac.kr/comcenter/index.kunsan?menuCd=DOM_000003802004002000",
+          "realms": [
+            "kunsan.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 29,
+          "page": 2,
+          "logo": "kumoh_ac_kr.png",
+          "univ_name": "Kumoh National Institute of Technology",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://cic.kumoh.ac.kr/cic/sub020202.do",
+          "realms": [
+            "kumoh.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 30,
+          "page": 2,
+          "logo": "ibs_re_kr.png",
+          "univ_name": "Institute for Basic Science (IBS)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "http://eduroam.ibs.re.kr",
+          "realms": [
+            "ibs.re.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "rows": [
+        {
+          "serial_no": 31,
+          "page": 3,
+          "logo": "kornu_ac_kr.png",
+          "univ_name": "Korea Nazarene University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.kornu.ac.kr/mbs/kornukr/subview.jsp?id=kornukr_071300000000",
+          "realms": [
+            "kornu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 32,
+          "page": 3,
+          "logo": "nambu_ac_kr.png",
+          "univ_name": "Nambu University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://se.nambu.ac.kr/content/view.do?menuCd=dept_se002001",
+          "realms": [
+            "nambu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 33,
+          "page": 3,
+          "logo": "dankook_ac_kr.png",
+          "univ_name": "Dankook University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://it4u.dankook.ac.kr/web/it4u/t-wifi-zone-",
+          "realms": [
+            "dankook.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 34,
+          "page": 3,
+          "logo": "cu_ac_kr.png",
+          "univ_name": "Daegu Catholic University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "cu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 35,
+          "page": 3,
+          "logo": "dgist_ac_kr.png",
+          "univ_name": "DGIST (Daegu Gyeongbuk Institute of Science and Technology)",
+          "inst_type": "Special",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "dgist.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 36,
+          "page": 3,
+          "logo": "dnue_ac_kr.png",
+          "univ_name": "Daegu National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.dnue.ac.kr/kor/CMS/Board/Board.do?mCode=MN168&mode=view&board_seq=14025",
+          "realms": [
+            "dnue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 37,
+          "page": 3,
+          "logo": "daegu_ac_kr.png",
+          "univ_name": "Daegu University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.daegu.ac.kr/page/153",
+          "realms": [
+            "daegu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 38,
+          "page": 3,
+          "logo": "dju_ac_kr.png",
+          "univ_name": "Daejeon University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.dju.ac.kr/dju/cm/cntnts/cntntsView.do?mi=6573&cntntsId=4021",
+          "realms": [
+            "dju.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 39,
+          "page": 3,
+          "logo": "dcckorea_or_kr.png",
+          "univ_name": "Daejeon Convention Center",
+          "inst_type": "Other",
+          "conn_type": "SP",
+          "guide": "",
+          "realms": [
+            ""
+          ]
+        },
+        {
+          "serial_no": 40,
+          "page": 3,
+          "logo": "daejin_ac_kr.png",
+          "univ_name": "Daejin University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "daejin.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 41,
+          "page": 3,
+          "logo": "dongguk_ac_kr.png",
+          "univ_name": "Dongguk University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://it.dongguk.edu/?page_id=18649",
+          "realms": [
+            "dongguk.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 42,
+          "page": 3,
+          "logo": "dsu_ac_kr.png",
+          "univ_name": "Dongshin University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "dsu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 43,
+          "page": 3,
+          "logo": "donga_ac_kr.png",
+          "univ_name": "Dong-A University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "donga.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 44,
+          "page": 3,
+          "logo": "deu_ac_kr.png",
+          "univ_name": "Dong-eui University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&articleNo=65693&article.offset=0&articleLimit=10",
+          "realms": [
+            "deu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 45,
+          "page": 3,
+          "logo": "mokpo_ac_kr.png",
+          "univ_name": "Mokpo National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.mokpo.ac.kr/www/291/subview.do",
+          "realms": [
+            "mokpo.ac.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "rows": [
+        {
+          "serial_no": 46,
+          "page": 4,
+          "logo": "mmu_ac_kr.png",
+          "univ_name": "Mokpo National Maritime University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.mmu.ac.kr/main/contents/eduroam",
+          "realms": [
+            "mmu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 47,
+          "page": 4,
+          "logo": "bu_ac_kr.png",
+          "univ_name": "Baekseok University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://www.bu.ac.kr/web/3739/subview.do",
+          "realms": [
+            "bu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 48,
+          "page": 4,
+          "logo": "pknu_ac_kr.png",
+          "univ_name": "Pukyong National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://icc.pknu.ac.kr/main/17",
+          "realms": [
+            "pknu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 49,
+          "page": 4,
+          "logo": "bnue_ac_kr.png",
+          "univ_name": "Busan National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "bnue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 50,
+          "page": 4,
+          "logo": "pusan_ac_kr.png",
+          "univ_name": "Pusan National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "pusan.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 51,
+          "page": 4,
+          "logo": "smu_ac_kr.png",
+          "univ_name": "Sangmyung University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.smu.ac.kr/kor/life/eduroam.do",
+          "realms": [
+            "smu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 52,
+          "page": 4,
+          "logo": "sogang_ac_kr.png",
+          "univ_name": "Sogang University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://eduroam.sogang.ac.kr/eduroam/index.html",
+          "realms": [
+            "sogang.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 53,
+          "page": 4,
+          "logo": "seoultech_ac_kr.png",
+          "univ_name": "Seoul National University of Science and Technology (SeoulTech)",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://itc.seoultech.ac.kr/service/wifi",
+          "realms": [
+            "seoultech.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 54,
+          "page": 4,
+          "logo": "snu_ac_kr.png",
+          "univ_name": "Seoul National University (SNU)",
+          "inst_type": "국립대법인",
+          "conn_type": "IdP+SP",
+          "guide": "https://ist.snu.ac.kr/wifi/",
+          "realms": [
+            "snu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 55,
+          "page": 4,
+          "logo": "uos_ac_kr.png",
+          "univ_name": "University of Seoul",
+          "inst_type": "공립",
+          "conn_type": "IdP+SP",
+          "guide": "https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&identified=anonymous&",
+          "realms": [
+            "uos.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 56,
+          "page": 4,
+          "logo": "seowon_ac_kr.png",
+          "univ_name": "Seowon University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "seowon.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 57,
+          "page": 4,
+          "logo": "seoil_ac_kr.png",
+          "univ_name": "Seoil University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "seoil.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 58,
+          "page": 4,
+          "logo": "sungkyul_ac_kr.png",
+          "univ_name": "Sungkyul University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "sungkyul.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 59,
+          "page": 4,
+          "logo": "skku_ac_kr.png",
+          "univ_name": "Sungkyunkwan University (SKKU)",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.skku.edu/skku/campus/IT_service/it_service11.do",
+          "realms": [
+            "skku.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 60,
+          "page": 4,
+          "logo": "sungshin_ac_kr.png",
+          "univ_name": "Sungshin Women's University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "sungshin.ac.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "rows": [
+        {
+          "serial_no": 61,
+          "page": 5,
+          "logo": "sejong_ac_kr.png",
+          "univ_name": "Sejong University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "sejong.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 62,
+          "page": 5,
+          "logo": "sehan_ac_kr.png",
+          "univ_name": "Sehan University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "sehan.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 63,
+          "page": 5,
+          "logo": "suwon_ac_kr.png",
+          "univ_name": "University of Suwon",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://ici.suwon.ac.kr/index.html?menuno=340",
+          "realms": [
+            "suwon.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 64,
+          "page": 5,
+          "logo": "sookmyung_ac_kr.png",
+          "univ_name": "Sookmyung Women's University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "sookmyung.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 65,
+          "page": 5,
+          "logo": "scnu_ac_kr.png",
+          "univ_name": "Sunchon National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.scnu.ac.kr/icc/cm/cntnts/cntntsView.do?mi=4804&cntntsId=2682",
+          "realms": [
+            "scnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 66,
+          "page": 5,
+          "logo": "ssu_ac_kr.png",
+          "univ_name": "Soongsil University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/",
+          "realms": [
+            "ssu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 67,
+          "page": 5,
+          "logo": "shinhan_ac_kr.png",
+          "univ_name": "Shinhan University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.shinhan.ac.kr/kr/256/subview.do",
+          "realms": [
+            "shinhan.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 68,
+          "page": 5,
+          "logo": "ajou_ac_kr.png",
+          "univ_name": "Ajou University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://pc119.ajou.ac.kr/pc119/service/lan.do",
+          "realms": [
+            "ajou.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 69,
+          "page": 5,
+          "logo": "yonsei_ac_kr.png",
+          "univ_name": "Yonsei University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://yis.yonsei.ac.kr/ics/service/eduroam.do",
+          "realms": [
+            "yonsei.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 70,
+          "page": 5,
+          "logo": "yu_ac_kr.png",
+          "univ_name": "Yeungnam University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://homep.yu.ac.kr/_korean/onestop/index.php?c=ucampus_07",
+          "realms": [
+            "yu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 71,
+          "page": 5,
+          "logo": "ync_ac_kr.png",
+          "univ_name": "Yeungnam University College",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "ync.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 72,
+          "page": 5,
+          "logo": "unist_ac_kr.png",
+          "univ_name": "UNIST (Ulsan National Institute of Science and Technology)",
+          "inst_type": "국립대법인",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "unist.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 73,
+          "page": 5,
+          "logo": "ulsan_ac_kr.png",
+          "univ_name": "University of Ulsan",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "ulsan.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 74,
+          "page": 5,
+          "logo": "wku_ac_kr.png",
+          "univ_name": "Wonkwang University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "wku.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 75,
+          "page": 5,
+          "logo": "wu_ac_kr.png",
+          "univ_name": "Wonkwang Health Science University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D",
+          "realms": [
+            "wu.ac.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "rows": [
+        {
+          "serial_no": 76,
+          "page": 6,
+          "logo": "yuhan_ac_kr.png",
+          "univ_name": "Yuhan University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "yuhan.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 77,
+          "page": 6,
+          "logo": "ewha_ac_kr.png",
+          "univ_name": "Ewha Womans University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.ewha.ac.kr/ewha/life/eduroam.do",
+          "realms": [
+            "ewha.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 78,
+          "page": 6,
+          "logo": "inje_ac_kr.png",
+          "univ_name": "Inje University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.inje.ac.kr/kor/campus-life/e-service-03.asp",
+          "realms": [
+            "inje.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 79,
+          "page": 6,
+          "logo": "inu_ac_kr.png",
+          "univ_name": "Incheon National University",
+          "inst_type": "공립",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "inu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 80,
+          "page": 6,
+          "logo": "inha_ac_kr.png",
+          "univ_name": "Inha University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "inha.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 81,
+          "page": 6,
+          "logo": "puts_ac_kr.png",
+          "univ_name": "Presbyterian University and Theological Seminary",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp",
+          "realms": [
+            "puts.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 82,
+          "page": 6,
+          "logo": "jnu_ac_kr.png",
+          "univ_name": "Chonnam National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "http://www.jnu.ac.kr/MainUniLife/InforService/Eduroam",
+          "realms": [
+            "jnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 83,
+          "page": 6,
+          "logo": "jbnu_ac_kr.png",
+          "univ_name": "Jeonbuk National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://its.jbnu.ac.kr/its/9226/subview.do",
+          "realms": [
+            "jbnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 84,
+          "page": 6,
+          "logo": "jnue_ac_kr.png",
+          "univ_name": "Jeonju National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000",
+          "realms": [
+            "jnue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 85,
+          "page": 6,
+          "logo": "jj_ac_kr.png",
+          "univ_name": "Jeonju University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://wlan.jj.ac.kr/",
+          "realms": [
+            "jj.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 86,
+          "page": 6,
+          "logo": "jvision_ac_kr.png",
+          "univ_name": "Jeonju Vision University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "jvision.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 87,
+          "page": 6,
+          "logo": "jejunu_ac_kr.png",
+          "univ_name": "Jeju National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://cms.jejunu.ac.kr/camp/stud/wifi/eduroam.htm",
+          "realms": [
+            "jejunu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 88,
+          "page": 6,
+          "logo": "chosun_ac_kr.png",
+          "univ_name": "Chosun University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://wifi.chosun.ac.kr/Main/Main.html",
+          "realms": [
+            "chosun.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 89,
+          "page": 6,
+          "logo": "cau_ac_kr.png",
+          "univ_name": "Chung-Ang University (CAU)",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://ithelp.cau.ac.kr/Pages/Sub0101.aspx?m1=01&m2=01",
+          "realms": [
+            "cau.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 90,
+          "page": 6,
+          "logo": "cwnu_ac_kr.png",
+          "univ_name": "Changwon National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.changwon.ac.kr/kor/na/ntt/selectNttInfo.do?mi=10177&nttSn=782638",
+          "realms": [
+            "cwnu.ac.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "rows": [
+        {
+          "serial_no": 91,
+          "page": 7,
+          "logo": "cje_ac_kr.png",
+          "univ_name": "Cheongju National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.cje.ac.kr/cj_edu_univ/web/content.do?menu_cd=000157",
+          "realms": [
+            "cje.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 92,
+          "page": 7,
+          "logo": "cnue_ac_kr.png",
+          "univ_name": "Chuncheon National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.cnue.ac.kr/cnue/life/wireless-lan.do",
+          "realms": [
+            "cnue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 93,
+          "page": 7,
+          "logo": "cnu_ac_kr.png",
+          "univ_name": "Chungnam National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://homepage.cnu.ac.kr/cic/service/eduroam.do",
+          "realms": [
+            "cnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 94,
+          "page": 7,
+          "logo": "cbnu_ac_kr.png",
+          "univ_name": "Chungbuk National University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "http://wifi.cbnu.ac.kr/",
+          "realms": [
+            "cbnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 95,
+          "page": 7,
+          "logo": "chsu_ac_kr.png",
+          "univ_name": "Chungbuk Health & Science University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "chsu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 96,
+          "page": 7,
+          "logo": "teincc_kr.png",
+          "univ_name": "TEIN Cooperation Centre (TeinCC)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "teincc.kr"
+          ]
+        },
+        {
+          "serial_no": 97,
+          "page": 7,
+          "logo": "postech_ac_kr.png",
+          "univ_name": "POSTECH (Pohang University of Science and Technology)",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi",
+          "realms": [
+            "postech.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 98,
+          "page": 7,
+          "logo": "tukorea_ac_kr.png",
+          "univ_name": "TUKorea (Tech University of Korea)",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "tukorea.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 99,
+          "page": 7,
+          "logo": "kisti_re_kr.png",
+          "univ_name": "KISTI (Korea Institute of Science and Technology Information)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "http://www.kreonet.net/eduroam/en",
+          "realms": [
+            "kisti.re.kr"
+          ]
+        },
+        {
+          "serial_no": 100,
+          "page": 7,
+          "logo": "knue_ac_kr.png",
+          "univ_name": "Korea National University of Education",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&uid=1974",
+          "realms": [
+            "knue.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 101,
+          "page": 7,
+          "logo": "koreatech_ac_kr.png",
+          "univ_name": "Korea University of Technology and Education (KOREATECH)",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "koreatech.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 102,
+          "page": 7,
+          "logo": "knou_ac_kr.png",
+          "univ_name": "Korea National Open University (KNOU)",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://eist.knou.ac.kr/eist/10344/subview.do",
+          "realms": [
+            "knou.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 103,
+          "page": 7,
+          "logo": "kentech_ac_kr.png",
+          "univ_name": "KENTECH (Korea Institute of Energy Technology)",
+          "inst_type": "Special",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kentech.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 104,
+          "page": 7,
+          "logo": "hufs_ac_kr.png",
+          "univ_name": "Hankuk University of Foreign Studies (HUFS)",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.hufs.ac.kr/hufs/11334/subview.do",
+          "realms": [
+            "hufs.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 105,
+          "page": 7,
+          "logo": "knsu_ac_kr.png",
+          "univ_name": "Korea National Sport University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "https://www.knsu.ac.kr/knsu/unilife/wireless-internet.do",
+          "realms": [
+            "knsu.ac.kr"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "rows": [
+        {
+          "serial_no": 106,
+          "page": 8,
+          "logo": "kriss_re_kr.png",
+          "univ_name": "KRISS (Korea Research Institute of Standards and Science)",
+          "inst_type": "Other",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "kriss.re.kr"
+          ]
+        },
+        {
+          "serial_no": 107,
+          "page": 8,
+          "logo": "kau_ac_kr.png",
+          "univ_name": "Korea Aerospace University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://kau.ac.kr/kaulife/itnoti.php?searchkey=&searchvalue=&code=s1801&page=&mode=read&seq=6546",
+          "realms": [
+            "kau.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 108,
+          "page": 8,
+          "logo": "kmou_ac_kr.png",
+          "univ_name": "Korea Maritime and Ocean University",
+          "inst_type": "National",
+          "conn_type": "IdP+SP",
+          "guide": "http://www.kmou.ac.kr/cisc/cm/cntnts/cntntsView.do?mi=4384&cntntsId=1306",
+          "realms": [
+            "kmou.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 109,
+          "page": 8,
+          "logo": "hnu_ac_kr.png",
+          "univ_name": "Hannam University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://wifi.hannam.ac.kr/",
+          "realms": [
+            "hnu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 110,
+          "page": 8,
+          "logo": "hgu_ac_kr.png",
+          "univ_name": "Handong Global University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://library.handong.edu/local/html/450",
+          "realms": [
+            "hgu.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 111,
+          "page": 8,
+          "logo": "hallym_ac_kr.png",
+          "univ_name": "Hallym University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "hallym.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 112,
+          "page": 8,
+          "logo": "hansei_ac_kr.png",
+          "univ_name": "Hansei University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "http://www.hansei.ac.kr/kor/345/subview.do",
+          "realms": [
+            "hansei.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 113,
+          "page": 8,
+          "logo": "hanyang_ac_kr.png",
+          "univ_name": "Hanyang University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "hanyang.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 114,
+          "page": 8,
+          "logo": "honam_ac_kr.png",
+          "univ_name": "Honam University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "",
+          "realms": [
+            "honam.ac.kr"
+          ]
+        },
+        {
+          "serial_no": 115,
+          "page": 8,
+          "logo": "hongik_ac_kr.png",
+          "univ_name": "Hongik University",
+          "inst_type": "Private",
+          "conn_type": "IdP+SP",
+          "guide": "https://wifi.hongik.ac.kr",
+          "realms": [
+            "hongik.ac.kr"
+          ]
+        }
+      ]
+    }
+  ]
+}
