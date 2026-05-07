@@ -1,98 +1,189 @@
 ---
 layout: default
 title: Home
+lang: en
 ---
+<style>
+  .hero-video-section {
+    background: url('{{ "/assets/images/hero-bg.png" | relative_url }}') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 70px 0;
+    overflow: hidden;
+  }
+  .hero-video-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(0, 30, 80, 0.8), rgba(0, 80, 150, 0.6));
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  .highlight-text {
+    background-color: #5ab2ff;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 18px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .hero-desc {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #5ab2ff;
+    line-height: 1.6;
+  }
+  .quick-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    background: var(--card-bg, #ffffff);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05) !important;
+  }
+  [data-theme='dark'] .quick-card {
+    background: #1e293b;
+    border-color: #334155 !important;
+  }
+  .quick-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+</style>
 
-<!-- Hero -->
-<section class="hero-section">
-  <div class="container">
-    <div class="eduroam-logo"><span>eduroam</span> @ Sandbox Research Institute</div>
-    <div class="sub">Connect to Wi-Fi worldwide with your institutional account</div>
-    <a class="hero-btn" href="{{ '/en/connect/' | relative_url }}">
-      <i class="fas fa-wifi mr-1"></i>How to Connect
-    </a>
+<!-- Hero Section -->
+<section class="hero-video-section">
+  <div class="container hero-content">
+    <div class="row align-items-center">
+      <div class="col-md-8 mb-5 mb-md-0">
+        <div><h1 class="highlight-text mb-2">Global Wi-Fi</h1></div>
+        <div><h1 class="highlight-text">Roaming Service</h1></div>
+        <div class="hero-desc mt-4">
+          <strong>eduroam (education roaming)</strong><br>
+          A Wi-Fi roaming service for the research and education community,<br>
+          available in more than 101 countries worldwide.
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <div class="container pb-4">
 
   <!-- Quick Cards -->
-  <div class="row quick-cards">
+  <div class="row quick-cards mb-4" style="margin-top: 0 !important;">
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/en/connect/' | relative_url }}">
-        <div class="icon"><i class="fas fa-laptop"></i></div>
-        <div class="title">Connect</div>
-        <div class="desc">Setup guide by device</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/connect/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-laptop"></i></div>
+        <div class="title mt-2 font-weight-bold">How to Connect</div>
+        <div class="desc text-muted small">Setup guide by device</div>
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/en/coverage/' | relative_url }}">
-        <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
-        <div class="title">Coverage</div>
-        <div class="desc">Domestic &amp; international locations</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/coverage/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-map-marked-alt"></i></div>
+        <div class="title mt-2 font-weight-bold">Coverage</div>
+        <div class="desc text-muted small">Domestic &amp; international locations</div>
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/en/policy/' | relative_url }}">
-        <div class="icon"><i class="fas fa-file-alt"></i></div>
-        <div class="title">Policy</div>
-        <div class="desc">Terms of use</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/policy/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-file-alt"></i></div>
+        <div class="title mt-2 font-weight-bold">Policy</div>
+        <div class="desc text-muted small">Terms of use</div>
       </a>
     </div>
     <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card" href="{{ '/en/support/' | relative_url }}">
-        <div class="icon"><i class="fas fa-headset"></i></div>
-        <div class="title">Support</div>
-        <div class="desc">Help &amp; troubleshooting</div>
+      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/support/' | relative_url }}" style="text-decoration: none;">
+        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-headset"></i></div>
+        <div class="title mt-2 font-weight-bold">Support</div>
+        <div class="desc text-muted small">Help &amp; troubleshooting</div>
       </a>
     </div>
   </div>
 
   <div class="row mt-3">
-
     <!-- Notices -->
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-header">
-          <i class="fas fa-bullhorn"></i>Notices
-          <a href="#" class="float-right" style="font-size:0.78rem; color:#888; font-weight:400;">View all</a>
+    <div class="col-md-8 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white border-bottom-0 pt-4 pb-2">
+          <i class="fas fa-bullhorn text-primary mr-2"></i><strong>Notices</strong>
+          <a href="{{ '/en/notices/' | relative_url }}" class="float-right text-muted small">View all</a>
         </div>
-        <div class="card-body p-0">
-          <ul class="notice-list">
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
             {% assign notices = site.notices | sort: "date" | reverse %}
             {% for notice in notices limit:5 %}
-            <li>
-              <span>{% if notice.is_new %}<span class="badge-new">NEW</span>{% endif %}<a href="{{ notice.url | relative_url }}" style="color:inherit; text-decoration:none;">{{ notice.title_en }}</a></span>
-              <span class="date">{{ notice.date | date: "%Y.%m.%d" }}</span>
+            <li class="py-2 border-bottom d-flex justify-content-between align-items-center">
+              <span class="text-truncate mr-3">
+                {% if notice.is_new %}<span class="badge badge-danger mr-1">NEW</span>{% endif %}
+                <a href="{{ notice.url | relative_url }}" class="text-dark">{{ notice.title_en | default: notice.title_ko }}</a>
+              </span>
+              <span class="text-muted small" style="min-width:80px; text-align:right;">{{ notice.date | date: "%Y.%m.%d" }}</span>
             </li>
             {% endfor %}
+            {% if notices.size == 0 %}
+            <li class="py-3 text-center text-muted">No notices available.</li>
+            {% endif %}
           </ul>
         </div>
       </div>
     </div>
 
     <!-- Quick Help -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header"><i class="fas fa-question-circle"></i>Quick Help</div>
-        <div class="card-body p-0">
-          <ul class="help-list">
-            <li onclick="location.href='{{ '/en/connect/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>First-time setup
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white border-bottom-0 pt-4 pb-2">
+          <i class="fas fa-question-circle text-primary mr-2"></i><strong>Quick Help</strong>
+        </div>
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+            <li class="py-2 border-bottom">
+              <a href="{{ '/en/connect/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>First-time setup</a>
             </li>
-            <li onclick="location.href='{{ '/en/support/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>Forgot my password
+            <li class="py-2 border-bottom">
+              <a href="{{ '/en/support/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>Forgot my password</a>
             </li>
-            <li onclick="location.href='{{ '/en/coverage/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>Connecting abroad
+            <li class="py-2 border-bottom">
+              <a href="{{ '/en/coverage/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>Connecting abroad</a>
             </li>
-            <li onclick="location.href='{{ '/en/support/' | relative_url }}'">
-              <i class="fas fa-chevron-right"></i>Certificate error fix
+            <li class="py-2 border-bottom">
+              <a href="{{ '/en/support/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>Certificate error fix</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
   </div>
+
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll('.counter-val');
+    const speed = 100;
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount, 15);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  });
+</script>
