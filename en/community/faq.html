@@ -1,0 +1,116 @@
+---
+layout: default
+title: FAQ
+lang: en
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-question-circle mr-2"></i>FAQ</h1>
+    <p class="page-sub">Frequently asked questions about eduroam</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          Community
+        </div>
+        <a href="{{ '/en/notices/' | relative_url }}" class="list-group-item list-group-item-action">Notices</a>
+        <a href="{{ '/en/community/faq.html' | relative_url }}" class="list-group-item list-group-item-action active">FAQ</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">FAQ</li>
+        </ol>
+      </nav>
+
+      <div class="accordion" id="faqAccordion">
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0" type="button" data-toggle="collapse" data-target="#collapseOne">
+                Q. What is an eduroam account?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. Your institutional email account (ID@institution-domain) is your eduroam account.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                Q. Is eduroam free abroad?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. Yes, eduroam is a free roaming service available anywhere in the world at no extra cost.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                Q. Which devices are supported?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. Windows, macOS, iOS, Android, and Linux are all supported. Use the eduroam CAT tool for the easiest setup.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFour">
+                Q. What should I do if I cannot connect?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. Check that your username format is correct (ID@institution-domain). If the issue persists, contact your home institution's IT helpdesk.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFive">
+                Q. How can my institution join eduroamKR?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. Please refer to the <a href="{{ '/en/about/guide.html' | relative_url }}">How to Join</a> page, or contact us directly at <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a>.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

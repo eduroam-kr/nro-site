@@ -1,0 +1,109 @@
+---
+layout: default
+title: Service Status
+lang: en
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-signal mr-2"></i>Service Status</h1>
+    <p class="page-sub">Real-time operational status of the eduroamKR service</p>
+  </div>
+</section>
+
+<div class="container content-section">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="section-card">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0"><i class="fas fa-check-circle text-success"></i> Current Service Status</h2>
+          <span class="text-muted small">Last updated: {{ site.data.network_status.last_updated }}</span>
+        </div>
+
+        <div class="status-box-success p-4 mb-4 rounded d-flex align-items-center">
+          <div class="mr-4">
+            <i class="fas fa-check-circle fa-4x text-success"></i>
+          </div>
+          <div>
+            <h3 class="mb-1 status-text">All Services Operational</h3>
+            <p class="mb-0 text-muted">All authentication servers and management portals are running normally.</p>
+          </div>
+        </div>
+
+        <table class="table mt-4">
+          <thead class="thead-light">
+            <tr>
+              <th>Service</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in site.data.network_status.services %}
+            <tr>
+              <td class="py-3 font-weight-bold">{{ item.name }}</td>
+              <td class="py-3">
+                {% if item.status == 'operational' %}
+                  <span class="badge badge-success px-3 py-2"><i class="fas fa-check mr-1"></i>Operational</span>
+                {% elsif item.status == 'maintenance' %}
+                  <span class="badge badge-warning px-3 py-2"><i class="fas fa-tools mr-1"></i>Maintenance</span>
+                {% else %}
+                  <span class="badge badge-danger px-3 py-2"><i class="fas fa-exclamation-triangle mr-1"></i>Outage</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-card mt-4">
+        <h2><i class="fas fa-history"></i> Recent Maintenance History</h2>
+        <ul class="list-unstyled">
+          <li class="pb-3 border-bottom mb-3">
+            <div class="d-flex justify-content-between">
+              <strong>[Scheduled Maintenance] National RADIUS Server Certificate Renewal</strong>
+              <span class="text-muted small">2026.04.15</span>
+            </div>
+            <p class="mb-0 mt-1 small text-muted">Security certificate renewal for the national RADIUS servers completed successfully.</p>
+          </li>
+          <li class="pb-3">
+            <div class="d-flex justify-content-between">
+              <strong>[Upgrade] Management Portal Database Optimization</strong>
+              <span class="text-muted small">2026.03.20</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="section-card bg-light">
+        <h4>Status Alerts</h4>
+        <p class="small text-muted">Subscribe to receive email notifications about outages and maintenance schedules. (For institutional administrators only)</p>
+        <button class="btn btn-primary d-block w-100">Subscribe</button>
+      </div>
+
+      <div class="section-card mt-4">
+        <h4>Technical Support</h4>
+        <p class="small text-muted">If you are experiencing connectivity issues, please contact the operations center.</p>
+        <a href="mailto:{{ site.support.email }}" class="btn btn-outline-dark d-block w-100">Contact Support</a>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .status-box-success {
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+  }
+  .status-text {
+    color: #166534;
+  }
+  [data-theme='dark'] .status-box-success {
+    background-color: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.3);
+  }
+  [data-theme='dark'] .status-text {
+    color: #4ade80;
+  }
+</style>

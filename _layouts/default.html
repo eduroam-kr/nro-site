@@ -195,14 +195,26 @@
   {% seo %}
 
   <script>
-    // 테마 깜빡임 방지: 페이지 렌더 직전에 저장된 선택을 적용
+    // 테마 깜빡임 방지
     (function () {
       try {
-        var saved = localStorage.getItem('theme'); // 'system' | 'light' | 'dark' | null
+        var saved = localStorage.getItem('theme');
         if (saved === 'light' || saved === 'dark') {
           document.documentElement.setAttribute('data-theme', saved);
         }
-      } catch (e) { /* localStorage 사용 불가 시 시스템 설정 따름 */ }
+      } catch (e) {}
+    })();
+    // 언어 설정 유지: 저장된 언어가 현재 페이지 언어와 다르면 해당 언어 버전으로 이동
+    (function () {
+      try {
+        var saved = localStorage.getItem('eduroam-lang');
+        var current = '{{ page.lang }}';
+        if (saved && saved !== current) {
+          var enUrl = '{{ en_url | relative_url }}';
+          var koUrl = '{{ ko_url | relative_url }}';
+          window.location.replace(saved === 'en' ? enUrl : koUrl);
+        }
+      } catch (e) {}
     })();
   </script>
 </head>
@@ -212,7 +224,11 @@
   <!-- ══ Top Utility Bar ══ -->
   <div class="top-utility-bar">
     <div class="container text-right">
-      <a href="{{ '/site/sitemap.html' | relative_url }}">사이트맵</a>
+      {% if page.lang == 'en' %}
+        <a href="{{ '/en/site/sitemap.html' | relative_url }}">Sitemap</a>
+      {% else %}
+        <a href="{{ '/site/sitemap.html' | relative_url }}">사이트맵</a>
+      {% endif %}
     </div>
   </div>
 
@@ -232,11 +248,37 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ml-auto">
-          <!-- 1. 소개 -->
+          {% if page.lang == 'en' %}
+          <!-- English nav -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              소개
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="{{ '/en/about/eduroam.html' | relative_url }}">About eduroam</a>
+              <a class="dropdown-item" href="{{ '/en/about/guide.html' | relative_url }}">How to Join</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{ '/en/policy/' | relative_url }}">Policy</a>
+              <a class="dropdown-item" href="{{ '/en/about/promotion.html' | relative_url }}">Resources</a>
+              <a class="dropdown-item" href="{{ '/en/connect/' | relative_url }}">Connect</a>
+              <a class="dropdown-item" href="{{ '/en/about/aboutus.html' | relative_url }}">About Us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/en/coverage/' | relative_url }}">eduroam Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/en/support/institutions.html' | relative_url }}">Member Institutions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+            <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="communityDropdown">
+              <a class="dropdown-item" href="{{ '/en/notices/' | relative_url }}">Notices</a>
+              <a class="dropdown-item" href="{{ '/en/community/faq.html' | relative_url }}">FAQ</a>
+            </div>
+          </li>
+          {% else %}
+          <!-- 한국어 nav -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">소개</a>
             <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="aboutDropdown">
               <a class="dropdown-item" href="{{ '/about/eduroam.html' | relative_url }}">eduroam이란?</a>
               <a class="dropdown-item" href="{{ '/about/guide.html' | relative_url }}">가입방법 및 절차</a>
@@ -247,27 +289,20 @@
               <a class="dropdown-item" href="{{ '/about/aboutus.html' | relative_url }}">운영센터안내</a>
             </div>
           </li>
-
-          <!-- 2. eduroam 맵 -->
           <li class="nav-item">
             <a class="nav-link" href="{{ '/coverage/map.html' | relative_url }}">eduroam 맵</a>
           </li>
-
-          <!-- 3. 이용 기관 -->
           <li class="nav-item">
             <a class="nav-link" href="{{ '/support/institutions.html' | relative_url }}">이용 기관</a>
           </li>
-
-          <!-- 4. 커뮤니티 -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              커뮤니티
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
             <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="communityDropdown">
               <a class="dropdown-item" href="{{ '/notices/' | relative_url }}">공지사항</a>
               <a class="dropdown-item" href="{{ '/community/faq.html' | relative_url }}">FAQ</a>
             </div>
           </li>
+          {% endif %}
 
           <!-- 테마 전환 -->
           <li class="nav-item dropdown ml-1">
@@ -293,10 +328,10 @@
               <i class="fas fa-globe"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item{% if page.lang == 'ko' %} active{% endif %}" href="{{ ko_url | relative_url }}">
+              <a class="dropdown-item{% if page.lang == 'ko' %} active{% endif %}" href="{{ ko_url | relative_url }}" data-lang-choice="ko">
                 🇰🇷 한국어
               </a>
-              <a class="dropdown-item{% if page.lang == 'en' %} active{% endif %}" href="{{ en_url | relative_url }}">
+              <a class="dropdown-item{% if page.lang == 'en' %} active{% endif %}" href="{{ en_url | relative_url }}" data-lang-choice="en">
                 🇺🇸 English
               </a>
             </div>
@@ -362,6 +397,13 @@
       });
     });
   })();
+
+  // 언어 선택 저장
+  document.querySelectorAll('[data-lang-choice]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      try { localStorage.setItem('eduroam-lang', el.dataset.langChoice); } catch (e) {}
+    });
+  });
 </script>
 </body>
 </html>
