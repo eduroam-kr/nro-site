@@ -65,6 +65,11 @@ lang: en
   .feature-circle.help-bg     { background: linear-gradient(135deg, #f59e0b, #d97706); }
   .feature-circle-icon { font-size: 2.5rem; color: rgba(255,255,255,0.95); }
   .feature-circle-title { font-size: 1rem; font-weight: 700; color: var(--card-text, #222); margin-bottom: 5px; }
+  .inst-bar {
+    height: 10px;
+    border-radius: 5px;
+    transition: width 0.8s ease;
+  }
 </style>
 
 <!-- Hero Section -->
@@ -119,12 +124,12 @@ lang: en
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/en/about/status.html' | relative_url }}" class="feature-circle-link">
+      <a href="{{ '/en/support/institutions.html' | relative_url }}" class="feature-circle-link">
         <div class="feature-circle-wrap help">
           <div class="feature-circle help-bg">
-            <i class="fas fa-chart-bar feature-circle-icon"></i>
+            <i class="fas fa-university feature-circle-icon"></i>
           </div>
-          <h6 class="feature-circle-title">Status</h6>
+          <h6 class="feature-circle-title">Institutions</h6>
         </div>
       </a>
     </div>
@@ -165,6 +170,40 @@ lang: en
           <li class="py-2 border-bottom"><a href="{{ '/en/coverage/' | relative_url }}" class="d-flex align-items-center" style="color:inherit; text-decoration:none; font-size:0.88rem;"><i class="fas fa-chevron-right text-primary mr-2" style="font-size:0.7rem;"></i>Connecting abroad</a></li>
           <li class="py-2"><a href="{{ '/en/support/' | relative_url }}" class="d-flex align-items-center" style="color:inherit; text-decoration:none; font-size:0.88rem;"><i class="fas fa-chevron-right text-primary mr-2" style="font-size:0.7rem;"></i>Certificate error fix</a></li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member Institution Connection Types -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="section-card">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h6 class="mb-0"><i class="fas fa-network-wired text-primary mr-2"></i><strong>Member Institution Connection Types</strong></h6>
+          <a href="{{ '/en/support/institutions.html' | relative_url }}" class="text-muted small">View details</a>
+        </div>
+        {% assign total = site.data.stats.participating_institutions %}
+        <div class="row">
+          {% for inst in site.data.stats.institution_breakdown %}
+          {% assign pct = inst.count | times: 100 | divided_by: total %}
+          <div class="col-md-4 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <div>
+                <span style="font-size:0.9rem; font-weight:700;">{{ inst.type_en }}</span>
+                <span class="text-muted ml-2" style="font-size:0.78rem;">{{ inst.desc_en }}</span>
+              </div>
+              <span class="text-muted" style="font-size:0.82rem; white-space:nowrap; margin-left:8px;">{{ inst.count }} ({{ pct }}%)</span>
+            </div>
+            <div class="progress" style="height:10px; border-radius:5px; background:#e9ecef;">
+              <div class="inst-bar" style="width:{{ pct }}%; background:{{ inst.color }};"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="mt-2 pt-2 border-top d-flex justify-content-between align-items-center">
+          <span class="text-muted" style="font-size:0.82rem;">Total Institutions</span>
+          <span style="font-size:0.95rem; font-weight:700; color:#2563eb;">{{ total }}</span>
+        </div>
       </div>
     </div>
   </div>
