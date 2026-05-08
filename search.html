@@ -29,7 +29,7 @@ title: 사이트 검색
 document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get('q');
-  
+
   if (!query) {
     document.getElementById('search-info').innerText = '검색어를 입력해 주세요.';
     return;
@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(data => {
       const resultsContainer = document.getElementById('search-results-container');
-      const results = data.filter(item => 
-        item.title.toLowerCase().includes(query.toLowerCase()) || 
+      const results = data.filter(item =>
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
         item.content.toLowerCase().includes(query.toLowerCase())
       );
 

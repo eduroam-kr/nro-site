@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  eduroam KR NRO 정보 파일 (ro.xml)
 
-  eduroam database specification v2.0.1 (30.11.2021) 준수
-  https://monitor.eduroam.org/eduroam-database/v2/docs/eduroam-database-ver30112021.pdf
-
-  배치 경로: 레포 루트의 general/ro.xml
-  서빙 URL: https://eduroam.kreonet.net/general/ro.xml
--->
 <ROs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:noNamespaceSchemaLocation="ro.xsd">
   <RO>

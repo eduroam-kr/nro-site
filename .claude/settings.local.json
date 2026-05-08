@@ -1,7 +1,33 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 -c \"import json; d=json.load\\(open\\('/home/cyj07154/다운로드/nro-site-main/_data/institutions_pages.json'\\)\\); print\\(d\\)\")"
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/home/cyj07154/다운로드/nro-site-main/_data/institutions_pages.json'\\)\\); print\\(d\\)\")",
+      "Bash(python3 parse_institutions.py)",
+      "Bash(python3 -c ' *)",
+      "WebFetch(domain:www.kias.re.kr)",
+      "WebFetch(domain:www.kisti.re.kr)",
+      "WebFetch(domain:www.nims.re.kr)",
+      "WebFetch(domain:www.tein.net)",
+      "WebFetch(domain:www.ibs.re.kr)",
+      "WebFetch(domain:www.kriss.re.kr)",
+      "WebFetch(domain:www.dime.or.kr)",
+      "WebFetch(domain:tein.net)",
+      "WebFetch(domain:www.tein4.net)",
+      "WebFetch(domain:dime.or.kr)",
+      "WebFetch(domain:tein4.net)",
+      "WebFetch(domain:www.visitdaejeon.co.kr)",
+      "WebSearch",
+      "WebFetch(domain:www.tein.asia)",
+      "WebFetch(domain:webcache.googleusercontent.com)",
+      "Bash(curl -sL \"http://www.kias.re.kr/static/newPub/public/logo.png\" -o kias_re_kr.png)",
+      "Bash(curl -sL \"https://www.kisti.re.kr/resources/images/intro/logo.png\" -o kisti_re_kr.png)",
+      "Bash(curl -sL \"https://www.nims.re.kr/resources/images/new_main2/main_logo_b.png\" -o nims_re_kr.png)",
+      "Bash(curl -sL \"https://www.tein.asia/img/footer_logo.png\" -o teincc_kr.png)",
+      "Bash(curl -sL \"https://www.ibs.re.kr/images/eng/common/header_logo.gif\" -o ibs_tmp.gif)",
+      "Bash(curl -sLk \"https://www.dime.or.kr\" -o /tmp/dime_home.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -sLk --max-time 10 \"https://www.dime.or.kr\")",
+      "Bash(curl -v --max-time 10 \"https://www.dime.or.kr\")"
     ]
   }
 }

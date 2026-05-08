@@ -182,6 +182,7 @@
     .form-control-custom[readonly] {
       background-color: #e9ecef !important;
     }
+
   </style>
 
   <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}" type="image/x-icon">
@@ -268,6 +269,7 @@
               <a class="dropdown-item" href="{{ '/en/about/promotion.html' | relative_url }}">Resources</a>
               <a class="dropdown-item" href="{{ '/en/connect/' | relative_url }}">Connect</a>
               <a class="dropdown-item" href="{{ '/en/about/aboutus.html' | relative_url }}">About Us</a>
+              <a class="dropdown-item" href="{{ '/en/about/status.html' | relative_url }}">Status</a>
             </div>
           </li>
           <li class="nav-item">
@@ -281,7 +283,6 @@
             <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="communityDropdown">
               <a class="dropdown-item" href="{{ '/en/notices/' | relative_url }}">Notices</a>
               <a class="dropdown-item" href="{{ '/en/community/faq.html' | relative_url }}">FAQ</a>
-              <a class="dropdown-item" href="{{ '/en/stats/' | relative_url }}"><i class="fas fa-chart-bar"></i> Statistics</a>
             </div>
           </li>
           {% else %}
@@ -296,6 +297,7 @@
               <a class="dropdown-item" href="{{ '/about/promotion.html' | relative_url }}">홍보자료</a>
               <a class="dropdown-item" href="{{ '/connect/' | relative_url }}">접속안내</a>
               <a class="dropdown-item" href="{{ '/about/aboutus.html' | relative_url }}">운영센터안내</a>
+              <a class="dropdown-item" href="{{ '/about/status.html' | relative_url }}">현황</a>
             </div>
           </li>
           <li class="nav-item">
@@ -309,7 +311,6 @@
             <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="communityDropdown">
               <a class="dropdown-item" href="{{ '/notices/' | relative_url }}">공지사항</a>
               <a class="dropdown-item" href="{{ '/community/faq.html' | relative_url }}">FAQ</a>
-              <a class="dropdown-item" href="{{ '/stats/' | relative_url }}"><i class="fas fa-chart-bar"></i> 통계/현황</a>
             </div>
           </li>
           {% endif %}
@@ -346,6 +347,7 @@
               </a>
             </div>
           </li>
+
         </ul>
       </div>
     </div>
@@ -415,6 +417,7 @@
       try { localStorage.setItem('eduroam-lang', el.dataset.langChoice); } catch (e) {}
     });
   });
+
 </script>
 </body>
 </html>
