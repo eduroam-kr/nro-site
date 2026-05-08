@@ -1,0 +1,25 @@
+participating_institutions: 115
+global_countries: 101
+total_aps: 78493
+service_start_year: 2004
+last_updated: "2026-04-30"
+
+institution_breakdown:
+  - type: IdP+SP
+    type_en: IdP+SP
+    desc: 인증 제공자 + 서비스 제공자
+    desc_en: Identity Provider + Service Provider
+    count: 114
+    color: "#2563eb"
+  - type: SP
+    type_en: SP
+    desc: 서비스 제공자
+    desc_en: Service Provider only
+    count: 1
+    color: "#059669"
+  - type: IdP
+    type_en: IdP
+    desc: 인증 제공자
+    desc_en: Identity Provider only
+    count: 0
+    color: "#94a3b8"

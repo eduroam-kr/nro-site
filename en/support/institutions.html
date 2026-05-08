@@ -11,11 +11,11 @@ lang: en
     <div class="col-md-12">
 
       <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
-        <h2 style="color: #666; font-weight: 300;">Member Institutions</h2>
+        <h2 style="color: var(--card-subtext); font-weight: 300;">Member Institutions</h2>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
-            <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" style="color: #999;">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page" style="color: #333;">Member Institutions</li>
+            <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
+            <li class="breadcrumb-item active text-dark" aria-current="page">Member Institutions</li>
           </ol>
         </nav>
       </div>
@@ -52,7 +52,7 @@ lang: en
       <!-- Institution Table -->
       <div class="table-responsive">
         <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem;" id="instTable">
-          <thead style="background-color: #f8f9fa;">
+          <thead class="inst-thead">
             <tr>
               <th style="width: 50px;">No.</th>
               <th colspan="2">Institution</th>

@@ -1,0 +1,167 @@
+---
+layout: default
+title: Statistics
+lang: en
+---
+<style>
+  .stat-hero-card {
+    border-radius: 16px;
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .stat-hero-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 32px rgba(0,0,0,0.18);
+  }
+  .stat-hero-card .bg-icon {
+    position: absolute;
+    right: -10px;
+    bottom: -15px;
+    font-size: 6rem;
+    opacity: 0.12;
+  }
+  .stat-hero-card .stat-num {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+  .stat-hero-card .stat-label {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-top: 6px;
+  }
+  .stat-hero-card .stat-icon {
+    font-size: 1.6rem;
+    opacity: 0.85;
+    margin-bottom: 12px;
+  }
+  .inst-bar {
+    height: 10px;
+    border-radius: 5px;
+    transition: width 0.8s ease;
+  }
+</style>
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-chart-bar mr-2"></i>Statistics</h1>
+    <p class="page-sub">{{ site.t[page.lang].org }} eduroam Service Overview</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu sticky-top" style="z-index: 1; top: 80px;">
+        <div class="list-group-item sidebar-header" style="color: white; border-radius: 0; text-align: center; font-weight: bold; font-size: 1.1rem; padding: 20px 10px;">
+          Community
+        </div>
+        <a href="{{ '/en/notices/' | relative_url }}" class="list-group-item list-group-item-action">Notices</a>
+        <a href="{{ '/en/community/faq.html' | relative_url }}" class="list-group-item list-group-item-action">FAQ</a>
+        <a href="{{ '/en/stats/' | relative_url }}" class="list-group-item list-group-item-action active">Statistics</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">Statistics</li>
+        </ol>
+      </nav>
+
+      <!-- Key Metrics -->
+      <div class="row mb-4">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-hero-card" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+            <i class="fas fa-university stat-icon d-block"></i>
+            <div class="stat-num counter-val" data-target="{{ site.data.stats.participating_institutions }}">0</div>
+            <div class="stat-label">Member Institutions</div>
+            <i class="fas fa-university bg-icon"></i>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-hero-card" style="background: linear-gradient(135deg, #059669, #0d9488);">
+            <i class="fas fa-globe stat-icon d-block"></i>
+            <div class="stat-num counter-val" data-target="{{ site.data.stats.global_countries }}">0</div>
+            <div class="stat-label">Countries Worldwide</div>
+            <i class="fas fa-globe bg-icon"></i>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-hero-card" style="background: linear-gradient(135deg, #7c3aed, #4f46e5);">
+            <i class="fas fa-wifi stat-icon d-block"></i>
+            <div class="stat-num">
+              <span class="counter-val" data-target="{{ site.data.stats.total_aps }}">0</span>
+            </div>
+            <div class="stat-label">Wireless APs</div>
+            <i class="fas fa-wifi bg-icon"></i>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          {% assign current_year = 'now' | date: '%Y' | plus: 0 %}
+          {% assign years = current_year | minus: site.data.stats.service_start_year %}
+          <div class="stat-hero-card" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+            <i class="fas fa-calendar-check stat-icon d-block"></i>
+            <div class="stat-num">{{ years }}<span style="font-size:1.2rem;">yrs</span></div>
+            <div class="stat-label">Years in Service</div>
+            <i class="fas fa-calendar-check bg-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connection Type Breakdown -->
+      <div class="section-card mb-4">
+        <h6 class="mb-4 font-weight-bold"><i class="fas fa-network-wired text-primary mr-2"></i>Institution Connection Type Breakdown</h6>
+        {% assign total = site.data.stats.participating_institutions %}
+        {% for inst in site.data.stats.institution_breakdown %}
+        {% assign pct = inst.count | times: 100 | divided_by: total %}
+        <div class="mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <div>
+              <span style="font-size:0.9rem; font-weight:700;">{{ inst.type_en }}</span>
+              <span class="text-muted ml-2" style="font-size:0.78rem;">{{ inst.desc_en }}</span>
+            </div>
+            <span class="text-muted" style="font-size:0.82rem; white-space:nowrap; margin-left:8px;">{{ inst.count }} ({{ pct }}%)</span>
+          </div>
+          <div class="progress" style="height:10px; border-radius:5px; background:#e9ecef;">
+            <div class="inst-bar" style="width:{{ pct }}%; background:{{ inst.color }};"></div>
+          </div>
+        </div>
+        {% endfor %}
+        <div class="mt-3 pt-2 border-top d-flex justify-content-between align-items-center">
+          <span class="text-muted" style="font-size:0.82rem;">Total Institutions</span>
+          <span style="font-size:0.95rem; font-weight:700; color:#2563eb;">{{ total }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.counter-val').forEach(function (el) {
+    var target = +el.getAttribute('data-target');
+    var duration = 1200;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(ease * target).toLocaleString();
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(step);
+  });
+});
+</script>

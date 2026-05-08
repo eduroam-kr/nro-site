@@ -366,6 +366,20 @@ body.layout-top-nav { background: var(--bg) !important; transition: background 0
   padding-left: 22px;
 }
 
+/* ── OS 빠른 접속 가이드 ── */
+.os-quick-link {
+  text-decoration: none;
+  color: var(--card-text);
+  border-radius: 10px;
+  transition: background 0.15s;
+}
+.os-quick-link:hover {
+  background: var(--list-hover-bg);
+  text-decoration: none;
+  color: var(--card-text);
+}
+.os-quick-link div { font-size: 0.88rem; font-weight: 700; }
+
 /* ── Footer ── */
 .main-footer {
   background: var(--edu-blue);
@@ -377,6 +391,64 @@ body.layout-top-nav { background: var(--bg) !important; transition: background 0
 .main-footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
 .main-footer a:hover { color: #fff; }
 .main-footer .divider { margin: 0 8px; }
+
+/* ── 다크모드: Bootstrap 텍스트 유틸리티 ── */
+[data-theme="dark"] .text-secondary,
+[data-theme="dark"] .text-muted { color: #94a3b8 !important; }
+[data-theme="dark"] .text-dark { color: #e5e9f0 !important; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .text-secondary,
+  :root:not([data-theme="light"]) .text-muted { color: #94a3b8 !important; }
+  :root:not([data-theme="light"]) .text-dark { color: #e5e9f0 !important; }
+}
+
+/* ── 다크모드: 폼 입력 ── */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] select.form-control {
+  background-color: #1e3050;
+  color: #e5e9f0;
+  border-color: #2a3a55;
+}
+[data-theme="dark"] .form-control::placeholder { color: #6b7a91; }
+[data-theme="dark"] .form-control:focus {
+  background-color: #243a60;
+  color: #e5e9f0;
+  border-color: #4a7ab5;
+  box-shadow: 0 0 0 0.2rem rgba(74,122,181,0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .form-control,
+  :root:not([data-theme="light"]) select.form-control {
+    background-color: #1e3050;
+    color: #e5e9f0;
+    border-color: #2a3a55;
+  }
+  :root:not([data-theme="light"]) .form-control::placeholder { color: #6b7a91; }
+  :root:not([data-theme="light"]) .form-control:focus {
+    background-color: #243a60;
+    color: #e5e9f0;
+    border-color: #4a7ab5;
+    box-shadow: 0 0 0 0.2rem rgba(74,122,181,0.25);
+  }
+}
+
+/* ── 다크모드: Markdown/Bootstrap 테이블 ── */
+[data-theme="dark"] .inst-thead,
+[data-theme="dark"] table thead { background-color: #1e3050 !important; color: #93c5fd; }
+[data-theme="dark"] table td,
+[data-theme="dark"] table th { border-color: #2a3a55 !important; color: var(--card-text); }
+[data-theme="dark"] .table-bordered { border-color: #2a3a55 !important; }
+[data-theme="dark"] .table-striped tbody tr:nth-of-type(odd) { background-color: rgba(255,255,255,0.03); }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .inst-thead,
+  :root:not([data-theme="light"]) table thead { background-color: #1e3050 !important; color: #93c5fd; }
+  :root:not([data-theme="light"]) table td,
+  :root:not([data-theme="light"]) table th { border-color: #2a3a55 !important; color: var(--card-text); }
+  :root:not([data-theme="light"]) .table-bordered { border-color: #2a3a55 !important; }
+}
 
 /* ============================================================
    다크 미드나잇 테마

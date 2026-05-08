@@ -14,7 +14,7 @@ layout: default
 
 <div class="container content-section">
   <div class="section-card">
-    <div style="font-size:0.95rem; line-height:1.9; color:#333;">
+    <div style="font-size:0.95rem; line-height:1.9; color: var(--card-text);">
       {{ content }}
     </div>
     <hr style="margin-top:2rem;">
@@ -32,7 +32,7 @@ layout: default
         {% assign next_notice = sorted_notices[next_idx] %}
         <div class="d-flex align-items-baseline border-top py-3">
           <span class="text-muted mr-3" style="min-width:60px;">Next</span>
-          <a href="{{ next_notice.url | relative_url }}" style="color:#333;">{{ next_notice.title }}</a>
+          <a href="{{ next_notice.url | relative_url }}" style="color: var(--card-text);">{{ next_notice.title }}</a>
         </div>
       {% endif %}
       {% assign prev_idx = curr_idx | plus: 1 %}
@@ -40,7 +40,7 @@ layout: default
       {% if prev_notice %}
         <div class="d-flex align-items-baseline border-top py-3">
           <span class="text-muted mr-3" style="min-width:60px;">Previous</span>
-          <a href="{{ prev_notice.url | relative_url }}" style="color:#333;">{{ prev_notice.title }}</a>
+          <a href="{{ prev_notice.url | relative_url }}" style="color: var(--card-text);">{{ prev_notice.title }}</a>
         </div>
       {% endif %}
     </div>

@@ -1,0 +1,452 @@
+<style>
+  #cb-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0056b3, #003d82);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,86,179,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    z-index: 9000;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  #cb-toggle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 22px rgba(0,86,179,0.55);
+  }
+  #cb-panel {
+    position: fixed;
+    bottom: 92px;
+    right: 24px;
+    width: 340px;
+    max-height: 480px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    z-index: 9000;
+    overflow: hidden;
+    transform: scale(0.92) translateY(12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s, transform 0.22s;
+  }
+  #cb-panel.cb-open {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+  }
+  .cb-header {
+    background: linear-gradient(135deg, #0056b3, #003d82);
+    color: #fff;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  .cb-header-title {
+    font-size: 0.93rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .cb-close {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 2px 6px;
+    line-height: 1;
+    transition: color 0.15s;
+  }
+  .cb-close:hover { color: #fff; }
+  .cb-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px 13px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #f8f9fc;
+  }
+  .cb-msg {
+    max-width: 88%;
+    font-size: 0.84rem;
+    line-height: 1.6;
+    border-radius: 12px;
+    padding: 9px 13px;
+    word-break: break-word;
+  }
+  .cb-msg.bot {
+    background: #fff;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    align-self: flex-start;
+    border-bottom-left-radius: 3px;
+  }
+  .cb-msg.user {
+    background: #0056b3;
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 3px;
+  }
+  .cb-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 2px;
+    font-size: 0.79rem;
+    font-weight: 600;
+    color: #0056b3;
+    text-decoration: none;
+    background: #e8f0fe;
+    padding: 5px 11px;
+    border-radius: 20px;
+    align-self: flex-start;
+    transition: background 0.15s;
+  }
+  .cb-link:hover { background: #d0e2ff; text-decoration: none; color: #003d82; }
+  .cb-input-area {
+    padding: 10px 12px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 8px;
+    background: #fff;
+    flex-shrink: 0;
+  }
+  #cb-input {
+    flex: 1;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 0.84rem;
+    outline: none;
+    transition: border-color 0.15s;
+    font-family: inherit;
+    background: #fff;
+    color: #1e293b;
+  }
+  #cb-input:focus { border-color: #0056b3; }
+  #cb-send {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.88rem;
+    flex-shrink: 0;
+    transition: background 0.15s;
+  }
+  #cb-send:hover { background: #003d82; }
+
+  /* 다크 모드 */
+  [data-theme='dark'] #cb-panel { background: #1e293b; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+  [data-theme='dark'] .cb-messages { background: #0f172a; }
+  [data-theme='dark'] .cb-msg.bot { background: #1e293b; color: #f1f5f9; border-color: #334155; }
+  [data-theme='dark'] .cb-input-area { background: #1e293b; border-top-color: #334155; }
+  [data-theme='dark'] #cb-input { background: #0f172a; border-color: #334155; color: #f1f5f9; }
+  [data-theme='dark'] #cb-input:focus { border-color: #60a5fa; }
+  [data-theme='dark'] .cb-link { background: #1e3050; color: #93c5fd; }
+  [data-theme='dark'] .cb-link:hover { background: #1e3a6e; color: #bfdbfe; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) #cb-panel { background: #1e293b; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+    :root:not([data-theme='light']) .cb-messages { background: #0f172a; }
+    :root:not([data-theme='light']) .cb-msg.bot { background: #1e293b; color: #f1f5f9; border-color: #334155; }
+    :root:not([data-theme='light']) .cb-input-area { background: #1e293b; border-top-color: #334155; }
+    :root:not([data-theme='light']) #cb-input { background: #0f172a; border-color: #334155; color: #f1f5f9; }
+    :root:not([data-theme='light']) .cb-link { background: #1e3050; color: #93c5fd; }
+  }
+  @media (max-width: 480px) {
+    #cb-panel { width: calc(100vw - 28px); right: 14px; bottom: 84px; }
+    #cb-toggle { right: 16px; bottom: 16px; }
+  }
+</style>
+
+<button id="cb-toggle" aria-label="챗봇 열기" title="eduroam 안내 챗봇">
+  <i class="fas fa-comment-dots"></i>
+</button>
+
+<div id="cb-panel" role="dialog" aria-label="eduroam 안내 챗봇">
+  <div class="cb-header">
+    <div class="cb-header-title">
+      <i class="fas fa-robot"></i>
+      eduroam 안내 챗봇
+    </div>
+    <button class="cb-close" id="cb-close" aria-label="닫기">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="cb-messages" id="cb-messages"></div>
+  <div class="cb-input-area">
+    <input type="text" id="cb-input" placeholder="궁금한 점을 입력하세요..." maxlength="200" autocomplete="off" />
+    <button id="cb-send" aria-label="전송">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var BASE = '{{ "" | relative_url }}';
+
+  var intents = [
+    {
+      kw: ['eduroam이란', '에듀로암이란', '뭔가요', '뭐야', '뭐예요', '무엇', '소개', '개요', '설명'],
+      answer: 'eduroam(education roaming)은 전 세계 연구·교육 기관 구성원이 서로의 무선 네트워크를 무료로 이용할 수 있는 Wi-Fi 로밍 서비스입니다.',
+      link: '/about/eduroam.html',
+      linkText: 'eduroam 소개 보기'
+    },
+    {
+      kw: ['접속', '연결', '설정', '어떻게', '방법', '사용법', '이용방법', '쓰는법'],
+      answer: '기기(OS)별 상세 설정 가이드를 접속안내 페이지에서 확인하실 수 있습니다.',
+      link: '/connect/',
+      linkText: '접속 방법 보기'
+    },
+    {
+      kw: ['커버리지', '지도', '어디서', '해외', '나라', '국가', '지역', '세계', '사용가능', '이용가능'],
+      answer: 'eduroam은 전 세계 101개국 이상에서 이용 가능합니다. 커버리지 지도에서 국가별 현황을 확인하세요.',
+      link: '/coverage/map.html',
+      linkText: '커버리지 지도 보기'
+    },
+    {
+      kw: ['정책', '약관', '규정', '보안정책', '인증서', '규칙'],
+      answer: 'eduroam 이용 정책 및 보안 요구사항을 정책 페이지에서 확인하실 수 있습니다.',
+      link: '/policy/',
+      linkText: '정책 보기'
+    },
+    {
+      kw: ['공지사항', '공지', '소식', '업데이트', '점검', '안내사항'],
+      answer: '최신 공지사항과 서비스 안내는 공지사항 페이지를 확인해 주세요.',
+      link: '/notices/',
+      linkText: '공지사항 보기'
+    },
+    {
+      kw: ['계정', '아이디', 'id', '비밀번호', '패스워드', '로그인', '인증정보'],
+      answer: 'eduroam 계정은 소속 기관의 이메일 계정(ID@기관도메인)입니다. 비밀번호도 기관 계정과 동일하게 사용합니다.',
+      link: '/community/faq.html',
+      linkText: 'FAQ 더 보기'
+    },
+    {
+      kw: ['무료', '요금', '비용', '돈이', '유료', '과금'],
+      answer: 'eduroam은 소속 기관 구성원이라면 누구나 무료로 이용 가능합니다. 해외에서도 추가 요금 없이 사용하실 수 있습니다.',
+      link: '/community/faq.html',
+      linkText: 'FAQ 더 보기'
+    },
+    {
+      kw: ['기관가입', '가입방법', '신청방법', '참여방법', '등록방법', '가입하고'],
+      answer: '기관 가입 절차와 요건은 가입방법 안내 페이지에서 확인하시거나 이메일로 문의해 주세요.',
+      link: '/about/guide.html',
+      linkText: '가입방법 및 절차 보기'
+    },
+    {
+      kw: ['이용기관', '회원기관', '참여기관', '기관목록', '어떤기관'],
+      answer: 'eduroam에 참여 중인 국내 이용 기관 목록을 확인하실 수 있습니다.',
+      link: '/support/institutions.html',
+      linkText: '이용 기관 목록 보기'
+    },
+    {
+      kw: ['홍보자료', '브로슈어', '포스터', '리플릿', '자료실'],
+      answer: 'eduroam 홍보자료(브로슈어, 포스터 등)를 홍보자료 페이지에서 내려받을 수 있습니다.',
+      link: '/about/promotion.html',
+      linkText: '홍보자료 보기'
+    },
+    {
+      kw: ['운영센터', '담당자', '관리자', '운영기관'],
+      answer: 'eduroam.kr 운영센터 정보를 확인하실 수 있습니다.',
+      link: '/about/aboutus.html',
+      linkText: '운영센터 안내 보기'
+    },
+    {
+      kw: ['faq', '자주묻는', '자주 묻는'],
+      answer: '자주 묻는 질문과 답변을 FAQ 페이지에서 확인하세요.',
+      link: '/community/faq.html',
+      linkText: 'FAQ 보기'
+    },
+    {
+      kw: ['안됨', '안돼요', '오류', '에러', '문제가', '불가', '막혀', '연결안', '접속안'],
+      answer: '접속 문제 시 사용자 이름 형식(ID@기관도메인)을 먼저 확인해 주세요. 지속적인 문제는 소속 기관 IT 헬프데스크에 문의하시거나 지원 페이지를 이용해 주세요.',
+      link: '/support/',
+      linkText: '지원 페이지 가기'
+    },
+    {
+      kw: ['기기', '스마트폰', '노트북', 'pc', '윈도우', 'windows', '맥os', 'macos', '안드로이드', 'android', '아이폰', 'ios', '리눅스', '태블릿'],
+      answer: 'Windows, macOS, iOS, Android, Linux 등 대부분의 기기를 지원합니다. 기기별 설정 가이드를 확인하세요.',
+      link: '/connect/',
+      linkText: '기기별 접속 방법 보기'
+    },
+    {
+      kw: ['문의', '연락처', '도움', '지원', '헬프데스크'],
+      answer: '추가 문의사항은 지원 페이지를 통해 연락주시거나 이메일로 문의해 주세요.',
+      link: '/support/',
+      linkText: '지원 페이지 가기'
+    },
+    /* ── 사이트 UI 기능 ── */
+    {
+      kw: ['다크모드', '다크 모드', '어두운', '야간모드', '야간 모드', '밝기', '테마', '화면모드', '화면 모드', '라이트모드', '라이트 모드', '밝게', '어둡게'],
+      answer: '상단 내비게이션 오른쪽의 ◑ 아이콘을 클릭하면 라이트·다크·시스템 테마를 선택할 수 있습니다.',
+      link: null,
+      linkText: null
+    },
+    {
+      kw: ['영문', '영어', '언어변경', '언어 변경', '영어로', '영문으로', '언어바꾸', '언어 바꾸', 'english', '영어페이지', '영문페이지'],
+      answer: '상단 내비게이션 오른쪽의 🌐 아이콘을 클릭한 뒤 "English"를 선택하면 영문 페이지로 이동합니다.',
+      link: '/en/',
+      linkText: '영문 페이지 바로가기'
+    },
+    {
+      kw: ['사이트맵', '전체메뉴', '전체 메뉴', '페이지목록', '페이지 목록'],
+      answer: '사이트 전체 메뉴 구성은 사이트맵 페이지에서 확인하실 수 있습니다.',
+      link: '/site/sitemap.html',
+      linkText: '사이트맵 보기'
+    },
+    /* ── eduroam 기술/서비스 ── */
+    {
+      kw: ['cat', '설정도구', '설정 도구', '자동설정', '자동 설정', '프로파일'],
+      answer: 'eduroam CAT(Configuration Assistant Tool)은 기기별 자동 설정 프로파일을 제공하는 도구입니다. 접속안내 페이지에서 다운로드할 수 있습니다.',
+      link: '/connect/',
+      linkText: '접속안내에서 CAT 확인'
+    },
+    {
+      kw: ['ssid', '와이파이이름', '와이파이 이름', '네트워크이름', '네트워크 이름', '접속이름'],
+      answer: 'eduroam Wi-Fi 네트워크 이름(SSID)은 "eduroam"입니다. 기기에서 Wi-Fi 목록에 "eduroam"을 선택하여 접속하세요.',
+      link: '/connect/',
+      linkText: '접속 방법 보기'
+    },
+    {
+      kw: ['보안', '암호화', '안전', '개인정보', '프라이버시'],
+      answer: 'eduroam은 WPA2-Enterprise 방식으로 암호화된 안전한 무선 네트워크입니다. 자세한 보안 정책은 정책 페이지를 확인해 주세요.',
+      link: '/policy/',
+      linkText: '보안 정책 보기'
+    },
+    {
+      kw: ['vpn', '가상사설망'],
+      answer: 'eduroam 접속 후 VPN을 별도로 사용할 수 있습니다. VPN 설정은 소속 기관 IT 부서에 문의해 주세요.',
+      link: '/community/faq.html',
+      linkText: 'FAQ 보기'
+    },
+    {
+      kw: ['eap', '인증방식', '인증 방식', 'ttls', 'peap', '802.1x'],
+      answer: 'eduroam은 EAP-TTLS/PAP 또는 PEAP-MSCHAPv2 방식을 주로 사용합니다. 기관별로 지원하는 방식이 다를 수 있으니 기관 IT 헬프데스크에 확인하세요.',
+      link: '/connect/',
+      linkText: '접속안내 보기'
+    },
+    {
+      kw: ['방문자', '게스트', '외부인', '외부', '타기관', '타 기관', '손님'],
+      answer: '타 기관 방문 시에도 자신의 소속 기관 계정(ID@기관도메인)으로 eduroam에 접속하면 됩니다. 별도의 게스트 계정 없이 이용 가능합니다.',
+      link: '/community/faq.html',
+      linkText: 'FAQ 더 보기'
+    },
+    {
+      kw: ['속도', '빠른지', '빠른가요', '느려요', '느린', '대역폭'],
+      answer: 'eduroam 접속 속도는 해당 기관의 네트워크 환경에 따라 다릅니다. 속도 관련 문제는 현재 접속 중인 기관의 네트워크 담당자에게 문의해 주세요.',
+      link: '/support/',
+      linkText: '지원 페이지 가기'
+    }
+  ];
+
+  function match(text) {
+    var t = text.toLowerCase().replace(/\s+/g, '');
+    for (var i = 0; i < intents.length; i++) {
+      var kws = intents[i].kw;
+      for (var j = 0; j < kws.length; j++) {
+        if (t.indexOf(kws[j].toLowerCase().replace(/\s+/g, '')) !== -1) {
+          return intents[i];
+        }
+      }
+    }
+    return null;
+  }
+
+  function scrollToBottom() {
+    var msgs = document.getElementById('cb-messages');
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  function addMsg(text, type) {
+    var msgs = document.getElementById('cb-messages');
+    var div = document.createElement('div');
+    div.className = 'cb-msg ' + type;
+    div.textContent = text;
+    msgs.appendChild(div);
+    scrollToBottom();
+    return div;
+  }
+
+  function addLink(link, linkText) {
+    var msgs = document.getElementById('cb-messages');
+    var a = document.createElement('a');
+    a.className = 'cb-link';
+    a.href = BASE + link;
+    a.innerHTML = '<i class="fas fa-arrow-right" style="font-size:0.72rem;"></i> ' + linkText;
+    msgs.appendChild(a);
+    scrollToBottom();
+  }
+
+  function reply(userText) {
+    var intent = match(userText);
+    setTimeout(function () {
+      if (intent) {
+        addMsg(intent.answer, 'bot');
+        if (intent.link) addLink(intent.link, intent.linkText);
+      } else {
+        addMsg('죄송해요, 잘 이해하지 못했습니다. 더 자세한 문의는 아래 지원 페이지를 이용해 주세요.', 'bot');
+        addLink('/support/', '지원 페이지 가기');
+      }
+    }, 300);
+  }
+
+  function send() {
+    var input = document.getElementById('cb-input');
+    var text = input.value.trim();
+    if (!text) return;
+    addMsg(text, 'user');
+    input.value = '';
+    reply(text);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.getElementById('cb-toggle');
+    var panel  = document.getElementById('cb-panel');
+    var closeBtn = document.getElementById('cb-close');
+    var sendBtn  = document.getElementById('cb-send');
+    var input    = document.getElementById('cb-input');
+
+    addMsg('안녕하세요! eduroam 안내 챗봇입니다. 접속 방법, 커버리지, 계정, 기관 가입 등 궁금한 점을 질문해 주세요.', 'bot');
+
+    toggle.addEventListener('click', function () {
+      var isOpen = panel.classList.toggle('cb-open');
+      toggle.innerHTML = isOpen
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-comment-dots"></i>';
+      if (isOpen) input.focus();
+    });
+
+    closeBtn.addEventListener('click', function () {
+      panel.classList.remove('cb-open');
+      toggle.innerHTML = '<i class="fas fa-comment-dots"></i>';
+    });
+
+    sendBtn.addEventListener('click', send);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') send();
+    });
+  });
+})();
+</script>

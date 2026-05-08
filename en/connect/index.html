@@ -204,3 +204,13 @@ lang: en
     font-weight: bold;
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hash = window.location.hash;
+    if (hash) {
+      var target = document.querySelector('#osTabs a[href="' + hash + '"]');
+      if (target) { $(target).tab('show'); }
+    }
+  });
+</script>

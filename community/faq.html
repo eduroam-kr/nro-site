@@ -20,6 +20,7 @@ title: FAQ
         </div>
         <a href="{{ '/notices/' | relative_url }}" class="list-group-item list-group-item-action">공지사항</a>
         <a href="{{ '/community/faq.html' | relative_url }}" class="list-group-item list-group-item-action active">FAQ</a>
+        <a href="{{ '/stats/' | relative_url }}" class="list-group-item list-group-item-action">통계/현황</a>
       </div>
     </div>
 
@@ -64,6 +65,52 @@ title: FAQ
             </div>
           </div>
         </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                Q. 어떤 기기를 지원하나요?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. Windows, macOS, iOS, Android, Linux 등 대부분의 기기를 지원합니다. eduroam CAT 도구를 사용하면 가장 간편하게 설정할 수 있습니다.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFour">
+                Q. 접속이 안 될 때 어떻게 하나요?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. 사용자 이름 형식(ID@기관도메인)이 올바른지 먼저 확인하세요. 문제가 지속되면 소속 기관 IT 헬프데스크에 문의하시기 바랍니다.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card p-0 mb-3">
+          <div class="card-header bg-white border-0 py-3" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-dark font-weight-bold p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFive">
+                Q. 우리 기관도 eduroamKR에 가입할 수 있나요?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" data-parent="#faqAccordion">
+            <div class="card-body pt-0 text-muted">
+              A. <a href="{{ '/about/guide.html' | relative_url }}">가입방법 및 절차</a> 페이지를 참고하시거나, <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a>으로 직접 문의해 주세요.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

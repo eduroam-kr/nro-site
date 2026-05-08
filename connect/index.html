@@ -64,13 +64,77 @@ title: 접속 방법
       </div>
 
       <div class="section-card mt-4">
-        <h2><i class="fas fa-cog"></i> 수동 설정 정보</h2>
+        <h2><i class="fas fa-cog"></i> 수동 설정</h2>
+
+        <ul class="nav nav-tabs os-tab mb-3" id="osTabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#tab-windows">
+              <i class="fab fa-windows mr-1"></i>Windows
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-mac">
+              <i class="fab fa-apple mr-1"></i>macOS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-ios">
+              <i class="fab fa-apple mr-1"></i>iOS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-android">
+              <i class="fab fa-android mr-1"></i>Android
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab-windows">
+            <ol class="step-list">
+              <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+              <li><span class="step-num">2</span><span>EAP 방식: <strong>PEAP</strong>, 2단계 인증: <strong>MSCHAPv2</strong>를 선택합니다.</span></li>
+              <li><span class="step-num">3</span><span>서버 인증서 확인을 활성화하고 <strong>{{ site.realm }}</strong> CA를 선택합니다.</span></li>
+              <li><span class="step-num">4</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+            </ol>
+          </div>
+          <div class="tab-pane fade" id="tab-mac">
+            <ol class="step-list">
+              <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+              <li><span class="step-num">2</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+              <li><span class="step-num">3</span><span>인증서 신뢰 창이 뜨면 <strong>계속</strong>을 클릭하여 인증서를 신뢰합니다.</span></li>
+            </ol>
+            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>CAT 도구를 사용하면 인증서 설정이 자동으로 처리됩니다.</p>
+          </div>
+          <div class="tab-pane fade" id="tab-ios">
+            <ol class="step-list">
+              <li><span class="step-num">1</span><span>설정 &gt; Wi-Fi에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+              <li><span class="step-num">2</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+              <li><span class="step-num">3</span><span>인증서 확인 화면에서 <strong>신뢰</strong>를 탭합니다.</span></li>
+            </ol>
+            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>iOS 15 이상: CAT 프로파일 설치를 권장합니다.</p>
+          </div>
+          <div class="tab-pane fade" id="tab-android">
+            <ol class="step-list">
+              <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+              <li><span class="step-num">2</span><span>EAP 방식: <strong>PEAP</strong>, 2단계 인증: <strong>MSCHAPV2</strong>를 선택합니다.</span></li>
+              <li><span class="step-num">3</span><span>CA 인증서: <strong>시스템 기본 인증서 사용</strong> 또는 다운로드한 인증서를 선택합니다.</span></li>
+              <li><span class="step-num">4</span><span>도메인: <strong>{{ site.realm }}</strong>, 사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+            </ol>
+            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-exclamation-triangle mr-1" style="color:#e67e22;"></i>Android 11 이상: 도메인 필드 입력이 필수입니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card mt-4">
+        <h2><i class="fas fa-key"></i> 계정 정보</h2>
         <table class="table table-sm" style="font-size:0.88rem;">
           <tbody>
             <tr><th style="width:140px;">Wi-Fi SSID</th><td><code>eduroam</code></td></tr>
             <tr><th>사용자 이름</th><td><code>아이디@{{ site.realm }}</code></td></tr>
             <tr><th>비밀번호</th><td>기관 계정 비밀번호</td></tr>
             <tr><th>EAP 방식</th><td>PEAP / TTLS</td></tr>
+            <tr><th>내부 인증</th><td>MSCHAPv2 / PAP</td></tr>
           </tbody>
         </table>
       </div>
@@ -93,3 +157,13 @@ title: 접속 방법
     font-weight: bold;
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hash = window.location.hash;
+    if (hash) {
+      var target = document.querySelector('#osTabs a[href="' + hash + '"]');
+      if (target) { $(target).tab('show'); }
+    }
+  });
+</script>

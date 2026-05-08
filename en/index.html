@@ -43,21 +43,28 @@ lang: en
     border-left: 4px solid #5ab2ff;
     line-height: 1.6;
   }
-  .quick-card {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    background: var(--card-bg, #ffffff);
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border: 1px solid rgba(0,0,0,0.05) !important;
+  .feature-circle-link { text-decoration: none; display: block; }
+  .feature-circle-link:hover { text-decoration: none; }
+  .feature-circle-wrap {
+    text-align: center;
+    padding: 24px 10px 16px;
+    transition: transform 0.25s;
   }
-  [data-theme='dark'] .quick-card {
-    background: #1e293b;
-    border-color: #334155 !important;
+  .feature-circle-wrap:hover { transform: translateY(-6px); }
+  .feature-circle {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    transition: box-shadow 0.25s;
   }
-  .quick-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  }
+  .feature-circle-wrap:hover .feature-circle { box-shadow: 0 12px 28px rgba(0,0,0,0.22); }
+  .feature-circle.connect-bg  { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+  .feature-circle.coverage-bg { background: linear-gradient(135deg, #059669, #0d9488); }
+  .feature-circle.policy-bg   { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+  .feature-circle.help-bg     { background: linear-gradient(135deg, #f59e0b, #d97706); }
+  .feature-circle-icon { font-size: 2.5rem; color: rgba(255,255,255,0.95); }
+  .feature-circle-title { font-size: 1rem; font-weight: 700; color: var(--card-text, #222); margin-bottom: 5px; }
 </style>
 
 <!-- Hero Section -->
@@ -79,88 +86,85 @@ lang: en
 
 <div class="container pb-4">
 
-  <!-- Quick Cards -->
-  <div class="row quick-cards mb-4" style="margin-top: 0 !important;">
-    <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/connect/' | relative_url }}" style="text-decoration: none;">
-        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-laptop"></i></div>
-        <div class="title mt-2 font-weight-bold">How to Connect</div>
-        <div class="desc text-muted small">Setup guide by device</div>
+  <!-- Feature Circles -->
+  <div class="row mb-4" style="margin-top: 0 !important;">
+    <div class="col-md-3 mb-3">
+      <a href="{{ '/en/connect/' | relative_url }}" class="feature-circle-link">
+        <div class="feature-circle-wrap connect">
+          <div class="feature-circle connect-bg">
+            <i class="fas fa-laptop feature-circle-icon"></i>
+          </div>
+          <h6 class="feature-circle-title">How to Connect</h6>
+        </div>
       </a>
     </div>
-    <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/coverage/' | relative_url }}" style="text-decoration: none;">
-        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-map-marked-alt"></i></div>
-        <div class="title mt-2 font-weight-bold">Coverage</div>
-        <div class="desc text-muted small">Domestic &amp; international locations</div>
+    <div class="col-md-3 mb-3">
+      <a href="{{ '/en/coverage/' | relative_url }}" class="feature-circle-link">
+        <div class="feature-circle-wrap coverage">
+          <div class="feature-circle coverage-bg">
+            <i class="fas fa-map-marked-alt feature-circle-icon"></i>
+          </div>
+          <h6 class="feature-circle-title">Coverage</h6>
+        </div>
       </a>
     </div>
-    <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/policy/' | relative_url }}" style="text-decoration: none;">
-        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-file-alt"></i></div>
-        <div class="title mt-2 font-weight-bold">Policy</div>
-        <div class="desc text-muted small">Terms of use</div>
+    <div class="col-md-3 mb-3">
+      <a href="{{ '/en/policy/' | relative_url }}" class="feature-circle-link">
+        <div class="feature-circle-wrap policy">
+          <div class="feature-circle policy-bg">
+            <i class="fas fa-file-alt feature-circle-icon"></i>
+          </div>
+          <h6 class="feature-circle-title">Policy</h6>
+        </div>
       </a>
     </div>
-    <div class="col-6 col-md-3 mb-3">
-      <a class="quick-card p-4 d-block text-center text-dark" href="{{ '/en/support/' | relative_url }}" style="text-decoration: none;">
-        <div class="icon" style="font-size: 2rem; color: #007bff;"><i class="fas fa-headset"></i></div>
-        <div class="title mt-2 font-weight-bold">Support</div>
-        <div class="desc text-muted small">Help &amp; troubleshooting</div>
+    <div class="col-md-3 mb-3">
+      <a href="{{ '/en/stats/' | relative_url }}" class="feature-circle-link">
+        <div class="feature-circle-wrap help">
+          <div class="feature-circle help-bg">
+            <i class="fas fa-chart-bar feature-circle-icon"></i>
+          </div>
+          <h6 class="feature-circle-title">Statistics</h6>
+        </div>
       </a>
     </div>
   </div>
 
-  <div class="row mt-3">
-    <!-- Notices -->
-    <div class="col-md-8 mb-4">
-      <div class="card shadow-sm border-0">
-        <div class="card-header bg-white border-bottom-0 pt-4 pb-2">
-          <i class="fas fa-bullhorn text-primary mr-2"></i><strong>Notices</strong>
-          <a href="{{ '/en/notices/' | relative_url }}" class="float-right text-muted small">View all</a>
+  <!-- Notices + Quick Help -->
+  <div class="row mb-4">
+    <div class="col-md-7 mb-3">
+      <div class="section-card h-100">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h6 class="mb-0"><i class="fas fa-bullhorn text-primary mr-2"></i><strong>Notices</strong></h6>
+          <a href="{{ '/en/notices/' | relative_url }}" class="text-muted small">View all</a>
         </div>
-        <div class="card-body pt-0">
-          <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
-            {% assign notices = site.notices_en | sort: "date" | reverse %}
-            {% for notice in notices limit:5 %}
-            <li class="py-2 border-bottom d-flex justify-content-between align-items-center">
-              <span class="text-truncate mr-3">
-                {% if notice.is_new %}<span class="badge badge-danger mr-1">NEW</span>{% endif %}
-                <a href="{{ notice.url | relative_url }}" class="text-dark">{{ notice.title }}</a>
-              </span>
-              <span class="text-muted small" style="min-width:80px; text-align:right;">{{ notice.date | date: "%Y.%m.%d" }}</span>
-            </li>
-            {% endfor %}
-            {% if notices.size == 0 %}
-            <li class="py-3 text-center text-muted">No notices available.</li>
-            {% endif %}
-          </ul>
-        </div>
+        {% assign notices = site.notices_en | sort: "date" | reverse %}
+        {% if notices.size > 0 %}
+        <ul class="list-unstyled mb-0">
+          {% for notice in notices limit:4 %}
+          <li class="py-2 {% unless forloop.last %}border-bottom{% endunless %} d-flex justify-content-between align-items-center">
+            <span class="text-truncate mr-2">
+              {% if notice.is_new %}<span class="badge badge-danger mr-1" style="font-size:0.65rem;">NEW</span>{% endif %}
+              <a href="{{ notice.url | relative_url }}" style="color:inherit; text-decoration:none; font-size:0.88rem;">{{ notice.title }}</a>
+            </span>
+            <span class="text-muted" style="font-size:0.78rem; white-space:nowrap;">{{ notice.date | date: "%Y.%m.%d" }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="text-muted text-center py-3 mb-0" style="font-size:0.9rem;">No notices available.</p>
+        {% endif %}
       </div>
     </div>
-
-    <!-- Quick Help -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm border-0">
-        <div class="card-header bg-white border-bottom-0 pt-4 pb-2">
-          <i class="fas fa-question-circle text-primary mr-2"></i><strong>Quick Help</strong>
-        </div>
-        <div class="card-body pt-0">
-          <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
-            <li class="py-2 border-bottom">
-              <a href="{{ '/en/connect/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>First-time setup</a>
-            </li>
-            <li class="py-2 border-bottom">
-              <a href="{{ '/en/support/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>Forgot my password</a>
-            </li>
-            <li class="py-2 border-bottom">
-              <a href="{{ '/en/coverage/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>Connecting abroad</a>
-            </li>
-            <li class="py-2 border-bottom">
-              <a href="{{ '/en/support/' | relative_url }}" class="text-dark d-block"><i class="fas fa-chevron-right text-muted mx-2 text-sm"></i>Certificate error fix</a>
-            </li>
-          </ul>
-        </div>
+    <div class="col-md-5 mb-3">
+      <div class="section-card h-100">
+        <h6 class="mb-3"><i class="fas fa-question-circle text-primary mr-2"></i><strong>Quick Help</strong></h6>
+        <ul class="list-unstyled mb-0">
+          <li class="py-2 border-bottom"><a href="{{ '/en/connect/' | relative_url }}" class="d-flex align-items-center" style="color:inherit; text-decoration:none; font-size:0.88rem;"><i class="fas fa-chevron-right text-primary mr-2" style="font-size:0.7rem;"></i>Initial setup guide</a></li>
+          <li class="py-2 border-bottom"><a href="{{ '/en/community/faq.html' | relative_url }}" class="d-flex align-items-center" style="color:inherit; text-decoration:none; font-size:0.88rem;"><i class="fas fa-chevron-right text-primary mr-2" style="font-size:0.7rem;"></i>Forgot my password</a></li>
+          <li class="py-2 border-bottom"><a href="{{ '/en/coverage/' | relative_url }}" class="d-flex align-items-center" style="color:inherit; text-decoration:none; font-size:0.88rem;"><i class="fas fa-chevron-right text-primary mr-2" style="font-size:0.7rem;"></i>Connecting abroad</a></li>
+          <li class="py-2"><a href="{{ '/en/support/' | relative_url }}" class="d-flex align-items-center" style="color:inherit; text-decoration:none; font-size:0.88rem;"><i class="fas fa-chevron-right text-primary mr-2" style="font-size:0.7rem;"></i>Certificate error fix</a></li>
+        </ul>
       </div>
     </div>
   </div>
