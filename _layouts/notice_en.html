@@ -5,9 +5,9 @@ layout: default
 <section class="page-hero">
   <div class="container">
     <p style="font-size:0.8rem; opacity:0.7; margin-bottom:6px;">
-      <i class="fas fa-bullhorn mr-1"></i>공지사항
+      <i class="fas fa-bullhorn mr-1"></i>Notices
     </p>
-    <h1 style="font-size:1.4rem;">{{ page.title_ko }}</h1>
+    <h1 style="font-size:1.4rem;">{{ page.title }}</h1>
     <p class="page-sub">{{ page.date | date: "%Y.%m.%d" }}</p>
   </div>
 </section>
@@ -19,7 +19,7 @@ layout: default
     </div>
     <hr style="margin-top:2rem;">
 
-    {% assign sorted_notices = site.notices | sort: "date" | reverse %}
+    {% assign sorted_notices = site.notices_en | sort: "date" | reverse %}
     {% for n in sorted_notices %}
       {% if n.url == page.url %}
         {% assign curr_idx = forloop.index0 %}
@@ -31,23 +31,23 @@ layout: default
         {% assign next_idx = curr_idx | minus: 1 %}
         {% assign next_notice = sorted_notices[next_idx] %}
         <div class="d-flex align-items-baseline border-top py-3">
-          <span class="text-muted mr-3" style="min-width:52px;">다음 글</span>
-          <a href="{{ next_notice.url | relative_url }}" style="color:#333;">{{ next_notice.title_ko }}</a>
+          <span class="text-muted mr-3" style="min-width:60px;">Next</span>
+          <a href="{{ next_notice.url | relative_url }}" style="color:#333;">{{ next_notice.title }}</a>
         </div>
       {% endif %}
       {% assign prev_idx = curr_idx | plus: 1 %}
       {% assign prev_notice = sorted_notices[prev_idx] %}
       {% if prev_notice %}
         <div class="d-flex align-items-baseline border-top py-3">
-          <span class="text-muted mr-3" style="min-width:52px;">이전 글</span>
-          <a href="{{ prev_notice.url | relative_url }}" style="color:#333;">{{ prev_notice.title_ko }}</a>
+          <span class="text-muted mr-3" style="min-width:60px;">Previous</span>
+          <a href="{{ prev_notice.url | relative_url }}" style="color:#333;">{{ prev_notice.title }}</a>
         </div>
       {% endif %}
     </div>
 
     <div class="border-top pt-3">
-      <a href="{{ '/notices/' | relative_url }}" style="font-size:0.85rem; color:#888;">
-        <i class="fas fa-arrow-left mr-1"></i>공지사항 목록으로
+      <a href="{{ '/en/notices/' | relative_url }}" style="font-size:0.85rem; color:#888;">
+        <i class="fas fa-arrow-left mr-1"></i>Back to Notices
       </a>
     </div>
   </div>

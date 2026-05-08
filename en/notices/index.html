@@ -33,24 +33,53 @@ lang: en
         </ol>
       </nav>
 
+      <!-- Search Box -->
+      <div class="mb-3">
+        <div class="input-group">
+          <input type="text" class="form-control" id="noticeSearch" placeholder="Search notices...">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" onclick="filterNotices()"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+
       <div class="section-card">
-        {% assign notices = site.notices | sort: "date" | reverse %}
+        {% assign notices = site.notices_en | sort: "date" | reverse %}
         {% if notices.size > 0 %}
-        <ul class="notice-list mb-0">
+        <ul class="notice-list mb-0" id="noticeList">
           {% for notice in notices %}
-          <li class="py-3 border-bottom d-flex justify-content-between align-items-center">
+          <li class="py-3 border-bottom d-flex justify-content-between align-items-center notice-item" data-title="{{ notice.title | downcase }}">
             <span>
               {% if notice.is_new %}<span class="badge badge-danger mr-2">NEW</span>{% endif %}
-              <a href="{{ notice.url | relative_url }}" style="color:inherit; text-decoration:none;" class="h6 mb-0">{{ notice.title_en | default: notice.title_ko }}</a>
+              <a href="{{ notice.url | relative_url }}" style="color:inherit; text-decoration:none;" class="h6 mb-0">{{ notice.title }}</a>
             </span>
             <span class="text-muted small">{{ notice.date | date: "%Y.%m.%d" }}</span>
           </li>
           {% endfor %}
         </ul>
+        <p id="noResult" style="font-size:0.9rem; color:#888; margin:0; padding:1rem 0; display:none;" class="text-center">No results found.</p>
         {% else %}
         <p style="font-size:0.9rem; color:#888; margin:0; padding:1rem 0;" class="text-center">No notices available.</p>
         {% endif %}
       </div>
+
+<script>
+  document.getElementById('noticeSearch').addEventListener('input', filterNotices);
+  function filterNotices() {
+    var query = document.getElementById('noticeSearch').value.toLowerCase().trim();
+    var items = document.querySelectorAll('.notice-item');
+    var count = 0;
+    items.forEach(function(item) {
+      if (!query || item.dataset.title.includes(query)) {
+        item.style.display = '';
+        count++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    document.getElementById('noResult').style.display = count === 0 ? '' : 'none';
+  }
+</script>
     </div>
   </div>
 </div>

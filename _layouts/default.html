@@ -1,13 +1,21 @@
 {% assign t = site.t[page.lang] %}
 {% if page.lang == 'en' %}
   {% assign base = '/en' %}
-  {% assign ko_url = page.url | remove_first: '/en' %}
-  {% if ko_url == '' %}{% assign ko_url = '/' %}{% endif %}
+  {% if page.lang_alt %}
+    {% assign ko_url = page.lang_alt %}
+  {% else %}
+    {% assign ko_url = page.url | remove_first: '/en' %}
+    {% if ko_url == '' %}{% assign ko_url = '/' %}{% endif %}
+  {% endif %}
   {% assign en_url = page.url %}
 {% else %}
   {% assign base = '' %}
   {% assign ko_url = page.url %}
-  {% assign en_url = '/en' | append: page.url %}
+  {% if page.lang_alt %}
+    {% assign en_url = page.lang_alt %}
+  {% else %}
+    {% assign en_url = '/en' | append: page.url %}
+  {% endif %}
 {% endif %}
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">

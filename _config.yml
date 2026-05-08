@@ -61,12 +61,22 @@ defaults:
     values:
       layout: notice
       lang: ko
+  - scope:
+      path: ""
+      type: notices_en
+    values:
+      layout: notice_en
+      lang: en
 
 collections:
   notices:
     output: true
     sort_by: date
     permalink: /notices/:name/
+  notices_en:
+    output: true
+    sort_by: date
+    permalink: /en/notices/:name/
 
 include:
   - general

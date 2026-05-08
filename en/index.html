@@ -121,12 +121,12 @@ lang: en
         </div>
         <div class="card-body pt-0">
           <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
-            {% assign notices = site.notices | sort: "date" | reverse %}
+            {% assign notices = site.notices_en | sort: "date" | reverse %}
             {% for notice in notices limit:5 %}
             <li class="py-2 border-bottom d-flex justify-content-between align-items-center">
               <span class="text-truncate mr-3">
                 {% if notice.is_new %}<span class="badge badge-danger mr-1">NEW</span>{% endif %}
-                <a href="{{ notice.url | relative_url }}" class="text-dark">{{ notice.title_en | default: notice.title_ko }}</a>
+                <a href="{{ notice.url | relative_url }}" class="text-dark">{{ notice.title }}</a>
               </span>
               <span class="text-muted small" style="min-width:80px; text-align:right;">{{ notice.date | date: "%Y.%m.%d" }}</span>
             </li>
