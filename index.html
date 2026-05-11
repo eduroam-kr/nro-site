@@ -141,6 +141,7 @@ title: 홈
   }
   .shortcut-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 130px;
   }
   .shortcut-card:hover {
     transform: translateY(-4px);
@@ -185,8 +186,8 @@ title: 홈
 
       <!-- Slide 1: eduroam -->
       <div class="carousel-item active">
-        <div class="container py-5">
-          <div class="row align-items-center" style="min-height: 220px;">
+        <div class="container py-3">
+          <div class="row align-items-center" style="min-height: 160px;">
             <div class="col-md-7 pr-md-5">
               <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">eduroam이란?</h2>
               <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
@@ -209,8 +210,8 @@ title: 홈
 
       <!-- Slide 2: NRO -->
       <div class="carousel-item">
-        <div class="container py-5">
-          <div class="row align-items-center" style="min-height: 220px;">
+        <div class="container py-3">
+          <div class="row align-items-center" style="min-height: 160px;">
             <div class="col-md-7 pr-md-5">
               <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">NRO란?</h2>
               <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
@@ -260,7 +261,7 @@ title: 홈
   <div class="row mb-4" style="margin-top: 24px;">
     <div class="col-md-3 mb-3">
       <a href="{{ '/connect/' | relative_url }}" class="text-decoration-none">
-        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #2563eb; background:#f8faff; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #2563eb; background:#f8faff; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-laptop mb-2" style="font-size:1.4rem; color:#2563eb;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">접속 방법</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">기기별 eduroam 설정 방법을 안내합니다.</p>
@@ -269,7 +270,7 @@ title: 홈
     </div>
     <div class="col-md-3 mb-3">
       <a href="{{ '/coverage/map.html' | relative_url }}" class="text-decoration-none">
-        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #059669; background:#f0fdf8; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #059669; background:#f0fdf8; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-map-marked-alt mb-2" style="font-size:1.4rem; color:#059669;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">eduroam 맵</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">전국 참여 기관 위치를 지도에서 확인합니다.</p>
@@ -278,7 +279,7 @@ title: 홈
     </div>
     <div class="col-md-3 mb-3">
       <a href="{{ '/policy/' | relative_url }}" class="text-decoration-none">
-        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #7c3aed; background:#faf5ff; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #7c3aed; background:#faf5ff; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-file-alt mb-2" style="font-size:1.4rem; color:#7c3aed;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">이용 정책</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">eduroam 서비스 이용 약관 및 정책입니다.</p>
@@ -287,7 +288,7 @@ title: 홈
     </div>
     <div class="col-md-3 mb-3">
       <a href="{{ '/support/institutions.html' | relative_url }}" class="text-decoration-none">
-        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #d97706; background:#fffbeb; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #d97706; background:#fffbeb; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-university mb-2" style="font-size:1.4rem; color:#d97706;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">이용 기관</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">eduroam 참여 기관 목록을 확인합니다.</p>
