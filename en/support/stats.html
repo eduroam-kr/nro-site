@@ -1,0 +1,142 @@
+---
+layout: default
+title: Statistics
+lang: en
+---
+
+<style>
+  .region-bar-wrap { margin-bottom: 14px; }
+  .region-bar-label {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 5px;
+  }
+  .region-name { font-weight: 700; font-size: 0.9rem; }
+  .region-count { font-size: 0.82rem; color: #555; white-space: nowrap; margin-left: 6px; }
+  [data-theme='dark'] .region-count { color: #94a3b8; }
+  .region-bar-track {
+    background: #e9ecef;
+    border-radius: 6px;
+    height: 14px;
+    overflow: hidden;
+  }
+  [data-theme='dark'] .region-bar-track { background: #334155; }
+  .region-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease;
+  }
+  .type-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+</style>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-chart-bar mr-2"></i>eduroam Institution Statistics</h1>
+    <p class="page-sub">Regional breakdown and connection type distribution (as of {{ site.data.stats.last_updated }})</p>
+  </div>
+</section>
+
+<div class="container my-4">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu">
+        <div class="list-group-item sidebar-header">Member Institutions</div>
+        <a href="{{ '/en/support/institutions.html' | relative_url }}"
+           class="list-group-item list-group-item-action">
+          <i class="fas fa-list-ul mr-2"></i>Institution List
+        </a>
+        <a href="{{ '/en/support/stats.html' | relative_url }}"
+           class="list-group-item list-group-item-action active">
+          <i class="fas fa-chart-bar mr-2"></i>Statistics
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+
+      <!-- Institutions by Region -->
+      <div class="section-card mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h5 class="mb-0"><i class="fas fa-map-marker-alt text-primary mr-2"></i><strong>Institutions by Region</strong></h5>
+          <a href="{{ '/en/support/institutions.html' | relative_url }}" class="btn btn-sm btn-outline-primary">
+            <i class="fas fa-list mr-1"></i>View Institution List
+          </a>
+        </div>
+        {% assign total = site.data.stats.participating_institutions %}
+        {% assign max_count = 24 %}
+        {% assign regions = site.data.regional_stats.regional_breakdown %}
+        <div class="row">
+          <div class="col-md-6">
+            {% for r in regions limit:9 %}
+            {% assign pct = r.count | times: 100 | divided_by: max_count %}
+            <div class="region-bar-wrap">
+              <div class="region-bar-label">
+                <span class="region-name">{{ r.region_en }}</span>
+                <span class="region-count">{{ r.count }} ({{ r.count | times: 100 | divided_by: total }}%)</span>
+              </div>
+              <div class="region-bar-track">
+                <div class="region-bar-fill" style="width:{{ pct }}%; background:{{ r.color }};"></div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="col-md-6">
+            {% for r in regions offset:9 %}
+            {% assign pct = r.count | times: 100 | divided_by: max_count %}
+            <div class="region-bar-wrap">
+              <div class="region-bar-label">
+                <span class="region-name">{{ r.region_en }}</span>
+                <span class="region-count">{{ r.count }} ({{ r.count | times: 100 | divided_by: total }}%)</span>
+              </div>
+              <div class="region-bar-track">
+                <div class="region-bar-fill" style="width:{{ pct }}%; background:{{ r.color }};"></div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="mt-3 pt-3 border-top d-flex justify-content-between align-items-center">
+          <span class="text-muted" style="font-size:0.82rem;">Total participating institutions nationwide</span>
+          <span style="font-size:1rem; font-weight:700; color:#2563eb;">{{ total }}</span>
+        </div>
+      </div>
+
+      <!-- Connection Type Distribution -->
+      <div class="section-card mb-4">
+        <h5 class="mb-4"><i class="fas fa-network-wired text-primary mr-2"></i><strong>Connection Type Distribution</strong></h5>
+        <div class="row text-center">
+          {% for inst in site.data.stats.institution_breakdown %}
+          {% assign pct = inst.count | times: 100 | divided_by: total %}
+          <div class="col-md-4 mb-3">
+            <div style="font-size:2.2rem; font-weight:800; color:{{ inst.color }};">{{ inst.count }}</div>
+            <div class="type-badge" style="background:{{ inst.color }};">{{ inst.type_en }}</div>
+            <div class="text-muted mt-1" style="font-size:0.8rem;">{{ inst.desc_en }}</div>
+            <div class="mt-1" style="font-size:0.85rem; font-weight:600;">{{ pct }}% of total</div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="progress mt-3" style="height:14px; border-radius:7px;">
+          {% for inst in site.data.stats.institution_breakdown %}
+          {% assign pct = inst.count | times: 100 | divided_by: total %}
+          <div class="progress-bar" role="progressbar"
+               style="width:{{ pct }}%; background:{{ inst.color }};"
+               title="{{ inst.type_en }}: {{ inst.count }}"></div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

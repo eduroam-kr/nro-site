@@ -4,21 +4,34 @@ title: 이용 기관
 lang: ko
 ---
 
+<!-- Hero -->
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-list-ul mr-2"></i>이용 기관 목록</h1>
+    <p class="page-sub">eduroam에 참여하는 국내 기관 목록 (기준: {{ site.data.stats.last_updated }})</p>
+  </div>
+</section>
+
 <div class="container my-4">
   <div class="row">
 
-    <!-- Main Content -->
-    <div class="col-md-12">
-      
-      <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
-        <h2 style="color: var(--card-subtext); font-weight: 300;">이용 기관</h2>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
-            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>
-            <li class="breadcrumb-item active text-dark" aria-current="page">이용 기관</li>
-          </ol>
-        </nav>
+    <!-- 사이드바 -->
+    <div class="col-md-3 mb-4">
+      <div class="list-group sidebar-menu">
+        <div class="list-group-item sidebar-header">이용 기관</div>
+        <a href="{{ '/support/institutions.html' | relative_url }}"
+           class="list-group-item list-group-item-action active">
+          <i class="fas fa-list-ul mr-2"></i>이용 기관 목록
+        </a>
+        <a href="{{ '/support/stats.html' | relative_url }}"
+           class="list-group-item list-group-item-action">
+          <i class="fas fa-chart-bar mr-2"></i>통계
+        </a>
       </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
 
       <!-- Search & Filter Box -->
       <div class="section-card p-4 mb-4" style="border: 1px solid #007bff; border-radius: 8px;">

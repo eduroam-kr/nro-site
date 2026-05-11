@@ -1,0 +1,89 @@
+regional_breakdown:
+  - region: "서울"
+    region_en: "Seoul"
+    count: 24
+    color: "#e74c3c"
+  - region: "경기"
+    region_en: "Gyeonggi"
+    count: 12
+    color: "#e67e22"
+  - region: "대전"
+    region_en: "Daejeon"
+    count: 11
+    color: "#2c3e50"
+  - region: "광주"
+    region_en: "Gwangju"
+    count: 7
+    color: "#8e44ad"
+  - region: "전북"
+    region_en: "Jeonbuk"
+    count: 7
+    color: "#d35400"
+  - region: "전남"
+    region_en: "Jeonnam"
+    count: 7
+    color: "#c0392b"
+  - region: "충남"
+    region_en: "Chungnam"
+    count: 6
+    color: "#2980b9"
+  - region: "대구"
+    region_en: "Daegu"
+    count: 6
+    color: "#9b59b6"
+  - region: "충북"
+    region_en: "Chungbuk"
+    count: 6
+    color: "#16a085"
+  - region: "경북"
+    region_en: "Gyeongbuk"
+    count: 6
+    color: "#1abc9c"
+  - region: "경남"
+    region_en: "Gyeongnam"
+    count: 5
+    color: "#3498db"
+  - region: "부산"
+    region_en: "Busan"
+    count: 5
+    color: "#e91e63"
+  - region: "강원"
+    region_en: "Gangwon"
+    count: 4
+    color: "#27ae60"
+  - region: "인천"
+    region_en: "Incheon"
+    count: 4
+    color: "#f39c12"
+  - region: "울산"
+    region_en: "Ulsan"
+    count: 2
+    color: "#ff5722"
+  - region: "세종"
+    region_en: "Sejong"
+    count: 2
+    color: "#607d8b"
+  - region: "제주"
+    region_en: "Jeju"
+    count: 1
+    color: "#00bcd4"
+
+type_breakdown:
+  - type: "사립"
+    count: 67
+    color: "#2563eb"
+  - type: "국립"
+    count: 33
+    color: "#059669"
+  - type: "기타"
+    count: 9
+    color: "#f59e0b"
+  - type: "국립대법인"
+    count: 2
+    color: "#7c3aed"
+  - type: "특별법법인"
+    count: 2
+    color: "#e74c3c"
+  - type: "공립"
+    count: 2
+    color: "#0891b2"
