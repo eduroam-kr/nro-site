@@ -83,9 +83,23 @@ lang: en
 <section class="hero-video-section">
   <div class="container hero-content">
     <div class="row align-items-center">
-      <div class="col-md-8 mb-5 mb-md-0">
+      <div class="col-md-7 mb-5 mb-md-0">
         <div><h1 class="highlight-text mb-2">Global Wi-Fi</h1></div>
         <div><h1 class="highlight-text">Roaming Service</h1></div>
+      </div>
+      <!-- Right Search -->
+      <div class="col-md-5">
+        <form class="hero-search-form" action="{{ '/en/search.html' | relative_url }}" method="get">
+          <p class="text-white font-weight-bold mb-2" style="font-size:0.9rem; opacity:0.85;">
+            <i class="fas fa-search mr-1"></i>Site Search
+          </p>
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Enter a keyword (e.g. how to connect)" autocomplete="off" style="border-radius: 6px 0 0 6px;">
+            <div class="input-group-append">
+              <button class="btn btn-primary font-weight-bold px-4" type="submit" style="border-radius: 0 6px 6px 0;">Search</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

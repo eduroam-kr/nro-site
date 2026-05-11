@@ -1,0 +1,14 @@
+---
+layout: none
+lang: en
+---
+[
+  {% assign searchable = site.pages | where_exp: "p", "p.title and p.url != '/en/search.json' and p.lang == 'en'" %}
+  {% for page in searchable %}
+  {
+    "title": {{ page.title | jsonify }},
+    "url": {{ page.url | relative_url | jsonify }},
+    "content": {{ page.content | strip_html | strip_newlines | truncatewords: 50 | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

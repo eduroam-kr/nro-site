@@ -1,0 +1,118 @@
+---
+layout: default
+title: Site Search
+lang: en
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1><i class="fas fa-search mr-2"></i>Site Search</h1>
+    <p class="page-sub" id="search-info">Enter a keyword to search.</p>
+  </div>
+</section>
+
+<div class="container my-5">
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-8">
+      <form action="{{ '/en/search.html' | relative_url }}" method="get">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white border-right-0" style="border-radius: 6px 0 0 6px;">
+              <i class="fas fa-search text-muted"></i>
+            </span>
+          </div>
+          <input type="text" name="q" id="search-input" class="form-control border-left-0" placeholder="Enter a keyword" autocomplete="off" style="border-radius: 0;">
+          <div class="input-group-append">
+            <button class="btn btn-primary font-weight-bold px-4" type="submit" style="border-radius: 0 6px 6px 0;">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div id="search-results-container"></div>
+      <div id="no-results" style="display: none;" class="text-center py-5">
+        <i class="fas fa-exclamation-circle fa-3x text-muted mb-3"></i>
+        <h4 class="text-muted">No results found.</h4>
+        <p class="text-muted">Try a different keyword.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = (urlParams.get('q') || '').trim();
+
+  const inputEl = document.getElementById('search-input');
+  if (inputEl && query) inputEl.value = query;
+
+  const infoEl = document.getElementById('search-info');
+
+  if (!query) {
+    infoEl.innerText = 'Enter a keyword to search.';
+    return;
+  }
+
+  fetch("{{ '/en/search.json' | relative_url }}")
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      const lowerQuery = query.toLowerCase();
+      const tokens = lowerQuery.split(/\s+/).filter(Boolean);
+
+      function matches(text) {
+        if (!text) return false;
+        const lowerText = text.toLowerCase();
+        return lowerText.includes(lowerQuery) ||
+               tokens.every(function(t) { return lowerText.includes(t); });
+      }
+
+      const results = data.filter(function(item) {
+        return matches(item.title) || matches(item.content);
+      });
+
+      infoEl.innerText = "Search results for '" + query + "': " + results.length + " found";
+
+      const container = document.getElementById('search-results-container');
+
+      if (results.length === 0) {
+        document.getElementById('no-results').style.display = 'block';
+        return;
+      }
+
+      results.forEach(function(result) {
+        const snippet = highlight(result.content || '', query);
+        const titleHighlighted = highlight(result.title || '', query);
+        const card = document.createElement('div');
+        card.className = 'section-card mb-4 result-card';
+        card.innerHTML =
+          '<h5 class="mb-1"><a href="' + result.url + '" class="text-primary text-decoration-none">' + titleHighlighted + '</a></h5>' +
+          '<p class="text-muted small mb-1" style="font-size:0.8rem;">' + result.url + '</p>' +
+          '<p class="text-dark mb-0" style="font-size:0.9rem; line-height:1.7;">' + snippet + '</p>';
+        container.appendChild(card);
+      });
+    })
+    .catch(function() {
+      infoEl.innerText = 'Failed to load search data.';
+    });
+});
+
+function highlight(text, query) {
+  if (!query) return text;
+  const regex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return text.replace(regex, '<mark style="background:#fff3cd; padding:0 2px; border-radius:2px;">$1</mark>');
+}
+</script>
+
+<style>
+  .result-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+</style>
