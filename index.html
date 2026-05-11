@@ -147,6 +147,44 @@ title: 홈
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   }
+
+  /* ── Dark mode: carousel section ── */
+  .carousel-section {
+    background: #f0f4f8;
+    border-bottom: 1px solid #dde3eb;
+  }
+  [data-theme="dark"] .carousel-section {
+    background: #0f1a2e;
+    border-bottom-color: #2a3a55;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .carousel-section {
+      background: #0f1a2e;
+      border-bottom-color: #2a3a55;
+    }
+  }
+
+  /* ── Dark mode: carousel text ── */
+  [data-theme="dark"] .carousel-item h2 { color: #93c5fd !important; }
+  [data-theme="dark"] .carousel-item p  { color: #e5e9f0 !important; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .carousel-item h2 { color: #93c5fd !important; }
+    :root:not([data-theme="light"]) .carousel-item p  { color: #e5e9f0 !important; }
+  }
+
+  /* ── Dark mode: shortcut cards ── */
+  [data-theme="dark"] .shortcut-card-blue   { background: #162238 !important; }
+  [data-theme="dark"] .shortcut-card-green  { background: #0d2420 !important; }
+  [data-theme="dark"] .shortcut-card-purple { background: #1c1830 !important; }
+  [data-theme="dark"] .shortcut-card-amber  { background: #261e10 !important; }
+  [data-theme="dark"] .shortcut-card h6     { color: var(--card-text) !important; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .shortcut-card-blue   { background: #162238 !important; }
+    :root:not([data-theme="light"]) .shortcut-card-green  { background: #0d2420 !important; }
+    :root:not([data-theme="light"]) .shortcut-card-purple { background: #1c1830 !important; }
+    :root:not([data-theme="light"]) .shortcut-card-amber  { background: #261e10 !important; }
+    :root:not([data-theme="light"]) .shortcut-card h6     { color: var(--card-text) !important; }
+  }
 </style>
 
 <!-- ================= 1. Hero Video Section ================= -->
@@ -180,7 +218,7 @@ title: 홈
 
 
 <!-- ================= 2. 슬라이드 캐러셀 ================= -->
-<section style="background: #f0f4f8; border-bottom: 1px solid #dde3eb;">
+<section class="carousel-section">
   <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
     <div class="carousel-inner">
 
@@ -261,7 +299,7 @@ title: 홈
   <div class="row mb-4" style="margin-top: 24px;">
     <div class="col-md-3 mb-3">
       <a href="{{ '/connect/' | relative_url }}" class="text-decoration-none">
-        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #2563eb; background:#f8faff; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card shortcut-card-blue" style="border-left:3px solid #2563eb; background:#f8faff; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-laptop mb-2" style="font-size:1.4rem; color:#2563eb;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">접속 방법</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">기기별 eduroam 설정 방법을 안내합니다.</p>
@@ -270,7 +308,7 @@ title: 홈
     </div>
     <div class="col-md-3 mb-3">
       <a href="{{ '/coverage/map.html' | relative_url }}" class="text-decoration-none">
-        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #059669; background:#f0fdf8; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card shortcut-card-green" style="border-left:3px solid #059669; background:#f0fdf8; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-map-marked-alt mb-2" style="font-size:1.4rem; color:#059669;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">eduroam 맵</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">전국 참여 기관 위치를 지도에서 확인합니다.</p>
@@ -279,7 +317,7 @@ title: 홈
     </div>
     <div class="col-md-3 mb-3">
       <a href="{{ '/policy/' | relative_url }}" class="text-decoration-none">
-        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #7c3aed; background:#faf5ff; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card shortcut-card-purple" style="border-left:3px solid #7c3aed; background:#faf5ff; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-file-alt mb-2" style="font-size:1.4rem; color:#7c3aed;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">이용 정책</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">eduroam 서비스 이용 약관 및 정책입니다.</p>
@@ -288,7 +326,7 @@ title: 홈
     </div>
     <div class="col-md-3 mb-3">
       <a href="{{ '/support/institutions.html' | relative_url }}" class="text-decoration-none">
-        <div class="p-4 h-100 shortcut-card" style="border-left:3px solid #d97706; background:#fffbeb; border-radius:0 8px 8px 0; cursor:pointer;">
+        <div class="p-4 h-100 shortcut-card shortcut-card-amber" style="border-left:3px solid #d97706; background:#fffbeb; border-radius:0 8px 8px 0; cursor:pointer;">
           <i class="fas fa-university mb-2" style="font-size:1.4rem; color:#d97706;"></i>
           <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">이용 기관</h6>
           <p class="text-muted mb-0" style="font-size:0.78rem;">eduroam 참여 기관 목록을 확인합니다.</p>
