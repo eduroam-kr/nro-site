@@ -70,6 +70,13 @@ lang: en
     border-radius: 5px;
     transition: width 0.8s ease;
   }
+  .shortcut-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .shortcut-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
 </style>
 
 <!-- Hero Section -->
@@ -79,57 +86,123 @@ lang: en
       <div class="col-md-8 mb-5 mb-md-0">
         <div><h1 class="highlight-text mb-2">Global Wi-Fi</h1></div>
         <div><h1 class="highlight-text">Roaming Service</h1></div>
-        <div class="hero-desc mt-4">
-          <strong>eduroam (education roaming)</strong><br>
-          A Wi-Fi roaming service for the research and education community,<br>
-          available in more than 101 countries worldwide.
-        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Carousel -->
+<section style="background: #f0f4f8; border-bottom: 1px solid #dde3eb;">
+  <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1: eduroam -->
+      <div class="carousel-item active">
+        <div class="container py-5">
+          <div class="row align-items-center" style="min-height: 220px;">
+            <div class="col-md-7 pr-md-5">
+              <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">What is eduroam?</h2>
+              <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
+                eduroam is a global Wi-Fi roaming service for the<br>
+                research and education community. With a single setup,<br>
+                you can connect automatically at institutions in 101+ countries.
+              </p>
+              <a href="{{ '/en/about/eduroam.html' | relative_url }}" class="btn btn-primary mt-3" style="font-size: 0.9rem;">
+                Learn more <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <div style="display:inline-flex; align-items:center; justify-content:center; width:160px; height:160px; border-radius:50%; background:linear-gradient(135deg,#0072ff,#00c6ff); box-shadow:0 10px 30px rgba(0,114,255,0.25);">
+                <i class="fas fa-wifi" style="font-size:5rem; color:white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: NRO -->
+      <div class="carousel-item">
+        <div class="container py-5">
+          <div class="row align-items-center" style="min-height: 220px;">
+            <div class="col-md-7 pr-md-5">
+              <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">What is NRO?</h2>
+              <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
+                NRO (National Roaming Operator) is the organization<br>
+                responsible for operating eduroam in each country.<br>
+                In Korea, KREN serves as the designated NRO.
+              </p>
+              <a href="{{ '/en/about/nro.html' | relative_url }}" class="btn btn-primary mt-3" style="font-size: 0.9rem;">
+                Learn more <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <div style="display:inline-flex; align-items:center; justify-content:center; width:160px; height:160px; border-radius:50%; background:linear-gradient(135deg,#4568dc,#b06ab3); box-shadow:0 10px 30px rgba(69,104,220,0.25);">
+                <i class="fas fa-network-wired" style="font-size:5rem; color:white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev" style="width:48px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(0,0,0,0.12);border-radius:50%;">
+        <i class="fas fa-chevron-left" style="color:#555; font-size:0.95rem;"></i>
+      </span>
+    </a>
+    <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next" style="width:48px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(0,0,0,0.12);border-radius:50%;">
+        <i class="fas fa-chevron-right" style="color:#555; font-size:0.95rem;"></i>
+      </span>
+    </a>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="bottom:-4px;">
+      <li data-target="#mainCarousel" data-slide-to="0" class="active" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none;"></li>
+      <li data-target="#mainCarousel" data-slide-to="1" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none; opacity:0.4;"></li>
+    </ol>
+  </div>
+</section>
+
 <div class="container pb-4">
 
-  <!-- Feature Circles -->
-  <div class="row mb-4" style="margin-top: 0 !important;">
+  <!-- Shortcut Cards -->
+  <div class="row mb-4" style="margin-top: 24px;">
     <div class="col-md-3 mb-3">
-      <a href="{{ '/en/connect/' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap connect">
-          <div class="feature-circle connect-bg">
-            <i class="fas fa-laptop feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">How to Connect</h6>
+      <a href="{{ '/en/connect/' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #2563eb; background:#f8faff; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-laptop mb-2" style="font-size:1.4rem; color:#2563eb;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">How to Connect</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">Step-by-step eduroam setup guides for your device.</p>
         </div>
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/en/coverage/' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap coverage">
-          <div class="feature-circle coverage-bg">
-            <i class="fas fa-map-marked-alt feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">Coverage</h6>
+      <a href="{{ '/en/coverage/' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #059669; background:#f0fdf8; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-map-marked-alt mb-2" style="font-size:1.4rem; color:#059669;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">eduroam Map</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">Find eduroam-enabled institutions on the map.</p>
         </div>
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/en/policy/' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap policy">
-          <div class="feature-circle policy-bg">
-            <i class="fas fa-file-alt feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">Policy</h6>
+      <a href="{{ '/en/policy/' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #7c3aed; background:#faf5ff; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-file-alt mb-2" style="font-size:1.4rem; color:#7c3aed;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">Policy</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">Terms and conditions for using eduroam.</p>
         </div>
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/en/support/institutions.html' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap help">
-          <div class="feature-circle help-bg">
-            <i class="fas fa-university feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">Institutions</h6>
+      <a href="{{ '/en/support/institutions.html' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #d97706; background:#fffbeb; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-university mb-2" style="font-size:1.4rem; color:#d97706;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">Institutions</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">Browse the list of eduroam member institutions.</p>
         </div>
       </a>
     </div>

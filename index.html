@@ -139,6 +139,13 @@ title: 홈
     border-radius: 5px;
     transition: width 0.8s ease;
   }
+  .shortcut-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .shortcut-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
 </style>
 
 <!-- ================= 1. Hero Video Section ================= -->
@@ -146,15 +153,23 @@ title: 홈
   <div class="container hero-content">
     <div class="row align-items-center">
       <!-- Left Text -->
-      <div class="col-md-8 mb-5 mb-md-0">
+      <div class="col-md-7 mb-5 mb-md-0">
         <div><h1 class="highlight-text mb-2">글로벌 무선랜(Wi-Fi)</h1></div>
         <div><h1 class="highlight-text">로밍 서비스</h1></div>
-
-        <div class="hero-desc mt-4">
-          <strong>eduroam(education roaming)은</strong><br>
-          연구·교육 커뮤니티를 위한 무선랜 로밍서비스로,<br>
-          전 세계 101개국이 참여하고 있습니다.
-        </div>
+      </div>
+      <!-- Right Search -->
+      <div class="col-md-5">
+        <form class="hero-search-form" action="{{ '/search.html' | relative_url }}" method="get">
+          <p class="text-white font-weight-bold mb-2" style="font-size:0.9rem; opacity:0.85;">
+            <i class="fas fa-search mr-1"></i>사이트 검색
+          </p>
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="검색어를 입력하세요 (예: 가입방법)" autocomplete="off" style="border-radius: 6px 0 0 6px;">
+            <div class="input-group-append">
+              <button class="btn btn-primary font-weight-bold px-4" type="submit" style="border-radius: 0 6px 6px 0;">검색</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -163,48 +178,119 @@ title: 홈
 
 
 
+<!-- ================= 2. 슬라이드 캐러셀 ================= -->
+<section style="background: #f0f4f8; border-bottom: 1px solid #dde3eb;">
+  <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1: eduroam -->
+      <div class="carousel-item active">
+        <div class="container py-5">
+          <div class="row align-items-center" style="min-height: 220px;">
+            <div class="col-md-7 pr-md-5">
+              <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">eduroam이란?</h2>
+              <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
+                연구·교육 커뮤니티를 위한 글로벌 무선랜 로밍 서비스입니다.<br>
+                단 한 번의 설정으로 전 세계 101개국 참여 기관 어디서나<br>
+                자동으로 인터넷에 접속할 수 있습니다.
+              </p>
+              <a href="{{ '/about/eduroam.html' | relative_url }}" class="btn btn-primary mt-3" style="font-size: 0.9rem;">
+                자세히 알아보기 <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <div style="display:inline-flex; align-items:center; justify-content:center; width:160px; height:160px; border-radius:50%; background:linear-gradient(135deg,#0072ff,#00c6ff); box-shadow:0 10px 30px rgba(0,114,255,0.25);">
+                <i class="fas fa-wifi" style="font-size:5rem; color:white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: NRO -->
+      <div class="carousel-item">
+        <div class="container py-5">
+          <div class="row align-items-center" style="min-height: 220px;">
+            <div class="col-md-7 pr-md-5">
+              <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">NRO란?</h2>
+              <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
+                NRO(National Roaming Operator)는 각 국가에서<br>
+                eduroam 서비스를 대표하여 운영하는 기관입니다.<br>
+                한국에서는 KREN이 NRO로 지정되어 운영하고 있습니다.
+              </p>
+              <a href="{{ '/about/nro.html' | relative_url }}" class="btn btn-primary mt-3" style="font-size: 0.9rem;">
+                자세히 알아보기 <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <div style="display:inline-flex; align-items:center; justify-content:center; width:160px; height:160px; border-radius:50%; background:linear-gradient(135deg,#4568dc,#b06ab3); box-shadow:0 10px 30px rgba(69,104,220,0.25);">
+                <i class="fas fa-network-wired" style="font-size:5rem; color:white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev" style="width:48px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(0,0,0,0.12);border-radius:50%;">
+        <i class="fas fa-chevron-left" style="color:#555; font-size:0.95rem;"></i>
+      </span>
+    </a>
+    <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next" style="width:48px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(0,0,0,0.12);border-radius:50%;">
+        <i class="fas fa-chevron-right" style="color:#555; font-size:0.95rem;"></i>
+      </span>
+    </a>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="bottom:-4px;">
+      <li data-target="#mainCarousel" data-slide-to="0" class="active" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none;"></li>
+      <li data-target="#mainCarousel" data-slide-to="1" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none; opacity:0.4;"></li>
+    </ol>
+  </div>
+</section>
+
 <!-- ================= 4. Existing Components (Lower Block) ================= -->
 <div class="container pb-4">
 
-  <!-- 피처 원형 (접속 방법 · 이용 지역 · 이용 정책 · 빠른 도움말) -->
-  <div class="row mb-4" style="margin-top: 0 !important;">
+  <!-- 바로가기 카드 -->
+  <div class="row mb-4" style="margin-top: 24px;">
     <div class="col-md-3 mb-3">
-      <a href="{{ '/connect/' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap connect">
-          <div class="feature-circle connect-bg">
-            <i class="fas fa-laptop feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">접속 방법</h6>
+      <a href="{{ '/connect/' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #2563eb; background:#f8faff; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-laptop mb-2" style="font-size:1.4rem; color:#2563eb;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">접속 방법</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">기기별 eduroam 설정 방법을 안내합니다.</p>
         </div>
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/coverage/map.html' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap coverage">
-          <div class="feature-circle coverage-bg">
-            <i class="fas fa-map-marked-alt feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">이용 지역</h6>
+      <a href="{{ '/coverage/map.html' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #059669; background:#f0fdf8; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-map-marked-alt mb-2" style="font-size:1.4rem; color:#059669;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">eduroam 맵</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">전국 참여 기관 위치를 지도에서 확인합니다.</p>
         </div>
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/policy/' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap policy">
-          <div class="feature-circle policy-bg">
-            <i class="fas fa-file-alt feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">이용 정책</h6>
+      <a href="{{ '/policy/' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #7c3aed; background:#faf5ff; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-file-alt mb-2" style="font-size:1.4rem; color:#7c3aed;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">이용 정책</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">eduroam 서비스 이용 약관 및 정책입니다.</p>
         </div>
       </a>
     </div>
     <div class="col-md-3 mb-3">
-      <a href="{{ '/support/institutions.html' | relative_url }}" class="feature-circle-link">
-        <div class="feature-circle-wrap help">
-          <div class="feature-circle help-bg">
-            <i class="fas fa-university feature-circle-icon"></i>
-          </div>
-          <h6 class="feature-circle-title">이용 기관</h6>
+      <a href="{{ '/support/institutions.html' | relative_url }}" class="text-decoration-none">
+        <div class="p-3 h-100 shortcut-card" style="border-left:3px solid #d97706; background:#fffbeb; border-radius:0 8px 8px 0; cursor:pointer;">
+          <i class="fas fa-university mb-2" style="font-size:1.4rem; color:#d97706;"></i>
+          <h6 class="font-weight-bold mb-1" style="font-size:0.9rem; color:#222;">이용 기관</h6>
+          <p class="text-muted mb-0" style="font-size:0.78rem;">eduroam 참여 기관 목록을 확인합니다.</p>
         </div>
       </a>
     </div>
