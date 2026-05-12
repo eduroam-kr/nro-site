@@ -492,6 +492,8 @@
   document.body.appendChild(revBtn);
   revBtn.addEventListener('click', expand);
 
+  collapse();
+
   function collapse() {
     sidebarCol.style.display = 'none';
     contentCol.classList.remove('col-md-9');
