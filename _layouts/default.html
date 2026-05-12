@@ -171,6 +171,17 @@
     [data-theme='dark'] .btn-outline-dark { color: #f1f5f9 !important; border-color: #475569 !important; }
 
     /* ── 사이드바 토글 ── */
+    /* CSS :has()로 페이지 로드 시점부터 즉시 숨김 — JS 실행 전 깜빡임 없음 */
+    .col-md-3:has(.sidebar-menu) { display: none !important; }
+    .col-md-3:has(.sidebar-menu) + [class*="col-"] {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+    body.sidebar-open .col-md-3:has(.sidebar-menu) { display: block !important; }
+    body.sidebar-open .col-md-3:has(.sidebar-menu) + [class*="col-"] {
+      flex: 0 0 75% !important;
+      max-width: 75% !important;
+    }
     .sidebar-header { position: relative; }
     .sidebar-collapse-btn {
       position: absolute; top: 50%; right: 8px;
@@ -459,22 +470,6 @@
   var sidebarMenu = document.querySelector('.sidebar-menu');
   if (!sidebarMenu) return;
 
-  var sidebarCol = null;
-  var el = sidebarMenu;
-  while (el && el !== document.body) {
-    if (el.classList && el.classList.contains('col-md-3')) { sidebarCol = el; break; }
-    el = el.parentElement;
-  }
-  if (!sidebarCol) return;
-
-  var row = sidebarCol.parentElement;
-  var contentCol = null;
-  for (var i = 0; i < row.children.length; i++) {
-    var c = row.children[i];
-    if (c !== sidebarCol && /\bcol-md-\d/.test(c.className)) { contentCol = c; break; }
-  }
-  if (!contentCol) return;
-
   var header = sidebarMenu.querySelector('.sidebar-header');
   if (header) {
     var colBtn = document.createElement('button');
@@ -489,22 +484,17 @@
   revBtn.className = 'sidebar-reveal-btn';
   revBtn.innerHTML = '{% if page.lang == "en" %}&#9654; Menu{% else %}&#9654; 메뉴{% endif %}';
   revBtn.title = '{% if page.lang == "en" %}Show sidebar{% else %}사이드바 열기{% endif %}';
+  revBtn.style.display = 'block';
   document.body.appendChild(revBtn);
   revBtn.addEventListener('click', expand);
 
-  collapse();
-
   function collapse() {
-    sidebarCol.style.display = 'none';
-    contentCol.classList.remove('col-md-9');
-    contentCol.classList.add('col-md-12');
+    document.body.classList.remove('sidebar-open');
     revBtn.style.display = 'block';
   }
 
   function expand() {
-    sidebarCol.style.display = '';
-    contentCol.classList.remove('col-md-12');
-    contentCol.classList.add('col-md-9');
+    document.body.classList.add('sidebar-open');
     revBtn.style.display = 'none';
   }
 })();
