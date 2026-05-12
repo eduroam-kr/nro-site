@@ -271,6 +271,30 @@ title: 홈
         </div>
       </div>
 
+      <!-- Slide 3: 참여 기관 연결 유형 현황 -->
+      <div class="carousel-item">
+        <div class="py-3">
+          <div class="row align-items-center" style="min-height: 160px;">
+            <div class="col-md-7 pr-md-5">
+              <h2 style="color: #0056b3; font-size: 2rem; font-weight: 800;">참여 기관 연결 유형 현황</h2>
+              <p style="font-size: 1.05rem; font-weight: 600; color: #222; margin-top: 1rem; line-height: 1.85;">
+                eduroam 참여 기관은 역할에 따라 세 가지 연결 유형으로 분류됩니다.<br>
+                서비스 제공(SP), 신원 제공(IdP), 또는 두 역할을 모두 수행하는<br>
+                기관으로 구성되어 전국 단위 인증 인프라를 이룹니다.
+              </p>
+              <a href="{{ '/support/stats.html' | relative_url }}" class="btn btn-primary mt-3" style="font-size: 0.9rem;">
+                자세히 알아보기 <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <div style="display:inline-flex; align-items:center; justify-content:center; width:160px; height:160px; border-radius:50%; background:linear-gradient(135deg,#0d9488,#059669); box-shadow:0 10px 30px rgba(13,148,136,0.25);">
+                <i class="fas fa-sitemap" style="font-size:5rem; color:white;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Controls -->
@@ -289,6 +313,7 @@ title: 홈
     <ol class="carousel-indicators" style="bottom:-4px;">
       <li data-target="#mainCarousel" data-slide-to="0" class="active" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none;"></li>
       <li data-target="#mainCarousel" data-slide-to="1" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none; opacity:0.4;"></li>
+      <li data-target="#mainCarousel" data-slide-to="2" style="background-color:#0056b3; width:10px; height:10px; border-radius:50%; border:none; opacity:0.4;"></li>
     </ol>
   </div>
   </div>
@@ -376,39 +401,6 @@ title: 홈
     </div>
   </div>
 
-  <!-- 참여 기관 연결 유형 현황 -->
-  <div class="row mb-4">
-    <div class="col-12">
-      <div class="section-card">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h6 class="mb-0"><i class="fas fa-network-wired text-primary mr-2"></i><strong>참여 기관 연결 유형 현황</strong></h6>
-          <a href="{{ '/support/stats.html' | relative_url }}" class="text-muted small">자세히 보기</a>
-        </div>
-        {% assign total = site.data.stats.participating_institutions %}
-        <div class="row">
-          {% for inst in site.data.stats.institution_breakdown %}
-          {% assign pct = inst.count | times: 100 | divided_by: total %}
-          <div class="col-md-4 mb-3">
-            <div class="d-flex justify-content-between align-items-center mb-1">
-              <div>
-                <span style="font-size:0.9rem; font-weight:700;">{{ inst.type }}</span>
-                <span class="text-muted ml-2" style="font-size:0.78rem;">{{ inst.desc }}</span>
-              </div>
-              <span class="text-muted" style="font-size:0.82rem; white-space:nowrap; margin-left:8px;">{{ inst.count }}개 ({{ pct }}%)</span>
-            </div>
-            <div class="progress" style="height:10px; border-radius:5px; background:#e9ecef;">
-              <div class="inst-bar" style="width:{{ pct }}%; background:{{ inst.color }};"></div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="mt-2 pt-2 border-top d-flex justify-content-between align-items-center">
-          <span class="text-muted" style="font-size:0.82rem;">총 참여 기관</span>
-          <span style="font-size:0.95rem; font-weight:700; color:#2563eb;">{{ total }}개</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </div>
 
