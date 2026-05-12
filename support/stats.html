@@ -5,7 +5,7 @@ lang: ko
 ---
 
 <style>
-  .region-bar-wrap { margin-bottom: 14px; }
+.region-bar-wrap { margin-bottom: 14px; }
   .region-bar-label {
     display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 5px;
@@ -48,23 +48,8 @@ lang: ko
 <div class="container my-4">
   <div class="row">
 
-    <!-- 사이드바 -->
-    <div class="col-md-3 mb-4">
-      <div class="list-group sidebar-menu">
-        <div class="list-group-item sidebar-header">이용 기관</div>
-        <a href="{{ '/support/institutions.html' | relative_url }}"
-           class="list-group-item list-group-item-action">
-          <i class="fas fa-list-ul mr-2"></i>이용 기관 목록
-        </a>
-        <a href="{{ '/support/stats.html' | relative_url }}"
-           class="list-group-item list-group-item-action active">
-          <i class="fas fa-chart-bar mr-2"></i>통계
-        </a>
-      </div>
-    </div>
-
     <!-- 메인 콘텐츠 -->
-    <div class="col-md-9">
+    <div class="col-md-12">
 
       <!-- 지역별 참여 기관 -->
       <div class="section-card mb-4">

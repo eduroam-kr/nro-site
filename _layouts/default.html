@@ -70,20 +70,6 @@
       border-color: #3f51b5 !important;
     }
     
-    .sidebar-header {
-      background-color: #2c3e50 !important;
-      color: white !important;
-      border-radius: 0 !important;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding: 20px 10px !important;
-    }
-    [data-theme='dark'] .sidebar-header {
-      background-color: #0f172a !important;
-      border-color: #1e293b !important;
-    }
-    
     /* 전역 클래스 다크 모드 보정 */
     [data-theme='dark'] .bg-white { background-color: #1e293b !important; color: #f1f5f9 !important; }
     [data-theme='dark'] .border { border-color: #334155 !important; }
@@ -94,22 +80,6 @@
     [data-theme='dark'] .text-info { color: #22d3ee !important; }
     [data-theme='dark'] .text-warning { color: #fbbf24 !important; }
     [data-theme='dark'] .text-danger { color: #f87171 !important; }
-
-    /* 회원가입 페이지 입력란 (요청: 항상 흰색 배경에 검은 글씨) */
-    .sidebar-menu [data-toggle="collapse"] .caret-icon {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 6px solid #38bdf8; /* 하늘색 (Sky Blue) */
-      transition: transform 0.3s ease;
-      vertical-align: middle;
-      margin-left: 5px;
-    }
-    .sidebar-menu [data-toggle="collapse"].collapsed .caret-icon {
-      transform: rotate(180deg);
-    }
 
     /* 상단 유틸리티 바 (로그인, 회원가입, 사이트맵) */
     .top-utility-bar {
@@ -162,52 +132,11 @@
     [data-theme='dark'] .list-group-item.active { background-color: #3b82f6 !important; border-color: #3b82f6 !important; color: #ffffff !important; }
     [data-theme='dark'] .list-group-item-action:hover { background-color: #334155 !important; color: #ffffff !important; }
     
-    [data-theme='dark'] .sidebar-header { background-color: #0f172a !important; border-color: #1e293b !important; }
-    
     [data-theme='dark'] .page-hero { background: #020617 !important; border-color: #1e293b !important; color: #f8fafc !important; }
     [data-theme='dark'] .page-hero h1, [data-theme='dark'] .page-hero .page-sub { color: #f8fafc !important; }
     
     [data-theme='dark'] .btn-light { background-color: #334155 !important; border-color: #475569 !important; color: #f1f5f9 !important; }
     [data-theme='dark'] .btn-outline-dark { color: #f1f5f9 !important; border-color: #475569 !important; }
-
-    /* ── 사이드바 토글 ── */
-    /* CSS :has()로 페이지 로드 시점부터 즉시 숨김 — JS 실행 전 깜빡임 없음 */
-    .col-md-3:has(.sidebar-menu) { display: none !important; }
-    .col-md-3:has(.sidebar-menu) + [class*="col-"] {
-      flex: 0 0 100% !important;
-      max-width: 100% !important;
-    }
-    body.sidebar-open .col-md-3:has(.sidebar-menu) { display: block !important; }
-    body.sidebar-open .col-md-3:has(.sidebar-menu) + [class*="col-"] {
-      flex: 0 0 75% !important;
-      max-width: 75% !important;
-    }
-    .sidebar-header { position: relative; }
-    .sidebar-collapse-btn {
-      position: absolute; top: 50%; right: 8px;
-      transform: translateY(-50%);
-      background: rgba(255,255,255,0.15); border: none; color: rgba(255,255,255,0.85);
-      width: 26px; height: 26px; border-radius: 4px;
-      cursor: pointer; font-size: 0.78rem;
-      display: inline-flex; align-items: center; justify-content: center;
-      transition: background 0.2s;
-    }
-    .sidebar-collapse-btn:hover { background: rgba(255,255,255,0.3); color: white; }
-    .sidebar-reveal-btn {
-      position: fixed; left: 0; top: 50%;
-      transform: translateY(-50%);
-      background: #2c3e50; color: white; border: none;
-      border-radius: 0 6px 6px 0;
-      padding: 14px 8px; cursor: pointer;
-      font-size: 0.75rem; writing-mode: vertical-rl;
-      box-shadow: 3px 0 10px rgba(0,0,0,0.2);
-      transition: background 0.2s;
-      z-index: 1000; display: none;
-      letter-spacing: 0.05em;
-    }
-    .sidebar-reveal-btn:hover { background: #3f51b5; }
-    [data-theme='dark'] .sidebar-reveal-btn { background: #1e293b; }
-    [data-theme='dark'] .sidebar-reveal-btn:hover { background: #3b82f6; }
 
     /* 회원가입 페이지 입력란 (요청: 항상 흰색 배경에 검은 글씨) */
     .form-control-custom {
@@ -465,39 +394,5 @@
 
 </script>
 
-<script>
-(function () {
-  var sidebarMenu = document.querySelector('.sidebar-menu');
-  if (!sidebarMenu) return;
-
-  var header = sidebarMenu.querySelector('.sidebar-header');
-  if (header) {
-    var colBtn = document.createElement('button');
-    colBtn.className = 'sidebar-collapse-btn';
-    colBtn.title = '{% if page.lang == "en" %}Hide sidebar{% else %}사이드바 숨기기{% endif %}';
-    colBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
-    header.appendChild(colBtn);
-    colBtn.addEventListener('click', collapse);
-  }
-
-  var revBtn = document.createElement('button');
-  revBtn.className = 'sidebar-reveal-btn';
-  revBtn.innerHTML = '{% if page.lang == "en" %}&#9654; Menu{% else %}&#9654; 메뉴{% endif %}';
-  revBtn.title = '{% if page.lang == "en" %}Show sidebar{% else %}사이드바 열기{% endif %}';
-  revBtn.style.display = 'block';
-  document.body.appendChild(revBtn);
-  revBtn.addEventListener('click', expand);
-
-  function collapse() {
-    document.body.classList.remove('sidebar-open');
-    revBtn.style.display = 'block';
-  }
-
-  function expand() {
-    document.body.classList.add('sidebar-open');
-    revBtn.style.display = 'none';
-  }
-})();
-</script>
 </body>
 </html>
