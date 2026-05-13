@@ -1,7 +1,7 @@
 ---
 title: "eduroam service maintenance notice (Jun 15, 02:00–06:00)"
 date: 2025-06-10
-is_new: true
+is_new: false
 ---
 
 ## Maintenance Schedule

@@ -2,7 +2,7 @@
 title_ko: "2025년 2학기 eduroam 서비스 점검 안내 (6/15 02:00~06:00)"
 title_en: "eduroam service maintenance notice (Jun 15, 02:00–06:00)"
 date: 2025-06-10
-is_new: true
+is_new: false
 ---
 
 ## 점검 일정
