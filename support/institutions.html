@@ -65,7 +65,7 @@ lang: ko
               {% for cd in pagedata.rows %}
                 <tr class="inst-row" data-name="{{ cd.univ_name }}" data-type="{{ cd.inst_type }}" data-guide="{% if cd.guide != '' %}y{% else %}n{% endif %}">
 
-                  <td>{{ cd.serial_no }}</td>
+                  <td class="inst-rownum" data-serial="{{ cd.serial_no }}">{{ cd.serial_no }}</td>
 
                   <td style="width: 100px; padding: 5px;" class="align-middle">
                     {% if cd.logo != '' %}
@@ -216,8 +216,16 @@ lang: ko
 
       filteredRows.forEach(function(row, index) {
         if (index >= startIndex && index < endIndex) {
-          row.style.display = ''; // 현재 검색 페이지에 해당하는 행만 표시
+          row.style.display = '';
+          var numCell = row.querySelector('.inst-rownum');
+          if (numCell) numCell.textContent = index + 1;
         }
+      });
+    } else {
+      // 일반 모드: 원본 연번 복원
+      allRows.forEach(function(row) {
+        var numCell = row.querySelector('.inst-rownum');
+        if (numCell) numCell.textContent = numCell.dataset.serial;
       });
     }
 
