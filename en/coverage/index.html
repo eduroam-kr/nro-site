@@ -95,9 +95,10 @@ lang_alt: /coverage/map.html
 
   var map = L.map('eduroam-map').setView([36.3, 127.8], 7);
 
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; <a href="https://www.esri.com/">Esri</a>',
-    maxZoom: 18
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19
   }).addTo(map);
 
   var markerIcon = L.divIcon({
