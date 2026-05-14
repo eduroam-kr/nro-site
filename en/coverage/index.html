@@ -5,14 +5,10 @@ lang: en
 lang_alt: /coverage/map.html
 ---
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-<script src="{{ '/assets/js/map-data-en.js' | relative_url }}"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 
-<!-- Hero -->
 <section class="page-hero">
   <div class="container">
     <h1><i class="fas fa-map-marked-alt mr-2"></i>eduroam Map</h1>
@@ -21,81 +17,163 @@ lang_alt: /coverage/map.html
 </section>
 
 <div class="container my-4">
-  <div class="row">
-    <!-- Main Content -->
-    <div class="col-md-12">
-      <div class="section-card p-0 overflow-hidden shadow-sm" style="border-radius: 12px; border: 1px solid #eee;">
-        <div class="bg-white p-3 border-bottom d-flex justify-content-between align-items-center">
-          <h5 class="m-0 font-weight-bold" style="color: #333;">
-            <i class="fas fa-map-marked-alt text-primary mr-2"></i>eduroam Participating Institutions Map (Korea)
-          </h5>
-          <span class="badge badge-primary px-3 py-2" style="font-size: 0.85rem;">115 Institutions</span>
+
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size:0.8rem;">
+      <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
+      <li class="breadcrumb-item active text-dark" aria-current="page">eduroam Map</li>
+    </ol>
+  </nav>
+
+  <!-- Search -->
+  <div class="section-card p-3 mb-3">
+    <div class="row align-items-center">
+      <div class="col-md-5 mb-2 mb-md-0">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white border-right-0"><i class="fas fa-search text-muted"></i></span>
+          </div>
+          <input type="text" id="mapSearch" class="form-control border-left-0" placeholder="Search by institution name">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" onclick="clearSearch()" title="Clear"><i class="fas fa-times"></i></button>
+          </div>
         </div>
-        <div id="eduroam-map" style="height: 700px; width: 100%;"></div>
       </div>
-
-      <div class="mt-4 p-3 bg-light rounded border" style="font-size: 0.9rem; color: #666;">
-        <i class="fas fa-info-circle mr-2 text-info"></i> Hover over a marker on the map to see the institution name. Click to view details.
+      <div class="col-md-auto mb-2 mb-md-0">
+        <button class="btn btn-outline-primary btn-sm" onclick="resetMap()">
+          <i class="fas fa-expand-arrows-alt mr-1"></i>Show All
+        </button>
       </div>
-
-      <!-- International eduroam Coverage -->
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-globe"></i> International eduroam Coverage</h2>
-        <p style="font-size:0.95rem; color:#444; line-height:1.8;">
-          eduroam is available at educational and research institutions in more than 100 countries worldwide — no separate registration required.
-        </p>
-        <a href="https://monitor.eduroam.org/map_service_loc.php" target="_blank" class="btn btn-outline-dark btn-block mt-3">
-          <i class="fas fa-external-link-alt mr-2"></i>View Global eduroam Map (eduroam.org)
-        </a>
+      <div class="col-md-auto ml-auto">
+        <span class="text-muted small">
+          <i class="fas fa-map-pin mr-1 text-primary"></i>
+          <span id="markerCount">178</span> campuses shown
+        </span>
       </div>
     </div>
   </div>
+
+  <!-- Map -->
+  <div class="section-card p-0 mb-4" style="overflow:hidden; border-radius:12px; border:1px solid #eee;">
+    <div id="eduroam-map" style="height:680px; width:100%;"></div>
+  </div>
+
+  <!-- Global eduroam -->
+  <div class="section-card">
+    <h2><i class="fas fa-globe"></i> International eduroam Coverage</h2>
+    <p style="font-size:0.95rem; color:#444; line-height:1.8;">
+      eduroam is available at educational and research institutions in more than 100 countries worldwide — no separate registration required.
+    </p>
+    <a href="https://monitor.eduroam.org/map_service_loc.php" target="_blank" class="btn btn-outline-dark btn-block mt-3">
+      <i class="fas fa-external-link-alt mr-2"></i>View Global eduroam Map (eduroam.org)
+    </a>
+  </div>
+
 </div>
 
 <style>
-  .leaflet-popup-content-wrapper { border-radius: 8px; padding: 0; overflow: hidden; }
-  .leaflet-popup-content { margin: 0; width: 220px !important; }
-  .map-popup-card { padding: 15px; }
-  .map-popup-header { font-weight: 700; font-size: 1.05rem; color: #0056b3; margin-bottom: 5px; }
-  .map-popup-addr { font-size: 0.85rem; color: #666; line-height: 1.4; }
-  .marker-cluster-small { background-color: rgba(181, 226, 140, 0.6); }
-  .marker-cluster-small div { background-color: rgba(110, 204, 57, 0.6); }
-  .marker-cluster-medium { background-color: rgba(241, 211, 87, 0.6); }
-  .marker-cluster-medium div { background-color: rgba(240, 194, 12, 0.6); }
-  .marker-cluster-large { background-color: rgba(253, 156, 115, 0.6); }
-  .marker-cluster-large div { background-color: rgba(241, 128, 23, 0.6); }
+.leaflet-popup-content-wrapper { border-radius: 10px; padding: 0; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+.leaflet-popup-content { margin: 0; min-width: 210px !important; }
+.map-popup-card { padding: 14px 16px; }
+.map-popup-name { font-weight: 700; font-size: 0.95rem; color: #1a4f8a; margin-bottom: 3px; }
+.map-popup-campus { font-size: 0.85rem; color: #1a6fd4; margin-bottom: 6px; }
+.map-popup-addr { font-size: 0.8rem; color: #777; line-height: 1.5; margin-bottom: 6px; }
+.map-popup-ap { font-size: 0.78rem; color: #555; }
+.marker-cluster-small { background-color: rgba(110,170,240,0.6); }
+.marker-cluster-small div { background-color: rgba(60,130,220,0.7); color:#fff; font-weight:700; }
+.marker-cluster-medium { background-color: rgba(80,150,230,0.6); }
+.marker-cluster-medium div { background-color: rgba(40,110,200,0.7); color:#fff; font-weight:700; }
+.marker-cluster-large { background-color: rgba(40,100,200,0.6); }
+.marker-cluster-large div { background-color: rgba(20,80,170,0.7); color:#fff; font-weight:700; }
 </style>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var map = L.map('eduroam-map').setView([36.3, 127.8], 7);
+(function() {
+  var campuses = {{ site.data.map_campuses | jsonify }};
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
+  var map = L.map('eduroam-map').setView([36.3, 127.8], 7);
 
-    var markers = L.markerClusterGroup();
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+  }).addTo(map);
 
-    if (typeof eduroamInstitutionsEn !== 'undefined') {
-      eduroamInstitutionsEn.forEach(function(inst) {
-        var marker = L.marker([inst.lat, inst.lng]);
-
-        var popupContent = `
-          <div class="map-popup-card">
-            <div class="map-popup-header">${inst.name}</div>
-            <div class="map-popup-addr">${inst.addr}</div>
-            ${inst.link ? `<a href="${inst.link}" target="_blank" class="btn btn-xs btn-success mt-2 text-white" style="font-size:0.75rem; padding: 2px 8px;"><i class="fas fa-external-link-alt mr-1"></i> View Wi-Fi Guide</a>` : `<span class="badge badge-secondary mt-2">Guide coming soon</span>`}
-          </div>
-        `;
-
-        marker.bindTooltip(inst.name, { direction: 'top' });
-        marker.bindPopup(popupContent);
-        markers.addLayer(marker);
-      });
-    }
-
-    map.addLayer(markers);
+  var markerIcon = L.divIcon({
+    className: '',
+    html: '<div style="width:12px;height:12px;background:#1a6fd4;border:2.5px solid #fff;border-radius:50%;box-shadow:0 1px 5px rgba(0,0,0,0.35);"></div>',
+    iconSize: [12, 12],
+    iconAnchor: [6, 6],
+    popupAnchor: [0, -8]
   });
+
+  var cluster = L.markerClusterGroup({
+    maxClusterRadius: 45,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: true
+  });
+
+  var allMarkers = [];
+
+  campuses.forEach(function(c) {
+    var apHtml = c.num_ap > 0
+      ? '<div class="map-popup-ap"><i class="fas fa-wifi mr-1" style="color:#1a6fd4;"></i>AP ' + c.num_ap.toLocaleString() + '</div>'
+      : '';
+    var addrHtml = c.addr_en
+      ? '<div class="map-popup-addr"><i class="fas fa-map-marker-alt mr-1"></i>' + c.addr_en + '</div>'
+      : '';
+
+    var popup =
+      '<div class="map-popup-card">' +
+      '<div class="map-popup-name">' + (c.name_en || c.name_ko) + '</div>' +
+      '<div class="map-popup-campus">' + (c.campus_en || c.campus_ko) + '</div>' +
+      addrHtml + apHtml +
+      '</div>';
+
+    var label = c.name_en || c.name_ko;
+    var marker = L.marker([c.lat, c.lng], { icon: markerIcon })
+      .bindTooltip(label, { direction: 'top', offset: [0, -6] })
+      .bindPopup(popup);
+    marker._data = c;
+    cluster.addLayer(marker);
+    allMarkers.push(marker);
+  });
+
+  map.addLayer(cluster);
+
+  document.getElementById('mapSearch').addEventListener('input', filterMarkers);
+
+  function filterMarkers() {
+    var q = document.getElementById('mapSearch').value.trim().toLowerCase();
+    cluster.clearLayers();
+    var filtered = allMarkers.filter(function(m) {
+      if (!q) return true;
+      var d = m._data;
+      return (d.name_en || '').toLowerCase().includes(q) ||
+             (d.campus_en || '').toLowerCase().includes(q) ||
+             (d.name_ko || '').toLowerCase().includes(q);
+    });
+    filtered.forEach(function(m) { cluster.addLayer(m); });
+    document.getElementById('markerCount').textContent = filtered.length;
+    if (q && filtered.length > 0) {
+      var bounds = L.latLngBounds(filtered.map(function(m) { return m.getLatLng(); }));
+      map.fitBounds(bounds, { maxZoom: 14, padding: [50, 50] });
+    }
+  }
+
+  window.clearSearch = function() {
+    document.getElementById('mapSearch').value = '';
+    filterMarkers();
+  };
+
+  window.resetMap = function() {
+    document.getElementById('mapSearch').value = '';
+    cluster.clearLayers();
+    allMarkers.forEach(function(m) { cluster.addLayer(m); });
+    document.getElementById('markerCount').textContent = campuses.length;
+    map.setView([36.3, 127.8], 7);
+  };
+})();
 </script>
