@@ -194,24 +194,27 @@ lang: ko
     currentPage = p;
     
     if (!isSearchMode) {
-      // 일반 모드: 페이지(tbody) 단위로 토글
+      // 일반 모드: 페이지(tbody) 단위로 토글 + 원본 연번 복원
       for (var i = 1; i <= totalPages; i++) {
         var pageElem = document.getElementById('page-' + i);
         if (pageElem) pageElem.style.display = (i === p) ? '' : 'none';
       }
+      allRows.forEach(function(row) {
+        var numCell = row.querySelector('.inst-rownum');
+        if (numCell) numCell.textContent = numCell.dataset.serial;
+      });
     } else {
-      // 검색 모드: 전체 행 중 검색된 행들의 인덱스에 따라 토글
+      // 검색 모드: 전체 행 중 검색된 행들의 인덱스에 따라 토글 + 재번호
       var startIndex = (p - 1) * itemsPerPage;
       var endIndex = p * itemsPerPage;
 
-      // 모든 tbody를 보이고 행 단위로 제어
       for (var i = 1; i <= totalPages; i++) {
         var pageElem = document.getElementById('page-' + i);
         if (pageElem) pageElem.style.display = '';
       }
 
       allRows.forEach(function(row) {
-        row.style.display = 'none'; // 일단 다 숨김
+        row.style.display = 'none';
       });
 
       filteredRows.forEach(function(row, index) {
@@ -220,12 +223,6 @@ lang: ko
           var numCell = row.querySelector('.inst-rownum');
           if (numCell) numCell.textContent = index + 1;
         }
-      });
-    } else {
-      // 일반 모드: 원본 연번 복원
-      allRows.forEach(function(row) {
-        var numCell = row.querySelector('.inst-rownum');
-        if (numCell) numCell.textContent = numCell.dataset.serial;
       });
     }
 

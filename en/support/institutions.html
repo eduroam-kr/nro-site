@@ -195,6 +195,10 @@ lang: en
         var pageElem = document.getElementById('page-' + i);
         if (pageElem) pageElem.style.display = (i === p) ? '' : 'none';
       }
+      allRows.forEach(function(row) {
+        var numCell = row.querySelector('.inst-rownum');
+        if (numCell) numCell.textContent = numCell.dataset.serial;
+      });
     } else {
       var startIndex = (p - 1) * itemsPerPage;
       var endIndex = p * itemsPerPage;
@@ -212,11 +216,6 @@ lang: en
           var numCell = row.querySelector('.inst-rownum');
           if (numCell) numCell.textContent = index + 1;
         }
-      });
-    } else {
-      allRows.forEach(function(row) {
-        var numCell = row.querySelector('.inst-rownum');
-        if (numCell) numCell.textContent = numCell.dataset.serial;
       });
     }
 
