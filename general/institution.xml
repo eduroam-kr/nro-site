@@ -579,9 +579,9 @@
     <stage>1</stage>
     <type_kr>기타</type_kr>
     <inst_name lang="ko">대전컨벤션센터</inst_name>
-    <inst_name lang="en">Daejeon Convention Center</inst_name>
+    <inst_name lang="en">DCC</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
-  <location><locationid>dcckorea.or.kr.01</locationid><coordinates>127.3876,36.3743</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">대전컨벤션센터</loc_name><loc_name lang="en">Daejeon Convention Center</loc_name><address><street lang="ko">엑스포로 107</street><city lang="ko">대전광역시 유성구</city><postcode>34125</postcode></address><address><street lang="en">107 Expo-ro, Yuseong-gu</street><city lang="en">Daejeon</city><postcode>34125</postcode></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>0</AP_no></location></institution>
+  <location><locationid>dcckorea.or.kr.01</locationid><coordinates>127.3876,36.3743</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">대전컨벤션센터</loc_name><loc_name lang="en">DCC</loc_name><address><street lang="ko">엑스포로 107</street><city lang="ko">대전광역시 유성구</city><postcode>34125</postcode></address><address><street lang="en">107 Expo-ro, Yuseong-gu</street><city lang="en">Daejeon</city><postcode>34125</postcode></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>0</AP_no></location></institution>
   <institution>
     <instid>daejin.ac.kr</instid>
     <ROid>kr01</ROid>
