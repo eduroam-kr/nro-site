@@ -140,6 +140,7 @@ lang_alt: /en/coverage/
   });
 
   map.addLayer(cluster);
+  document.getElementById('markerCount').textContent = campuses.length;
 
   document.getElementById('mapSearch').addEventListener('input', filterMarkers);
 

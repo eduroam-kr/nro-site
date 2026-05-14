@@ -147,7 +147,7 @@
     <inst_realm>konyang.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">건양대학교</inst_name>
-    <inst_name lang="en">KONYANG</inst_name>
+    <inst_name lang="en">Konyang University</inst_name>
     <info_URL lang="ko">https://www.konyang.ac.kr/ict/sub02_02.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>konyang.ac.kr.01</locationid><coordinates>127.1096874,36.1821519</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">건양대학교 글로벌캠퍼스</loc_name><loc_name lang="en">Konyang University Changui Convergence Campus</loc_name><address><street lang="en">(32992) 121 Daehak-ro, Nonsan-si, Chungcheongnam-do</street><city lang="en">Chungcheongnam-do</city></address><address><street lang="ko">(32992) 충청남도 논산시 대학로 121</street><city lang="ko">충청남도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>400</AP_no></location>
@@ -205,7 +205,7 @@
     <inst_realm>ginue.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">경인교육대학교</inst_name>
-    <inst_name lang="en">Gyeongin national university of education</inst_name>
+    <inst_name lang="en">Gyeongin National University of Education</inst_name>
     <info_URL lang="ko">https://www.ginue.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN313</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>ginue.ac.kr.01</locationid><coordinates>126.7164,37.5383</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">경인교육대학교 인천캠퍼스</loc_name><loc_name lang="en">Gyeongin National University of Education Incheon Campus</loc_name><address><street lang="ko">계산로 62</street><city lang="ko">인천광역시 계양구</city><postcode>21044</postcode></address><address><street lang="en">62 Gyesan-ro, Gyeyang-gu</street><city lang="en">Incheon</city><postcode>21044</postcode></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>0</AP_no></location><location><locationid>ginue.ac.kr.02</locationid><coordinates>126.9520,37.3930</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">경인교육대학교 경기캠퍼스</loc_name><loc_name lang="en">Gyeongin National University of Education Gyeonggi Campus</loc_name><address><street lang="ko">만안구 삼막로 155</street><city lang="ko">경기도 안양시</city><postcode>13910</postcode></address><address><street lang="en">155 Sammak-ro, Manan-gu</street><city lang="en">Anyang-si, Gyeonggi-do</city><postcode>13910</postcode></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>0</AP_no></location></institution>
@@ -230,7 +230,7 @@
     <inst_realm>khu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">경희대학교</inst_name>
-    <inst_name lang="en">Kyunghee University</inst_name>
+    <inst_name lang="en">Kyung Hee University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>khu.ac.kr.01</locationid><coordinates>127.0548902,37.5939495</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">경희대학교 서울캠퍼스</loc_name><loc_name lang="en">Kyung Hee University Seoul Campus</loc_name><address><street lang="en">(02447) 26 Kyungheedae-ro, Dongdaemun-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(02447) 서울특별시 동대문구 경희대로 26</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1497</AP_no></location>
   <location><locationid>khu.ac.kr.02</locationid><coordinates>127.0811979,37.2398016</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">경희대학교 국제캠퍼스</loc_name><loc_name lang="en">Kyung Hee University Global Campus</loc_name><address><street lang="en">(17104) 1732 Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(17104) 경기도 용인시 기흥구 덕영대로 1732</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1084</AP_no></location>
@@ -256,7 +256,7 @@
     <inst_realm>kmcu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">계명문화대학교</inst_name>
-    <inst_name lang="en">KEIMYUNG COLLEGE UNIVERSITY</inst_name>
+    <inst_name lang="en">Keimyung College University</inst_name>
     <info_URL lang="ko">https://www.kmcu.ac.kr/kr/index.php?pCode=wifi</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>kmcu.ac.kr.01</locationid><coordinates>128.4910262,35.8590061</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">계명문화대학교</loc_name><loc_name lang="en">Keimyung College University</loc_name><address><street lang="en">(42601) 675 Dalseo-daero, Dalseo-gu, Daegu</street><city lang="en">Daegu</city></address><address><street lang="ko">(42601) 대구광역시 달서구 달서대로 675</street><city lang="ko">대구광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -280,7 +280,7 @@
     <inst_realm>korea.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">고려대학교</inst_name>
-    <inst_name lang="en">KOREA UNIVERSITY</inst_name>
+    <inst_name lang="en">Korea University</inst_name>
     <info_URL lang="ko">http://wifi.korea.ac.kr/</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>korea.ac.kr.01</locationid><coordinates>127.0316981,37.5887034</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">고려대학교 서울캠퍼스(안암)</loc_name><loc_name lang="en">Korea University Seoul Campus (Anam)</loc_name><address><street lang="en">(02841) 145 Anam-ro, Seongbuk-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(02841) 서울특별시 성북구 안암로 145</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>3533</AP_no></location>
@@ -307,7 +307,7 @@
     <inst_realm>ust.ac.kr</inst_realm>
     <type_kr>기타</type_kr>
     <inst_name lang="ko">과학기술연합대학원대학교</inst_name>
-    <inst_name lang="en">UST</inst_name>
+    <inst_name lang="en">University of Science and Technology</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>ust.ac.kr.01</locationid><coordinates>127.3676230,36.3849081</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">과학기술연합대학원대학교</loc_name><loc_name lang="en">University of Science and Technology (UST)</loc_name><address><street lang="en">(34113) 217 Gajeong-ro, Yuseong-gu, Daejeon</street><city lang="en">Daejeon</city></address><address><street lang="ko">(34113) 대전광역시 유성구 가정로 217</street><city lang="ko">대전광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -410,7 +410,7 @@
     <inst_realm>hanbat.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">국립한밭대학교</inst_name>
-    <inst_name lang="en">HANBAT NATIONAL UNIVERSITY</inst_name>
+    <inst_name lang="en">Hanbat National University</inst_name>
     <info_URL lang="ko">https://www.hanbat.ac.kr/kor/sub06_080105.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>hanbat.ac.kr.01</locationid><coordinates>127.3957887,36.4283490</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국립한밭대학교 대덕산학융합캠퍼스</loc_name><loc_name lang="en">Hanbat National University Daedeok Industry-Academia Convergence Campus</loc_name><address><street lang="en">(34014) 75 Techno 1-ro, Yuseong-gu, Daejeon</street><city lang="en">Daejeon</city></address><address><street lang="ko">(34014) 대전광역시 유성구 테크노1로 75</street><city lang="ko">대전광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -424,7 +424,7 @@
     <inst_realm>kookmin.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">국민대학교</inst_name>
-    <inst_name lang="en">KOOKMIN UNIVERSITY</inst_name>
+    <inst_name lang="en">Kookmin University</inst_name>
     <info_URL lang="ko">https://kist.kookmin.ac.kr/kist_new/infra/ko.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>kookmin.ac.kr.01</locationid><coordinates>126.9985231,37.6102882</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국민대학교 북악캠퍼스</loc_name><loc_name lang="en">Kookmin University Bukak Campus</loc_name><address><street lang="en">(02707) 77 Jeongneung-ro, Seongbuk-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(02707) 서울특별시 성북구 정릉로 77</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1156</AP_no></location>
@@ -465,7 +465,7 @@
     <inst_realm>ibs.re.kr</inst_realm>
     <type_kr>기타</type_kr>
     <inst_name lang="ko">기초과학연구원</inst_name>
-    <inst_name lang="en">IBS, Institute for Basic Science</inst_name>
+    <inst_name lang="en">Korea Institute for Basic Science</inst_name>
     <info_URL lang="ko">http://eduroam.ibs.re.kr</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>ibs.re.kr.01</locationid><coordinates>127.4001240,36.4018360</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">본원</loc_name><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -518,7 +518,7 @@
     <inst_realm>cu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">대구가톨릭대학교</inst_name>
-    <inst_name lang="en">Daegu Catholic Univ</inst_name>
+    <inst_name lang="en">Daegu Catholic University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>cu.ac.kr.01</locationid><coordinates>128.8074220,35.9089671</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">대구가톨릭대학교 효성캠퍼스</loc_name><loc_name lang="en">Daegu Catholic University, Hyoseong Campus</loc_name><address><street lang="en">(38430) 13-13 Hayang-ro, Hayang-eup, Gyeongsan-si, Gyeongsangbuk-do</street><city lang="en">Gyeongsangbuk-do</city></address><address><street lang="ko">(38430) 경상북도 경산시 하양읍 하양로 13-13</street><city lang="ko">경상북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -591,7 +591,7 @@
     <inst_realm>daejin.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">대진대학교</inst_name>
-    <inst_name lang="en">DAEJIN UNIVERSITY</inst_name>
+    <inst_name lang="en">Daejin University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>daejin.ac.kr.01</locationid><coordinates>127.1575536,37.8738099</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">대진대학교</loc_name><loc_name lang="en">Daejin University</loc_name><address><street lang="en">(11159) 1007 Hoguk-ro, Pocheon-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(11159) 경기도 포천시 호국로 1007</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>736</AP_no></location>
   </institution>
@@ -603,7 +603,7 @@
     <inst_realm>dongguk.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">동국대학교</inst_name>
-    <inst_name lang="en">DONGGUK UNIVERSITY</inst_name>
+    <inst_name lang="en">Dongguk University</inst_name>
     <info_URL lang="ko">https://it.dongguk.edu/?page_id=18649</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>dongguk.ac.kr.01</locationid><coordinates>126.9980035,37.5581784</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">동국대학교 서울캠퍼스</loc_name><loc_name lang="en">Dongguk University, Seoul Campus</loc_name><address><street lang="en">(04620) 30 Pildong-ro 1-gil, Jung-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(04620) 서울특별시 중구 필동로1길 30</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1000</AP_no></location>
@@ -642,7 +642,7 @@
     <inst_realm>deu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">동의대학교</inst_name>
-    <inst_name lang="en">Dong-Eui university</inst_name>
+    <inst_name lang="en">Dong-Eui University</inst_name>
     <info_URL lang="ko">https://www.deu.ac.kr/www/deu-it-etc.do?mode=view&amp;articleNo=65693&amp;article.offset=0&amp;articleLimit=10</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>deu.ac.kr.01</locationid><coordinates>129.0352536,35.1437214</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">동의대학교 가야캠퍼스</loc_name><loc_name lang="en">Dong-Eui University, Gaya Campus</loc_name><address><street lang="en">(47340) 176 Eomgwang-ro, Busanjin-gu, Busan</street><city lang="en">Busan</city></address><address><street lang="ko">(47340) 부산광역시 부산진구 엄광로 176</street><city lang="ko">부산광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>499</AP_no></location>
@@ -722,7 +722,7 @@
     <inst_realm>pusan.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">부산대학교</inst_name>
-    <inst_name lang="en">PUSAN NATIONAL UNIVERSITY</inst_name>
+    <inst_name lang="en">Pusan National University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>pusan.ac.kr.01</locationid><coordinates>128.9883383,35.3111639</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국립부산대학교 양산캠퍼스</loc_name><loc_name lang="en">Pusan National University, Yangsan Campus</loc_name><address><street lang="en">(50612) 49 Busandaehak-ro, Yangsan-si, Gyeongsangnam-do</street><city lang="en">Gyeongsangnam-do</city></address><address><street lang="ko">(50612) 경상남도 양산시 부산대학로 49</street><city lang="ko">경상남도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>352</AP_no></location>
   <location><locationid>pusan.ac.kr.02</locationid><coordinates>129.0843625,35.2314426</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국립부산대학교 부산캠퍼스</loc_name><loc_name lang="en">Pusan National University, Busan Campus</loc_name><address><street lang="en">(46241) 2 Busandaehak-ro 63beon-gil, Geumjeong-gu, Busan</street><city lang="en">Busan</city></address><address><street lang="ko">(46241) 부산광역시 금정구 부산대학로63번길 2</street><city lang="ko">부산광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1867</AP_no></location>
@@ -736,7 +736,7 @@
     <inst_realm>smu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">상명대학교</inst_name>
-    <inst_name lang="en">SANGMYUNG UNIVERSITY</inst_name>
+    <inst_name lang="en">Sangmyung University</inst_name>
     <info_URL lang="ko">https://www.smu.ac.kr/kor/life/eduroam.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>smu.ac.kr.01</locationid><coordinates>126.9551595,37.6041089</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">상명대학교 서울캠퍼스</loc_name><loc_name lang="en">Sangmyung University, Seoul Campus</loc_name><address><street lang="en">(03016) 20 Hongjimun 2-gil, Jongno-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(03016) 서울특별시 종로구 홍지문2길 20</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -762,7 +762,7 @@
     <inst_realm>seoultech.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">서울과학기술대학교</inst_name>
-    <inst_name lang="en">Seoul National University of Science&amp;Technology</inst_name>
+    <inst_name lang="en">Seoul National University of Science and Technology</inst_name>
     <info_URL lang="ko">https://itc.seoultech.ac.kr/service/wifi</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>seoultech.ac.kr.01</locationid><coordinates>127.0768337,37.6328059</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국립서울과학기술대학교</loc_name><loc_name lang="en">Seoul National University of Science and Technology</loc_name><address><street lang="en">(01811) 232 Gongneung-ro, Nowon-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(01811) 서울특별시 노원구 공릉로 232</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1201</AP_no></location>
@@ -788,7 +788,7 @@
     <inst_realm>uos.ac.kr</inst_realm>
     <type_kr>공립</type_kr>
     <inst_name lang="ko">서울시립대학교</inst_name>
-    <inst_name lang="en">UNIVERSITY OF SEOUL</inst_name>
+    <inst_name lang="en">University of Seoul</inst_name>
     <info_URL lang="ko">https://cis.uos.ac.kr/ithelpdesk/html/network/wifi.do?menuid=1089004001000000000&amp;identified=anonymous&amp;</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>uos.ac.kr.01</locationid><coordinates>127.0599901,37.5825765</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">서울시립대학교</loc_name><loc_name lang="en">University of Seoul</loc_name><address><street lang="en">(02504) 163 Seoulsiripdae-ro, Dongdaemun-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(02504) 서울특별시 동대문구 서울시립대로 163</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1164</AP_no></location>
@@ -813,7 +813,7 @@
     <inst_realm>seoil.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">서일대학교</inst_name>
-    <inst_name lang="en">SEOIL UNIVERSITY</inst_name>
+    <inst_name lang="en">Seoil University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>seoil.ac.kr.01</locationid><coordinates>127.0976268,37.5858310</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">서일대학교</loc_name><loc_name lang="en">Seoil University</loc_name><address><street lang="en">(02192) 28 Yongmasan-ro 90-gil, Jungnang-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(02192) 서울특별시 중랑구 용마산로90길 28</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -825,7 +825,7 @@
     <inst_realm>sungkyul.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">성결대학교</inst_name>
-    <inst_name lang="en">SUNGKYUL UNIVERSITY</inst_name>
+    <inst_name lang="en">Sungkyul University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>sungkyul.ac.kr.01</locationid><coordinates>126.9288086,37.3798649</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">성결대학교</loc_name><loc_name lang="en">Sungkyul University</loc_name><address><street lang="en">(14097) 53 Sungkyuldaehak-ro, Manan-gu, Anyang-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(14097) 경기도 안양시 만안구 성결대학로 53</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>236</AP_no></location>
   </institution>
@@ -837,7 +837,7 @@
     <inst_realm>skku.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">성균관대학교</inst_name>
-    <inst_name lang="en">SUNGKYUNKWAN UNIVERSITY</inst_name>
+    <inst_name lang="en">Sungkyunkwan University</inst_name>
     <info_URL lang="ko">https://www.skku.edu/skku/campus/IT_service/it_service11.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>skku.ac.kr.01</locationid><coordinates>126.9936060,37.5882270</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">성균관대학교 인문사회과학캠퍼스</loc_name><loc_name lang="en">Sungkyunkwan University, Humanities and Social Sciences Campus</loc_name><address><street lang="en">(03063) 25-2 Sungkyunkwan-ro, Jongno-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(03063) 서울특별시 종로구 성균관로 25-2</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1053</AP_no></location>
@@ -851,7 +851,7 @@
     <inst_realm>sungshin.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">성신여자대학교</inst_name>
-    <inst_name lang="en">SUNGSHIN WOMEN'S UNIVERSITY</inst_name>
+    <inst_name lang="en">Sungshin Women's University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>sungshin.ac.kr.01</locationid><coordinates>127.0221456,37.5916525</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">성신여자대학교 수정캠퍼스</loc_name><loc_name lang="en">Sungshin Women's University, Sujeong Campus</loc_name><address><street lang="en">(02844) 2 Bomun-ro 34da-gil, Seongbuk-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(02844) 서울특별시 성북구 보문로34다길 2</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>494</AP_no></location>
   <location><locationid>sungshin.ac.kr.02</locationid><coordinates>127.0271242,37.6320380</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">성신여자대학교 운정그린캠퍼스</loc_name><loc_name lang="en">Sungshin Women's University, Unjeong Green Campus</loc_name><address><street lang="en">(01133) 55 Samyang-ro 144-gil, Gangbuk-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(01133) 서울특별시 강북구 삼양로 144길 55</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>217</AP_no></location>
@@ -864,7 +864,7 @@
     <inst_realm>sejong.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">세종대학교</inst_name>
-    <inst_name lang="en">SEJONG UNIVERSITY</inst_name>
+    <inst_name lang="en">Sejong University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>sejong.ac.kr.01</locationid><coordinates>127.0745756,37.5507981</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">세종대학교</loc_name><loc_name lang="en">Sejong University</loc_name><address><street lang="en">(05006) 209 Neungdong-ro, Gwangjin-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(05006) 서울특별시 광진구 능동로 209</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -876,7 +876,7 @@
     <inst_realm>sehan.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">세한대학교</inst_name>
-    <inst_name lang="en">SEHAN UNIVERSITY</inst_name>
+    <inst_name lang="en">Sehan University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>sehan.ac.kr.01</locationid><coordinates>126.4832658,34.7453782</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">세한대학교 영암캠퍼스</loc_name><loc_name lang="en">Sehan University, Yeongam Campus</loc_name><address><street lang="en">(58447) 1113 Noksaek-ro, Samho-eup, Yeongam-gun, Jeollanam-do</street><city lang="en">Jeollanam-do</city></address><address><street lang="ko">(58447) 전라남도 영암군 삼호읍 녹색로 1113</street><city lang="ko">전라남도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   <location><locationid>sehan.ac.kr.02</locationid><coordinates>126.7806583,36.8761556</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">세한대학교 당진캠퍼스</loc_name><loc_name lang="en">Sehan University, Dangjin Campus</loc_name><address><street lang="en">(31746) 7065 Seohae-ro, Sinpyeong-myeon, Dangjin-si, Chungcheongnam-do</street><city lang="en">Chungcheongnam-do</city></address><address><street lang="ko">(31746) 충청남도 당진시 신평면 서해로 7065</street><city lang="ko">충청남도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -902,7 +902,7 @@
     <inst_realm>sookmyung.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">숙명여자대학교</inst_name>
-    <inst_name lang="en">SookMyung Women's University</inst_name>
+    <inst_name lang="en">Sookmyung Women's University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>sookmyung.ac.kr.01</locationid><coordinates>126.9650253,37.5449609</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">숙명여자대학교 청파캠퍼스</loc_name><loc_name lang="en">Sookmyung Women's University, Cheongpa Campus</loc_name><address><street lang="en">(04310) 100 Cheongpa-ro 47-gil, Yongsan-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(04310) 서울특별시 용산구 청파로47길 100</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -927,7 +927,7 @@
     <inst_realm>ssu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">숭실대학교</inst_name>
-    <inst_name lang="en">Soongsil university</inst_name>
+    <inst_name lang="en">Soongsil University</inst_name>
     <info_URL lang="ko">https://ssu.ac.kr/%EB%8C%80%ED%95%99%EC%83%9D%ED%99%9C/%EA%B5%90%EB%82%B4%EC%83%9D%ED%99%9C%EC%A7%80%EC%9B%90/it%EC%A7%80%EC%9B%90-%EC%84%9C%EB%B9%84%EC%8A%A4/eduroam/</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>ssu.ac.kr.01</locationid><coordinates>126.9551579,37.4964290</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">숭실대학교 상도캠퍼스</loc_name><loc_name lang="en">Soongsil University, Sangdo Campus</loc_name><address><street lang="en">(06978) 369 Sangdo-ro, Dongjak-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(06978) 서울특별시 동작구 상도로 369</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -940,7 +940,7 @@
     <inst_realm>shinhan.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">신한대학교</inst_name>
-    <inst_name lang="en">SHINHAN UNIVERSITY</inst_name>
+    <inst_name lang="en">Shinhan University</inst_name>
     <info_URL lang="ko">https://www.shinhan.ac.kr/kr/256/subview.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>shinhan.ac.kr.01</locationid><coordinates>127.0462897,37.7102010</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">신한대학교 제1캠퍼스</loc_name><loc_name lang="en">Shinhan University, Campus 1</loc_name><address><street lang="en">(11644) 95 Hoam-ro, Uijeongbu-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(11644) 경기도 의정부시 호암로 95</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>400</AP_no></location>
@@ -1018,7 +1018,7 @@
     <inst_realm>ulsan.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">울산대학교</inst_name>
-    <inst_name lang="en">UNIVERSITY OF ULSAN</inst_name>
+    <inst_name lang="en">University of Ulsan</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>ulsan.ac.kr.01</locationid><coordinates>129.2575865,35.5418772</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">울산대학교</loc_name><loc_name lang="en">University of Ulsan</loc_name><address><street lang="en">(44610) 93 Daehak-ro, Nam-gu, Ulsan</street><city lang="en">Ulsan</city></address><address><street lang="ko">(44610) 울산광역시 남구 대학로 93</street><city lang="ko">울산광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>677</AP_no></location>
   </institution>
@@ -1030,7 +1030,7 @@
     <inst_realm>wku.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">원광대학교</inst_name>
-    <inst_name lang="en">wonkwang</inst_name>
+    <inst_name lang="en">Wonkwang University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>wku.ac.kr.01</locationid><coordinates>126.9602243,35.9717140</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">원광대학교 익산캠퍼스</loc_name><loc_name lang="en">Wonkwang University, Iksan Campus</loc_name><address><street lang="en">(54538) 460 Iksan-daero, Iksan-si, Jeollabuk-do</street><city lang="en">Jeollabuk-do</city></address><address><street lang="ko">(54538) 전라북도 익산시 익산대로 460</street><city lang="ko">전라북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -1042,7 +1042,7 @@
     <inst_realm>wu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">원광보건대학교</inst_name>
-    <inst_name lang="en">WONKWANG HEALTH SCIENCE UNIVERSITY</inst_name>
+    <inst_name lang="en">Wonkwang Health Science University</inst_name>
     <info_URL lang="ko">https://wu.ac.kr/wu/9385/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGd3UlMkYzOCUyRjEwNzQyMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2c3JjaENvbHVtbiUzRCUyNnNyY2hXcmQlM0QlMjZiYnNDbFNlcSUzRCUyNmJic09wZW5XcmRTZXElM0QlMjZyZ3NCZ25kZVN0ciUzRCUyNnJnc0VuZGRlU3RyJTNEJTI2aXNWaWV3TWluZSUzRGZhbHNlJTI2cGFzc3dvcmQlM0QlMjY%3D</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>wu.ac.kr.01</locationid><coordinates>126.9561967,35.9727469</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">원광보건대학교</loc_name><loc_name lang="en">Wonkwang Health Science University</loc_name><address><street lang="en">(54538) 514 Iksan-daero, Iksan-si, Jeollabuk-do</street><city lang="en">Jeollabuk-do</city></address><address><street lang="ko">(54538) 전라북도 익산시 익산대로 514</street><city lang="ko">전라북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>380</AP_no></location>
@@ -1067,7 +1067,7 @@
     <inst_realm>ewha.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">이화여자대학교</inst_name>
-    <inst_name lang="en">EWHA WOMANS UNIVERSITY</inst_name>
+    <inst_name lang="en">Ewha Womans University</inst_name>
     <info_URL lang="ko">https://www.ewha.ac.kr/ewha/life/eduroam.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>ewha.ac.kr.01</locationid><coordinates>126.9502883,37.5644641</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">이화여자대학교</loc_name><loc_name lang="en">Ewha Womans University</loc_name><address><street lang="en">(03760) 52 Ewhayeodae-gil, Seodaemun-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(03760) 서울특별시 서대문구 이화여대길 52</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -1080,7 +1080,7 @@
     <inst_realm>inje.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">인제대학교</inst_name>
-    <inst_name lang="en">INJE UNIVERSITY</inst_name>
+    <inst_name lang="en">Inje University</inst_name>
     <info_URL lang="ko">https://www.inje.ac.kr/kor/campus-life/e-service-03.asp</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>inje.ac.kr.01</locationid><coordinates>128.9005160,35.2528091</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">인제대학교 김해캠퍼스</loc_name><loc_name lang="en">Inje University, Gimhae Campus</loc_name><address><street lang="en">(50834) 197 Inje-ro, Gimhae-si, Gyeongsangnam-do</street><city lang="en">Gyeongsangnam-do</city></address><address><street lang="ko">(50834) 경상남도 김해시 인제로 197</street><city lang="ko">경상남도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -1093,7 +1093,7 @@
     <inst_realm>inu.ac.kr</inst_realm>
     <type_kr>공립</type_kr>
     <inst_name lang="ko">인천대학교</inst_name>
-    <inst_name lang="en">INCHEON NATIONAL UNIVERSITY</inst_name>
+    <inst_name lang="en">Incheon National University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>inu.ac.kr.01</locationid><coordinates>126.6325053,37.3778557</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국립인천대학교 송도캠퍼스</loc_name><loc_name lang="en">Incheon National University, Songdo Campus</loc_name><address><street lang="en">(22012) 119 Academy-ro, Yeonsu-gu, Incheon</street><city lang="en">Incheon</city></address><address><street lang="ko">(22012) 인천광역시 연수구 아카데미로 119</street><city lang="ko">인천광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
@@ -1105,7 +1105,7 @@
     <inst_realm>inha.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">인하대학교</inst_name>
-    <inst_name lang="en">INHA university</inst_name>
+    <inst_name lang="en">Inha University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>inha.ac.kr.01</locationid><coordinates>126.6534880,37.4500221</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">인하대학교</loc_name><loc_name lang="en">Inha University</loc_name><address><street lang="en">(22212) 100 Inha-ro, Michuhol-gu, Incheon</street><city lang="en">Incheon</city></address><address><street lang="ko">(22212) 인천광역시 미추홀구 인하로 100</street><city lang="ko">인천광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>750</AP_no></location>
   </institution>
@@ -1117,7 +1117,7 @@
     <inst_realm>puts.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">장로회신학대학교</inst_name>
-    <inst_name lang="en">PRESBYTERIAN UNIVERSITY AND THEOLOGICAL SEMINARY</inst_name>
+    <inst_name lang="en">Presbyterian University and Theological Seminary</inst_name>
     <info_URL lang="ko">https://pcts.ac.kr/www/main/kor/_Sub/sub-04-05-02-01.asp</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>puts.ac.kr.01</locationid><coordinates>127.1031345,37.5502658</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">장로회신학대학교</loc_name><loc_name lang="en">Presbyterian University and Theological Seminary</loc_name><address><street lang="en">(04965) 25-1 Gwangjang-ro 5-gil, Gwangjin-gu, Seoul</street><city lang="en">Seoul</city></address><address><street lang="ko">(04965) 서울특별시 광진구 광장로5길 25-1</street><city lang="ko">서울특별시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -1160,7 +1160,7 @@
     <inst_realm>jnue.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">전주교육대학교</inst_name>
-    <inst_name lang="en">JEONJU NATIONAL UNIVERSITY OF EDUCATION</inst_name>
+    <inst_name lang="en">Jeonju National University of Education</inst_name>
     <info_URL lang="ko">https://www.jnue.kr/portal/icc/contents/contents_view.do?menuId=M0093000400020000</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>jnue.ac.kr.01</locationid><coordinates>127.1538032,35.8091628</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">전주교육대학교</loc_name><loc_name lang="en">Jeonju National University of Education</loc_name><address><street lang="en">(55101) 50 Seohak-ro, Wansan-gu, Jeonju-si, Jeollabuk-do</street><city lang="en">Jeollabuk-do</city></address><address><street lang="ko">(55101) 전라북도 전주시 완산구 서학로 50</street><city lang="ko">전라북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>249</AP_no></location>
@@ -1211,7 +1211,7 @@
     <inst_realm>chosun.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">조선대학교</inst_name>
-    <inst_name lang="en">chosun university</inst_name>
+    <inst_name lang="en">Chosun University</inst_name>
     <info_URL lang="ko">http://wifi.chosun.ac.kr/Main/Main.html</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>chosun.ac.kr.01</locationid><coordinates>126.9343632,35.1460038</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">조선대학교</loc_name><loc_name lang="en">Chosun University</loc_name><address><street lang="en">(61452) 309 Pilmun-daero, Dong-gu, Gwangju</street><city lang="en">Gwangju</city></address><address><street lang="ko">(61452) 광주광역시 동구 필문대로 309</street><city lang="ko">광주광역시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -1264,7 +1264,7 @@
     <inst_realm>cnue.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">춘천교육대학교</inst_name>
-    <inst_name lang="en">CHUNCHEON NATIONAL UNIVERSITY OF EDUCATION</inst_name>
+    <inst_name lang="en">Chuncheon National University of Education</inst_name>
     <info_URL lang="ko">https://www.cnue.ac.kr/cnue/life/wireless-lan.do</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>cnue.ac.kr.01</locationid><coordinates>127.7486049,37.8594161</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">춘천교육대학교</loc_name><loc_name lang="en">Chuncheon National University of Education</loc_name><address><street lang="en">(24328) 126 Gongji-ro, Chuncheon-si, Gangwon-do</street><city lang="en">Gangwon-do</city></address><address><street lang="ko">(24328) 강원특별자치도 춘천시 공지로 126</street><city lang="ko">강원특별자치도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>393</AP_no></location>
@@ -1304,7 +1304,7 @@
     <inst_realm>chsu.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">충북보건과학대학교</inst_name>
-    <inst_name lang="en">CHUNGBUK HEALTH &amp; SCIENCE UNIVERSITY</inst_name>
+    <inst_name lang="en">Chungbuk Health &amp; Science University</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>chsu.ac.kr.01</locationid><coordinates>127.5533575,36.7035004</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">충북보건과학대학교</loc_name><loc_name lang="en">Chungbuk Health &amp; Science University</loc_name><address><street lang="en">(28150) 10 Deogam-gil, Naesu-eup, Cheongwon-gu, Cheongju-si, Chungcheongbuk-do</street><city lang="en">Chungcheongbuk-do</city></address><address><street lang="ko">(28150) 충청북도 청주시 청원구 내수읍 덕암길 10</street><city lang="ko">충청북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>10</AP_no></location>
   </institution>
@@ -1327,7 +1327,7 @@
     <inst_realm>postech.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">포항공과대학교</inst_name>
-    <inst_name lang="en">Postech</inst_name>
+    <inst_name lang="en">POSTECH</inst_name>
     <info_URL lang="ko">https://hemos.postech.ac.kr/ServiceGuide/UserGuide?section=wifi</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>postech.ac.kr.01</locationid><coordinates>129.3212998,36.0105874</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">포항공과대학교</loc_name><loc_name lang="en">Pohang University of Science and Technology (POSTECH)</loc_name><address><street lang="en">(37673) 77 Cheongam-ro, Nam-gu, Pohang-si, Gyeongsangbuk-do</street><city lang="en">Gyeongsangbuk-do</city></address><address><street lang="ko">(37673) 경상북도 포항시 남구 청암로 77</street><city lang="ko">경상북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
@@ -1340,7 +1340,7 @@
     <inst_realm>tukorea.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">한국공학대학교</inst_name>
-    <inst_name lang="en">TECH UNIVERSITY OF KOREA</inst_name>
+    <inst_name lang="en">Tech University of Korea</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>tukorea.ac.kr.01</locationid><coordinates>126.7335394,37.3397327</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">한국공학대학교 시흥캠퍼스</loc_name><loc_name lang="en">Tech University of Korea, Siheung Campus</loc_name><address><street lang="en">(15073) 237 Sangidaehak-ro, Siheung-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(15073) 경기도 시흥시 산기대학로 237</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>724</AP_no></location>
   <location><locationid>tukorea.ac.kr.02</locationid><coordinates>126.6894889,37.3305323</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">한국공학대학교 제2캠퍼스(정왕)</loc_name><loc_name lang="en">Tech University of Korea, 2nd Campus</loc_name><address><street lang="en">(15073) 271 Jeongwang-daero, Siheung-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(15073) 경기도 시흥시 정왕대로 271</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>117</AP_no></location>
@@ -1366,7 +1366,7 @@
     <inst_realm>knue.ac.kr</inst_realm>
     <type_kr>국립</type_kr>
     <inst_name lang="ko">한국교원대학교</inst_name>
-    <inst_name lang="en">KOREA NATIONAL UNIVERSITY OF EDUCATION</inst_name>
+    <inst_name lang="en">Korea National University of Education</inst_name>
     <info_URL lang="ko">http://rec.knue.ac.kr/bbs/outBoard.jsp?bodcode=notice&amp;uid=1974</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>knue.ac.kr.01</locationid><coordinates>127.3573245,36.6056660</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">국립한국교원대학교</loc_name><loc_name lang="en">Korea National University of Education</loc_name><address><street lang="en">(28173) 250 Taeseongtabyeon-ro, Gangnae-myeon, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do</street><city lang="en">Chungcheongbuk-do</city></address><address><street lang="ko">(28173) 충청북도 청주시 흥덕구 강내면 태성탑연로 250</street><city lang="ko">충청북도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>512</AP_no></location>
@@ -1471,7 +1471,7 @@
     <inst_realm>kau.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">한국항공대학교</inst_name>
-    <inst_name lang="en">korea aerospace university</inst_name>
+    <inst_name lang="en">Korea Aerospace University</inst_name>
     <info_URL lang="ko">https://kau.ac.kr/kaulife/itnoti.php?searchkey=&amp;searchvalue=&amp;code=s1801&amp;page=&amp;mode=read&amp;seq=6546</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>kau.ac.kr.01</locationid><coordinates>126.8641855,37.5989369</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">한국항공대학교</loc_name><loc_name lang="en">Korea Aerospace University</loc_name><address><street lang="en">(10540) 76 Hanggongdaehak-ro, Deogyang-gu, Goyang-si, Gyeonggi-do</street><city lang="en">Gyeonggi-do</city></address><address><street lang="ko">(10540) 경기도 고양시 덕양구 항공대학로 76</street><city lang="ko">경기도</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>341</AP_no></location>
@@ -1574,7 +1574,7 @@
     <inst_realm>hongik.ac.kr</inst_realm>
     <type_kr>사립</type_kr>
     <inst_name lang="ko">홍익대학교</inst_name>
-    <inst_name lang="en">HONGIK UNIVERSITY</inst_name>
+    <inst_name lang="en">Hongik University</inst_name>
     <info_URL lang="ko">https://wifi.hongik.ac.kr</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
   <location><locationid>hongik.ac.kr.01</locationid><coordinates>127.2880980,36.6197753</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">홍익대학교 세종캠퍼스</loc_name><loc_name lang="en">Hongik University, Sejong Campus</loc_name><address><street lang="en">(30016) 2639 Sejong-ro, Jochiwon-eup, Sejong</street><city lang="en">Sejong</city></address><address><street lang="ko">(30016) 세종특별자치시 조치원읍 세종로 2639</street><city lang="ko">세종특별자치시</city></address><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no>1291</AP_no></location>
