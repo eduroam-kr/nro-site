@@ -49,13 +49,21 @@ lang: ko
 
       <!-- Table Map -->
       <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem;" id="instTable">
+        <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem; table-layout: fixed; width: 100%;" id="instTable">
+          <colgroup>
+            <col style="width: 50px;">
+            <col style="width: 90px;">
+            <col>
+            <col style="width: 80px;">
+            <col style="width: 140px;">
+            <col style="width: 200px;">
+          </colgroup>
           <thead class="inst-thead">
             <tr>
-              <th style="width: 50px;">연번</th>
+              <th>연번</th>
               <th colspan="2">기관명</th>
-              <th style="width: 80px;">구분</th>
-              <th style="width: 140px;">접속안내</th>
+              <th>구분</th>
+              <th>접속안내</th>
               <th>렐름(Realm)</th>
             </tr>
           </thead>
@@ -133,6 +141,10 @@ lang: ko
   }
   #instTable tbody + tbody {
     border-top: 1px solid #dee2e6;
+  }
+  #instTable td {
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
   .pagination .page-link {
     color: #28a745;

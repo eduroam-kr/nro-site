@@ -49,13 +49,21 @@ lang: en
 
       <!-- Institution Table -->
       <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem;" id="instTable">
+        <table class="table table-bordered text-center align-middle" style="font-size: 0.9rem; table-layout: fixed; width: 100%;" id="instTable">
+          <colgroup>
+            <col style="width: 50px;">
+            <col style="width: 90px;">
+            <col>
+            <col style="width: 80px;">
+            <col style="width: 140px;">
+            <col style="width: 200px;">
+          </colgroup>
           <thead class="inst-thead">
             <tr>
-              <th style="width: 50px;">No.</th>
+              <th>No.</th>
               <th colspan="2">Institution</th>
-              <th style="width: 80px;">Type</th>
-              <th style="width: 140px;">Connection Guide</th>
+              <th>Type</th>
+              <th>Connection Guide</th>
               <th>Realm</th>
             </tr>
           </thead>
@@ -132,6 +140,10 @@ lang: en
   }
   #instTable tbody + tbody {
     border-top: 1px solid #dee2e6;
+  }
+  #instTable td {
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
   .pagination .page-link {
     color: #28a745;
