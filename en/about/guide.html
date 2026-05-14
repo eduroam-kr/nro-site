@@ -1,6 +1,7 @@
 ---
 layout: default
 title: How to Join
+lang: en
 ---
 
 <section class="page-hero">
@@ -12,8 +13,6 @@ title: How to Join
 
 <div class="container my-4">
   <div class="row">
-
-    <!-- Main Content -->
     <div class="col-md-12">
 
       <!-- Breadcrumb -->
@@ -25,48 +24,241 @@ title: How to Join
         </ol>
       </nav>
 
-      <div class="section-card mb-4">
-        <h2><i class="fas fa-list-ol"></i> Enrollment Steps Overview</h2>
-        <p class="text-muted small mb-4">A server administrator at the university or institution must apply directly.</p>
+      <!-- Intro Banner -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-wifi mr-2" style="color: #7eb3f7;"></i>eduroam Membership Guide
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              eduroam membership is applied for directly by the <strong style="color: #7eb3f7;">server administrator</strong> of a university or research institution.<br>
+              Please follow the 4-step process below in order.
+            </p>
+          </div>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-network-wired" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
+          </div>
+        </div>
+      </div>
 
-        <div class="step-list">
-          <div class="d-flex mb-4">
-            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">01.</div>
-            <div>
-              <h5 class="mb-1">Register on eduroam.kr</h5>
-              <p class="text-muted small">The server administrator of the university or institution must register.</p>
-              <a href="https://www.eduroam.kr/Member/Join.aspx" target="_blank" class="btn btn-xs btn-outline-primary py-1 px-2" style="font-size: 0.75rem;">Go to registration site</a>
-            </div>
+      <!-- STEP 01 -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #4a6cf7;">
+          <div class="guide-step-badge">STEP 01</div>
+          <div class="guide-step-title"><i class="fas fa-user-plus mr-2"></i>Register on eduroam.kr</div>
+        </div>
+        <div class="guide-step-body">
+          <div class="guide-step-text">
+            <p>The <strong>server administrator</strong> of the university or institution must register directly on the eduroam.kr website.
+              Only network administrators may apply — general faculty and students do not need to register separately.</p>
+            <ul class="guide-step-checklist">
+              <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Applicant: network server administrator of the university or institution</li>
+              <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> General faculty and students do not need to register</li>
+              <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Enter username, password, email, and institution information</li>
+            </ul>
+            <a href="https://www.eduroam.kr/Member/Join.aspx" target="_blank" class="guide-step-btn" style="background:#4a6cf7;">
+              <i class="fas fa-external-link-alt mr-1"></i> Go to Registration Site
+            </a>
           </div>
-          <div class="d-flex mb-4">
-            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">02.</div>
-            <div>
-              <h5 class="mb-1">Administrator Approval</h5>
-              <p class="text-muted small">Once approved, the account gains university server administrator privileges.</p>
-            </div>
-          </div>
-          <div class="d-flex mb-4">
-            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">03.</div>
-            <div>
-              <h5 class="mb-1">Enter Information (Auth Server / Basic Info)</h5>
-              <p class="text-muted small">Enter institution name, address, application form, and authentication server details.</p>
-            </div>
-          </div>
-          <div class="d-flex mb-4">
-            <div class="mr-3 text-primary font-weight-bold" style="font-size: 1.5rem; min-width: 30px;">04.</div>
-            <div>
-              <h5 class="mb-1">Register Campus and Contact Information</h5>
-              <p class="text-muted small">Enter campus information to be displayed on the eduroam map.</p>
+          <div class="guide-step-screenshot">
+            <div class="guide-screenshot-frame" style="background:#f0f4ff; border:1.5px solid #c7d2fe; border-radius:10px; overflow:hidden;">
+              <div class="guide-screenshot-bar" style="background:#4a6cf7;">
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="guide-screenshot-url" style="color:rgba(255,255,255,0.8);">www.eduroam.kr / Register</span>
+              </div>
+              <div style="padding:20px;">
+                <div style="font-size:0.8rem;font-weight:700;color:#3730a3;margin-bottom:12px;"><i class="fas fa-user-plus mr-1"></i> Registration Form</div>
+                <div style="display:grid;gap:8px;">
+                  <div class="guide-form-row" style="border-color:#c7d2fe;"><span style="color:#3730a3;">Username</span><div class="guide-form-input" style="font-family:monospace;font-size:0.78rem;">admin@inst.ac.kr</div></div>
+                  <div class="guide-form-row" style="border-color:#c7d2fe;"><span style="color:#3730a3;">Password</span><div class="guide-form-input" style="letter-spacing:3px;">••••••••</div></div>
+                  <div class="guide-form-row" style="border-color:#c7d2fe;"><span style="color:#3730a3;">Name</span><div class="guide-form-input">John Doe</div></div>
+                  <div class="guide-form-row" style="border-color:#c7d2fe;"><span style="color:#3730a3;">Email</span><div class="guide-form-input" style="font-family:monospace;font-size:0.78rem;">admin@inst.ac.kr</div></div>
+                  <div class="guide-form-row" style="border-color:#c7d2fe;"><span style="color:#3730a3;">Institution</span><div class="guide-form-input">Your University</div></div>
+                </div>
+                <div style="margin-top:12px;background:#4a6cf7;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.82rem;font-weight:600;">
+                  <i class="fas fa-user-check mr-1"></i> Submit Registration
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="section-card" style="border-left: 4px solid #ef4444;">
-        <h4 style="color: #dc2626; font-size: 1.1rem;"><i class="fas fa-exclamation-triangle"></i> Important Notice</h4>
-        <p class="small text-muted mb-0">Technical coordination with the Operations Center is required before connecting your authentication server.</p>
-        <div class="mt-2 small">
-          <i class="fas fa-envelope mr-1"></i> <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a>
+      <!-- STEP 02 -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #0ea5e9;">
+          <div class="guide-step-badge">STEP 02</div>
+          <div class="guide-step-title"><i class="fas fa-envelope-open-text mr-2"></i>Administrator Approval</div>
+        </div>
+        <div class="guide-step-body">
+          <div class="guide-step-text">
+            <p>The Operations Center reviews the application and grants <strong>university server administrator privileges</strong>.
+              Once approved, a notification email is sent to the registered address, and access to the management system becomes available.</p>
+            <ul class="guide-step-checklist">
+              <li><i class="fas fa-check-circle" style="color:#0ea5e9;"></i> Operations Center staff reviews the application</li>
+              <li><i class="fas fa-check-circle" style="color:#0ea5e9;"></i> Notification email sent upon approval</li>
+              <li><i class="fas fa-check-circle" style="color:#0ea5e9;"></i> Access to server administrator menu granted after approval</li>
+            </ul>
+          </div>
+          <div class="guide-step-screenshot">
+            <div class="guide-screenshot-frame" style="background:#f0f7ff; border:1.5px solid #bfdbfe; display:flex; align-items:center; justify-content:center; min-height:220px; border-radius:10px; padding: 30px 20px; text-align:center;">
+              <div>
+                <div style="width:72px;height:72px;background:#0ea5e9;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                  <i class="fas fa-envelope-open-text" style="font-size:1.8rem;color:#fff;"></i>
+                </div>
+                <div style="font-size:1rem;font-weight:700;color:#0369a1;margin-bottom:8px;">Approval Email Sent</div>
+                <div style="font-size:0.85rem;color:#64748b;line-height:1.6;">
+                  The eduroam.kr Operations Center<br>reviews and sends a privilege grant email.
+                </div>
+                <div style="margin-top:18px;background:#fff;border:1px solid #bae6fd;border-radius:8px;padding:12px 16px;text-align:left;font-size:0.82rem;color:#334155;">
+                  <div style="font-weight:600;margin-bottom:6px;color:#0369a1;"><i class="fas fa-envelope mr-1"></i> Approval Notification Email</div>
+                  <div>Subject: [eduroam.kr] Registration Approved</div>
+                  <div style="color:#64748b;margin-top:4px;">Your server administrator privileges have been granted.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #8b5cf6;">
+          <div class="guide-step-badge">STEP 03</div>
+          <div class="guide-step-title"><i class="fas fa-server mr-2"></i>Register Institution & Auth Server</div>
+        </div>
+        <div class="guide-step-body">
+          <div class="guide-step-text">
+            <p>After approval, log in to the eduroam.kr management system and enter your institution name, address, application form,
+              and <strong>RADIUS authentication server</strong> details. Technical coordination with the Operations Center follows.</p>
+            <ul class="guide-step-checklist">
+              <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Register institution name, address, and contact information</li>
+              <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Configure RADIUS server IP and port</li>
+              <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Technical coordination with Operations Center for server integration</li>
+              <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Upload signed membership application form</li>
+            </ul>
+          </div>
+          <div class="guide-step-screenshot">
+            <div class="guide-screenshot-frame" style="background:#faf5ff; border:1.5px solid #ddd6fe; border-radius:10px; overflow:hidden;">
+              <div class="guide-screenshot-bar" style="background:#8b5cf6;">
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="guide-screenshot-url" style="color:rgba(255,255,255,0.8);">eduroam.kr / Admin &gt; Institution Info</span>
+              </div>
+              <div style="padding:20px;">
+                <div style="font-size:0.8rem;font-weight:700;color:#6d28d9;margin-bottom:12px;"><i class="fas fa-building mr-1"></i> Institution Information</div>
+                <div style="display:grid;gap:8px;">
+                  <div class="guide-form-row"><span>Institution</span><div class="guide-form-input">Your University</div></div>
+                  <div class="guide-form-row"><span>Address</span><div class="guide-form-input">Seoul, Korea ...</div></div>
+                  <div class="guide-form-row"><span>RADIUS IP</span><div class="guide-form-input" style="font-family:monospace;">192.168.x.x</div></div>
+                  <div class="guide-form-row"><span>Port</span><div class="guide-form-input" style="font-family:monospace;">1812 / 1813</div></div>
+                  <div class="guide-form-row"><span>Application</span><div class="guide-form-input" style="color:#8b5cf6;"><i class="fas fa-paperclip mr-1"></i>Attach file</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="section-card mb-5 guide-step-card">
+        <div class="guide-step-header" style="background: #10b981;">
+          <div class="guide-step-badge">STEP 04</div>
+          <div class="guide-step-title"><i class="fas fa-map-marker-alt mr-2"></i>Register Campus Location</div>
+        </div>
+        <div class="guide-step-body">
+          <div class="guide-step-text">
+            <p>Register your <strong>campus location</strong> and contact details for display on the global eduroam map.
+              Once registered, your institution will appear on the worldwide eduroam map.</p>
+            <ul class="guide-step-checklist">
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Enter campus GPS coordinates (latitude &amp; longitude)</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Register contact name, email, and phone number</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Institution displayed on the global eduroam map</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Service operation begins after registration is complete</li>
+            </ul>
+          </div>
+          <div class="guide-step-screenshot">
+            <div class="guide-screenshot-frame" style="background:#ecfdf5; border:1.5px solid #a7f3d0; border-radius:10px; overflow:hidden;">
+              <div class="guide-screenshot-bar" style="background:#10b981;">
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="guide-screenshot-url" style="color:rgba(255,255,255,0.8);">eduroam.kr / Admin &gt; Campus</span>
+              </div>
+              <div style="padding:20px;">
+                <div style="font-size:0.8rem;font-weight:700;color:#065f46;margin-bottom:12px;"><i class="fas fa-map-marker-alt mr-1"></i> Campus Location</div>
+                <div style="background:#d1fae5;border-radius:8px;padding:14px;margin-bottom:12px;font-size:0.82rem;color:#064e3b;text-align:center;">
+                  <i class="fas fa-globe" style="font-size:2rem;color:#10b981;display:block;margin-bottom:8px;"></i>
+                  <div>Your institution will appear on the<br>eduroam map across 101 countries.</div>
+                </div>
+                <div style="display:grid;gap:8px;">
+                  <div class="guide-form-row" style="border-color:#a7f3d0;"><span style="color:#064e3b;">Latitude</span><div class="guide-form-input">37.XXXX°N</div></div>
+                  <div class="guide-form-row" style="border-color:#a7f3d0;"><span style="color:#064e3b;">Longitude</span><div class="guide-form-input">126.XXXX°E</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Summary -->
+      <div class="section-card mb-4">
+        <h2 class="mb-3"><i class="fas fa-route"></i> Enrollment Flow Summary</h2>
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 0;">
+          <div style="text-align: center; flex: 1; min-width: 100px;">
+            <div style="background: #eef2ff; border-radius: 10px; padding: 16px 10px;">
+              <i class="fas fa-user-plus" style="font-size: 1.6rem; color: #4a6cf7; display: block; margin-bottom: 8px;"></i>
+              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">Register</div>
+            </div>
+          </div>
+          <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
+          <div style="text-align: center; flex: 1; min-width: 100px;">
+            <div style="background: #e0f2fe; border-radius: 10px; padding: 16px 10px;">
+              <i class="fas fa-check-circle" style="font-size: 1.6rem; color: #0ea5e9; display: block; margin-bottom: 8px;"></i>
+              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">Approval</div>
+            </div>
+          </div>
+          <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
+          <div style="text-align: center; flex: 1; min-width: 100px;">
+            <div style="background: #f5f3ff; border-radius: 10px; padding: 16px 10px;">
+              <i class="fas fa-server" style="font-size: 1.6rem; color: #8b5cf6; display: block; margin-bottom: 8px;"></i>
+              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">Enter Info</div>
+            </div>
+          </div>
+          <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
+          <div style="text-align: center; flex: 1; min-width: 100px;">
+            <div style="background: #ecfdf5; border-radius: 10px; padding: 16px 10px;">
+              <i class="fas fa-map-marker-alt" style="font-size: 1.6rem; color: #10b981; display: block; margin-bottom: 8px;"></i>
+              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">Register Campus</div>
+            </div>
+          </div>
+          <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
+          <div style="text-align: center; flex: 1; min-width: 100px;">
+            <div style="background: #fef9c3; border-radius: 10px; padding: 16px 10px;">
+              <i class="fas fa-wifi" style="font-size: 1.6rem; color: #f59e0b; display: block; margin-bottom: 8px;"></i>
+              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">Go Live</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="section-card mb-4" style="background: #f8faff; border: 1px solid #dde5f7;">
+        <div class="d-flex align-items-center" style="gap: 14px;">
+          <div style="background: #4a6cf7; border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <i class="fas fa-envelope" style="color: #fff; font-size: 1.1rem;"></i>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #1c2b3f; margin-bottom: 3px;">Membership Inquiries</div>
+            <div style="color: #555; font-size: 0.9rem;">
+              For authentication server integration and technical coordination, please contact the Operations Center.
+              <a href="mailto:{{ site.support.email }}" style="color: #4a6cf7; font-weight: 600; margin-left: 6px;">{{ site.support.email }}</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -74,3 +266,122 @@ title: How to Join
   </div>
 </div>
 
+<style>
+.guide-step-card { padding: 0 !important; overflow: hidden; }
+.guide-step-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.guide-step-badge {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.guide-step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.guide-step-body {
+  display: flex;
+  gap: 32px;
+  padding: 28px 28px;
+  align-items: flex-start;
+}
+.guide-step-text {
+  flex: 1;
+  min-width: 0;
+}
+.guide-step-text p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 0.93rem;
+}
+.guide-step-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.guide-step-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.87rem;
+  color: #374151;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.guide-step-checklist li i { flex-shrink: 0; margin-top: 2px; }
+.guide-step-btn {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.guide-step-btn:hover { opacity: 0.88; color: #fff; text-decoration: none; }
+.guide-step-screenshot {
+  width: 340px;
+  min-width: 280px;
+  flex-shrink: 0;
+}
+.guide-screenshot-frame {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  border: 1px solid #e0e5ed;
+}
+.guide-screenshot-bar {
+  background: #e8edf5;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.guide-screenshot-bar .dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.guide-screenshot-url {
+  margin-left: 8px;
+  font-size: 0.72rem;
+  color: #6b7280;
+  font-family: monospace;
+}
+.guide-form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+.guide-form-row span {
+  min-width: 80px;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.guide-form-input {
+  flex: 1;
+  color: #374151;
+}
+@media (max-width: 767.98px) {
+  .guide-step-body { flex-direction: column; }
+  .guide-step-screenshot { width: 100%; min-width: 0; }
+}
+</style>

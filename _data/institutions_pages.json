@@ -144,7 +144,7 @@
           "univ_name": "경희대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://com.khu.ac.kr/ois/user/contents/view.do?menuNo=14000034",
           "realms": [
             "khu.ac.kr"
           ]
@@ -156,7 +156,7 @@
           "univ_name": "계명대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://it.kmu.ac.kr/it/9414/subview.do",
           "realms": [
             "kmu.ac.kr"
           ]
@@ -233,7 +233,7 @@
           "univ_name": "광주교육대학교",
           "inst_type": "국립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://comcenter.gnue.ac.kr/index.9is?contentUid=4a9f18ab75b598b70175b7c23fdb006c",
           "realms": [
             "gnue.ac.kr"
           ]
@@ -269,7 +269,7 @@
           "univ_name": "광주여자대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://start.kwu.ac.kr/start/",
           "realms": [
             "kwu.ac.kr"
           ]
@@ -418,7 +418,7 @@
           "univ_name": "대구가톨릭대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.cu.ac.kr/life/internet/campus",
           "realms": [
             "cu.ac.kr"
           ]
@@ -490,7 +490,7 @@
           "univ_name": "대진대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://comcenter.daejin.ac.kr/comcenter/3471/subview.do",
           "realms": [
             "daejin.ac.kr"
           ]
@@ -514,7 +514,7 @@
           "univ_name": "동신대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.dsu.ac.kr/kr/index.php?pCode=notice&pg=149&mode=view&idx=12226",
           "realms": [
             "dsu.ac.kr"
           ]
@@ -526,7 +526,7 @@
           "univ_name": "동아대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.donga.ac.kr/kor/CMS/Contents/Contents.do?mCode=MN190",
           "realms": [
             "donga.ac.kr"
           ]
@@ -615,7 +615,7 @@
           "univ_name": "부산대학교",
           "inst_type": "국립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://uitc.pusan.ac.kr/uitc/12106/subview.do",
           "realms": [
             "pusan.ac.kr"
           ]
@@ -687,7 +687,7 @@
           "univ_name": "서원대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.seowon.ac.kr/seowon/431/subview..do",
           "realms": [
             "seowon.ac.kr"
           ]
@@ -699,7 +699,7 @@
           "univ_name": "서일대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.seoil.ac.kr/seoil/590/subview.do",
           "realms": [
             "seoil.ac.kr"
           ]
@@ -711,7 +711,7 @@
           "univ_name": "성결대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.sungkyul.ac.kr/skukr/335/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc2t1a3IlMkY5OSUyRjIwMTElMkZhcnRjbFZpZXcuZG8lM0Y%3D",
           "realms": [
             "sungkyul.ac.kr"
           ]
@@ -735,7 +735,7 @@
           "univ_name": "성신여자대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.sungshin.ac.kr/ecenter/19161/subview.do",
           "realms": [
             "sungshin.ac.kr"
           ]
@@ -752,7 +752,7 @@
           "univ_name": "세종대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.sejong.ac.kr/kor/unilife/wifi-guide.do",
           "realms": [
             "sejong.ac.kr"
           ]
@@ -788,7 +788,7 @@
           "univ_name": "숙명여자대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.sookmyung.ac.kr/kr/university-life/network.do",
           "realms": [
             "sookmyung.ac.kr"
           ]
@@ -896,7 +896,7 @@
           "univ_name": "울산대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://info.ulsan.ac.kr/info/4162",
           "realms": [
             "ulsan.ac.kr"
           ]
@@ -937,7 +937,7 @@
           "univ_name": "유한대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.yuhan.ac.kr/bbs/data/view.do?menu_idx=3160&bbs_mst_idx=BM0000003113&data_idx=BD0000006771",
           "realms": [
             "yuhan.ac.kr"
           ]
@@ -973,7 +973,7 @@
           "univ_name": "인천대학교",
           "inst_type": "공립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://itcenter.inu.ac.kr/itcenter/6980/subview.do",
           "realms": [
             "inu.ac.kr"
           ]
@@ -985,7 +985,7 @@
           "univ_name": "인하대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://internet.inha.ac.kr/internet/11480/subview.do",
           "realms": [
             "inha.ac.kr"
           ]
@@ -1057,7 +1057,7 @@
           "univ_name": "전주비전대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.jvision.ac.kr/vision/main/?menu=338",
           "realms": [
             "jvision.ac.kr"
           ]
@@ -1170,7 +1170,7 @@
           "univ_name": "충북보건과학대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.chsu.ac.kr/contView.do?menuId=4000000058",
           "realms": [
             "chsu.ac.kr"
           ]
@@ -1206,7 +1206,7 @@
           "univ_name": "한국공학대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://wifi.tukorea.ac.kr/tukorea/8196/subview.do",
           "realms": [
             "tukorea.ac.kr"
           ]
@@ -1242,7 +1242,7 @@
           "univ_name": "한국기술교육대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.koreatech.ac.kr/menu.es?mid=a10601090000",
           "realms": [
             "koreatech.ac.kr"
           ]
@@ -1367,7 +1367,7 @@
           "univ_name": "한림대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.hallym.ac.kr/hicc/4755/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaGljYyUyRjY1MyUyRjMyNjQxMiUyRmFydGNsVmlldy5kbyUzRg%3D%3D",
           "realms": [
             "hallym.ac.kr"
           ]
@@ -1391,7 +1391,7 @@
           "univ_name": "한양대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://it.hanyang.ac.kr/eduroam",
           "realms": [
             "hanyang.ac.kr"
           ]
@@ -1403,7 +1403,7 @@
           "univ_name": "호남대학교",
           "inst_type": "사립",
           "conn_type": "IdP+SP",
-          "guide": "",
+          "guide": "https://www.honam.ac.kr/BachelorNotice/category47/5/read/3281",
           "realms": [
             "honam.ac.kr"
           ]
