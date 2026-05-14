@@ -15,8 +15,7 @@
   * 다국어 필드(inst_name, address, info_URL, policy_URL, loc_name)는 lang 속성 필수.
     English("en") 항목은 반드시 1개 포함.
   * ts 요소는 마지막 수정 시각 (ISO 8601 UTC).
--->
-<institutions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="institution.xsd">
+--><institutions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="institution.xsd">
   <!--
   [샌드박스 가상 기관 — 비활성화]
   <institution>
@@ -468,7 +467,7 @@
     <inst_name lang="en">Korea Institute for Basic Science</inst_name>
     <info_URL lang="ko">http://eduroam.ibs.re.kr</info_URL>
     <ts>2026-05-07T00:00:00+09:00</ts>
-  <location><locationid>ibs.re.kr.01</locationid><coordinates>127.4001240,36.4018360</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">본원</loc_name><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
+  <location><locationid>ibs.re.kr.01</locationid><coordinates>127.4001240,36.4018360</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">본원</loc_name><loc_name lang="en">IBS, Institute for Basic Science</loc_name><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
   <institution>
     <instid>kornu.ac.kr</instid>
@@ -1461,7 +1460,7 @@
     <inst_name lang="ko">한국표준과학연구원</inst_name>
     <inst_name lang="en">KRISS, Korea Research Institute of Standards and Science</inst_name>
     <ts>2026-05-07T00:00:00+09:00</ts>
-  <location><locationid>kriss.re.kr.01</locationid><coordinates>127.3723140,36.3879830</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">본원</loc_name><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
+  <location><locationid>kriss.re.kr.01</locationid><coordinates>127.3723140,36.3879830</coordinates><stage>1</stage><type>1</type><loc_name lang="ko">본원</loc_name><loc_name lang="en">KRISS, Korea Research Institute of Standards and Science</loc_name><SSID>eduroam</SSID><enc_level>WPA2/AES</enc_level><AP_no/></location>
   </institution>
   <institution>
     <instid>kau.ac.kr</instid>
