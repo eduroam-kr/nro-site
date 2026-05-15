@@ -264,39 +264,6 @@ is_homepage: true
   }
   .faq-read-more:hover { text-decoration: underline; }
 
-  .ripe-policy-section {
-    background: white;
-    padding: 48px 0;
-  }
-  .policy-card {
-    border-left: 4px solid #003680;
-    border-radius: 0 6px 6px 0;
-    padding: 22px 22px 22px 20px;
-    background: #f7f8fa;
-    height: 100%;
-    transition: box-shadow 0.2s;
-  }
-  .policy-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-  .policy-card h3 {
-    font-size: 0.97rem;
-    font-weight: 700;
-    color: #003680;
-    margin-bottom: 10px;
-  }
-  .policy-card p {
-    font-size: 0.85rem;
-    color: #555;
-    line-height: 1.65;
-    margin-bottom: 14px;
-  }
-  .policy-read-more {
-    font-size: 0.83rem;
-    color: #0055a5;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .policy-read-more:hover { text-decoration: underline; }
-
   .ripe-join-section {
     background: white;
     padding: 44px 0;
@@ -353,10 +320,6 @@ is_homepage: true
   [data-theme='dark'] .faq-feature-card { background: #1e293b !important; border-color: #334155 !important; }
   [data-theme='dark'] .faq-feature-card h3 { color: #93c5fd !important; }
   [data-theme='dark'] .faq-feature-card p { color: #94a3b8 !important; }
-  [data-theme='dark'] .ripe-policy-section { background: #0b1220 !important; }
-  [data-theme='dark'] .policy-card { background: #1e293b !important; border-color: #334155 !important; }
-  [data-theme='dark'] .policy-card h3 { color: #93c5fd !important; }
-  [data-theme='dark'] .policy-card p { color: #94a3b8 !important; }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .ripe-join-section { background: #0b1220 !important; border-color: #1e293b !important; }
@@ -381,10 +344,6 @@ is_homepage: true
     :root:not([data-theme="light"]) .faq-feature-card { background: #1e293b !important; border-color: #334155 !important; }
     :root:not([data-theme="light"]) .faq-feature-card h3 { color: #93c5fd !important; }
     :root:not([data-theme="light"]) .faq-feature-card p { color: #94a3b8 !important; }
-    :root:not([data-theme="light"]) .ripe-policy-section { background: #0b1220 !important; }
-    :root:not([data-theme="light"]) .policy-card { background: #1e293b !important; border-color: #334155 !important; }
-    :root:not([data-theme="light"]) .policy-card h3 { color: #93c5fd !important; }
-    :root:not([data-theme="light"]) .policy-card p { color: #94a3b8 !important; }
   }
 </style>
 
@@ -458,53 +417,7 @@ is_homepage: true
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     3. Quick Navigation
-════════════════════════════════════════════════════════ -->
-<div class="ripe-shortcuts-bar">
-  <div class="container p-0">
-    <div class="row no-gutters">
-      <div class="col-6 col-md-3">
-        <a href="{{ '/en/connect/' | relative_url }}" class="shortcut-nav-item h-100">
-          <i class="fas fa-laptop mr-3"></i>
-          <div>
-            <span class="shortcut-nav-title">How to Connect</span>
-            <span class="shortcut-nav-sub">Device setup guides</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="{{ '/en/coverage/' | relative_url }}" class="shortcut-nav-item h-100">
-          <i class="fas fa-map-marked-alt mr-3"></i>
-          <div>
-            <span class="shortcut-nav-title">eduroam Map</span>
-            <span class="shortcut-nav-sub">Find member institutions</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="{{ '/en/support/institutions.html' | relative_url }}" class="shortcut-nav-item h-100">
-          <i class="fas fa-university mr-3"></i>
-          <div>
-            <span class="shortcut-nav-title">Institutions</span>
-            <span class="shortcut-nav-sub">Member institution list</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 col-md-3">
-        <a href="{{ '/en/support/stats.html' | relative_url }}" class="shortcut-nav-item h-100">
-          <i class="fas fa-chart-bar mr-3"></i>
-          <div>
-            <span class="shortcut-nav-title">Statistics</span>
-            <span class="shortcut-nav-sub">Service statistics</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════
-     4. Notices + Quick Help
+     3. Notices + Quick Help
 ════════════════════════════════════════════════════════ -->
 <section class="ripe-main-section">
   <div class="container">
@@ -581,7 +494,7 @@ is_homepage: true
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     5. FAQ
+     4. FAQ
 ════════════════════════════════════════════════════════ -->
 <section class="ripe-faq-section">
   <div class="container">
@@ -634,37 +547,3 @@ is_homepage: true
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════
-     6. Policy
-════════════════════════════════════════════════════════ -->
-<section class="ripe-policy-section">
-  <div class="container">
-    <div class="ripe-sec-head mb-4">
-      <h2><i class="fas fa-file-alt mr-2"></i>Policy</h2>
-      <a href="{{ '/en/policy/' | relative_url }}">View full policy →</a>
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="policy-card">
-          <h3><i class="fas fa-users mr-2"></i>Eligible Users</h3>
-          <p>Members of participating institutions and visitors can use the service with their institutional account credentials.</p>
-          <a href="{{ '/en/policy/' | relative_url }}" class="policy-read-more">Learn more →</a>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="policy-card" style="border-left-color:#059669;">
-          <h3><i class="fas fa-ban mr-2"></i>Prohibited Activities</h3>
-          <p>Distribution of illegal content, hacking, spam, and excessive bandwidth usage are prohibited and may result in service suspension.</p>
-          <a href="{{ '/en/policy/' | relative_url }}" class="policy-read-more">Learn more →</a>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="policy-card" style="border-left-color:#7c3aed;">
-          <h3><i class="fas fa-shield-alt mr-2"></i>Data Privacy</h3>
-          <p>Connection logs are retained for 180 days for security purposes and managed in accordance with applicable laws.</p>
-          <a href="{{ '/en/policy/' | relative_url }}" class="policy-read-more">Learn more →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

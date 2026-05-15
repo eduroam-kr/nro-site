@@ -506,3 +506,13 @@ body.layout-top-nav { background: var(--bg) !important; transition: background 0
     --faq-text: #c9d1de;
   }
 }
+
+[data-theme="dark"] .page-hero {
+  background: linear-gradient(135deg, #0f1a2e 0%, #1a2e50 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .page-hero {
+    background: linear-gradient(135deg, #0f1a2e 0%, #1a2e50 100%);
+  }
+}

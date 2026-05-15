@@ -13,30 +13,7 @@ lang: en
 
 <div class="container my-4">
   <div class="row">
-
-    <!-- Sidebar -->
-    <div class="col-md-3 mb-4 mb-md-0">
-      <div class="community-sidebar">
-        <div class="community-sidebar-header">
-          <i class="fas fa-comments mr-2"></i>Community
-        </div>
-        <ul class="community-sidebar-nav">
-          <li>
-            <a href="{{ '/en/community/faq.html' | relative_url }}">
-              <i class="fas fa-question-circle"></i>FAQ
-            </a>
-          </li>
-          <li class="active">
-            <a href="{{ '/en/notices/' | relative_url }}">
-              <i class="fas fa-bullhorn"></i>Notices
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="col-md-9">
+    <div class="col-md-12">
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
           <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
@@ -93,55 +70,5 @@ lang: en
   }
 </script>
     </div>
-
   </div>
 </div>
-
-<style>
-.community-sidebar {
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.community-sidebar-header {
-  background: #1c2b3f;
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.92rem;
-  padding: 14px 18px;
-}
-.community-sidebar-nav {
-  list-style: none;
-  margin: 0;
-  padding: 6px 0;
-  background: var(--card-bg, #fff);
-}
-.community-sidebar-nav li a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 11px 18px;
-  color: var(--card-text, #374151);
-  text-decoration: none;
-  font-size: 0.88rem;
-  border-left: 3px solid transparent;
-  transition: background 0.15s;
-}
-.community-sidebar-nav li a i {
-  color: #94a3b8;
-  width: 15px;
-  flex-shrink: 0;
-}
-.community-sidebar-nav li a:hover {
-  background: var(--list-hover-bg, #f8faff);
-}
-.community-sidebar-nav li.active a {
-  color: var(--card-text, #1c2b3f);
-  font-weight: 700;
-  background: var(--list-hover-bg, #f0f4ff);
-  border-left-color: #4a6cf7;
-}
-.community-sidebar-nav li.active a i {
-  color: #4a6cf7;
-}
-</style>
