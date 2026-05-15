@@ -247,14 +247,14 @@ lang: en
       </div>
 
       <!-- Contact -->
-      <div class="section-card mb-4" style="background: #f8faff; border: 1px solid #dde5f7;">
+      <div class="section-card mb-4 guide-contact-card">
         <div class="d-flex align-items-center" style="gap: 14px;">
           <div style="background: #4a6cf7; border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <i class="fas fa-envelope" style="color: #fff; font-size: 1.1rem;"></i>
           </div>
           <div>
-            <div style="font-weight: 700; color: #1c2b3f; margin-bottom: 3px;">Membership Inquiries</div>
-            <div style="color: #555; font-size: 0.9rem;">
+            <div class="guide-contact-title">Membership Inquiries</div>
+            <div class="guide-contact-desc">
               For authentication server integration and technical coordination, please contact the Operations Center.
               <a href="mailto:{{ site.support.email }}" style="color: #4a6cf7; font-weight: 600; margin-left: 6px;">{{ site.support.email }}</a>
             </div>
@@ -383,5 +383,16 @@ lang: en
 @media (max-width: 767.98px) {
   .guide-step-body { flex-direction: column; }
   .guide-step-screenshot { width: 100%; min-width: 0; }
+}
+.guide-contact-card { background: #f8faff; border: 1px solid #dde5f7; }
+.guide-contact-title { font-weight: 700; color: #1c2b3f; margin-bottom: 3px; }
+.guide-contact-desc { color: #555; font-size: 0.9rem; }
+[data-theme="dark"] .guide-contact-card { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
+[data-theme="dark"] .guide-contact-title { color: var(--card-text) !important; }
+[data-theme="dark"] .guide-contact-desc { color: var(--card-subtext) !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .guide-contact-card { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
+  :root:not([data-theme="light"]) .guide-contact-title { color: var(--card-text) !important; }
+  :root:not([data-theme="light"]) .guide-contact-desc { color: var(--card-subtext) !important; }
 }
 </style>

@@ -13,8 +13,6 @@ lang: en
 
 <div class="container my-4">
   <div class="row">
-
-    <!-- Main Content -->
     <div class="col-md-12">
 
       <nav aria-label="breadcrumb" class="mb-4">
@@ -24,57 +22,141 @@ lang: en
         </ol>
       </nav>
 
-  <div class="section-card mb-4">
-    <h2><i class="fas fa-users"></i>Eligible Users</h2>
-    <ul style="font-size:0.9rem; color:#444; line-height:2.2;">
-      <li>{{ site.t[page.lang].org }} staff with an institutional account</li>
-      <li>Visitors from eduroam member institutions (authenticated via home institution account)</li>
-    </ul>
+      <!-- Intro banner -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-shield-alt mr-2" style="color: #7eb3f7;"></i>eduroam Usage Policy
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              eduroam is accessed using your home institution account credentials.<br>
+              Please read and comply with the policy below before using the service.
+            </p>
+          </div>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-shield-alt" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eligible Users -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #4a6cf7;">
+          <div class="policy-section-icon"><i class="fas fa-users"></i></div>
+          <div class="policy-section-title">Eligible Users</div>
+        </div>
+        <div class="policy-section-body">
+          <p>eduroam is available to members of participating institutions and visiting users from other eduroam member institutions.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> {{ site.t[page.lang].org }} staff with an institutional account</li>
+            <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Visitors from eduroam member institutions (authenticated via home institution account)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Prohibited Activities -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #ef4444;">
+          <div class="policy-section-icon"><i class="fas fa-ban"></i></div>
+          <div class="policy-section-title">Prohibited Activities</div>
+        </div>
+        <div class="policy-section-body">
+          <p>The following activities violate the eduroam terms of use and may result in suspension of access.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Distributing illegal content or infringing copyright</li>
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Hacking, fraud, spam, or any attacks against others</li>
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Excessive bandwidth consumption (P2P, running large-scale streaming servers, etc.)</li>
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Sharing or transferring account credentials to others</li>
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Any other activity in violation of applicable laws</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Enforcement -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #f59e0b;">
+          <div class="policy-section-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="policy-section-title">Enforcement</div>
+        </div>
+        <div class="policy-section-body">
+          <p>Policy violations may result in the following actions.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-check-circle" style="color:#f59e0b;"></i> Suspension of eduroam access</li>
+            <li><i class="fas fa-check-circle" style="color:#f59e0b;"></i> Notification to the user's home institution</li>
+            <li><i class="fas fa-check-circle" style="color:#f59e0b;"></i> Illegal activities will be reported to law enforcement authorities</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Personal Data Processing -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #8b5cf6;">
+          <div class="policy-section-icon"><i class="fas fa-user-shield"></i></div>
+          <div class="policy-section-title">Personal Data Processing</div>
+        </div>
+        <div class="policy-section-body">
+          <p>The following information is collected when using eduroam. Collected data is used solely for service provision and security incident response, and will not be shared with third parties except as required by law.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> User ID (anonymised before roaming log forwarding)</li>
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Connection time and AP location</li>
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Device MAC address</li>
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> Data is retained for one year from the date of connection</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="section-card mb-4" style="background: #f8faff; border: 1px solid #dde5f7;">
+        <div class="d-flex align-items-center" style="gap: 14px;">
+          <div style="background: #4a6cf7; border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <i class="fas fa-envelope" style="color: #fff; font-size: 1.1rem;"></i>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #1c2b3f; margin-bottom: 3px;">Policy Enquiries</div>
+            <div style="color: #555; font-size: 0.9rem;">
+              This policy is effective from March 1, 2025. Enquiries: {{ site.t[page.lang].support_dept }},
+              <a href="mailto:{{ site.support.email }}" style="color: #4a6cf7; font-weight: 600; margin-left: 4px;">{{ site.support.email }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>
 
-  <div class="section-card mb-4">
-    <h2><i class="fas fa-ban"></i>Prohibited Activities</h2>
-    <ul style="font-size:0.9rem; color:#444; line-height:2.2;">
-      <li>Distributing illegal content or infringing copyright</li>
-      <li>Hacking, fraud, spam, or any attacks against others</li>
-      <li>Excessive bandwidth consumption (P2P, running large-scale streaming servers, etc.)</li>
-      <li>Sharing or transferring account credentials to others</li>
-      <li>Any other activity in violation of applicable laws</li>
-    </ul>
-  </div>
-
-  <div class="section-card mb-4">
-    <h2><i class="fas fa-exclamation-triangle"></i>Enforcement</h2>
-    <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-      Policy violations may result in access suspension and notification to the user's home institution.
-      Illegal activities will be reported to law enforcement authorities.
-    </p>
-  </div>
-
-  <div class="section-card mb-4">
-    <h2><i class="fas fa-user-shield"></i>Personal Data Processing</h2>
-    <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-      The following information is collected when using eduroam:
-    </p>
-    <ul style="font-size:0.9rem; color:#444; line-height:2.2;">
-      <li>User ID (anonymised before roaming log forwarding)</li>
-      <li>Connection time and AP location</li>
-      <li>Device MAC address</li>
-    </ul>
-    <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-      Collected data is used solely for service provision and security incident response.
-      It will not be shared with third parties except as required by law.
-      Data is retained for one year from the date of connection.
-    </p>
-  </div>
-
-  <div class="section-card" style="background:#f8f9fa;">
-    <p style="font-size:0.82rem; color:#888; margin:0;">
-      This policy is effective from March 1, 2025. Inquiries: {{ site.t[page.lang].support_dept }}, <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a>
-    </p>
-  </div>
-
-    </div><!-- /col-md-9 -->
-  </div><!-- /row -->
-</div><!-- /container -->
-
+<style>
+.policy-section-card { padding: 0 !important; overflow: hidden; }
+.policy-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.policy-section-icon { font-size: 1.3rem; }
+.policy-section-title { font-size: 1.1rem; font-weight: 700; }
+.policy-section-body { padding: 28px 28px; }
+.policy-section-body p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 0.93rem;
+}
+.policy-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.policy-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.87rem;
+  color: #374151;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.policy-checklist li i { flex-shrink: 0; margin-top: 2px; }
+</style>

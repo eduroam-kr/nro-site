@@ -13,8 +13,6 @@ lang: en
 
 <div class="container my-4">
   <div class="row">
-
-    <!-- Main Content -->
     <div class="col-md-12">
 
       <nav aria-label="breadcrumb" class="mb-4">
@@ -24,150 +22,207 @@ lang: en
         </ol>
       </nav>
 
-      <div class="section-card">
-        <h2><i class="fas fa-magic"></i> eduroam CAT (Recommended)</h2>
-        <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-          Use the <strong>eduroam CAT (Configuration Assistant Tool)</strong> to automatically configure your device in just a few clicks.
-        </p>
-        <ol class="step-list">
-          <li>
-            <span class="step-num">1</span>
-            <span>Go to <a href="https://cat.eduroam.org" target="_blank">cat.eduroam.org</a> and search for <strong>{{ site.t[page.lang].org }}</strong>.</span>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <span>Download the installer for your operating system.</span>
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <span>Run the installer and enter your institutional account (<strong>username@{{ site.realm }}</strong>) and password when prompted.</span>
-          </li>
-          <li>
-            <span class="step-num">4</span>
-            <span>Once installed, select <strong>eduroam</strong> from your Wi-Fi list to connect automatically.</span>
-          </li>
-        </ol>
-        <p style="font-size:0.8rem; color:#888; margin-top:12px;">
-          <i class="fas fa-info-circle mr-1"></i>This service is only available if your institution's administrator has registered with eduroam CAT.
-        </p>
-      </div>
-
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-cog"></i> Manual Setup</h2>
-
-        <ul class="nav nav-tabs os-tab mb-3" id="osTabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#tab-windows">
-              <i class="fab fa-windows mr-1"></i>Windows
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-mac">
-              <i class="fab fa-apple mr-1"></i>macOS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-ios">
-              <i class="fab fa-apple mr-1"></i>iOS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-android">
-              <i class="fab fa-android mr-1"></i>Android
-            </a>
-          </li>
-        </ul>
-
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="tab-windows">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Select <strong>eduroam</strong> from the Wi-Fi list.</span></li>
-              <li><span class="step-num">2</span><span>Set EAP method: <strong>PEAP</strong>, Phase 2: <strong>MSCHAPv2</strong>.</span></li>
-              <li><span class="step-num">3</span><span>Enable server certificate validation and select the CA for <strong>{{ site.realm }}</strong>.</span></li>
-              <li><span class="step-num">4</span><span>Username: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
-            </ol>
+      <!-- Intro banner -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-wifi mr-2" style="color: #7eb3f7;"></i>eduroam Connection Guide
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              Use the eduroam CAT tool to configure your device <strong style="color:#7eb3f7;">automatically in just a few clicks</strong>.<br>
+              For manual setup, refer to the per-OS instructions below.
+            </p>
           </div>
-          <div class="tab-pane fade" id="tab-mac">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Select <strong>eduroam</strong> from the Wi-Fi list.</span></li>
-              <li><span class="step-num">2</span><span>Username: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
-              <li><span class="step-num">3</span><span>In the certificate trust dialog, click <strong>Continue</strong> and trust the certificate.</span></li>
-            </ol>
-            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>Using the CAT tool handles certificate setup automatically.</p>
-          </div>
-          <div class="tab-pane fade" id="tab-ios">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Go to Settings &gt; Wi-Fi and select <strong>eduroam</strong>.</span></li>
-              <li><span class="step-num">2</span><span>Username: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
-              <li><span class="step-num">3</span><span>Tap <strong>Trust</strong> on the certificate verification screen.</span></li>
-            </ol>
-            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>iOS 15 and later: installing a CAT profile is recommended.</p>
-          </div>
-          <div class="tab-pane fade" id="tab-android">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Select <strong>eduroam</strong> from the Wi-Fi list.</span></li>
-              <li><span class="step-num">2</span><span>EAP method: <strong>PEAP</strong>, Phase 2: <strong>MSCHAPV2</strong>.</span></li>
-              <li><span class="step-num">3</span><span>CA certificate: select <strong>Use system certificates</strong> or import the downloaded certificate.</span></li>
-              <li><span class="step-num">4</span><span>Domain: <strong>{{ site.realm }}</strong>, Identity: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
-            </ol>
-            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-exclamation-triangle mr-1" style="color:#e67e22;"></i>Android 11+: the domain field is required.</p>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-wifi" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
           </div>
         </div>
       </div>
 
-      {% unless site.cert == "none" %}
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-certificate"></i> Certificate Information</h2>
-        <p style="font-size:0.85rem; color:#666; line-height:1.7;">
-          <strong>If you have the CA certificate installed in the OS trust store</strong>, no trust confirmation dialog will appear, and certificate renewals are handled automatically — no action needed.<br>
-          <strong>If you set up manually without the CA certificate (TOFU)</strong>, you must delete the Wi-Fi profile and reconnect when the server certificate expires.<br>
-          <i class="fas fa-info-circle mr-1"></i>TOFU (Trust On First Use): on first connection, the user manually inspects and trusts the server certificate.
-        </p>
-        <div class="row mt-2">
-          <div class="col-md-6 mb-3">
-            <div style="font-size:0.8rem; font-weight:700; color:var(--edu-blue); margin-bottom:8px;">
-              <i class="fas fa-shield-alt mr-1"></i>CA Certificate
-            </div>
-            <table class="table table-sm table-borderless" style="font-size:0.8rem;">
-              <tr><th style="width:100px; color:#888; font-weight:400;">CN</th><td><code>{{ site.cert.ca.cn }}</code></td></tr>
-              <tr><th style="color:#888; font-weight:400;">Valid</th><td>{{ site.cert.ca.valid_from }} – {{ site.cert.ca.valid_until }}</td></tr>
-              <tr><th style="color:#888; font-weight:400; vertical-align:top;">SHA-256</th>
-                <td style="word-break:break-all; font-family:monospace; font-size:0.75rem;">{{ site.cert.ca.fingerprint_sha256 }}</td></tr>
-            </table>
-            <a href="{{ site.cert.ca.download | relative_url }}" download style="font-size:0.8rem;">
-              <i class="fas fa-download mr-1"></i>Download CA Certificate
+      <!-- eduroam CAT -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #10b981;">
+          <div class="guide-step-badge">RECOMMENDED</div>
+          <div class="guide-step-title"><i class="fas fa-magic mr-2"></i>eduroam CAT (Auto Setup)</div>
+        </div>
+        <div class="guide-step-body">
+          <div class="guide-step-text">
+            <p>Use the <strong>eduroam CAT (Configuration Assistant Tool)</strong> to automatically configure your device. Supports Windows, macOS, iOS, and Android.</p>
+            <ul class="guide-step-checklist">
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Go to <a href="https://cat.eduroam.org" target="_blank">cat.eduroam.org</a> and search for <strong>{{ site.t[page.lang].org }}</strong>.</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Download the installer for your operating system.</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Run the installer and enter your account (<strong>username@{{ site.realm }}</strong>) and password when prompted.</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> Once installed, select <strong>eduroam</strong> from your Wi-Fi list to connect.</li>
+            </ul>
+            <a href="https://cat.eduroam.org" target="_blank" class="guide-step-btn" style="background:#10b981;">
+              <i class="fas fa-external-link-alt mr-1"></i> Go to cat.eduroam.org
             </a>
+            <p style="font-size:0.8rem; color:#888; margin-top:12px; margin-bottom:0;">
+              <i class="fas fa-info-circle mr-1"></i>This service is only available if your institution's administrator has registered with eduroam CAT.
+            </p>
           </div>
-          <div class="col-md-6 mb-3">
-            <div style="font-size:0.8rem; font-weight:700; color:var(--edu-blue); margin-bottom:8px;">
-              <i class="fas fa-server mr-1"></i>Server Certificate (RADIUS)
+          <div class="guide-step-screenshot">
+            <div class="guide-screenshot-frame" style="background:#ecfdf5; border:1.5px solid #a7f3d0; border-radius:10px; overflow:hidden;">
+              <div class="guide-screenshot-bar" style="background:#10b981;">
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="guide-screenshot-url" style="color:rgba(255,255,255,0.8);">cat.eduroam.org</span>
+              </div>
+              <div style="padding:20px;">
+                <div style="font-size:0.8rem;font-weight:700;color:#065f46;margin-bottom:12px;"><i class="fas fa-search mr-1"></i> Search Institution</div>
+                <div class="guide-form-row" style="border-color:#a7f3d0; margin-bottom:10px;"><span style="color:#065f46;">Institution</span><div class="guide-form-input">{{ site.t[page.lang].org }}</div></div>
+                <div style="margin-bottom:12px;background:#fff;border:1px solid #a7f3d0;border-radius:6px;padding:10px 14px;font-size:0.82rem;color:#065f46;">
+                  <i class="fas fa-check-circle mr-1" style="color:#10b981;"></i>Institution found
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-windows mr-1"></i>Windows</div>
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-apple mr-1"></i>macOS</div>
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-apple mr-1"></i>iOS</div>
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-android mr-1"></i>Android</div>
+                </div>
+              </div>
             </div>
-            <table class="table table-sm table-borderless" style="font-size:0.8rem;">
-              <tr><th style="width:100px; color:#888; font-weight:400;">CN</th><td><code>{{ site.cert.server.cn }}</code></td></tr>
-              <tr><th style="color:#888; font-weight:400;">Valid</th><td>{{ site.cert.server.valid_from }} – <strong>{{ site.cert.server.valid_until }}</strong></td></tr>
-              <tr><th style="color:#888; font-weight:400; vertical-align:top;">SHA-256</th>
-                <td style="word-break:break-all; font-family:monospace; font-size:0.75rem;">{{ site.cert.server.fingerprint_sha256 }}</td></tr>
-            </table>
-            <a href="{{ site.cert.server.download | relative_url }}" download style="font-size:0.8rem;">
-              <i class="fas fa-download mr-1"></i>Download Server Certificate
-            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manual Setup -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #475569;">
+          <div class="guide-step-badge">MANUAL</div>
+          <div class="guide-step-title"><i class="fas fa-cog mr-2"></i>Manual Setup by OS</div>
+        </div>
+        <div style="padding: 24px 28px;">
+          <ul class="nav nav-tabs os-tab mb-3" id="osTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tab-windows"><i class="fab fa-windows mr-1"></i>Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-mac"><i class="fab fa-apple mr-1"></i>macOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-ios"><i class="fab fa-apple mr-1"></i>iOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-android"><i class="fab fa-android mr-1"></i>Android</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab-windows">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Select <strong>eduroam</strong> from the Wi-Fi list.</span></li>
+                <li><span class="step-num">2</span><span>Set EAP method: <strong>PEAP</strong>, Phase 2: <strong>MSCHAPv2</strong>.</span></li>
+                <li><span class="step-num">3</span><span>Enable server certificate validation and select the CA for <strong>{{ site.realm }}</strong>.</span></li>
+                <li><span class="step-num">4</span><span>Username: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
+              </ol>
+            </div>
+            <div class="tab-pane fade" id="tab-mac">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Select <strong>eduroam</strong> from the Wi-Fi list.</span></li>
+                <li><span class="step-num">2</span><span>Username: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
+                <li><span class="step-num">3</span><span>In the certificate trust dialog, click <strong>Continue</strong> and trust the certificate.</span></li>
+              </ol>
+              <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>Using the CAT tool handles certificate setup automatically.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-ios">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Go to Settings &gt; Wi-Fi and select <strong>eduroam</strong>.</span></li>
+                <li><span class="step-num">2</span><span>Username: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
+                <li><span class="step-num">3</span><span>Tap <strong>Trust</strong> on the certificate verification screen.</span></li>
+              </ol>
+              <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>iOS 15 and later: installing a CAT profile is recommended.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-android">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Select <strong>eduroam</strong> from the Wi-Fi list.</span></li>
+                <li><span class="step-num">2</span><span>EAP method: <strong>PEAP</strong>, Phase 2: <strong>MSCHAPV2</strong>.</span></li>
+                <li><span class="step-num">3</span><span>CA certificate: select <strong>Use system certificates</strong> or import the downloaded certificate.</span></li>
+                <li><span class="step-num">4</span><span>Domain: <strong>{{ site.realm }}</strong>, Identity: <strong>username@{{ site.realm }}</strong>, then enter your password.</span></li>
+              </ol>
+              <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-exclamation-triangle mr-1" style="color:#e67e22;"></i>Android 11+: the domain field is required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate Information -->
+      {% unless site.cert == "none" %}
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #8b5cf6;">
+          <div class="guide-step-badge">참고</div>
+          <div class="guide-step-title"><i class="fas fa-certificate mr-2"></i>Certificate Information</div>
+        </div>
+        <div style="padding: 24px 28px;">
+          <p style="font-size:0.85rem; color:#666; line-height:1.7; margin-bottom:20px;">
+            <strong>If you have the CA certificate installed in the OS trust store</strong>, no trust confirmation dialog will appear, and certificate renewals are handled automatically — no action needed.<br>
+            <strong>If you set up manually without the CA certificate (TOFU)</strong>, you must delete the Wi-Fi profile and reconnect when the server certificate expires.<br>
+            <i class="fas fa-info-circle mr-1"></i>TOFU (Trust On First Use): on first connection, the user manually inspects and trusts the server certificate.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div style="font-size:0.8rem; font-weight:700; color:var(--edu-blue); margin-bottom:8px;">
+                <i class="fas fa-shield-alt mr-1"></i>CA Certificate
+              </div>
+              <table class="table table-sm table-borderless" style="font-size:0.8rem;">
+                <tr><th style="width:100px; color:#888; font-weight:400;">CN</th><td><code>{{ site.cert.ca.cn }}</code></td></tr>
+                <tr><th style="color:#888; font-weight:400;">Valid</th><td>{{ site.cert.ca.valid_from }} – {{ site.cert.ca.valid_until }}</td></tr>
+                <tr><th style="color:#888; font-weight:400; vertical-align:top;">SHA-256</th>
+                  <td style="word-break:break-all; font-family:monospace; font-size:0.75rem;">{{ site.cert.ca.fingerprint_sha256 }}</td></tr>
+              </table>
+              <a href="{{ site.cert.ca.download | relative_url }}" download style="font-size:0.8rem;">
+                <i class="fas fa-download mr-1"></i>Download CA Certificate
+              </a>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div style="font-size:0.8rem; font-weight:700; color:var(--edu-blue); margin-bottom:8px;">
+                <i class="fas fa-server mr-1"></i>Server Certificate (RADIUS)
+              </div>
+              <table class="table table-sm table-borderless" style="font-size:0.8rem;">
+                <tr><th style="width:100px; color:#888; font-weight:400;">CN</th><td><code>{{ site.cert.server.cn }}</code></td></tr>
+                <tr><th style="color:#888; font-weight:400;">Valid</th><td>{{ site.cert.server.valid_from }} – <strong>{{ site.cert.server.valid_until }}</strong></td></tr>
+                <tr><th style="color:#888; font-weight:400; vertical-align:top;">SHA-256</th>
+                  <td style="word-break:break-all; font-family:monospace; font-size:0.75rem;">{{ site.cert.server.fingerprint_sha256 }}</td></tr>
+              </table>
+              <a href="{{ site.cert.server.download | relative_url }}" download style="font-size:0.8rem;">
+                <i class="fas fa-download mr-1"></i>Download Server Certificate
+              </a>
+            </div>
           </div>
         </div>
       </div>
       {% endunless %}
 
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-key"></i> Account Details</h2>
-        <table class="table table-sm" style="font-size:0.88rem;">
-          <tbody>
-            <tr><th style="width:160px;">Wi-Fi SSID</th><td><code>eduroam</code></td></tr>
-            <tr><th>Username</th><td><code>username@{{ site.realm }}</code></td></tr>
-            <tr><th>Password</th><td>Your institutional account password</td></tr>
-            <tr><th>EAP method</th><td>PEAP / TTLS</td></tr>
-            <tr><th>Inner auth</th><td>MSCHAPv2 / PAP</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:0.82rem; color:#888;"><i class="fas fa-info-circle mr-1"></i>Account inquiries: {{ site.t[page.lang].support_dept }} <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a> / {{ site.support.tel }}</p>
+      <!-- Account Details -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #4a6cf7;">
+          <div class="guide-step-badge">REFERENCE</div>
+          <div class="guide-step-title"><i class="fas fa-key mr-2"></i>Account Details</div>
+        </div>
+        <div style="padding: 24px 28px;">
+          <div class="row">
+            <div class="col-md-7 mb-3">
+              <div style="display:grid; gap:8px;">
+                <div class="guide-form-row"><span>Wi-Fi SSID</span><div class="guide-form-input" style="font-family:monospace; font-weight:700;">eduroam</div></div>
+                <div class="guide-form-row"><span>Username</span><div class="guide-form-input" style="font-family:monospace; font-size:0.78rem;">username@{{ site.realm }}</div></div>
+                <div class="guide-form-row"><span>Password</span><div class="guide-form-input">Your institutional account password</div></div>
+                <div class="guide-form-row"><span>EAP method</span><div class="guide-form-input">PEAP / TTLS</div></div>
+                <div class="guide-form-row"><span>Inner auth</span><div class="guide-form-input">MSCHAPv2 / PAP</div></div>
+              </div>
+            </div>
+            <div class="col-md-5 mb-3 d-flex align-items-center justify-content-center">
+              <div style="text-align:center;">
+                <i class="fas fa-lock" style="font-size:3rem; margin-bottom:12px; color:#c7d2fe; display:block;"></i>
+                <div style="font-size:0.82rem; color:#64748b; line-height:1.7;">For account inquiries, please contact the helpdesk.</div>
+                <div style="font-size:0.82rem; color:#64748b; margin-top:4px;">{{ site.t[page.lang].support_dept }}</div>
+                <a href="mailto:{{ site.support.email }}" style="font-size:0.83rem; color:#4a6cf7; font-weight:600; margin-top:8px; display:inline-block;">
+                  <i class="fas fa-envelope mr-1"></i>{{ site.support.email }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -183,3 +238,111 @@ lang: en
     }
   });
 </script>
+
+<style>
+.guide-step-card { padding: 0 !important; overflow: hidden; }
+.guide-step-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.guide-step-badge {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.guide-step-title { font-size: 1.1rem; font-weight: 700; }
+.guide-step-body {
+  display: flex;
+  gap: 32px;
+  padding: 28px 28px;
+  align-items: flex-start;
+}
+.guide-step-text { flex: 1; min-width: 0; }
+.guide-step-text p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 0.93rem;
+}
+.guide-step-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.guide-step-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.87rem;
+  color: #374151;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.guide-step-checklist li i { flex-shrink: 0; margin-top: 2px; }
+.guide-step-btn {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.guide-step-btn:hover { opacity: 0.88; color: #fff; text-decoration: none; }
+.guide-step-screenshot {
+  width: 300px;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+.guide-screenshot-frame {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+.guide-screenshot-bar {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.guide-screenshot-bar .dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.guide-screenshot-url {
+  margin-left: 8px;
+  font-size: 0.72rem;
+  font-family: monospace;
+}
+.guide-form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+.guide-form-row span {
+  min-width: 90px;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.guide-form-input { flex: 1; color: #374151; }
+@media (max-width: 767.98px) {
+  .guide-step-body { flex-direction: column; }
+  .guide-step-screenshot { width: 100%; min-width: 0; }
+}
+</style>

@@ -12,10 +12,8 @@ title: 접속 방법
 
 <div class="container my-4">
   <div class="row">
-
-    <!-- Main Content -->
     <div class="col-md-12">
-      
+
       <!-- 빵부스러기 -->
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
@@ -24,102 +22,204 @@ title: 접속 방법
         </ol>
       </nav>
 
-      <div class="section-card">
-        <h2><i class="fas fa-magic"></i> eduroam CAT (권장)</h2>
-        <p style="font-size:0.9rem; color:#444; line-height:1.8;">
-          <strong>eduroam CAT(Configuration Assistant Tool)</strong>을 사용하면 기기 설정을 자동으로 완료할 수 있습니다.
-        </p>
-        <ol class="step-list">
-          <li>
-            <span class="step-num">1</span>
-            <span><a href="https://cat.eduroam.org" target="_blank">cat.eduroam.org</a>에 접속하여 <strong>{{ site.t[page.lang].org }}</strong>를 검색합니다.</span>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <span>운영체제에 맞는 설치 프로그램(프로파일)을 다운로드합니다.</span>
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <span>다운로드한 파일을 실행하고 안내에 따라 기관 계정(아이디@{{ site.realm }})과 비밀번호를 입력합니다.</span>
-          </li>
-        </ol>
-      </div>
-
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-cog"></i> 수동 설정</h2>
-
-        <ul class="nav nav-tabs os-tab mb-3" id="osTabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#tab-windows">
-              <i class="fab fa-windows mr-1"></i>Windows
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-mac">
-              <i class="fab fa-apple mr-1"></i>macOS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-ios">
-              <i class="fab fa-apple mr-1"></i>iOS
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab-android">
-              <i class="fab fa-android mr-1"></i>Android
-            </a>
-          </li>
-        </ul>
-
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="tab-windows">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
-              <li><span class="step-num">2</span><span>EAP 방식: <strong>PEAP</strong>, 2단계 인증: <strong>MSCHAPv2</strong>를 선택합니다.</span></li>
-              <li><span class="step-num">3</span><span>서버 인증서 확인을 활성화하고 <strong>{{ site.realm }}</strong> CA를 선택합니다.</span></li>
-              <li><span class="step-num">4</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
-            </ol>
+      <!-- 인트로 배너 -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-wifi mr-2" style="color: #7eb3f7;"></i>eduroam 접속 안내
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              eduroam CAT 도구를 사용하면 <strong style="color:#7eb3f7;">클릭 몇 번</strong>으로 자동 설정이 완료됩니다.<br>
+              수동 설정이 필요한 경우 아래 OS별 안내를 참고해 주세요.
+            </p>
           </div>
-          <div class="tab-pane fade" id="tab-mac">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
-              <li><span class="step-num">2</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
-              <li><span class="step-num">3</span><span>인증서 신뢰 창이 뜨면 <strong>계속</strong>을 클릭하여 인증서를 신뢰합니다.</span></li>
-            </ol>
-            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>CAT 도구를 사용하면 인증서 설정이 자동으로 처리됩니다.</p>
-          </div>
-          <div class="tab-pane fade" id="tab-ios">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>설정 &gt; Wi-Fi에서 <strong>eduroam</strong>을 선택합니다.</span></li>
-              <li><span class="step-num">2</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
-              <li><span class="step-num">3</span><span>인증서 확인 화면에서 <strong>신뢰</strong>를 탭합니다.</span></li>
-            </ol>
-            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>iOS 15 이상: CAT 프로파일 설치를 권장합니다.</p>
-          </div>
-          <div class="tab-pane fade" id="tab-android">
-            <ol class="step-list">
-              <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
-              <li><span class="step-num">2</span><span>EAP 방식: <strong>PEAP</strong>, 2단계 인증: <strong>MSCHAPV2</strong>를 선택합니다.</span></li>
-              <li><span class="step-num">3</span><span>CA 인증서: <strong>시스템 기본 인증서 사용</strong> 또는 다운로드한 인증서를 선택합니다.</span></li>
-              <li><span class="step-num">4</span><span>도메인: <strong>{{ site.realm }}</strong>, 사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
-            </ol>
-            <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-exclamation-triangle mr-1" style="color:#e67e22;"></i>Android 11 이상: 도메인 필드 입력이 필수입니다.</p>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-wifi" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
           </div>
         </div>
       </div>
 
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-key"></i> 계정 정보</h2>
-        <table class="table table-sm" style="font-size:0.88rem;">
-          <tbody>
-            <tr><th style="width:140px;">Wi-Fi SSID</th><td><code>eduroam</code></td></tr>
-            <tr><th>사용자 이름</th><td><code>아이디@{{ site.realm }}</code></td></tr>
-            <tr><th>비밀번호</th><td>기관 계정 비밀번호</td></tr>
-            <tr><th>EAP 방식</th><td>PEAP / TTLS</td></tr>
-            <tr><th>내부 인증</th><td>MSCHAPv2 / PAP</td></tr>
-          </tbody>
-        </table>
+      <!-- eduroam CAT -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #10b981;">
+          <div class="guide-step-badge">권장</div>
+          <div class="guide-step-title"><i class="fas fa-magic mr-2"></i>eduroam CAT (자동 설정)</div>
+        </div>
+        <div class="guide-step-body">
+          <div class="guide-step-text">
+            <p><strong>eduroam CAT(Configuration Assistant Tool)</strong>을 사용하면 기기 설정을 자동으로 완료할 수 있습니다. Windows, macOS, iOS, Android 모두 지원합니다.</p>
+            <ul class="guide-step-checklist">
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> <a href="https://cat.eduroam.org" target="_blank">cat.eduroam.org</a>에 접속하여 <strong>{{ site.t[page.lang].org }}</strong>를 검색합니다.</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> 운영체제에 맞는 설치 프로그램(프로파일)을 다운로드합니다.</li>
+              <li><i class="fas fa-check-circle" style="color:#10b981;"></i> 설치 후 계정(<strong>아이디@{{ site.realm }}</strong>)과 비밀번호를 입력합니다.</li>
+            </ul>
+            <a href="https://cat.eduroam.org" target="_blank" class="guide-step-btn" style="background:#10b981;">
+              <i class="fas fa-external-link-alt mr-1"></i> cat.eduroam.org 바로가기
+            </a>
+          </div>
+          <div class="guide-step-screenshot">
+            <div class="guide-screenshot-frame" style="background:#ecfdf5; border:1.5px solid #a7f3d0; border-radius:10px; overflow:hidden;">
+              <div class="guide-screenshot-bar" style="background:#10b981;">
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="dot" style="background:rgba(255,255,255,0.4);"></span>
+                <span class="guide-screenshot-url" style="color:rgba(255,255,255,0.8);">cat.eduroam.org</span>
+              </div>
+              <div style="padding:20px;">
+                <div style="font-size:0.8rem;font-weight:700;color:#065f46;margin-bottom:12px;"><i class="fas fa-search mr-1"></i> 기관 검색</div>
+                <div class="guide-form-row" style="border-color:#a7f3d0; margin-bottom:10px;"><span style="color:#065f46;">기관명</span><div class="guide-form-input">{{ site.t[page.lang].org }}</div></div>
+                <div style="margin-bottom:12px;background:#fff;border:1px solid #a7f3d0;border-radius:6px;padding:10px 14px;font-size:0.82rem;color:#065f46;">
+                  <i class="fas fa-check-circle mr-1" style="color:#10b981;"></i>기관 발견됨
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-windows mr-1"></i>Windows</div>
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-apple mr-1"></i>macOS</div>
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-apple mr-1"></i>iOS</div>
+                  <div style="background:#10b981;color:#fff;border-radius:6px;padding:8px;text-align:center;font-size:0.75rem;font-weight:600;"><i class="fab fa-android mr-1"></i>Android</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- 수동 설정 -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #475569;">
+          <div class="guide-step-badge">수동</div>
+          <div class="guide-step-title"><i class="fas fa-cog mr-2"></i>OS별 수동 설정</div>
+        </div>
+        <div style="padding: 24px 28px;">
+          <ul class="nav nav-tabs os-tab mb-3" id="osTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tab-windows"><i class="fab fa-windows mr-1"></i>Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-mac"><i class="fab fa-apple mr-1"></i>macOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-ios"><i class="fab fa-apple mr-1"></i>iOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-android"><i class="fab fa-android mr-1"></i>Android</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab-windows">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+                <li><span class="step-num">2</span><span>EAP 방식: <strong>PEAP</strong>, 2단계 인증: <strong>MSCHAPv2</strong>를 선택합니다.</span></li>
+                <li><span class="step-num">3</span><span>서버 인증서 확인을 활성화하고 <strong>{{ site.realm }}</strong> CA를 선택합니다.</span></li>
+                <li><span class="step-num">4</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+              </ol>
+            </div>
+            <div class="tab-pane fade" id="tab-mac">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+                <li><span class="step-num">2</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+                <li><span class="step-num">3</span><span>인증서 신뢰 창이 뜨면 <strong>계속</strong>을 클릭하여 인증서를 신뢰합니다.</span></li>
+              </ol>
+              <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>CAT 도구를 사용하면 인증서 설정이 자동으로 처리됩니다.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-ios">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>설정 &gt; Wi-Fi에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+                <li><span class="step-num">2</span><span>사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+                <li><span class="step-num">3</span><span>인증서 확인 화면에서 <strong>신뢰</strong>를 탭합니다.</span></li>
+              </ol>
+              <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-info-circle mr-1"></i>iOS 15 이상: CAT 프로파일 설치를 권장합니다.</p>
+            </div>
+            <div class="tab-pane fade" id="tab-android">
+              <ol class="step-list">
+                <li><span class="step-num">1</span><span>Wi-Fi 목록에서 <strong>eduroam</strong>을 선택합니다.</span></li>
+                <li><span class="step-num">2</span><span>EAP 방식: <strong>PEAP</strong>, 2단계 인증: <strong>MSCHAPV2</strong>를 선택합니다.</span></li>
+                <li><span class="step-num">3</span><span>CA 인증서: <strong>시스템 기본 인증서 사용</strong> 또는 다운로드한 인증서를 선택합니다.</span></li>
+                <li><span class="step-num">4</span><span>도메인: <strong>{{ site.realm }}</strong>, 사용자 이름: <strong>아이디@{{ site.realm }}</strong>, 비밀번호를 입력합니다.</span></li>
+              </ol>
+              <p style="font-size:0.82rem; color:#888; margin-top:8px;"><i class="fas fa-exclamation-triangle mr-1" style="color:#e67e22;"></i>Android 11 이상: 도메인 필드 입력이 필수입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 인증서 정보 -->
+      {% unless site.cert == "none" %}
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #8b5cf6;">
+          <div class="guide-step-badge">참고</div>
+          <div class="guide-step-title"><i class="fas fa-certificate mr-2"></i>인증서 정보</div>
+        </div>
+        <div style="padding: 24px 28px;">
+          <p style="font-size:0.85rem; color:#666; line-height:1.7; margin-bottom:20px;">
+            <strong>OS 신뢰 저장소에 CA 인증서가 설치된 경우</strong>, 인증서 신뢰 확인 창이 나타나지 않으며 인증서 갱신 시 별도 조치가 필요 없습니다.<br>
+            <strong>CA 인증서 없이 수동 설정(TOFU)한 경우</strong>, 서버 인증서 만료 시 Wi-Fi 프로파일을 삭제하고 재연결해야 합니다.<br>
+            <i class="fas fa-info-circle mr-1"></i>TOFU(Trust On First Use): 최초 접속 시 사용자가 직접 서버 인증서를 확인하고 신뢰하는 방식입니다.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div style="font-size:0.8rem; font-weight:700; color:var(--edu-blue); margin-bottom:8px;">
+                <i class="fas fa-shield-alt mr-1"></i>CA 인증서
+              </div>
+              <table class="table table-sm table-borderless" style="font-size:0.8rem;">
+                <tr><th style="width:90px; color:#888; font-weight:400;">CN</th><td><code>{{ site.cert.ca.cn }}</code></td></tr>
+                <tr><th style="color:#888; font-weight:400;">유효기간</th><td>{{ site.cert.ca.valid_from }} ~ {{ site.cert.ca.valid_until }}</td></tr>
+                <tr><th style="color:#888; font-weight:400; vertical-align:top;">SHA-256</th>
+                  <td style="word-break:break-all; font-family:monospace; font-size:0.75rem;">{{ site.cert.ca.fingerprint_sha256 }}</td></tr>
+              </table>
+              <a href="{{ site.cert.ca.download | relative_url }}" download style="font-size:0.8rem;">
+                <i class="fas fa-download mr-1"></i>CA 인증서 다운로드
+              </a>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div style="font-size:0.8rem; font-weight:700; color:var(--edu-blue); margin-bottom:8px;">
+                <i class="fas fa-server mr-1"></i>서버 인증서 (RADIUS)
+              </div>
+              <table class="table table-sm table-borderless" style="font-size:0.8rem;">
+                <tr><th style="width:90px; color:#888; font-weight:400;">CN</th><td><code>{{ site.cert.server.cn }}</code></td></tr>
+                <tr><th style="color:#888; font-weight:400;">유효기간</th><td>{{ site.cert.server.valid_from }} ~ <strong>{{ site.cert.server.valid_until }}</strong></td></tr>
+                <tr><th style="color:#888; font-weight:400; vertical-align:top;">SHA-256</th>
+                  <td style="word-break:break-all; font-family:monospace; font-size:0.75rem;">{{ site.cert.server.fingerprint_sha256 }}</td></tr>
+              </table>
+              <a href="{{ site.cert.server.download | relative_url }}" download style="font-size:0.8rem;">
+                <i class="fas fa-download mr-1"></i>서버 인증서 다운로드
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endunless %}
+
+      <!-- 계정 정보 -->
+      <div class="section-card mb-4 guide-step-card">
+        <div class="guide-step-header" style="background: #4a6cf7;">
+          <div class="guide-step-badge">참고</div>
+          <div class="guide-step-title"><i class="fas fa-key mr-2"></i>계정 정보</div>
+        </div>
+        <div style="padding: 24px 28px;">
+          <div class="row">
+            <div class="col-md-7 mb-3">
+              <div style="display:grid; gap:8px;">
+                <div class="guide-form-row"><span>Wi-Fi SSID</span><div class="guide-form-input" style="font-family:monospace; font-weight:700;">eduroam</div></div>
+                <div class="guide-form-row"><span>사용자 이름</span><div class="guide-form-input" style="font-family:monospace; font-size:0.78rem;">아이디@{{ site.realm }}</div></div>
+                <div class="guide-form-row"><span>비밀번호</span><div class="guide-form-input">기관 계정 비밀번호</div></div>
+                <div class="guide-form-row"><span>EAP 방식</span><div class="guide-form-input">PEAP / TTLS</div></div>
+                <div class="guide-form-row"><span>내부 인증</span><div class="guide-form-input">MSCHAPv2 / PAP</div></div>
+              </div>
+            </div>
+            <div class="col-md-5 mb-3 d-flex align-items-center justify-content-center">
+              <div style="text-align:center;">
+                <i class="fas fa-lock" style="font-size:3rem; margin-bottom:12px; color:#c7d2fe; display:block;"></i>
+                <div style="font-size:0.82rem; color:#64748b; line-height:1.7;">계정 관련 문의는 운영센터로 연락해 주세요.</div>
+                <a href="mailto:{{ site.support.email }}" style="font-size:0.83rem; color:#4a6cf7; font-weight:600; margin-top:8px; display:inline-block;">
+                  <i class="fas fa-envelope mr-1"></i>{{ site.support.email }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -133,3 +233,111 @@ title: 접속 방법
     }
   });
 </script>
+
+<style>
+.guide-step-card { padding: 0 !important; overflow: hidden; }
+.guide-step-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.guide-step-badge {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.guide-step-title { font-size: 1.1rem; font-weight: 700; }
+.guide-step-body {
+  display: flex;
+  gap: 32px;
+  padding: 28px 28px;
+  align-items: flex-start;
+}
+.guide-step-text { flex: 1; min-width: 0; }
+.guide-step-text p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 0.93rem;
+}
+.guide-step-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.guide-step-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.87rem;
+  color: #374151;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.guide-step-checklist li i { flex-shrink: 0; margin-top: 2px; }
+.guide-step-btn {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.guide-step-btn:hover { opacity: 0.88; color: #fff; text-decoration: none; }
+.guide-step-screenshot {
+  width: 300px;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+.guide-screenshot-frame {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+.guide-screenshot-bar {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.guide-screenshot-bar .dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.guide-screenshot-url {
+  margin-left: 8px;
+  font-size: 0.72rem;
+  font-family: monospace;
+}
+.guide-form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+.guide-form-row span {
+  min-width: 80px;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.guide-form-input { flex: 1; color: #374151; }
+@media (max-width: 767.98px) {
+  .guide-step-body { flex-direction: column; }
+  .guide-step-screenshot { width: 100%; min-width: 0; }
+}
+</style>

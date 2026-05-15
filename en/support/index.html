@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Support
+lang: en
 ---
 
 <section class="page-hero">
@@ -10,105 +11,207 @@ title: Support
   </div>
 </section>
 
-<div class="container content-section">
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-12">
 
-  <div class="section-card">
-    <h2><i class="fas fa-question-circle"></i>Frequently Asked Questions</h2>
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
+          <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
+          <li class="breadcrumb-item active text-dark" aria-current="page">Support</li>
+        </ol>
+      </nav>
 
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>How do I set up eduroam for the first time?</div>
-      <div class="faq-a">
-        Visit the <a href="{{ '/en/connect/' | relative_url }}">Connect page</a> for instructions on installing the eduroam CAT tool.
-        CAT completes setup automatically in just a few clicks — no manual configuration needed.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>I forgot my password.</div>
-      <div class="faq-a">
-        Please contact the IT helpdesk at <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a> to reset your password.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>eduroam was working fine but suddenly gives an authentication error.</div>
-      <div class="faq-a">
-        If you set up eduroam manually (TOFU), the server certificate may have been renewed.
-        <strong>Delete the eduroam Wi-Fi profile</strong> from your device and reconnect — this re-trusts the new certificate.
-        Check the server certificate validity period on the <a href="{{ '/en/connect/' | relative_url }}">Connect page</a>.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>I'm connected to eduroam but have no internet.</div>
-      <div class="faq-a">
-        Try removing the eduroam network from your saved Wi-Fi list and reconnecting. If the issue persists, check that your device is set to obtain an IP address automatically, or contact the helpdesk.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>I'm getting a certificate error.</div>
-      <div class="faq-a">
-        Reinstalling the eduroam CAT profile will automatically renew the certificate.
-        For manual setups, the CA certificate must be installed separately.
-        See the <a href="{{ '/en/connect/' | relative_url }}">Connect page</a> for details.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>How do I connect to eduroam abroad?</div>
-      <div class="faq-a">
-        If you have the CAT profile installed, your device will connect automatically at any eduroam hotspot worldwide.
-        Check the <a href="{{ '/en/coverage/' | relative_url }}">Coverage page</a> for global availability.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q"><i class="fas fa-chevron-right"></i>Can I connect multiple devices?</div>
-      <div class="faq-a">
-        Yes, you can connect multiple devices simultaneously with the same account. Install the CAT profile or complete manual setup on each device.
-      </div>
-    </div>
-
-  </div>
-
-  <div class="section-card">
-    <h2><i class="fas fa-envelope"></i>Helpdesk Contact</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <table class="table table-sm" style="font-size:0.88rem;">
-          <tbody>
-            <tr>
-              <th style="width:110px;">Email</th>
-              <td><a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a></td>
-            </tr>
-            <tr>
-              <th>Phone</th>
-              <td>{{ site.support.tel }}</td>
-            </tr>
-            <tr>
-              <th>Hours</th>
-              <td>Weekdays 09:00 – 18:00 (KST)</td>
-            </tr>
-            <tr>
-              <th>Location</th>
-              <td>Main Building, 3F, IT Team</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-6">
-        <div class="alert alert-light" style="font-size:0.85rem; border:1px solid #e0e0e0;">
-          <strong>Please include when contacting us</strong>
-          <ul style="margin:8px 0 0; padding-left:18px; line-height:2;">
-            <li>Your user ID (username@{{ site.realm }})</li>
-            <li>Device type and OS version</li>
-            <li>Error message (screenshot recommended)</li>
-            <li>Time and location of the issue</li>
-          </ul>
+      <!-- Intro banner -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-headset mr-2" style="color: #7eb3f7;"></i>eduroam Helpdesk
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              Experiencing connection or authentication issues with eduroam?<br>
+              Check the FAQ below first, or contact our helpdesk directly.
+            </p>
+          </div>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-headset" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
+          </div>
         </div>
       </div>
+
+      <!-- FAQ -->
+      <div class="section-card mb-4 support-section-card">
+        <div class="support-section-header" style="background: #4a6cf7;">
+          <div class="support-section-icon"><i class="fas fa-question-circle"></i></div>
+          <div class="support-section-title">Frequently Asked Questions</div>
+        </div>
+        <div class="support-section-body">
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>How do I set up eduroam for the first time?</div>
+            <div class="faq-a">
+              Visit the <a href="{{ '/en/connect/' | relative_url }}">Connect page</a> for instructions on installing the eduroam CAT tool.
+              CAT completes setup automatically in just a few clicks — no manual configuration needed.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>I forgot my password.</div>
+            <div class="faq-a">
+              Please contact the IT helpdesk at <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a> to reset your password.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>eduroam was working fine but suddenly gives an authentication error.</div>
+            <div class="faq-a">
+              If you set up eduroam manually (TOFU), the server certificate may have been renewed.
+              <strong>Delete the eduroam Wi-Fi profile</strong> from your device and reconnect — this re-trusts the new certificate.
+              Check the server certificate validity period on the <a href="{{ '/en/connect/' | relative_url }}">Connect page</a>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>I'm connected to eduroam but have no internet.</div>
+            <div class="faq-a">
+              Try removing the eduroam network from your saved Wi-Fi list and reconnecting. If the issue persists, check that your device is set to obtain an IP address automatically, or contact the helpdesk.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>I'm getting a certificate error.</div>
+            <div class="faq-a">
+              Reinstalling the eduroam CAT profile will automatically renew the certificate.
+              For manual setups, the CA certificate must be installed separately.
+              See the <a href="{{ '/en/connect/' | relative_url }}">Connect page</a> for details.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>How do I connect to eduroam abroad?</div>
+            <div class="faq-a">
+              If you have the CAT profile installed, your device will connect automatically at any eduroam hotspot worldwide.
+              Check the <a href="{{ '/en/coverage/' | relative_url }}">Coverage page</a> for global availability.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><i class="fas fa-chevron-right"></i>Can I connect multiple devices?</div>
+            <div class="faq-a">
+              Yes, you can connect multiple devices simultaneously with the same account. Install the CAT profile or complete manual setup on each device.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Helpdesk Contact -->
+      <div class="section-card mb-4 support-section-card">
+        <div class="support-section-header" style="background: #10b981;">
+          <div class="support-section-icon"><i class="fas fa-envelope"></i></div>
+          <div class="support-section-title">Helpdesk Contact</div>
+        </div>
+        <div class="support-section-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:4px;">
+                <div class="support-contact-card">
+                  <div class="support-contact-icon" style="background:#e0f2fe;"><i class="fas fa-envelope" style="color:#0ea5e9;"></i></div>
+                  <div class="support-contact-label">Email</div>
+                  <div class="support-contact-value"><a href="mailto:{{ site.support.email }}" style="color:#1a4f8a; word-break:break-all;">{{ site.support.email }}</a></div>
+                </div>
+                <div class="support-contact-card">
+                  <div class="support-contact-icon" style="background:#dcfce7;"><i class="fas fa-phone" style="color:#10b981;"></i></div>
+                  <div class="support-contact-label">Phone</div>
+                  <div class="support-contact-value">{{ site.support.tel }}</div>
+                </div>
+                <div class="support-contact-card">
+                  <div class="support-contact-icon" style="background:#fef9c3;"><i class="fas fa-clock" style="color:#f59e0b;"></i></div>
+                  <div class="support-contact-label">Hours</div>
+                  <div class="support-contact-value">Weekdays 09:00 – 18:00 (KST)</div>
+                </div>
+                <div class="support-contact-card">
+                  <div class="support-contact-icon" style="background:#f3e8ff;"><i class="fas fa-map-marker-alt" style="color:#8b5cf6;"></i></div>
+                  <div class="support-contact-label">Location</div>
+                  <div class="support-contact-value">Main Building, 3F, IT Team</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div style="background:#f8faff; border:1px solid #dde5f7; border-radius:10px; padding:20px;">
+                <div style="font-weight:700; color:#1c2b3f; margin-bottom:12px; font-size:0.9rem;">
+                  <i class="fas fa-clipboard-list mr-1" style="color:#4a6cf7;"></i>Please include when contacting us
+                </div>
+                <ul class="policy-checklist">
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Your user ID (username@{{ site.realm }})</li>
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Device type and OS version</li>
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Error message (screenshot recommended)</li>
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> Time and location of the issue</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
 </div>
+
+<style>
+.support-section-card { padding: 0 !important; overflow: hidden; }
+.support-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.support-section-icon { font-size: 1.3rem; }
+.support-section-title { font-size: 1.1rem; font-weight: 700; }
+.support-section-body { padding: 8px 28px 24px; }
+.support-contact-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.support-contact-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  font-size: 1rem;
+}
+.support-contact-label {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.support-contact-value {
+  font-size: 0.8rem;
+  color: #374151;
+  font-weight: 600;
+  word-break: break-word;
+}
+.policy-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.policy-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.87rem;
+  color: #374151;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.policy-checklist li i { flex-shrink: 0; margin-top: 2px; }
+</style>

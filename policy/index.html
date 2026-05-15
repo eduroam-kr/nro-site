@@ -12,9 +12,8 @@ title: 이용 정책
 
 <div class="container my-4">
   <div class="row">
-
-    <!-- Main Content -->
     <div class="col-md-12">
+
       <!-- 빵부스러기 -->
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
@@ -23,27 +22,139 @@ title: 이용 정책
         </ol>
       </nav>
 
-      <div class="section-card mb-4">
-        <h2><i class="fas fa-users"></i> 이용 대상</h2>
-        <ul style="font-size:0.95rem; color:#444; line-height:2.2;">
-          <li>{{ site.t[page.lang].org }} 소속 구성원 (기관 계정 보유자)</li>
-          <li>eduroam 참여기관 방문자 (소속 기관 계정으로 인증)</li>
-        </ul>
+      <!-- 상단 소개 배너 -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-shield-alt mr-2" style="color: #7eb3f7;"></i>eduroam 이용 정책 안내
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              eduroam 서비스는 소속 기관 계정으로 인증하여 이용합니다.<br>
+              아래 이용 정책을 확인하고 준수해 주세요.
+            </p>
+          </div>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-shield-alt" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
+          </div>
+        </div>
       </div>
 
-      <div class="section-card mb-4">
-        <h2><i class="fas fa-ban"></i> 금지 사항</h2>
-        <ul style="font-size:0.95rem; color:#444; line-height:2.2;">
-          <li>불법 콘텐츠 유통 및 저작권 침해 행위</li>
-          <li>타인에 대한 해킹·사기·스팸 등 침해 행위</li>
-          <li>과도한 대역폭 점유 (P2P, 서버 운영 등)</li>
-        </ul>
+      <!-- 이용 대상 -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #4a6cf7;">
+          <div class="policy-section-icon"><i class="fas fa-users"></i></div>
+          <div class="policy-section-title">이용 대상</div>
+        </div>
+        <div class="policy-section-body">
+          <p>eduroam 서비스는 참여기관 소속 구성원 및 방문자가 이용할 수 있습니다.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> {{ site.t[page.lang].org }} 소속 구성원 (기관 계정 보유자)</li>
+            <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> eduroam 참여기관 방문자 (소속 기관 계정으로 인증)</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="section-card" style="background:#f8f9fa;">
-        <p class="small text-muted mb-0">본 정책은 2025년 3월 1일부터 시행됩니다. 문의: <a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a></p>
+      <!-- 금지 사항 -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #ef4444;">
+          <div class="policy-section-icon"><i class="fas fa-ban"></i></div>
+          <div class="policy-section-title">금지 사항</div>
+        </div>
+        <div class="policy-section-body">
+          <p>다음 행위는 이용약관에 위반되며, 위반 시 서비스 이용이 제한될 수 있습니다.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> 불법 콘텐츠 유통 및 저작권 침해 행위</li>
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> 타인에 대한 해킹·사기·스팸 등 침해 행위</li>
+            <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> 과도한 대역폭 점유 (P2P, 서버 운영 등)</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- 위반 처리 -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #f59e0b;">
+          <div class="policy-section-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="policy-section-title">위반 처리</div>
+        </div>
+        <div class="policy-section-body">
+          <p>이용 정책 위반 시 다음과 같은 조치가 취해질 수 있습니다.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-check-circle" style="color:#f59e0b;"></i> eduroam 서비스 이용 정지</li>
+            <li><i class="fas fa-check-circle" style="color:#f59e0b;"></i> 소속 기관 담당자에게 위반 사실 통보</li>
+            <li><i class="fas fa-check-circle" style="color:#f59e0b;"></i> 불법 행위의 경우 수사기관에 신고</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 개인정보 처리 -->
+      <div class="section-card mb-4 policy-section-card">
+        <div class="policy-section-header" style="background: #8b5cf6;">
+          <div class="policy-section-icon"><i class="fas fa-user-shield"></i></div>
+          <div class="policy-section-title">개인정보 처리</div>
+        </div>
+        <div class="policy-section-body">
+          <p>eduroam 이용 시 아래 정보가 수집됩니다. 수집된 정보는 서비스 제공 및 보안 사고 대응 목적으로만 활용되며, 법령에 의한 경우를 제외하고 제3자에게 제공되지 않습니다.</p>
+          <ul class="policy-checklist">
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 사용자 ID (로밍 로그 전달 시 익명화 처리)</li>
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 접속 시간 및 AP 위치 정보</li>
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 단말기 MAC 주소</li>
+            <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 수집 정보는 접속일로부터 1년간 보유 후 삭제</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 정책 시행 및 문의 -->
+      <div class="section-card mb-4" style="background: #f8faff; border: 1px solid #dde5f7;">
+        <div class="d-flex align-items-center" style="gap: 14px;">
+          <div style="background: #4a6cf7; border-radius: 50%; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <i class="fas fa-envelope" style="color: #fff; font-size: 1.1rem;"></i>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #1c2b3f; margin-bottom: 3px;">정책 시행 및 문의</div>
+            <div style="color: #555; font-size: 0.9rem;">
+              본 정책은 2025년 3월 1일부터 시행됩니다. 문의:
+              <a href="mailto:{{ site.support.email }}" style="color: #4a6cf7; font-weight: 600; margin-left: 6px;">{{ site.support.email }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
+<style>
+.policy-section-card { padding: 0 !important; overflow: hidden; }
+.policy-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.policy-section-icon { font-size: 1.3rem; }
+.policy-section-title { font-size: 1.1rem; font-weight: 700; }
+.policy-section-body { padding: 28px 28px; }
+.policy-section-body p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 0.93rem;
+}
+.policy-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.policy-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.87rem;
+  color: #374151;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.policy-checklist li i { flex-shrink: 0; margin-top: 2px; }
+</style>
