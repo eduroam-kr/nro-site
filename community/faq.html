@@ -12,7 +12,20 @@ title: FAQ
 
 <div class="container my-4">
   <div class="row">
-    <div class="col-md-12">
+
+    <!-- 사이드바 -->
+    <div class="col-md-3 col-lg-2 mb-4">
+      <aside class="site-sidebar" style="width:100%; min-width:0;">
+        <div class="sidebar-section-title">커뮤니티</div>
+        <ul class="sidebar-nav-list">
+          <li><a href="{{ '/notices/' | relative_url }}"{% if page.url contains '/notices' %} class="sidebar-active"{% endif %}>공지사항</a></li>
+          <li><a href="{{ '/community/faq.html' | relative_url }}"{% if page.url contains '/community/faq' %} class="sidebar-active"{% endif %}>FAQ</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="col-md-9 col-lg-10">
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
           <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}" class="text-muted">홈</a></li>

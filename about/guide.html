@@ -112,7 +112,7 @@ title: 서비스 가입방법
                 <div style="font-size:0.85rem;color:#64748b;line-height:1.6;">
                   eduroam.kr 운영센터에서<br>검토 후 권한 부여 메일을 발송합니다.
                 </div>
-                <div style="margin-top:18px;background:#fff;border:1px solid #bae6fd;border-radius:8px;padding:12px 16px;text-align:left;font-size:0.82rem;color:#334155;">
+                <div class="guide-inner-card" style="margin-top:18px;background:#fff;border:1px solid #bae6fd;border-radius:8px;padding:12px 16px;text-align:left;font-size:0.82rem;color:#334155;">
                   <div style="font-weight:600;margin-bottom:6px;color:#0369a1;"><i class="fas fa-envelope mr-1"></i> 승인 안내 이메일</div>
                   <div>제목: [eduroam.kr] 가입 승인 완료 안내</div>
                   <div style="color:#64748b;margin-top:4px;">대학서버관리자 권한이 부여되었습니다.</div>
@@ -209,37 +209,37 @@ title: 서비스 가입방법
         <h2 class="mb-3"><i class="fas fa-route"></i> 가입 흐름 요약</h2>
         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 0;">
           <div style="text-align: center; flex: 1; min-width: 100px;">
-            <div style="background: #eef2ff; border-radius: 10px; padding: 16px 10px;">
+            <div class="guide-flow-box" style="background: #eef2ff; border-radius: 10px; padding: 16px 10px;">
               <i class="fas fa-user-plus" style="font-size: 1.6rem; color: #4a6cf7; display: block; margin-bottom: 8px;"></i>
-              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">회원가입</div>
+              <div class="guide-flow-label" style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">회원가입</div>
             </div>
           </div>
           <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
           <div style="text-align: center; flex: 1; min-width: 100px;">
-            <div style="background: #e0f2fe; border-radius: 10px; padding: 16px 10px;">
+            <div class="guide-flow-box" style="background: #e0f2fe; border-radius: 10px; padding: 16px 10px;">
               <i class="fas fa-check-circle" style="font-size: 1.6rem; color: #0ea5e9; display: block; margin-bottom: 8px;"></i>
-              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">관리자 승인</div>
+              <div class="guide-flow-label" style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">관리자 승인</div>
             </div>
           </div>
           <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
           <div style="text-align: center; flex: 1; min-width: 100px;">
-            <div style="background: #f5f3ff; border-radius: 10px; padding: 16px 10px;">
+            <div class="guide-flow-box" style="background: #f5f3ff; border-radius: 10px; padding: 16px 10px;">
               <i class="fas fa-server" style="font-size: 1.6rem; color: #8b5cf6; display: block; margin-bottom: 8px;"></i>
-              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">정보 입력</div>
+              <div class="guide-flow-label" style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">정보 입력</div>
             </div>
           </div>
           <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
           <div style="text-align: center; flex: 1; min-width: 100px;">
-            <div style="background: #ecfdf5; border-radius: 10px; padding: 16px 10px;">
+            <div class="guide-flow-box" style="background: #ecfdf5; border-radius: 10px; padding: 16px 10px;">
               <i class="fas fa-map-marker-alt" style="font-size: 1.6rem; color: #10b981; display: block; margin-bottom: 8px;"></i>
-              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">캠퍼스 등록</div>
+              <div class="guide-flow-label" style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">캠퍼스 등록</div>
             </div>
           </div>
           <div style="color: #cbd5e1; font-size: 1.2rem;">&#8594;</div>
           <div style="text-align: center; flex: 1; min-width: 100px;">
-            <div style="background: #fef9c3; border-radius: 10px; padding: 16px 10px;">
+            <div class="guide-flow-box" style="background: #fef9c3; border-radius: 10px; padding: 16px 10px;">
               <i class="fas fa-wifi" style="font-size: 1.6rem; color: #f59e0b; display: block; margin-bottom: 8px;"></i>
-              <div style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">서비스 시작</div>
+              <div class="guide-flow-label" style="font-size: 0.78rem; font-weight: 700; color: #1c2b3f;">서비스 시작</div>
             </div>
           </div>
         </div>
@@ -389,9 +389,27 @@ title: 서비스 가입방법
 [data-theme="dark"] .guide-contact-card { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
 [data-theme="dark"] .guide-contact-title { color: var(--card-text) !important; }
 [data-theme="dark"] .guide-contact-desc { color: var(--card-subtext) !important; }
+[data-theme="dark"] .guide-step-text p,
+[data-theme="dark"] .guide-step-checklist li { color: var(--card-text) !important; }
+[data-theme="dark"] .guide-form-row { background: rgba(255,255,255,0.07) !important; border-color: rgba(255,255,255,0.12) !important; }
+[data-theme="dark"] .guide-form-row span { color: #94a3b8 !important; }
+[data-theme="dark"] .guide-form-input { color: #e2e8f0 !important; }
+[data-theme="dark"] .guide-step-card .guide-screenshot-frame { background: #162030 !important; border-color: rgba(255,255,255,0.12) !important; }
+[data-theme="dark"] .guide-inner-card { background: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important; color: var(--card-subtext) !important; }
+[data-theme="dark"] .guide-flow-box { background: rgba(255,255,255,0.07) !important; }
+[data-theme="dark"] .guide-flow-label { color: var(--card-text) !important; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .guide-contact-card { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
   :root:not([data-theme="light"]) .guide-contact-title { color: var(--card-text) !important; }
   :root:not([data-theme="light"]) .guide-contact-desc { color: var(--card-subtext) !important; }
+  :root:not([data-theme="light"]) .guide-step-text p,
+  :root:not([data-theme="light"]) .guide-step-checklist li { color: var(--card-text) !important; }
+  :root:not([data-theme="light"]) .guide-form-row { background: rgba(255,255,255,0.07) !important; border-color: rgba(255,255,255,0.12) !important; }
+  :root:not([data-theme="light"]) .guide-form-row span { color: #94a3b8 !important; }
+  :root:not([data-theme="light"]) .guide-form-input { color: #e2e8f0 !important; }
+  :root:not([data-theme="light"]) .guide-step-card .guide-screenshot-frame { background: #162030 !important; border-color: rgba(255,255,255,0.12) !important; }
+  :root:not([data-theme="light"]) .guide-inner-card { background: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important; color: var(--card-subtext) !important; }
+  :root:not([data-theme="light"]) .guide-flow-box { background: rgba(255,255,255,0.07) !important; }
+  :root:not([data-theme="light"]) .guide-flow-label { color: var(--card-text) !important; }
 }
 </style>

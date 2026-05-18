@@ -5,15 +5,15 @@ title: 운영센터안내
 
 <section class="page-hero">
   <div class="container">
-    <h1><i class="fas fa-headset mr-2"></i>운영센터안내</h1>
+    <h1><i class="fas fa-building mr-2"></i>운영센터안내</h1>
     <p class="page-sub">국내 eduroam 서비스 운영 및 기술 지원을 담당하는 운영센터를 소개합니다</p>
   </div>
 </section>
 
 <div class="container my-4">
   <div class="row">
-    <!-- Main Content -->
     <div class="col-md-12">
+
       <!-- 빵부스러기 -->
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
@@ -23,48 +23,321 @@ title: 운영센터안내
         </ol>
       </nav>
 
-      <div class="section-card">
-        <h2><i class="fas fa-university"></i> eduroam 운영센터 소개</h2>
-        <p style="line-height: 1.8;">
-          국내 eduroam 서비스는 <strong>한국과학기술정보연구원(KISTI)</strong>과 <strong>한국교육정보화재단(KREN)</strong>의 공동 협력을 통해 운영되고 있습니다.
-        </p>
-
-        <div class="row mt-4">
-          <div class="col-md-6 mb-3">
-            <div class="p-3 border rounded h-100" style="background: var(--card-bg);">
-              <h5 class="mb-2 text-success">기술 운영 (KISTI)</h5>
-              <ul class="small text-muted mb-0 pl-3">
-                <li>국가 RADIUS 서버 운영</li>
-                <li>글로벌 eduroam 연동</li>
-              </ul>
-            </div>
+      <!-- 상단 소개 배너 -->
+      <div class="section-card mb-5" style="background: linear-gradient(135deg, #1c2b3f 0%, #2d4a7a 100%); color: #fff; border: none;">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 style="color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">
+              <i class="fas fa-building mr-2" style="color: #7eb3f7;"></i>eduroam 운영센터
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 0; font-size: 0.95rem;">
+              국내 eduroam 서비스는 <strong style="color: #7eb3f7;">{{ site.t[page.lang].support_dept }}</strong>에서 운영합니다.<br>
+              인증 서버 운영·기술 지원·정책 관리를 통해 안정적인 서비스를 제공합니다.
+            </p>
           </div>
-          <div class="col-md-6 mb-3">
-            <div class="p-3 border rounded h-100" style="background: var(--card-bg);">
-              <h5 class="mb-2 text-primary">기획 및 관리 (KREN)</h5>
-              <ul class="small text-muted mb-0 pl-3">
-                <li>가입 승인 및 기관 관리</li>
-                <li>서비스 정책 및 홍보</li>
-              </ul>
+          <div class="col-md-4 text-center d-none d-md-block">
+            <i class="fas fa-building" style="font-size: 5rem; color: rgba(255,255,255,0.15);"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 운영 기관 -->
+      <div class="section-card mb-4 aboutus-section-card">
+        <div class="aboutus-section-header" style="background: #4a6cf7;">
+          <div class="aboutus-section-icon"><i class="fas fa-university"></i></div>
+          <div class="aboutus-section-title">운영 기관</div>
+        </div>
+        <div class="aboutus-section-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="aboutus-org-card">
+                <div class="aboutus-org-icon" style="background: #e0f2fe;">
+                  <i class="fas fa-server" style="color: #0ea5e9;"></i>
+                </div>
+                <div class="aboutus-org-name">기술 운영 (KISTI)</div>
+                <div class="aboutus-org-desc">한국과학기술정보연구원</div>
+                <ul class="aboutus-role-list">
+                  <li><i class="fas fa-check-circle" style="color:#0ea5e9;"></i> 국가 RADIUS 서버 운영</li>
+                  <li><i class="fas fa-check-circle" style="color:#0ea5e9;"></i> 글로벌 eduroam 연동</li>
+                  <li><i class="fas fa-check-circle" style="color:#0ea5e9;"></i> 네트워크 기술 지원</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="aboutus-org-card">
+                <div class="aboutus-org-icon" style="background: #ede9fe;">
+                  <i class="fas fa-tasks" style="color: #8b5cf6;"></i>
+                </div>
+                <div class="aboutus-org-name">기획 및 관리 (KREN)</div>
+                <div class="aboutus-org-desc">한국교육정보화재단</div>
+                <ul class="aboutus-role-list">
+                  <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 가입 승인 및 기관 관리</li>
+                  <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 서비스 정책 수립 및 홍보</li>
+                  <li><i class="fas fa-check-circle" style="color:#8b5cf6;"></i> 참여 기관 교육 및 안내</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="section-card mt-4">
-        <h2><i class="fas fa-phone-alt"></i> 연락처</h2>
-        <table class="table table-sm border-0 mb-0" style="font-size: 0.95rem;">
-          <tr>
-            <th class="border-0" style="background: var(--list-hover-bg);" style="width: 120px;">이메일</th>
-            <td class="border-0"><a href="mailto:{{ site.support.email }}">{{ site.support.email }}</a></td>
-          </tr>
-          <tr>
-            <th class="border-0" style="background: var(--list-hover-bg);">기술 지원</th>
-            <td class="border-0">02-882-5363 (ARS 6번)</td>
-          </tr>
-        </table>
+      <!-- 주요 역할 -->
+      <div class="section-card mb-4 aboutus-section-card">
+        <div class="aboutus-section-header" style="background: #10b981;">
+          <div class="aboutus-section-icon"><i class="fas fa-list-check"></i></div>
+          <div class="aboutus-section-title">주요 역할</div>
+        </div>
+        <div class="aboutus-section-body">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="aboutus-role-card">
+                <div class="aboutus-role-icon" style="background: #e0f2fe;">
+                  <i class="fas fa-shield-alt" style="color: #0ea5e9;"></i>
+                </div>
+                <div class="aboutus-role-title">보안 관리</div>
+                <div class="aboutus-role-body">WPA2-Enterprise 기반 인증 체계 운영 및 보안 정책 관리</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="aboutus-role-card">
+                <div class="aboutus-role-icon" style="background: #dcfce7;">
+                  <i class="fas fa-globe" style="color: #10b981;"></i>
+                </div>
+                <div class="aboutus-role-title">글로벌 연동</div>
+                <div class="aboutus-role-body">전 세계 101개국 eduroam 네트워크와의 연동 및 관계 유지</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="aboutus-role-card">
+                <div class="aboutus-role-icon" style="background: #fef9c3;">
+                  <i class="fas fa-headset" style="color: #f59e0b;"></i>
+                </div>
+                <div class="aboutus-role-title">기술 지원</div>
+                <div class="aboutus-role-body">참여 기관의 인증서버 연동 및 장애 대응 기술 지원</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="aboutus-role-card">
+                <div class="aboutus-role-icon" style="background: #f3e8ff;">
+                  <i class="fas fa-chart-bar" style="color: #8b5cf6;"></i>
+                </div>
+                <div class="aboutus-role-title">통계·현황 관리</div>
+                <div class="aboutus-role-body">서비스 이용 통계 수집 및 참여 기관 현황 관리</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- 연락처 -->
+      <div class="section-card mb-4 aboutus-section-card">
+        <div class="aboutus-section-header" style="background: #ef4444;">
+          <div class="aboutus-section-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="aboutus-section-title">연락처</div>
+        </div>
+        <div class="aboutus-section-body">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <div class="aboutus-contact-card">
+                  <div class="aboutus-contact-icon" style="background:#e0f2fe;"><i class="fas fa-envelope" style="color:#0ea5e9;"></i></div>
+                  <div class="aboutus-contact-label">이메일</div>
+                  <div class="aboutus-contact-value"><a href="mailto:{{ site.support.email }}" class="aboutus-contact-link" style="word-break:break-all;">{{ site.support.email }}</a></div>
+                </div>
+                <div class="aboutus-contact-card">
+                  <div class="aboutus-contact-icon" style="background:#dcfce7;"><i class="fas fa-phone" style="color:#10b981;"></i></div>
+                  <div class="aboutus-contact-label">전화</div>
+                  <div class="aboutus-contact-value">{{ site.support.tel }}</div>
+                </div>
+                <div class="aboutus-contact-card">
+                  <div class="aboutus-contact-icon" style="background:#fef9c3;"><i class="fas fa-clock" style="color:#f59e0b;"></i></div>
+                  <div class="aboutus-contact-label">운영 시간</div>
+                  <div class="aboutus-contact-value">평일 09:00 – 18:00</div>
+                </div>
+                <div class="aboutus-contact-card">
+                  <div class="aboutus-contact-icon" style="background:#f3e8ff;"><i class="fas fa-map-marker-alt" style="color:#8b5cf6;"></i></div>
+                  <div class="aboutus-contact-label">위치</div>
+                  <div class="aboutus-contact-value">본관 3층 정보통신팀</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="aboutus-info-box">
+                <div class="aboutus-info-title">
+                  <i class="fas fa-info-circle mr-1" style="color:#4a6cf7;"></i>문의 시 안내 사항
+                </div>
+                <ul class="policy-checklist">
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> 기관명 및 담당자 성명</li>
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> 문의 내용 (인증서버 연동, 장애, 가입 등)</li>
+                  <li><i class="fas fa-check-circle" style="color:#4a6cf7;"></i> 연락 가능한 이메일 또는 전화번호</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
+<style>
+.aboutus-section-card { padding: 0 !important; overflow: hidden; }
+.aboutus-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  color: #fff;
+}
+.aboutus-section-icon { font-size: 1.3rem; }
+.aboutus-section-title { font-size: 1.1rem; font-weight: 700; }
+.aboutus-section-body { padding: 24px 28px; }
+
+/* 운영 기관 카드 */
+.aboutus-org-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+.aboutus-org-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.aboutus-org-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c2b3f;
+  margin-bottom: 2px;
+}
+.aboutus-org-desc {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-bottom: 14px;
+}
+.aboutus-role-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.aboutus-role-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 0.85rem;
+  color: #374151;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+.aboutus-role-list li i { flex-shrink: 0; margin-top: 2px; }
+
+/* 주요 역할 카드 */
+.aboutus-role-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+.aboutus-role-icon {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 0 auto 12px;
+}
+.aboutus-role-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1c2b3f;
+  margin-bottom: 8px;
+}
+.aboutus-role-body {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* 연락처 카드 */
+.aboutus-contact-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.aboutus-contact-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  font-size: 1rem;
+}
+.aboutus-contact-label {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.aboutus-contact-value {
+  font-size: 0.8rem;
+  color: #374151;
+  font-weight: 600;
+  word-break: break-word;
+}
+.aboutus-contact-link { color: #1a4f8a; }
+.aboutus-info-box {
+  background: #f8faff;
+  border: 1px solid #dde5f7;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+.aboutus-info-title {
+  font-weight: 700;
+  color: #1c2b3f;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+/* 다크모드 */
+[data-theme="dark"] .aboutus-org-card,
+[data-theme="dark"] .aboutus-role-card,
+[data-theme="dark"] .aboutus-contact-card { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
+[data-theme="dark"] .aboutus-org-name,
+[data-theme="dark"] .aboutus-role-title { color: var(--card-text) !important; }
+[data-theme="dark"] .aboutus-org-desc,
+[data-theme="dark"] .aboutus-role-body,
+[data-theme="dark"] .aboutus-role-list li,
+[data-theme="dark"] .aboutus-contact-value { color: var(--card-subtext) !important; }
+[data-theme="dark"] .aboutus-contact-link { color: #7eb3f7 !important; }
+[data-theme="dark"] .aboutus-info-box { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
+[data-theme="dark"] .aboutus-info-title { color: var(--card-text) !important; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .aboutus-org-card,
+  :root:not([data-theme="light"]) .aboutus-role-card,
+  :root:not([data-theme="light"]) .aboutus-contact-card { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
+  :root:not([data-theme="light"]) .aboutus-org-name,
+  :root:not([data-theme="light"]) .aboutus-role-title { color: var(--card-text) !important; }
+  :root:not([data-theme="light"]) .aboutus-org-desc,
+  :root:not([data-theme="light"]) .aboutus-role-body,
+  :root:not([data-theme="light"]) .aboutus-role-list li,
+  :root:not([data-theme="light"]) .aboutus-contact-value { color: var(--card-subtext) !important; }
+  :root:not([data-theme="light"]) .aboutus-contact-link { color: #7eb3f7 !important; }
+  :root:not([data-theme="light"]) .aboutus-info-box { background: var(--card-bg) !important; border-color: var(--card-border) !important; }
+  :root:not([data-theme="light"]) .aboutus-info-title { color: var(--card-text) !important; }
+}
+</style>

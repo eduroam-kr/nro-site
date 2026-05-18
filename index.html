@@ -275,8 +275,15 @@ is_homepage: true
 
   /* Dark mode */
   [data-theme='dark'] .ripe-join-section { background: #0b1220 !important; border-color: #1e293b !important; }
-  [data-theme='dark'] .join-step-card { background: #1e293b !important; border-color: #3b5bdb !important; }
-  [data-theme='dark'] .join-step-num { color: #60a5fa !important; }
+  [data-theme='dark'] .join-step-card { background: #1e293b !important; }
+  [data-theme='dark'] .join-step-card-1 { border-top-color: #60a5fa !important; }
+  [data-theme='dark'] .join-step-card-2 { border-top-color: #34d399 !important; }
+  [data-theme='dark'] .join-step-card-3 { border-top-color: #a78bfa !important; }
+  [data-theme='dark'] .join-step-card-4 { border-top-color: #fbbf24 !important; }
+  [data-theme='dark'] .join-step-num-1 { color: #60a5fa !important; }
+  [data-theme='dark'] .join-step-num-2 { color: #34d399 !important; }
+  [data-theme='dark'] .join-step-num-3 { color: #a78bfa !important; }
+  [data-theme='dark'] .join-step-num-4 { color: #fbbf24 !important; }
   [data-theme='dark'] .join-step-card h4 { color: #f1f5f9 !important; }
   [data-theme='dark'] .join-step-card p { color: #94a3b8 !important; }
   [data-theme='dark'] .ripe-main-section { background: #0b1220 !important; }
@@ -295,8 +302,15 @@ is_homepage: true
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .ripe-join-section { background: #0b1220 !important; border-color: #1e293b !important; }
-    :root:not([data-theme="light"]) .join-step-card { background: #1e293b !important; border-color: #3b5bdb !important; }
-    :root:not([data-theme="light"]) .join-step-num { color: #60a5fa !important; }
+    :root:not([data-theme="light"]) .join-step-card { background: #1e293b !important; }
+    :root:not([data-theme="light"]) .join-step-card-1 { border-top-color: #60a5fa !important; }
+    :root:not([data-theme="light"]) .join-step-card-2 { border-top-color: #34d399 !important; }
+    :root:not([data-theme="light"]) .join-step-card-3 { border-top-color: #a78bfa !important; }
+    :root:not([data-theme="light"]) .join-step-card-4 { border-top-color: #fbbf24 !important; }
+    :root:not([data-theme="light"]) .join-step-num-1 { color: #60a5fa !important; }
+    :root:not([data-theme="light"]) .join-step-num-2 { color: #34d399 !important; }
+    :root:not([data-theme="light"]) .join-step-num-3 { color: #a78bfa !important; }
+    :root:not([data-theme="light"]) .join-step-num-4 { color: #fbbf24 !important; }
     :root:not([data-theme="light"]) .join-step-card h4 { color: #f1f5f9 !important; }
     :root:not([data-theme="light"]) .join-step-card p { color: #94a3b8 !important; }
     :root:not([data-theme="light"]) .ripe-main-section { background: #0b1220 !important; }
@@ -353,29 +367,29 @@ is_homepage: true
     </div>
     <div class="row align-items-stretch">
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#0055a5;">
-          <div class="join-step-num" style="color:#0055a5;">01</div>
+        <div class="join-step-card join-step-card-1" style="border-top-color:#0055a5;">
+          <div class="join-step-num join-step-num-1" style="color:#0055a5;">01</div>
           <h4>eduroam.kr 회원가입</h4>
           <p>기관 서버관리자가 eduroam.kr 사이트에 가입합니다.</p>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#059669;">
-          <div class="join-step-num" style="color:#059669;">02</div>
+        <div class="join-step-card join-step-card-2" style="border-top-color:#059669;">
+          <div class="join-step-num join-step-num-2" style="color:#059669;">02</div>
           <h4>관리자 승인</h4>
           <p>승인 완료 후 대학 서버관리자 권한이 부여됩니다.</p>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#7c3aed;">
-          <div class="join-step-num" style="color:#7c3aed;">03</div>
+        <div class="join-step-card join-step-card-3" style="border-top-color:#7c3aed;">
+          <div class="join-step-num join-step-num-3" style="color:#7c3aed;">03</div>
           <h4>정보 입력</h4>
           <p>기관명·주소·인증서버 정보 및 가입신청서를 입력합니다.</p>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#d97706;">
-          <div class="join-step-num" style="color:#d97706;">04</div>
+        <div class="join-step-card join-step-card-4" style="border-top-color:#d97706;">
+          <div class="join-step-num join-step-num-4" style="color:#d97706;">04</div>
           <h4>캠퍼스 정보 등록</h4>
           <p>eduroam 맵에 표시될 캠퍼스·담당자 정보를 등록합니다.</p>
         </div>

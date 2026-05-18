@@ -299,8 +299,15 @@ is_homepage: true
 
   /* Dark mode */
   [data-theme='dark'] .ripe-join-section { background: #0b1220 !important; border-color: #1e293b !important; }
-  [data-theme='dark'] .join-step-card { background: #1e293b !important; border-color: #3b5bdb !important; }
-  [data-theme='dark'] .join-step-num { color: #60a5fa !important; }
+  [data-theme='dark'] .join-step-card { background: #1e293b !important; }
+  [data-theme='dark'] .join-step-card-1 { border-top-color: #60a5fa !important; }
+  [data-theme='dark'] .join-step-card-2 { border-top-color: #34d399 !important; }
+  [data-theme='dark'] .join-step-card-3 { border-top-color: #a78bfa !important; }
+  [data-theme='dark'] .join-step-card-4 { border-top-color: #fbbf24 !important; }
+  [data-theme='dark'] .join-step-num-1 { color: #60a5fa !important; }
+  [data-theme='dark'] .join-step-num-2 { color: #34d399 !important; }
+  [data-theme='dark'] .join-step-num-3 { color: #a78bfa !important; }
+  [data-theme='dark'] .join-step-num-4 { color: #fbbf24 !important; }
   [data-theme='dark'] .join-step-card h4 { color: #f1f5f9 !important; }
   [data-theme='dark'] .join-step-card p { color: #94a3b8 !important; }
   [data-theme='dark'] .ripe-shortcuts-bar { background: #1e293b !important; border-color: #334155 !important; }
@@ -323,8 +330,15 @@ is_homepage: true
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .ripe-join-section { background: #0b1220 !important; border-color: #1e293b !important; }
-    :root:not([data-theme="light"]) .join-step-card { background: #1e293b !important; border-color: #3b5bdb !important; }
-    :root:not([data-theme="light"]) .join-step-num { color: #60a5fa !important; }
+    :root:not([data-theme="light"]) .join-step-card { background: #1e293b !important; }
+    :root:not([data-theme="light"]) .join-step-card-1 { border-top-color: #60a5fa !important; }
+    :root:not([data-theme="light"]) .join-step-card-2 { border-top-color: #34d399 !important; }
+    :root:not([data-theme="light"]) .join-step-card-3 { border-top-color: #a78bfa !important; }
+    :root:not([data-theme="light"]) .join-step-card-4 { border-top-color: #fbbf24 !important; }
+    :root:not([data-theme="light"]) .join-step-num-1 { color: #60a5fa !important; }
+    :root:not([data-theme="light"]) .join-step-num-2 { color: #34d399 !important; }
+    :root:not([data-theme="light"]) .join-step-num-3 { color: #a78bfa !important; }
+    :root:not([data-theme="light"]) .join-step-num-4 { color: #fbbf24 !important; }
     :root:not([data-theme="light"]) .join-step-card h4 { color: #f1f5f9 !important; }
     :root:not([data-theme="light"]) .join-step-card p { color: #94a3b8 !important; }
     :root:not([data-theme="light"]) .ripe-shortcuts-bar { background: #1e293b !important; border-color: #334155 !important; }
@@ -385,29 +399,29 @@ is_homepage: true
     </div>
     <div class="row align-items-stretch">
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#0055a5;">
-          <div class="join-step-num" style="color:#0055a5;">01</div>
+        <div class="join-step-card join-step-card-1" style="border-top-color:#0055a5;">
+          <div class="join-step-num join-step-num-1" style="color:#0055a5;">01</div>
           <h4>Register on eduroam.kr</h4>
           <p>The institution's server administrator signs up on the eduroam.kr site.</p>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#059669;">
-          <div class="join-step-num" style="color:#059669;">02</div>
+        <div class="join-step-card join-step-card-2" style="border-top-color:#059669;">
+          <div class="join-step-num join-step-num-2" style="color:#059669;">02</div>
           <h4>Admin Approval</h4>
           <p>Upon approval, administrator privileges are granted for your institution.</p>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#7c3aed;">
-          <div class="join-step-num" style="color:#7c3aed;">03</div>
+        <div class="join-step-card join-step-card-3" style="border-top-color:#7c3aed;">
+          <div class="join-step-num join-step-num-3" style="color:#7c3aed;">03</div>
           <h4>Enter Information</h4>
           <p>Submit institution name, address, authentication server info, and application.</p>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-3">
-        <div class="join-step-card" style="border-top-color:#d97706;">
-          <div class="join-step-num" style="color:#d97706;">04</div>
+        <div class="join-step-card join-step-card-4" style="border-top-color:#d97706;">
+          <div class="join-step-num join-step-num-4" style="color:#d97706;">04</div>
           <h4>Register Campus</h4>
           <p>Register campus and contact details to appear on the eduroam Map.</p>
         </div>

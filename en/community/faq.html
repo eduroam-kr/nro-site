@@ -13,7 +13,20 @@ lang: en
 
 <div class="container my-4">
   <div class="row">
-    <div class="col-md-12">
+
+    <!-- Sidebar -->
+    <div class="col-md-3 col-lg-2 mb-4">
+      <aside class="site-sidebar" style="width:100%; min-width:0;">
+        <div class="sidebar-section-title">Community</div>
+        <ul class="sidebar-nav-list">
+          <li><a href="{{ '/en/notices/' | relative_url }}"{% if page.url contains '/en/notices' %} class="sidebar-active"{% endif %}>Notices</a></li>
+          <li><a href="{{ '/en/community/faq.html' | relative_url }}"{% if page.url contains '/en/community/faq' %} class="sidebar-active"{% endif %}>FAQ</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9 col-lg-10">
       <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb bg-transparent p-0 m-0" style="font-size: 0.8rem;">
           <li class="breadcrumb-item"><a href="{{ '/en/' | relative_url }}" class="text-muted">Home</a></li>
@@ -100,9 +113,9 @@ lang: en
         </div>
 
       </div>
-    </div>
-  </div>
-</div>
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
 
 <style>
 .faq-card-header { background: var(--card-bg, #fff); }

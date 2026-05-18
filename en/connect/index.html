@@ -214,8 +214,8 @@ lang: en
             <div class="col-md-5 mb-3 d-flex align-items-center justify-content-center">
               <div style="text-align:center;">
                 <i class="fas fa-lock" style="font-size:3rem; margin-bottom:12px; color:#c7d2fe; display:block;"></i>
-                <div style="font-size:0.82rem; color:#64748b; line-height:1.7;">For account inquiries, please contact the helpdesk.</div>
-                <div style="font-size:0.82rem; color:#64748b; margin-top:4px;">{{ site.t[page.lang].support_dept }}</div>
+                <div class="connect-account-notice" style="font-size:0.82rem; color:#64748b; line-height:1.7;">For account inquiries, please contact the helpdesk.</div>
+                <div class="connect-account-notice" style="font-size:0.82rem; color:#64748b; margin-top:4px;">{{ site.t[page.lang].support_dept }}</div>
                 <a href="mailto:{{ site.support.email }}" style="font-size:0.83rem; color:#4a6cf7; font-weight:600; margin-top:8px; display:inline-block;">
                   <i class="fas fa-envelope mr-1"></i>{{ site.support.email }}
                 </a>
@@ -344,5 +344,21 @@ lang: en
 @media (max-width: 767.98px) {
   .guide-step-body { flex-direction: column; }
   .guide-step-screenshot { width: 100%; min-width: 0; }
+}
+[data-theme="dark"] .guide-step-text p,
+[data-theme="dark"] .guide-step-checklist li { color: var(--card-text) !important; }
+[data-theme="dark"] .guide-form-row { background: rgba(255,255,255,0.07) !important; border-color: rgba(255,255,255,0.12) !important; }
+[data-theme="dark"] .guide-form-row span { color: #94a3b8 !important; }
+[data-theme="dark"] .guide-form-input { color: #e2e8f0 !important; }
+[data-theme="dark"] .guide-step-card .guide-screenshot-frame { background: #162030 !important; border-color: rgba(255,255,255,0.12) !important; }
+[data-theme="dark"] .connect-account-notice { color: var(--card-subtext) !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .guide-step-text p,
+  :root:not([data-theme="light"]) .guide-step-checklist li { color: var(--card-text) !important; }
+  :root:not([data-theme="light"]) .guide-form-row { background: rgba(255,255,255,0.07) !important; border-color: rgba(255,255,255,0.12) !important; }
+  :root:not([data-theme="light"]) .guide-form-row span { color: #94a3b8 !important; }
+  :root:not([data-theme="light"]) .guide-form-input { color: #e2e8f0 !important; }
+  :root:not([data-theme="light"]) .guide-step-card .guide-screenshot-frame { background: #162030 !important; border-color: rgba(255,255,255,0.12) !important; }
+  :root:not([data-theme="light"]) .connect-account-notice { color: var(--card-subtext) !important; }
 }
 </style>
